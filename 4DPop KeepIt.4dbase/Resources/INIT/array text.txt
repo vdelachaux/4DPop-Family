@@ -1,0 +1,8 @@
+%attributes = {"lang":"us"}
+ARRAY TEXT:C222(<ask message="Array name?"/>;<ask message="Size of the array ?" type="integer"/>)
+
+For ($Lon_i;1;Size of array:C274(<ask message="\1"/>);1)
+
+<ask message="\1"/>{$Lon_i}:="<ask message="Default value?"/>"
+
+End for 

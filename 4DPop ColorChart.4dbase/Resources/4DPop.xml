@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<tools name=":xliff:ColorChart_ColorChart" picture="4DPop.png">
+
+	<tool method="ShowPalette"/>
+	
+</tools>

@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--             
+Translation file.
+This file is distributed under the same license as the product package.
+-->
+<xliff version="1.0">
+   <file datatype="x-STR#" original="Undefined" source-language="en" target-language="ja">
+      <header>
+         <prop-group name="Xliff-Editor.4dbase">
+            <prop prop-type="resname-autofill">1</prop>
+            <prop prop-type="resname-prefix">Menus_</prop>
+            <prop prop-type="resname-separator"/>
+            <prop prop-type="version">1.0</prop>
+            <prop prop-type="separator">_</prop>
+            <prop prop-type="prefix">4D_</prop>
+         </prop-group>
+      </header>
+      <body>
+         <group resname="Buttons">
+            <trans-unit id="2" resname="SaveButton">
+               <source>Save</source>
+               <target>保存</target>
+            </trans-unit>
+            <trans-unit id="3" resname="CancelButton">
+               <source>Cancel</source>
+               <target>キャンセル</target>
+            </trans-unit>
+            <trans-unit id="9" resname="OKButton">
+               <source>OK</source>
+               <target>OK</target>
+            </trans-unit>
+            <trans-unit id="31" resname="YesButton">
+               <source>Yes</source>
+               <target>はい</target>
+            </trans-unit>
+            <trans-unit id="32" resname="NoButton">
+               <source>No</source>
+               <target>いいえ</target>
+            </trans-unit>
+            <trans-unit id="99" resname="NewButton">
+               <source>New</source>
+               <target>新規</target>
+            </trans-unit>
+            <trans-unit id="100" resname="EditionButton">
+               <source>Edition</source>
+               <target>版</target>
+            </trans-unit>
+            <trans-unit id="101" resname="SourceButton">
+               <source>Source</source>
+               <target>ソース</target>
+            </trans-unit>
+            <trans-unit id="104" resname="ChangeButton">
+               <source>Change…</source>
+               <target>変更…</target>
+            </trans-unit>
+         </group>
+         <group resname="Messages">
+            <trans-unit id="7" resname="FileName">
+               <source>File name:</source>
+               <target>ファイル名:</target>
+            </trans-unit>
+            <trans-unit id="10" resname="DeleteGroup">
+               <source>Are you sure that you want to delete the group "{groupname}" ?</source>
+               <target>グループ "{groupname}" を本当に削除しますか?</target>
+            </trans-unit>
+            <trans-unit id="11" resname="DeleteItem">
+               <source>Are you sure that you want to delete the item "{itemname}" ?</source>
+               <target>項目 "{itemname}" を本当に削除しますか?</target>
+            </trans-unit>
+            <trans-unit id="30" resname="AreYouSure">
+               <source>Are you sure?</source>
+               <target>処理を続行しますか?</target>
+            </trans-unit>
+            <trans-unit id="33" resname="RevertConfirmation">
+               <source>Discard changes to "{file}"?</source>
+               <target>"{file}" への変更を破棄しますか?</target>
+            </trans-unit>
+            <trans-unit id="47" resname="xliff_AnErrorOccurredTheResourcesFileCannotBeOpened.">
+               <source>An error occurred, the resources file cannot be opened.</source>
+               <target>エラーが発生しました。リソースファイルが開けません。</target>
+            </trans-unit>
+            <trans-unit id="48" resname="xliff_TheLocalized.rsrcFileShouldBeInThe{Folder}.lproj folder.">
+               <source>The "Localized.rsrc" file should be in the {Folder}.lproj  folder.</source>
+               <target>"Localized.rsrc" ファイルが {Folder}.lproj フォルダにあるべきです。</target>
+            </trans-unit>
+            <trans-unit id="49" resname="xliff_STR#ID{id}ResourceNotFound.">
+               <source>STR# ID {id} resource not found.</source>
+               <target>STR# ID {id} リソースが見つかりません。</target>
+            </trans-unit>
+            <trans-unit id="10" resname="DeleteFile">
+               <source>Are you sure that you want to delete the file "{filename}" ?</source>
+               <target>ファイル "{filename}" を本当に削除しますか?</target>
+            </trans-unit>
+         </group>
+         <group resname="Tips">
+            <trans-unit id="12" resname="TipAddFile">
+               <source>New xliff file</source>
+               <target>新規XLIFFファイル</target>
+            </trans-unit>
+            <trans-unit id="13" resname="TipNewGroup">
+               <source>Add a group in the current file</source>
+               <target>現在のファイルにグループを追加</target>
+            </trans-unit>
+            <trans-unit id="14" resname="TipNewTransUnit">
+               <source>Add a string to the current group</source>
+               <target>現在のグループに文字列を追加</target>
+            </trans-unit>
+            <trans-unit id="15" resname="TipDelete">
+               <source>Delete the current element</source>
+               <target>現在の要素を削除</target>
+            </trans-unit>
+            <trans-unit id="16" resname="TipInfo">
+               <source>Current file's info</source>
+               <target>現在のファイルの情報</target>
+            </trans-unit>
+            <trans-unit id="17" resname="TipPreferences">
+               <source>Preferences</source>
+               <target>環境設定</target>
+            </trans-unit>
+            <trans-unit id="27" resname="TipToggleWindow">
+               <source>Switch between the editor and the pallet</source>
+               <target>エディタとパレットをスイッチ</target>
+            </trans-unit>
+            <trans-unit id="33" resname="TipString">
+               <source>Show or Hide the string box</source>
+               <target>文字ボックスの表示/非表示</target>
+            </trans-unit>
+            <trans-unit id="97" resname="TipsShowOrHideTheAttributesBox">
+               <source>Show or Hide the attributes box</source>
+               <target>属性ボックスの表示/非表示</target>
+            </trans-unit>
+            <trans-unit id="113" resname="Tips_XLIFF10Specification">
+               <source>XLIFF 1.0 Specification</source>
+               <target>XLIFF 1.0 仕様</target>
+            </trans-unit>
+            <trans-unit id="114" resname="Tips_ShortCuts">
+               <source>Short cuts for the current actions.</source>
+               <target>現在のアクションのショートカット</target>
+            </trans-unit>
+         </group>
+         <group resname="Default Values">
+            <trans-unit id="5" resname="NewGroup">
+               <source>Group {id}</source>
+               <target>グループ {id}</target>
+            </trans-unit>
+            <trans-unit id="6" resname="NewItem">
+               <source>Item {id} </source>
+               <target>項目 {id} </target>
+            </trans-unit>
+            <trans-unit id="8" resname="NewFile">
+               <source>Untitled.xlf</source>
+               <target>Untitled.xlf</target>
+            </trans-unit>
+         </group>
+         <group resname="Menus">
+            <trans-unit id="18" resname="MenuFile">
+               <source>File</source>
+               <target>ファイル</target>
+            </trans-unit>
+            <trans-unit id="19" resname="MenuNew">
+               <source>New</source>
+               <target>新規</target>
+            </trans-unit>
+            <trans-unit id="20" resname="Menuxliff">
+               <source>File...</source>
+               <target>ファイル...</target>
+            </trans-unit>
+            <trans-unit id="21" resname="MenuGroup">
+               <source>Group</source>
+               <target>グループ</target>
+            </trans-unit>
+            <trans-unit id="22" resname="MenuLine">
+               <source>Item</source>
+               <target>項目</target>
+            </trans-unit>
+            <trans-unit id="23" resname="MenuSave">
+               <source>Save</source>
+               <target>保存</target>
+            </trans-unit>
+            <trans-unit id="28" resname="MenuRevert">
+               <source>Revert to Saved</source>
+               <target>保存状態に戻る</target>
+            </trans-unit>
+            <trans-unit id="34" resname="Menus_FillIn">
+               <source>Fill in</source>
+               <target>Fill in</target>
+            </trans-unit>
+            <trans-unit id="35" resname="Menus_Preferences…">
+               <source>Preferences…</source>
+               <target>環境設定...</target>
+            </trans-unit>
+            <trans-unit id="50" resname="Menus_Rename">
+               <source>Rename…</source>
+               <target>名称変更…</target>
+            </trans-unit>
+            <trans-unit id="51" resname="Menus_Delete">
+               <source>Delete.…</source>
+               <target>削除…</target>
+            </trans-unit>
+            <trans-unit id="52" resname="Menus_Informations">
+               <source>Informations…</source>
+               <target>情報…</target>
+            </trans-unit>
+            <trans-unit id="53" resname="Menus_ImportSTR#Resource…">
+               <source>Import STR# Resource…</source>
+               <target>STR# リソースを読み込み…</target>
+            </trans-unit>
+            <trans-unit id="54" resname="Menus_AddAgroup">
+               <source>Add a group</source>
+               <target>グループ追加</target>
+            </trans-unit>
+            <trans-unit id="55" resname="Menus_ShowTheFile">
+               <source>Show file</source>
+               <target>ファイルを表示</target>
+            </trans-unit>
+            <trans-unit id="98" resname="Menus_ValidateUsingDTD">
+               <source>Validate using the DTD</source>
+               <target>DTDを使用して検証</target>
+            </trans-unit>
+            <trans-unit id="102" resname="Menu_Editor">
+               <source>Editor…</source>
+               <target>エディタ…</target>
+            </trans-unit>
+         </group>
+         <group resname="Labels">
+            <trans-unit id="24" resname="WindowEditor">
+               <source>Xliff Editor</source>
+               <target>Xliff エディタ</target>
+            </trans-unit>
+            <trans-unit id="25" resname="WindowPalette" translate="no">
+               <source>Xliff</source>
+               <target>Xliff</target>
+            </trans-unit>
+            <trans-unit id="26" resname="SearchLabel">
+               <source>Find...</source>
+               <target>検索...</target>
+            </trans-unit>
+            <trans-unit id="29" resname="DontSave">
+               <source>Don't save</source>
+               <target>保存しない</target>
+            </trans-unit>
+            <trans-unit id="61" resname="ResourcesFolder">
+               <source>Resources Folder</source>
+               <target>Resources フォルダ</target>
+            </trans-unit>
+            <trans-unit id="62" resname="DefaultValues">
+               <source>Default values</source>
+               <target>デフォルト値</target>
+            </trans-unit>
+            <trans-unit id="63" resname="UseTheDatabasesFolder">
+               <source>Use the database's folder</source>
+               <target>データベースフォルダを使用</target>
+            </trans-unit>
+            <trans-unit id="64" resname="UseTheFolder">
+               <source>Use the folder:</source>
+               <target>使用するフォルダ:</target>
+            </trans-unit>
+            <trans-unit id="67" resname="Comments">
+               <source>Comments</source>
+               <target>コメント</target>
+            </trans-unit>
+            <trans-unit id="68" resname="MetalWindow">
+               <source>Metal Window</source>
+               <target>メタルウィンドウ</target>
+            </trans-unit>
+            <trans-unit id="69" resname="Languages">
+               <source>Languages</source>
+               <target>ランゲージ</target>
+            </trans-unit>
+            <trans-unit id="70" resname="General">
+               <source>General</source>
+               <target>一般</target>
+            </trans-unit>
+            <trans-unit id="71" resname="Database">
+               <source>Database</source>
+               <target>データベース</target>
+            </trans-unit>
+            <trans-unit id="95" resname="Attributes">
+               <source>Attributes</source>
+               <target>属性</target>
+            </trans-unit>
+            <trans-unit id="96" resname="Values">
+               <source>Values</source>
+               <target>値</target>
+            </trans-unit>
+            <trans-unit id="104" resname="SelectTheTargetResourceFolder">
+               <source>Select the Target Resource Folder.</source>
+               <target>ターゲットのResourceフォルダを選択.</target>
+            </trans-unit>
+            <trans-unit id="106" resname="UseGroupsResname">
+               <source>Use group's resname</source>
+               <target>グループのresnameを使用</target>
+            </trans-unit>
+            <trans-unit id="107" resname="UsePrefix">
+               <source>Use prefix:</source>
+               <target>プリフィクスを使用:</target>
+            </trans-unit>
+            <trans-unit id="108" resname="SeparatingCharacter">
+               <source>Separating character:</source>
+               <target>区切り文字:</target>
+            </trans-unit>
+            <trans-unit id="109" resname="EscapedCharacters">
+               <source>Escaped characters</source>
+               <target>エスケープ文字</target>
+            </trans-unit>
+            <trans-unit id="110" resname="MaximumSizeOfTheResname">
+               <source>Maximum size of the resname</source>
+               <target>resnameの最大サイズ</target>
+            </trans-unit>
+            <trans-unit id="111" resname="Advanced">
+               <source>Advanced</source>
+               <target>詳細</target>
+            </trans-unit>
+            <trans-unit id="112" resname="Labels_Files">
+               <source>Files</source>
+               <target>ファイル</target>
+            </trans-unit>
+            <trans-unit id="115" resname="DragAndDropInForm">
+               <source>Drag &amp; drop in form:</source>
+               <target>Drag &amp; drop in form:</target>
+            </trans-unit>
+         </group>
+         <group resname="4D STR# 42">
+            <trans-unit id="2" resname="xliff_If">
+               <source>If</source>
+               <target>If</target>
+            </trans-unit>
+            <trans-unit id="3" resname="xliff_Else">
+               <source>Else</source>
+               <target>Else</target>
+            </trans-unit>
+            <trans-unit id="4" resname="xliff_EndIf">
+               <source>End if</source>
+               <target>End if</target>
+            </trans-unit>
+            <trans-unit id="5" resname="xliff_CaseOf">
+               <source>Case of</source>
+               <target>Case of</target>
+            </trans-unit>
+            <trans-unit id="7" resname="xliff_EndCase">
+               <source>End case</source>
+               <target>End case</target>
+            </trans-unit>
+            <trans-unit id="8" resname="xliff_While">
+               <source>While</source>
+               <target>While</target>
+            </trans-unit>
+            <trans-unit id="9" resname="xliff_EndWhile">
+               <source>End while</source>
+               <target>End while</target>
+            </trans-unit>
+            <trans-unit id="10" resname="xliff_For">
+               <source>For</source>
+               <target>For</target>
+            </trans-unit>
+            <trans-unit id="11" resname="xliff_EndFor">
+               <source>End for</source>
+               <target>End for</target>
+            </trans-unit>
+            <trans-unit id="12" resname="xliff_Repeat">
+               <source>Repeat</source>
+               <target>Repeat</target>
+            </trans-unit>
+            <trans-unit id="13" resname="xliff_Until">
+               <source>Until</source>
+               <target>Until</target>
+            </trans-unit>
+         </group>
+         <group resname="Managed Languages">
+            <trans-unit id="56" resname="Languages_1">
+               <source>English</source>
+               <target>English</target>
+            </trans-unit>
+            <trans-unit id="57" resname="Languages_2">
+               <source>French</source>
+               <target>French</target>
+            </trans-unit>
+            <trans-unit id="58" resname="Languages_3">
+               <source>German</source>
+               <target>German</target>
+            </trans-unit>
+            <trans-unit id="59" resname="Languages_4">
+               <source>Italian</source>
+               <target>Italian</target>
+            </trans-unit>
+            <trans-unit id="60" resname="Languages_5">
+               <source>Japanese</source>
+               <target>Japanese</target>
+            </trans-unit>
+            <trans-unit id="61" resname="Languages_6">
+               <source>Spanish</source>
+               <target>Spanish</target>
+            </trans-unit>
+            <trans-unit id="62" resname="Languages_7">
+               <source>Chinese</source>
+               <target>Chinese</target>
+            </trans-unit>
+            <trans-unit id="124" resname="Languages_8">
+               <source>Russian</source>
+               <target>Russian</target>
+            </trans-unit>
+         </group>
+         <group resname="DO NOT TRANSLATE">
+            <trans-unit id="66" resname="DOCTYPE" translate="no">
+               <source>xliff PUBLIC "-//XLIFF//DTD XLIFF//EN"
+"http://www.oasis-open.org/committees/xliff/documents/xliff.dtd"</source>
+               <target>xliff PUBLIC "-//XLIFF//DTD XLIFF//EN"
+"http://www.oasis-open.org/committees/xliff/documents/xliff.dtd"</target>
+            </trans-unit>
+            <trans-unit id="67" resname="XliffComment" translate="no">
+               <source>
+Translation file.
+This file is distributed under the same license as the product package.</source>
+               <target>
+Translation file.
+This file is distributed under the same license as the product package.</target>
+            </trans-unit>
+         </group>
+         <group resname="Standard Buttons">
+            <trans-unit id="1" resname="CommonOK">
+               <source>OK</source>
+               <target>OK</target>
+            </trans-unit>
+            <trans-unit id="2" resname="CommonCancel">
+               <source>Cancel</source>
+               <target>キャンセル</target>
+            </trans-unit>
+            <trans-unit id="3" resname="CommonRetry">
+               <source>Retry</source>
+               <target>再試行</target>
+            </trans-unit>
+            <trans-unit id="4" resname="CommonQuit">
+               <source>Quit</source>
+               <target>終了</target>
+            </trans-unit>
+            <trans-unit id="5" resname="CommonAdd">
+               <source>Add</source>
+               <target>追加</target>
+            </trans-unit>
+            <trans-unit id="6" resname="CommonDelete">
+               <source>Delete</source>
+               <target>削除</target>
+            </trans-unit>
+            <trans-unit id="7" resname="CommonEdit">
+               <source>Edit</source>
+               <target>編集</target>
+            </trans-unit>
+            <trans-unit id="9" resname="CommonDone">
+               <source>Done</source>
+               <target>終了</target>
+            </trans-unit>
+            <trans-unit id="10" resname="CommonApply">
+               <source>Apply</source>
+               <target>適用</target>
+            </trans-unit>
+            <trans-unit id="11" resname="CommonLoadDial">
+               <source>Load...</source>
+               <target>読み込み...</target>
+            </trans-unit>
+            <trans-unit id="12" resname="CommonSaveDial">
+               <source>Save...</source>
+               <target>保存...</target>
+            </trans-unit>
+            <trans-unit id="13" resname="CommonOrderBy">
+               <source>Order by</source>
+               <target>並び替え</target>
+            </trans-unit>
+            <trans-unit id="14" resname="CommonUse">
+               <source>Use</source>
+               <target>使用</target>
+            </trans-unit>
+            <trans-unit id="15" resname="CommonBack">
+               <source>&lt; Back</source>
+               <target>&lt; 戻る</target>
+            </trans-unit>
+            <trans-unit id="16" resname="CommonNext">
+               <source>Next &gt;</source>
+               <target>次へ &gt;</target>
+            </trans-unit>
+            <trans-unit id="17" resname="CommonCreate">
+               <source>Create</source>
+               <target>作成</target>
+            </trans-unit>
+            <trans-unit id="18" resname="CommonExportDial">
+               <source>Export...</source>
+               <target>書き出し...</target>
+            </trans-unit>
+            <trans-unit id="19" resname="CommonPreview">
+               <source>Preview</source>
+               <target>プレビュー</target>
+            </trans-unit>
+            <trans-unit id="20" resname="CommonRemove">
+               <source>Remove</source>
+               <target>削除</target>
+            </trans-unit>
+            <trans-unit id="22" resname="CommonOpen">
+               <source>Open</source>
+               <target>開く</target>
+            </trans-unit>
+            <trans-unit id="23" resname="CommonClose">
+               <source>Close</source>
+               <target>閉じる</target>
+            </trans-unit>
+            <trans-unit id="24" resname="CommonExpandAll">
+               <source>Expand all</source>
+               <target>すべて拡げる</target>
+            </trans-unit>
+            <trans-unit id="25" resname="CommonCollapseAll">
+               <source>Collapse all</source>
+               <target>すべて閉じる</target>
+            </trans-unit>
+         </group>
+         <group id="36" resname="4D STR# 36">
+            <trans-unit id="1" resname="4D_FormMethod">
+               <source>Form Method: </source>
+               <target>フォームメソッド: </target>
+            </trans-unit>
+            <trans-unit id="2" resname="4D_Trigger">
+               <source>Trigger: </source>
+               <target>トリガ: </target>
+            </trans-unit>
+            <trans-unit id="3" resname="4D_FormFrench" translate="no">
+               <source>Formulaire : </source>
+            </trans-unit>
+            <trans-unit id="3" resname="4D_FormEnglish" translate="no">
+               <source>Form: </source>
+            </trans-unit>
+            <trans-unit id="4" resname="4D_Subtable">
+               <source>Subtable: </source>
+               <target>サブテーブル: </target>
+            </trans-unit>
+            <trans-unit id="5" resname="4D_Method">
+               <source>Method: </source>
+               <target>メソッド: </target>
+            </trans-unit>
+            <trans-unit id="9" resname="4D_ObjectMethod">
+               <source>Object Method: </source>
+               <target>オブジェクトメソッド: </target>
+            </trans-unit>
+         </group>
+      </body>
+   </file>
+</xliff>

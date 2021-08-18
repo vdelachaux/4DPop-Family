@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE macros SYSTEM "http://www.4d.com/dtd/2007/macros.dtd" >
+<macros>
+
+	<macro 
+		name="" 
+		in_menu="false" 
+		in_toolbar="false" 
+		type_ahead="false" 
+		version="2" 
+		method_event="on_load">
+		<text><method>4DPopWindow_macroOnOpen("<method_path/>")</method></text>
+	</macro>
+
+	<macro 
+		name="" 
+		in_menu="false" 
+		in_toolbar="false" 
+		type_ahead="false" 
+		version="2" 
+		method_event="on_create">
+		<text><method>4DPopWindow_macroOnOpen("<method_path/>")</method></text>
+	</macro>
+
+	<macro 
+		name="" 
+		in_menu="false" 
+		in_toolbar="false" 
+		type_ahead="false" 
+		version="2" 
+		method_event="on_close">
+		<text><method>4DPopWindow_macroOnClose("<method_path/>")</method></text>
+	</macro>
+    
+</macros>

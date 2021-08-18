@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<tools name="Xliff" picture="xliff.png">
+
+	<tool name="Editor" method="XLIFF_Editor"/>
+	
+</tools>

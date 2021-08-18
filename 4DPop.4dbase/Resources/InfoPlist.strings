@@ -1,0 +1,6 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "4DPop";
+CFBundleShortVersionString = "19 (172)";
+CFBundleGetInfoString = "19 (172)";
+NSHumanReadableCopyright = "©4D SAS 2009-2021";

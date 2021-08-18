@@ -1,0 +1,6 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "4DPop Git";
+CFBundleShortVersionString = "19 (269311)";
+CFBundleGetInfoString = "19 (269311)";
+NSHumanReadableCopyright = "© 2020";

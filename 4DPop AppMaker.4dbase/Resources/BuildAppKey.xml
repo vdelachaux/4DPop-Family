@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<BuildApp>
+
+	<BuildApplicationName type="alpha.ApplicationName" size="27"/>
+	<BuildWinDestFolder type="path.folder" os="win"/>
+	<BuildMacDestFolder type="path.folder" os="mac"/>
+	<DataFilePath type="path.file.4dd"/>
+	<BuildCompiled type="boolean"/>
+	<IncludeAssociatedFolders type="boolean"/>
+	<BuildComponent type="boolean"/>
+	<BuildApplicationLight type="boolean"/>
+	<BuildApplicationSerialized type="boolean"/>
+	<ArrayExcludedPluginName type="array" arraytype="plugin.name"/>
+	<ArrayExcludedPluginID type="array" arraytype="plugin.id"/>
+	<ArrayExcludedComponentName type="array" arraytype="component"/>
+
+	<SignApplication>
+		<MacSignature type="boolean.signApplication" os="mac"/>
+		<MacCertificate type="alpha.certificate" os="mac"/>
+	</SignApplication>
+
+	<Licenses>
+		<ArrayLicenseWin type="array" arraytype="path.file.license4D" os="win"/>
+		<ArrayLicenseMac type="array" arraytype="path.file.license4D" os="mac"/>
+	</Licenses>
+
+	<CS>
+		<BuildServerApplication type="boolean"/>
+		<BuildCSUpgradeable type="boolean"/>
+		<IPAddress type="alpha.ip"/>
+		<PortNumber type="alpha.port"/>
+		<HardLink type="alpha" size="27"/>
+		<RangeVersMin type="alpha.version"/>
+		<RangeVersMax type="alpha.version"/>
+		<CurrentVers type="alpha.version"/>
+		<BuildV13ClientUpgrades type="boolean"/>
+	</CS>
+
+	<SourcesFiles>
+
+		<RuntimeVL>
+			<RuntimeVLIncludeIt type="boolean"/>
+			<RuntimeVLWinFolder type="path.folder" os="win"/>
+			<RuntimeVLMacFolder type="path.exe" os="mac"/>
+			<RuntimeVLIconWinPath type="path.file.ico" os="win"/>
+			<RuntimeVLIconMacPath type="path.file.icns" os="mac"/>
+			<IsOEM type="boolean"/>
+		</RuntimeVL>
+
+		<CS>
+			<ServerIncludeIt type="boolean"/>
+			<ServerWinFolder type="path.folder" os="win"/>
+			<ServerMacFolder type="path.exe" os="mac"/>
+
+			<ClientWinIncludeIt type="boolean" os="win"/>
+			<ClientWinFolderToWin type="path.folder" os="win"/>
+			<ClientWinFolderToMac type="path.folder" os="win"/>
+
+			<ClientMacIncludeIt type="boolean" os="mac"/>
+			<ClientMacFolderToWin type="path.exe" os="mac"/>
+			<ClientMacFolderToMac type="path.folder" os="mac"/>
+
+			<ServerIconWinPath type="path.file.ico" os="win"/>
+			<ServerIconMacPath type="path.file.icns" os="mac"/>
+
+			<ClientMacIconForMacPath type="path.file.icns" os="mac"/>
+			<ClientWinIconForMacPath type="path.file.ico" os="mac"/>
+
+			<ClientMacIconForWinPath type="path.file.icns" os="win"/>
+			<ClientWinIconForWinPath type="path.file.ico" os="win"/>
+			<IsOEM type="boolean"/>
+		</CS>
+
+	</SourcesFiles>
+
+	<Versioning>
+
+		<Common>
+			<CommonVersion type="alpha.version"/>
+			<CommonCopyright type="alpha.copyright"/>
+			<CommonCreator type="alpha.creator" os="mac"/>
+			<CommonComment type="alpha.comment" size="31" os="win"/>
+			<CommonCompanyName type="alpha.company-name" size="31" os="win"/>
+			<CommonFileDescription type="alpha.file-description" size="31" os="win"/>
+			<CommonInternalName type="alpha.internal-name" size="31" os="win"/>
+			<CommonLegalTrademark type="alpha.legal-trademark" size="31" os="win"/>
+			<CommonPrivateBuild type="alpha.private-build" size="31" os="win"/>
+			<CommonSpecialBuild type="alpha.special-build" size="31" os="win"/>
+		</Common>
+
+		<RuntimeVL>
+			<RuntimeVLVersion type="alpha.version"/>
+			<RuntimeVLCopyright type="alpha.copyright"/>
+			<RuntimeVLCreator type="alpha.creator" os="mac"/>
+			<RuntimeVLComment type="alpha.comment" size="31" os="win"/>
+			<RuntimeVLCompanyName type="alpha.company-name" size="31" os="win"/>
+			<RuntimeVLFileDescription type="alpha.file-description" size="31" os="win"/>
+			<RuntimeVLInternalName type="alpha.internal-name" size="31" os="win"/>
+			<RuntimeVLLegalTrademark type="alpha.legal-trademark" size="31" os="win"/>
+			<RuntimeVLPrivateBuild type="alpha.private-build" size="31" os="win"/>
+			<RuntimeVLSpecialBuild type="alpha.special-build" size="31" os="win"/>
+		</RuntimeVL>
+
+		<Server>
+			<ServerVersion type="alpha.version"/>
+			<ServerCopyright type="alpha.copyright"/>
+			<ServerCreator type="alpha.creator" os="mac"/>
+			<ServerComment type="alpha.comment" size="31" os="win"/>
+			<ServerCompanyName type="alpha.company-name" size="31" os="win"/>
+			<ServerFileDescription type="alpha.file-description" size="31" os="win"/>
+			<ServerInternalName type="alpha.internal-name" size="31" os="win"/>
+			<ServerLegalTrademark type="alpha.legal-trademark" size="31" os="win"/>
+			<ServerPrivateBuild type="alpha.private-build" size="31" os="win"/>
+			<ServerSpecialBuild type="alpha.special-build" size="31" os="win"/>
+		</Server>
+
+		<Client>
+			<ClientVersion type="alpha.version"/>
+			<ClientCopyright type="alpha.copyright"/>
+			<ClientCreator type="alpha.creator" os="mac"/>
+			<ClientComment type="alpha.comment" size="31" os="win"/>
+			<ClientCompanyName type="alpha.company-name" size="31" os="win"/>
+			<ClientFileDescription type="alpha.file-description" size="31" os="win"/>
+			<ClientInternalName type="alpha.internal-name" size="31" os="win"/>
+			<ClientLegalTrademark type="alpha.legal-trademark" size="31" os="win"/>
+			<ClientPrivateBuild type="alpha.private-build" size="31" os="win"/>
+			<ClientSpecialBuild type="alpha.special-build" size="31" os="win"/>
+		</Client>
+
+	</Versioning>
+
+	<AutoUpdate>
+
+		<RuntimeVL>
+			<StartElevated type="boolean" os="win"/>
+		</RuntimeVL>
+
+		<CS>
+			<Server>
+				<StartElevated type="boolean" os="win"/>
+			</Server>
+			<Client>
+				<StartElevated type="boolean" os="win"/>
+			</Client>
+			<ClientUpdateWin os="win">
+				<StartElevated type="boolean" os="win"/>
+			</ClientUpdateWin>
+		</CS>
+
+	</AutoUpdate>
+
+</BuildApp>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menus version="1">
+	
+	<!-- Editor menu bar -->
+	<menu id="editor">
+		<menu text=":xliff:CommonMenuFile">
+			<menu text=":xliff:MenuNew">
+				<item text=":xliff:Menuxliff" reference="new_file" shortcut="N"/>
+				<item text=":xliff:MenuGroup" reference="new_group" shortcut="R"/>
+				<item text=":xliff:MenuLine" reference="new_unit" shortcut="L"/>
+			</menu>
+			<item text="-"/>
+			<item text=":xliff:MenuSave" reference="save_menu_validate" shortcut="S"/>
+			<item text=":xliff:MenuRevert" reference="revert"/>
+			<item text="-"/>
+			<item text=":xliff:CommonClose" reference="save_close" shortcut="W"/>
+		</menu>
+		<menu text=":xliff:CommonMenuEdit">
+			<item text=":xliff:CommonMenuItemUndo" standard_action="17" shortcut="Z"/>
+			<item text="-"/>
+			<item text=":xliff:CommonMenuItemCut" standard_action="18" shortcut="X" enable="1"/>
+			<item text=":xliff:CommonMenuItemCopy" method="MENU_COPY" shortcut="C" enable="1"/>
+			<item text=":xliff:CommonMenuItemPaste" method="MENU_PASTE" shortcut="V" enable="1"/>
+			<item text=":xliff:CommonMenuItemClear" standard_action="21"/>
+			<item text=":xliff:CommonMenuItemSelectAll" standard_action="22" shortcut="A"/>
+			<item text="-"/>
+			<item text=":xliff:CommonMenuItemShowClipboard" standard_action="23"/>
+		</menu>
+	</menu>
+	
+	<!-- New menu -->
+	<menu id="buttonNew">
+		<item text=":xliff:Menuxliff" reference="file" shortcut="N"/>
+		<item text=":xliff:MenuGroup" reference="group" shortcut="R"/>
+		<item text=":xliff:MenuLine" reference="transunit" shortcut="L"/>
+	</menu>
+		
+	<!-- string contextual -->
+	<menu id="stringList">
+		<item text=":xliff:CommonMenuItemCopy" reference="copy" shortcut="C"/>
+		<item text=":xliff:CommonMenuItemDuplicate" reference="duplicate" shortcut="D"/>		
+	</menu>
+	
+</menus>

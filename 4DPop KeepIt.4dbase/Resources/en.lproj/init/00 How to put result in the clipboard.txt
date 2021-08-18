@@ -1,0 +1,7 @@
+/*
+Select this item and copy it (Right click > Copy)
+The result will be placed in the clipboard.
+*/
+//Your name is <ask message="What is your first name?" type="text"/>
+//You are <ask message="How old are you?" type="integer"/> old
+//And you are a <ask message="Are you a man or woman?" type="{man;woman}"/>

@@ -1,0 +1,36 @@
+%attributes = {"lang":"us"}
+//Set the component localization {
+C_TEXT:C284($Txt_language)
+
+//Find the language of the 4D runtime…
+ARRAY TEXT:C222($tTxt_Components;0x0000)
+COMPONENT LIST:C1001($tTxt_Components)
+If (Find in array:C230($tTxt_Components;"4DPop")>0)
+	
+	//…with 4DPop, if any, …
+	//$Txt_4dLanguage:=4DPop_applicationLanguage
+	EXECUTE METHOD:C1007("4DPop_applicationLanguage";$Txt_language)
+	
+Else
+	
+	//…the system language else.
+	$Txt_language:=Get database localization:C1009(User system localization:K5:23)
+	
+End if
+
+//Set the component language
+SET DATABASE LOCALIZATION:C1104($Txt_language;*)
+
+If (OK=0)
+	
+	//Default is english
+	SET DATABASE LOCALIZATION:C1104("en";*)
+	
+	If (OK=0)
+		
+		//if fail, restore the default
+		SET DATABASE LOCALIZATION:C1104(Get database localization:C1009(Default localization:K5:21);*)
+		
+	End if
+End if
+//}

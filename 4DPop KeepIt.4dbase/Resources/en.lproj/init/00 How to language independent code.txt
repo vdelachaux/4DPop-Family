@@ -1,0 +1,22 @@
+%attributes = {"lang":"us"}
+/*Example of language independent code.
+
+The pasted text in the method editor will
+be correctly interpreted with a 4D US or FR
+
+To do that select"Tokenize"in the Actions' menu
+*/
+
+$Ptr_object:=OBJECT Get pointer:C1124(Object named:K67:5;$Txt_object)
+
+If (Length:C16($Ptr_object->)>0)
+	
+	ST GET ATTRIBUTES:C1094(*;$Txt_object;1;2;Attribute text size:K65:6;$Lon_buffer)
+	$Boo_Styled:=(OK=1)
+	
+Else
+	
+	$Boo_Styled:=(ST Get text:C1116(*;$Txt_object)=ST Get plain text:C1092(*;$Txt_object))
+	
+End if
+

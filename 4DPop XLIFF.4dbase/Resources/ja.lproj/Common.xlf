@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--    
+   Translation file for 4D products.
+   Copyright (C) 2007-2012 4D SAS.
+   This file is distributed under the same license as the 4D product package.
+-->
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd"><xliff version="1.0">
+   <file datatype="x-STR#" original="Undefined" product-version="2007" source-language="en" target-language="ja">
+      <header>
+         <prop-group name="Xliff-Editor.4dbase">
+            <prop prop-type="version">1.0</prop>
+         </prop-group>
+      </header>
+      <body>
+         <group resname="Menu Titles">
+            <trans-unit id="1" resname="CommonMenuFile">
+               <source>File</source>
+               <target>ファイル</target>
+            </trans-unit>
+            <trans-unit id="5" resname="CommonMenuEdit">
+               <source>Edit</source>
+               <target>編集</target>
+            </trans-unit>
+            <trans-unit id="6" resname="CommonMenuMode">
+               <source>Mode</source>
+               <target>モード</target>
+            </trans-unit>
+         </group>
+         <group resname="Character">
+            <trans-unit id="1" resname="CommonSize">
+               <source>Size</source>
+               <target>サイズ</target>
+            </trans-unit>
+            <trans-unit id="2" resname="CommonStyle">
+               <source>Style</source>
+               <target>スタイル</target>
+            </trans-unit>
+            <trans-unit id="3" resname="CommonUnderline">
+               <source>Underline</source>
+               <target>下線</target>
+            </trans-unit>
+            <trans-unit id="4" resname="CommonItalic">
+               <source>Italic</source>
+               <target>イタリック</target>
+            </trans-unit>
+            <trans-unit id="5" resname="CommonBold">
+               <source>Bold</source>
+               <target>太字</target>
+            </trans-unit>
+         </group>
+         <group resname="Menus Items">
+            <trans-unit id="18" resname="CommonMenuItemUndo">
+               <source>Undo</source>
+               <target>取り消し</target>
+            </trans-unit>
+            <trans-unit id="20" resname="CommonMenuItemCut">
+               <source>Cut</source>
+               <target>カット</target>
+            </trans-unit>
+            <trans-unit id="21" resname="CommonMenuItemCopy">
+               <source>Copy</source>
+               <target>コピー</target>
+            </trans-unit>
+            <trans-unit id="22" resname="CommonMenuItemPaste">
+               <source>Paste</source>
+               <target>ペースト</target>
+            </trans-unit>
+            <trans-unit id="23" resname="CommonMenuItemClear">
+               <source>Clear</source>
+               <target>クリア</target>
+            </trans-unit>
+            <trans-unit id="24" resname="CommonMenuItemSelectAll">
+               <source>Select All</source>
+               <target>すべてを選択</target>
+            </trans-unit>
+            <trans-unit id="25" resname="CommonMenuItemShowClipboard">
+               <source>Show Clipboard</source>
+               <target>クリップボード表示</target>
+            </trans-unit>
+            <trans-unit id="27" resname="CommonMenuItemDesign">
+               <source>Design</source>
+               <target>デザイン</target>
+            </trans-unit>
+            <trans-unit id="30" resname="CommonMenuItemQuit">
+               <source>Quit</source>
+               <target>終了</target>
+            </trans-unit>
+         </group>
+         <group resname="Button Labels">
+            <trans-unit id="1" resname="CommonOK">
+               <source>OK</source>
+               <target>OK</target>
+            </trans-unit>
+            <trans-unit id="2" resname="CommonCancel">
+               <source>Cancel</source>
+               <target>キャンセル</target>
+            </trans-unit>
+            <trans-unit id="3" resname="CommonRetry">
+               <source>Retry</source>
+               <target>再試行</target>
+            </trans-unit>
+            <trans-unit id="4" resname="CommonQuit">
+               <source>Quit</source>
+               <target>終了</target>
+            </trans-unit>
+            <trans-unit id="5" resname="CommonAdd">
+               <source>Add</source>
+               <target>追加</target>
+            </trans-unit>
+            <trans-unit id="6" resname="CommonDelete">
+               <source>Delete</source>
+               <target>削除</target>
+            </trans-unit>
+            <trans-unit id="7" resname="CommonEdit">
+               <source>Edit</source>
+               <target>編集</target>
+            </trans-unit>
+            <trans-unit id="9" resname="CommonDone">
+               <source>Done</source>
+               <target>終了</target>
+            </trans-unit>
+            <trans-unit id="10" resname="CommonApply">
+               <source>Apply</source>
+               <target>適用</target>
+            </trans-unit>
+            <trans-unit id="11" resname="CommonLoadDial">
+               <source>Load...</source>
+               <target>読み込み...</target>
+            </trans-unit>
+            <trans-unit id="12" resname="CommonSaveDial">
+               <source>Save...</source>
+               <target>保存...</target>
+            </trans-unit>
+            <trans-unit id="13" resname="CommonOrderBy">
+               <source>Order by</source>
+               <target>並び替え</target>
+            </trans-unit>
+            <trans-unit id="14" resname="CommonUse">
+               <source>Use</source>
+               <target>使用</target>
+            </trans-unit>
+            <trans-unit id="15" resname="CommonBack">
+               <source>&lt; Back</source>
+               <target>&lt; 戻る</target>
+            </trans-unit>
+            <trans-unit id="16" resname="CommonNext">
+               <source>Next &gt;</source>
+               <target>次へ &gt;</target>
+            </trans-unit>
+            <trans-unit id="17" resname="CommonCreate">
+               <source>Create</source>
+               <target>作成</target>
+            </trans-unit>
+            <trans-unit id="18" resname="CommonExportDial">
+               <source>Export...</source>
+               <target>書き出し...</target>
+            </trans-unit>
+            <trans-unit id="19" resname="CommonPreview">
+               <source>Preview</source>
+               <target>プレビュー</target>
+            </trans-unit>
+            <trans-unit id="20" resname="CommonRemove">
+               <source>Remove</source>
+               <target>削除</target>
+            </trans-unit>
+            <trans-unit id="22" resname="CommonOpen">
+               <source>Open</source>
+               <target>開く</target>
+            </trans-unit>
+            <trans-unit id="23" resname="CommonClose">
+               <source>Close</source>
+               <target>閉じる</target>
+            </trans-unit>
+            <trans-unit id="24" resname="CommonExpandAll">
+               <source>Expand all</source>
+               <target>すべて拡げる</target>
+            </trans-unit>
+            <trans-unit id="25" resname="CommonCollapseAll">
+               <source>Collapse all</source>
+               <target>すべて閉じる</target>
+            </trans-unit>
+            <trans-unit id="45" resname="CommonDuplicate">
+               <source>Duplicate</source>
+               <target>複製</target>
+            </trans-unit>
+            <trans-unit id="46" resname="CommonRename">
+               <source>Rename</source>
+               <target>名前の変更</target>
+            </trans-unit>
+         </group>
+         <group resname="Labels">
+            <trans-unit id="43" resname="FileInVolume">
+               <source>"{file}" in volume "{volume}"</source>
+               <target>ボリューム "{volume}" の中の "{file}"</target>
+            </trans-unit>
+            <trans-unit id="44" resname="ShowOnDisk">
+               <source>Show on disk</source>
+               <target>ディスク上に表示</target>
+            </trans-unit>
+         </group>
+      </body>
+   </file>
+</xliff>
