@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--               
+Translation file.
+Copyright (C) 2007-2018 4D SAS.
+This file is distributed under the same license as the product package.
+-->
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+
+  <file datatype="plaintext" original="Undefined" source-language="en" target-language="en">
+    <header>
+      <prop-group name="Xliff-Editor.4dbase">
+        <prop prop-type="resname-autofill">1</prop>
+        <prop prop-type="resname-prefix">Menus_</prop>
+        <prop prop-type="resname-separator"/>
+        <prop prop-type="version">2.0</prop>
+        <prop prop-type="separator">_</prop>
+        <prop prop-type="prefix">4D_</prop>
+      </prop-group>
+    </header>
+    <body>
+      <group id="group_1" resname="GROUP_ONE">
+        <trans-unit id="726EDAD96CDF4A8B9189E1DDEC6B27A1" resname="no-translate" translate="no">
+          <source>www.4d.com</source>
+          <note>Main site URL</note>
+        </trans-unit>
+        <trans-unit id="two_id" resname="missingGermanTranslation">
+          <source>Missing German translation</source>
+          <target>Missing German translation</target>
+        </trans-unit>
+        <trans-unit id="9" resname="withoutDE&amp;CH">
+          <source>Three</source>
+          <target>Three</target>
+        </trans-unit>
+        <trans-unit id="637560D1352445B991967F6BB50D5215" resname="helloWorld">
+          <source>Hello World!</source>
+          <target>Hello World!</target>
+          <note>A "Hello, World!" program is a computer program that outputs or displays "Hello, World!" to the user.</note>
+        </trans-unit>
+        <trans-unit id="0B94AF98448241E5B86D6DC5F7255D2D" resname="NEW ELEMENT">
+          <source>Not the same resname as "new element".</source>
+          <target>Not the same resname as "new element".</target>
+        </trans-unit>
+        <trans-unit id="0B94AF98448241E5B86D6DC5F7255D2C" resname="new element" translate="no">
+          <source>Not the same reesname as "NEW ELEMENT"</source>
+        </trans-unit>
+        <trans-unit id="1E32B1E68C3E485E86BBC943CEF83FC3" resname="seeYouLater">
+          <source>See you later.</source>
+          <target>See you later.</target>
+        </trans-unit>
+        <trans-unit d4:includeIf="win" id="AE9E027B8B36449CA278453223F9B1AF" resname="platformDependent">
+          <source>Windows string</source>
+          <target state="needs-translation">Windows string</target>
+        </trans-unit>
+        <trans-unit d4:includeIf="mac" id="7D6678E5DE2145038F2F0338DF8C4634" resname="platformDependent" translate="macOS string">
+          <source>macOS string</source>
+          <target state="needs-translation">macOS string</target>
+        </trans-unit>
+        <trans-unit id="62BFF83A354A4A83B1E1B0AA2D209790" resname="duplicateResname">
+          <source>Duplicate_resname_1</source>
+          <target>Duplicate_resname_1</target>
+        </trans-unit>
+        <trans-unit id="E89EE009E2D5458E9CE64FFF78D410DA" resname="duplicateResname">
+          <source>Duplicate_resname_2</source>
+          <target>Duplicate_resname_2</target>
+        </trans-unit>
+        <trans-unit id="FDD8311C4B1A47B8B9B9FA78DF3DCB58" resname="seventies">
+          <source>Seventy</source>
+          <target>Seventy</target>
+        </trans-unit>
+      </group>
+      <group resname="newGroup2">
+        <trans-unit id="525B8FB18B0C47359FA2D0AEC03AF7B2" resname="TEST_23" translate="no">
+          <source>TEST_23</source>
+        </trans-unit>
+        <trans-unit id="1C7368614EC44BCF975463E793ADE2E5" resname="TEST_20">
+          <source>TEST_20</source>
+          <target>TEST_20</target>
+          <note>TEST_20TEST_20</note>
+        </trans-unit>
+        <trans-unit id="ZAM7+gSvosRelroUsIoBzg" resname="New element 3">
+          <source>New element 3</source>
+          <target>New element 3</target>
+        </trans-unit>
+        <trans-unit id="wvp67kfhNL0/IF9eAXxTIQ" resname="newName">
+          <source>en</source>
+          <target>en</target>
+        </trans-unit>
+        <trans-unit id="ARpsD191/XNMKyAQdDD/qQ" resname="TEST_5">
+          <source>New element 5</source>
+          <target>New element 5</target>
+          <note>TEST_5</note>
+        </trans-unit>
+        <trans-unit id="QhMeC9kCSQzMOJHEDWDTvw" resname="newName_2" translate="no">
+          <source>XXXX</source>
+        </trans-unit>
+        <trans-unit id="hR3cFNHtbQhTL1Ch6vinVQ" resname="New element 5">
+          <source>sssssssfffffff</source>
+          <target>sssssssfffffff</target>
+        </trans-unit>
+      </group>
+      <group resname="New group">
+        <trans-unit id="FeNrY6DSpP9l9mzAeCn7jg" resname="New element 7">
+          <source>zzzzzz</source>
+          <target>zzzzzz</target>
+        </trans-unit>
+        <trans-unit id="zBX/6sXvLqDmOoj5lqJzVA" resname="New element 8">
+          <source>en</source>
+          <target>en</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+
+</xliff>

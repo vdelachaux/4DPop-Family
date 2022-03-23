@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+
+  <file datatype="plaintext" original="Undefined" source-language="en" target-language="cs">
+    <header>
+      <prop-group name="Xliff-Editor.4dbase">
+        <prop prop-type="version">2.0</prop>
+      </prop-group>
+      <prop-group name="4DPop XLIFF Pro">
+        <prop prop-type="version">2.0</prop>
+      </prop-group>
+    </header>
+    <body>
+      <group resname="Group">
+        <trans-unit id="ZwzolpOQJlOG8jeusqTDmQ" resname="String">
+          <source>zzz</source>
+          <target state="needs-translation">zzz</target>
+          <note>AAA</note>
+        </trans-unit>
+        <trans-unit id="eAbRFNJ89rF6A+FYOjBhyA" resname="String 3">
+          <source/>
+          <target state="new"/>
+        </trans-unit>
+        <trans-unit id="8zPyYXUQ58UlYk61WWVMJA" resname="String 3">
+          <source/>
+          <target state="new"/>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+
+</xliff>

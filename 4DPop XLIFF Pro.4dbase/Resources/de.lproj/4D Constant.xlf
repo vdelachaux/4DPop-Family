@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  <!--
+    Created with 4DPop Constants Editor
+  -->
+
+  <file datatype="x-4DK#" original="x-undefined" source-language="x-none" target-language="de">
+    <header>
+      <prop-group name="4DPop Constant editor">
+        <prop prop-type="version">DEV (43)</prop>
+      </prop-group>
+      <prop-group name="Xliff-Editor.4dbase">
+        <prop prop-type="version">2.0</prop>
+      </prop-group>
+    </header>
+    <body>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--groups' labels-->
+      <group resname="themes">
+        <trans-unit id="thm_1" resname="E4A1D7C0F32F4E66A7F82429D82994E8">
+          <source>VP Properties</source>
+          <target state="new">VP Properties</target>
+        </trans-unit>
+        <trans-unit id="thm_2" resname="C4E7E48EE8BE4E17898209DD2C83D232">
+          <source>VP Values</source>
+          <target state="new">VP Values</target>
+        </trans-unit>
+      </group>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--constants-->
+      <group d4:groupName="E4A1D7C0F32F4E66A7F82429D82994E8" restype="x-4DK#">
+        <trans-unit d4:value="allowUserDragDrop:S" id="k_1">
+          <source>vp Drag and Drop</source>
+          <target state="new">vp Drag and Drop</target>
+        </trans-unit>
+        <trans-unit d4:value="allowUserDragFill:S" id="k_2">
+          <source>vp Drag and Fill</source>
+          <target state="new">vp Drag and Fill</target>
+        </trans-unit>
+        <trans-unit d4:value="allowUserZoom:S" id="k_3">
+          <source>vp Zoom</source>
+          <target state="new">vp Zoom</target>
+        </trans-unit>
+        <trans-unit d4:value="newTabVisible:S" id="k_4">
+          <source>vp New Tab</source>
+          <target state="new">vp New Tab</target>
+        </trans-unit>
+        <trans-unit d4:value="referenceStyle:S" id="k_5">
+          <source>vp Reference Style</source>
+          <target state="new">vp Reference Style</target>
+        </trans-unit>
+        <trans-unit d4:value="showHorizontalScrollbar:S" id="k_6">
+          <source>vp Horizontal Scrollbar</source>
+          <target state="new">vp Horizontal Scrollbar</target>
+        </trans-unit>
+        <trans-unit d4:value="showVerticalScrollbar:S" id="k_7">
+          <source>vp Vertical Scrollbar</source>
+          <target state="new">vp Vertical Scrollbar</target>
+        </trans-unit>
+        <trans-unit d4:value="tabEditable:S" id="k_8">
+          <source>vp Tab Editable</source>
+          <target state="new">vp Tab Editable</target>
+        </trans-unit>
+        <trans-unit d4:value="tabNavigationVisible:S" id="k_9">
+          <source>vp Tab Navigation</source>
+          <target state="new">vp Tab Navigation</target>
+        </trans-unit>
+        <trans-unit d4:value="tabStripVisible:S" id="k_10">
+          <source>vp Tab Strip</source>
+          <target state="new">vp Tab Strip</target>
+        </trans-unit>
+      </group>
+      <group d4:groupName="C4E7E48EE8BE4E17898209DD2C83D232" restype="x-4DK#">
+        <trans-unit d4:value="a1:S" id="k_11">
+          <source>vp A1</source>
+          <target state="new">vp A1</target>
+        </trans-unit>
+        <trans-unit d4:value="false:S" id="k_12">
+          <source>vp Disable</source>
+          <target state="new">vp Disable</target>
+        </trans-unit>
+        <trans-unit d4:value="r1c1:S" id="k_13">
+          <source>vp R1C1</source>
+          <target state="new">vp R1C1</target>
+        </trans-unit>
+        <trans-unit d4:value="true:S" id="k_14">
+          <source>vp Enable</source>
+          <target state="new">vp Enable</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</xliff>
