@@ -2,22 +2,24 @@
 
 <BuildApp>
 
-	<BuildApplicationName type="alpha.ApplicationName" size="27"/>
-	<BuildWinDestFolder type="path.folder" os="win"/>
-	<BuildMacDestFolder type="path.folder" os="mac"/>
-	<DataFilePath type="path.file.4dd"/>
-	<BuildCompiled type="boolean"/>
-	<IncludeAssociatedFolders type="boolean"/>
 	<BuildComponent type="boolean"/>
 	<BuildApplicationLight type="boolean"/>
+	<BuildCompiled type="boolean"/>
+	<BuildApplicationName type="alpha.ApplicationName" size="27"/>
+	<BuildMacDestFolder type="path.folder" os="mac"/>
+	<BuildWinDestFolder type="path.folder" os="win"/>
 	<BuildApplicationSerialized type="boolean"/>
+	<IncludeAssociatedFolders type="boolean"/>
 	<ArrayExcludedPluginName type="array" arraytype="plugin.name"/>
 	<ArrayExcludedPluginID type="array" arraytype="plugin.id"/>
 	<ArrayExcludedComponentName type="array" arraytype="component"/>
+	<DataFilePath type="path.file.4dd"/>
+	<PackProject type="boolean"/>
 
 	<SignApplication>
 		<MacSignature type="boolean.signApplication" os="mac"/>
 		<MacCertificate type="alpha.certificate" os="mac"/>
+		<AdHocSign type="boolean" os="mac"/>
 	</SignApplication>
 
 	<Licenses>
@@ -34,42 +36,46 @@
 		<RangeVersMin type="alpha.version"/>
 		<RangeVersMax type="alpha.version"/>
 		<CurrentVers type="alpha.version"/>
-		<BuildV13ClientUpgrades type="boolean"/>
+		<LastDataPathLookup type="alpha.in-[InDbStruct,ByAppName,ByAppPath]"/>
+		<ServerSelectionAllowed type="boolean"/>
+		<ClientWinSingleInstance type="boolean" os="win"/>
+		<ServerStructureFolderName type="alpha"/>
+		<ClientServerSystemFolderName type="alpha"/>
 	</CS>
 
 	<SourcesFiles>
 
 		<RuntimeVL>
+<!-- 
 			<RuntimeVLIncludeIt type="boolean"/>
 			<RuntimeVLWinFolder type="path.folder" os="win"/>
 			<RuntimeVLMacFolder type="path.exe" os="mac"/>
 			<RuntimeVLIconWinPath type="path.file.ico" os="win"/>
 			<RuntimeVLIconMacPath type="path.file.icns" os="mac"/>
 			<IsOEM type="boolean"/>
+ -->
+			<LastDataPathLookup type="alpha.in-[InDbStruct,ByAppName,ByAppPath]"/>
 		</RuntimeVL>
 
 		<CS>
 			<ServerIncludeIt type="boolean"/>
 			<ServerWinFolder type="path.folder" os="win"/>
 			<ServerMacFolder type="path.exe" os="mac"/>
-
 			<ClientWinIncludeIt type="boolean" os="win"/>
 			<ClientWinFolderToWin type="path.folder" os="win"/>
 			<ClientWinFolderToMac type="path.folder" os="win"/>
-
 			<ClientMacIncludeIt type="boolean" os="mac"/>
 			<ClientMacFolderToWin type="path.exe" os="mac"/>
 			<ClientMacFolderToMac type="path.folder" os="mac"/>
-
 			<ServerIconWinPath type="path.file.ico" os="win"/>
 			<ServerIconMacPath type="path.file.icns" os="mac"/>
-
 			<ClientMacIconForMacPath type="path.file.icns" os="mac"/>
 			<ClientWinIconForMacPath type="path.file.ico" os="mac"/>
-
 			<ClientMacIconForWinPath type="path.file.icns" os="win"/>
-			<ClientWinIconForWinPath type="path.file.ico" os="win"/>
-			<IsOEM type="boolean"/>
+			<ClientWinIconForWinPath type="path.file.ico" os="win"/>	
+			<DatabaseToEmbedInClientMacFolder type="path.folder" os="mac"/>
+			<DatabaseToEmbedInClientWinFolder type="path.folder" os="win"/>		
+			<IsOEM type="boolean"/>			
 		</CS>
 
 	</SourcesFiles>

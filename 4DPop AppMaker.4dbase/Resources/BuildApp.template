@@ -1,43 +1,1 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Preferences4D>
-  <BuildApp>
-    <BuildCompiled>False</BuildCompiled>
-    <IncludeAssociatedFolders>True</IncludeAssociatedFolders>
-    <BuildComponent>True</BuildComponent>
-    <BuildApplicationSerialized>False</BuildApplicationSerialized>
-    <BuildApplicationLight>False</BuildApplicationLight>
-    <SourcesFiles>
-      <RuntimeVL>
-        <RuntimeVLIncludeIt>True</RuntimeVLIncludeIt>
-      </RuntimeVL>
-      <CS>
-        <ServerIncludeIt>False</ServerIncludeIt>
-        <ClientMacIncludeIt>False</ClientMacIncludeIt>
-        <ClientWinIncludeIt>False</ClientWinIncludeIt>
-      </CS>
-    </SourcesFiles>
-    <BuildApplicationName>{BuildApplicationName}</BuildApplicationName>
-    <BuildMacDestFolder>::Build:</BuildMacDestFolder>
-    <BuildWinDestFolder>..\\Builds/</BuildWinDestFolder>
-    <CS>
-      <BuildServerApplication>True</BuildServerApplication>
-      <BuildCSUpgradeable>False</BuildCSUpgradeable>
-      <CurrentVers>1</CurrentVers>
-      <HardLink/>
-    </CS>
-    <ArrayExcludedPluginName>
-      <ItemsCount>0</ItemsCount>
-    </ArrayExcludedPluginName>
-    <ArrayExcludedPluginID>
-      <ItemsCount>0</ItemsCount>
-    </ArrayExcludedPluginID>
-    <ArrayExcludedComponentName>
-      <ItemsCount>0</ItemsCount>
-    </ArrayExcludedComponentName>
-    <Licenses>
-      <ArrayLicenseMac>
-        <ItemsCount>0</ItemsCount>
-      </ArrayLicenseMac>
-    </Licenses>
-  </BuildApp>
-</Preferences4D>
+﻿{	"BuildApplicationName": null,	"BuildWinDestFolder": null,	"BuildMacDestFolder": null,	"DataFilePath": null,	"BuildApplicationSerialized": false,	"BuildApplicationLight": false,	"IncludeAssociatedFolders": false,	"BuildComponent": false,	"BuildCompiled": false,	"ArrayExcludedPluginName": {		"ItemsCount": 0,		"Item": []	},	"ArrayExcludedPluginID": {		"ItemsCount": 0,		"Item": []	},	"ArrayExcludedComponentName": {		"ItemsCount": 0,		"Item": []	},	"UseStandardZipFormat": false,	"PackProject": true,	"AutoUpdate": {		"CS": {			"Client": {				"StartElevated": null			},			"ClientUpdateWin": {				"StartElevated": null			},			"Server": {				"StartElevated": null			}		},		"RuntimeVL": {			"StartElevated": null		}	},	"CS": {		"BuildServerApplication": false,		"BuildCSUpgradeable": false,		"BuildV13ClientUpgrades": false,		"IPAddress": null,		"PortNumber": null,		"HardLink": null,		"RangeVersMin": 1,		"RangeVersMax": 1,		"CurrentVers": 1,		"LastDataPathLookup": null,		"ServerSelectionAllowed": false,		"MacCompiledDatabaseToWin": null,		"MacCompiledDatabaseToWinIncludeIt": false	},	"Licenses": {		"ArrayLicenseWin": {			"ItemsCount": "[object Formula]",			"Item": []		},		"ArrayLicenseMac": {			"ItemsCount": "[object Formula]",			"Item": []		}	},	"RuntimeVL": {		"LastDataPathLookup": "ByAppName"	},	"SignApplication": {		"MacSignature": null,		"MacCertificate": null,		"AdHocSign": null	},	"SourcesFiles": {		"RuntimeVL": {			"RuntimeVLIncludeIt": false,			"RuntimeVLWinFolder": null,			"RuntimeVLMacFolder": null,			"RuntimeVLIconWinPath": null,			"RuntimeVLIconMacPath": null,			"IsOEM": false		},		"CS": {			"ServerIncludeIt": false,			"ServerWinFolder": null,			"ServerMacFolder": null,			"ClientWinIncludeIt": false,			"ClientWinFolderToWin": null,			"ClientWinFolderToMac": null,			"ClientMacIncludeIt": false,			"ClientMacFolderToWin": null,			"ClientMacFolderToMac": null,			"ServerIconWinPath": null,			"ServerIconMacPath": null,			"ClientMacIconForMacPath": null,			"ClientWinIconForMacPath": null,			"ClientMacIconForWinPath": null,			"ClientWinIconForWinPath": null,			"DatabaseToEmbedInClientWinFolder": null,			"DatabaseToEmbedInClientMacFolder": null,			"IsOEM": false		}	},	"Versioning": {		"Common": {			"CommonVersion": null,			"CommonCopyright": null,			"CommonCreator": null,			"CommonComment": null,			"CommonCompanyName": null,			"CommonFileDescription": null,			"CommonInternalName": null,			"CommonLegalTrademark": null,			"CommonPrivateBuild": null,			"CommonSpecialBuild": null		},		"RuntimeVL": {			"RuntimeVLVersion": null,			"RuntimeVLCopyright": null,			"RuntimeVLCreator": null,			"RuntimeVLComment": null,			"RuntimeVLCompanyName": null,			"RuntimeVLFileDescription": null,			"RuntimeVLInternalName": null,			"RuntimeVLLegalTrademark": null,			"RuntimeVLPrivateBuild": null,			"RuntimeVLSpecialBuild": null		},		"Server": {			"ServerVersion": null,			"ServerCopyright": null,			"ServerCreator": null,			"ServerComment": null,			"ServerCompanyName": null,			"ServerFileDescription": null,			"ServerInternalName": null,			"ServerLegalTrademark": null,			"ServerPrivateBuild": null,			"ServerSpecialBuild": null		},		"Client": {			"ClientVersion": null,			"ClientCopyright": null,			"ClientCreator": null,			"ClientComment": null,			"ClientCompanyName": null,			"ClientFileDescription": null,			"ClientInternalName": null,			"ClientLegalTrademark": null,			"ClientPrivateBuild": null,			"ClientSpecialBuild": null		}	}}
