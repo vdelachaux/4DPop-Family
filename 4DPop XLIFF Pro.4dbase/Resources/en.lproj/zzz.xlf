@@ -23,6 +23,12 @@
           <target/>
         </trans-unit>
       </group>
+      <group resname="Group 2">
+        <trans-unit id="FA0+1AvDlJCGpAHurSumOg" resname="String 4">
+          <source/>
+          <target/>
+        </trans-unit>
+      </group>
     </body>
   </file>
 
