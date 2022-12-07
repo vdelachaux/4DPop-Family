@@ -6,19 +6,19 @@
     <key>CFBundleDisplayName</key>
     <string>4DPop Commands</string>
     <key>CFBundleShortVersionString</key>
-    <string>19</string>
+    <string>19R6</string>
     <key>CFBundleLongVersionString</key>
-    <string>19</string>
+    <string>19R6 (64)</string>
     <key>NSHumanReadableCopyright</key>
-    <string>© 4D SAS 2007-2021</string>
+    <string>©vdl 2007-2022</string>
     <key>CFBundleVersion</key>
-    <string>63</string>
+    <string>64</string>
     <key>CSResourcesFileMapped</key>
-    <string/>
+    <string></string>
     <key>CFBundleName</key>
     <string>4DPop Commands</string>
     <key>CFBundleGetInfoString</key>
-    <string>4DPop Commands</string>
+    <string>19R6</string>
   </dict>
 
 </plist>

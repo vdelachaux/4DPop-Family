@@ -4,17 +4,17 @@
 
   <dict>
     <key>CFBundleVersion</key>
-    <string>63</string>
+    <string>67</string>
     <key>NSHumanReadableCopyright</key>
-    <string>© 4D SAS 2009-2021</string>
+    <string>©vdl 2009-2022</string>
     <key>CFBundleGetInfoString</key>
-    <string>4DPop Bookmarks</string>
+    <string>19R6</string>
     <key>CFBundleLongVersionString</key>
-    <string>19</string>
+    <string>19R6 (67)</string>
     <key>CFBundleName</key>
     <string>4DPop Bookmarks</string>
     <key>CFBundleShortVersionString</key>
-    <string>19</string>
+    <string>19R6</string>
     <key>CFBundleDisplayName</key>
     <string>4DPop Bookmarks</string>
   </dict>

@@ -1,1 +1,28 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0">  <dict>    <key>NSHumanReadableCopyright</key>    <string>© 4D SAS 2007-2021</string>    <key>CFBundleIdentifier</key>    <string>com.4D.4DPop XLIFF Pro</string>    <key>CFBundleGetInfoString</key>    <string>4DPop XLIFF Pro</string>    <key>CFBundleLongVersionString</key>    <string>19R5</string>    <key>CFBundleName</key>    <string>4DPop XLIFF Pro</string>    <key>CFBundleDevelopmentRegion</key>    <string>French</string>    <key>CFBundleDisplayName</key>    <string>4DPop XLIFF Pro</string>    <key>CFBundleVersion</key>    <string>39</string>    <key>CFBundleShortVersionString</key>    <string>19R5</string>    <key>CFBundleExecutable</key>    <string>4DPop XLIFF Pro</string>  </dict></plist>
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+
+  <dict>
+    <key>NSHumanReadableCopyright</key>
+    <string>©vdl 2020-2022</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.4D.4DPop XLIFF Pro</string>
+    <key>CFBundleGetInfoString</key>
+    <string>19R6</string>
+    <key>CFBundleLongVersionString</key>
+    <string>19R6 (48)</string>
+    <key>CFBundleName</key>
+    <string>4DPop XLIFF Pro</string>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>French</string>
+    <key>CFBundleDisplayName</key>
+    <string>4DPop XLIFF Pro</string>
+    <key>CFBundleVersion</key>
+    <string>48</string>
+    <key>CFBundleShortVersionString</key>
+    <string>19R6</string>
+    <key>CFBundleExecutable</key>
+    <string>4DPop XLIFF Pro</string>
+  </dict>
+
+</plist>
