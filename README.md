@@ -4,6 +4,19 @@
 # 4DPop-Family
 All-in-one compiled [4Dpop components](https://github.com/vdelachaux/4DPop)
 
-# What's new
+## How to
 
-[4DPop **QuickOpen**](https://github.com/vdelachaux/4DPop-QuickOpen), inspired by Xcode's Quickly Open feature or macOS' Spotlight feature, allows you to quickly open forms, methods, classes, etc. in project mode. In addition, it allows you to create and open documentation.
+Download the [version](https://github.com/vdelachaux/4DPop-Family/releases) corresponding to your version of 4D
+
+### 📌 **About 19R versions**.  
+>Due to a difference in the 4D compiler between the **19R5** and **19R6** releases, the [**R5 version of the components**](https://github.com/vdelachaux/4DPop-Family/releases/tag/v19R5) is only compatible with the **4D 19R5**.    
+>From **4D 19R6** onwards, you must use the [**latest version of the components**](https://github.com/vdelachaux/4DPop-Family/releases/tag/v19R6). 
+
+### 📌 **macOS user on ARM processor**.    
+>Since version **19R5**, 4DPop components are signed and notarized.    
+>In order not to break the notarization, you must download the provided **4DPop.Family.XX.dmg** file that is also signed & notarized.   
+>Another method is to clone the repository and select the branch corresponding to your 4D version.
+
+### 📌 **Users of Windows or macOS on Intel processor**.    
+>Download the provided **Source code (zip)** file
+
