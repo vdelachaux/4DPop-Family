@@ -4,7 +4,7 @@
 # 4DPop-Family
 All-in-one compiled [4Dpop components](https://github.com/vdelachaux/4DPop)
 
-## How to
+## Installation
 
 Download the [version](https://github.com/vdelachaux/4DPop-Family/releases) corresponding to your version of 4D
 
@@ -14,7 +14,7 @@ Download the [version](https://github.com/vdelachaux/4DPop-Family/releases) corr
 
 ### 📌 **macOS user on ARM processor**.    
 >Since version **19R5**, 4DPop components are signed and notarized.    
->In order not to break the notarization, you must download the provided **4DPop.Family.XX.dmg** file that is also signed & notarized.   
+>In order not to break the notarization, you need to download the provided **4DPop-Family-XX.dmg** which is also signed & notarized.    
 >Another method is to clone the repository and select the branch corresponding to your 4D version.
 
 ### 📌 **Users of Windows or macOS on Intel processor**.    
