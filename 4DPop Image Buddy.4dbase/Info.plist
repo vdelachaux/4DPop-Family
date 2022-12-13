@@ -5,17 +5,17 @@
     <key>CFBundleName</key>
     <string>4DPop Image Buddy</string>
     <key>CFBundleShortVersionString</key>
-    <string>19R6</string>
+    <string>19R8</string>
     <key>CFBundleLongVersionString</key>
-    <string>19R6 (273)</string>
+    <string>19R8 (279)</string>
     <key>NSHumanReadableCopyright</key>
     <string>©vdl 2007-2022</string>
     <key>CFBundleVersion</key>
-    <string>273</string>
+    <string>280</string>
     <key>CSResourcesFileMapped</key>
     <string></string>
     <key>CFBundleGetInfoString</key>
-    <string>19R6</string>
+    <string>19R8</string>
     <key>CFBundleDisplayName</key>
     <string>4DPop Image Buddy</string>
   </dict>

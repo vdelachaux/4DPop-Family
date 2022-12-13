@@ -8,15 +8,15 @@
     <key>CFBundleIdentifier</key>
     <string>com.4D.4Dpop XLIFF</string>
     <key>CFBundleGetInfoString</key>
-    <string>19R6</string>
+    <string>19R8</string>
     <key>CFBundleLongVersionString</key>
-    <string>19R6 (301)</string>
+    <string>19R8 (307)</string>
     <key>CFBundleShortVersionString</key>
-    <string>19R6</string>
+    <string>19R8</string>
     <key>CFBundleExecutable</key>
     <string>4DPop XLIFF</string>
     <key>CFBundleVersion</key>
-    <string>301</string>
+    <string>308</string>
     <key>CFBundleDevelopmentRegion</key>
     <string>French</string>
     <key>CFBundleDisplayName</key>
