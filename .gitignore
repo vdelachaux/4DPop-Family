@@ -1,0 +1,3 @@
+# Ignore invisible files/folders except .gitignore
+.*
+!.gitignore
