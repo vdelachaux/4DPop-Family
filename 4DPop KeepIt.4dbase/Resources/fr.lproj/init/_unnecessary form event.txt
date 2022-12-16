@@ -1,1 +1,0 @@
-ASSERT(Faux;"Form event activated unnecessary ("+Chaine($Lon_formEvent)+")")

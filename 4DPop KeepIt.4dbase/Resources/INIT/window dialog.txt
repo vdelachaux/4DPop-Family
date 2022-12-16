@@ -1,3 +1,0 @@
-$Win_hdl:=Open form window("<ask message="Form name" type="text"/>";Plain form window;Horizontally centered;Vertically centered;*)
-DIALOG("<ask message="\1"/>")
-CLOSE WINDOW

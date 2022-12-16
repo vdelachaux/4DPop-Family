@@ -1,8 +1,0 @@
-/* Example of KeepIt comment.
-
-    Everything inside this block will be ignored when extracting the contents.
-
-    As against this text is used to display a tooltip
-*/
-
-// This is a 4D comment, it will be included as is in the method

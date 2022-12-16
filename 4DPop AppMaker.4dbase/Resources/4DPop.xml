@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<tools id="AppMaker" name="AppMaker" default="popAppMakerRun" picture="4DPop.png">
-  <tool name=":xliff:4DPop_run" method="popAppMakerRun"/>
-  <tool name="-"/>
-  <tool name=":xliff:4DPop_parameters" method="popAppMakerParameters"/>
-</tools>

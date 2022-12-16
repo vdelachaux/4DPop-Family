@@ -1,4 +1,0 @@
-For each ($Obj_;$Col_)
-	
-	
-End for each

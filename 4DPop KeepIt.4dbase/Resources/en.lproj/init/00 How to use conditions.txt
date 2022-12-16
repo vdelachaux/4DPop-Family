@@ -1,6 +1,0 @@
-/*#_IF, #_ELSE & #_END_IF can be used to return a conditional result*/
-#_IF <ask message="Are you a woman?" type="{Yes:1;No:0}"/>=1
-//OK, you are a woman!
-#_ELSE
-//You're probably a man
-#_ENDIF

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<tools name=":xliff:Title" popup="true" picture="4DPop.png" ondrop="popBookMarksOnDrop">
-  <tool method="popBookMarks"/>
-</tools>

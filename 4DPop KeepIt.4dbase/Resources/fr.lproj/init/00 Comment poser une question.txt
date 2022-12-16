@@ -1,6 +1,0 @@
-/*Demander le nom d'un tableau puis créer une boucle basée sur sa taille.*/
-Boucle ($Lon_i;1;Taille tableau(<ask message="Nom du tableau ?"/>);1)
-	
-	<ask message="\1"/>{$Lon_i}:=<caret/>
-	
-Fin de boucle

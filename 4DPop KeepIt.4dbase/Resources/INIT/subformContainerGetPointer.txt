@@ -1,2 +1,0 @@
-C_POINTER($Ptr_subformContainer)
-$Ptr_subformContainer:=OBJECT Get pointer(Object subform container)

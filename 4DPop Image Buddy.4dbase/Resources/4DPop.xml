@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-
-<tools name=":xliff:ToolName" picture="Tool.png" ondrop="Pictures_Tool_Ondrop">
-
-	<tool method="Pictures_Browser"/>
-	
-</tools>

@@ -1,5 +1,0 @@
-Si (Vrai)    //<caret/> {
-
-<selection/>
-
-Fin de si     //}

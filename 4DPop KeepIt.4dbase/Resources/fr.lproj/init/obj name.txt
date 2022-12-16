@@ -1,1 +1,0 @@
-$Txt_objectName:=OBJET Lire nom(Objet courant)
