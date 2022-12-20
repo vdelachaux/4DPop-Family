@@ -10,7 +10,7 @@ Download the [version](https://github.com/vdelachaux/4DPop-Family/releases) corr
 
 ### 📌 **About 19R versions**.  
 >Due to a difference in the 4D compiler between the **19R5** and **19R6** releases, the [**R5 version of the components**](https://github.com/vdelachaux/4DPop-Family/releases/tag/v19R5) is only compatible with the **4D 19R5**.    
->From **4D 19R6** onwards, you must use the [**latest version of the components**](https://github.com/vdelachaux/4DPop-Family/releases/tag/v19R6). 
+>From **4D 19R6** onwards, you must use the [**latest version of the components**](https://github.com/vdelachaux/4DPop-Family/releases/latest). 
 
 ### 📌 **macOS user on ARM processor**.    
 >Since version **19R5**, 4DPop components are signed and notarized.    
