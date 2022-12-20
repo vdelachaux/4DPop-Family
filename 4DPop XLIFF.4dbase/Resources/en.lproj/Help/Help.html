@@ -1,0 +1,429 @@
+<HTML>
+
+	<HEAD>
+		<TITLE>4DPop Read-me</TITLE>
+		<META http-equiv="content-type" content="text/html;charset=utf-8">
+<LINK href="../../Common/style.css" rel="stylesheet" type="text/css">
+	</HEAD>
+
+	<BODY leftmargin="20" marginheight="20" marginwidth="20" topmargin="20">
+			<DIV class="Section1" align="left">
+			<HR>
+			<TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+				<TR>
+					<TD width="100"><IMG src="../../Common/4d.png" border="0"></TD>
+					<TD valign="middle">
+						<TABLE width="100%" border="0" cellspacing="0" cellpadding="4" height="100%">
+							<TR>
+								<TD>
+								  <H1>4DPop XLIFF</H1>
+							  </TD>
+							  <TD>
+									
+								</TD>
+							</TR>
+							<TR>
+								<TD colspan="2">
+									<IFRAME src="../../Common/Localisation.html" frameborder="0" scrolling="no" align="middle" height="40" width="100%" NORESIZE="true"></IFRAME>
+								</TD>
+							</TR>
+						</TABLE>
+					</TD>
+				</TR>
+			</TABLE>
+			<HR>
+			<P>4DPop XLIFF is a database used to manage <A href="http://www.oasis-open.org/committees/xliff/documents/xliff-20020415.htm">XLIFF</A> files to localize your datadases. This database integrates tools to minimize the impact created for converting STR# and TEXT to the new XLIFF standard.</P>
+			<DIV class="Section1" align="left">
+				<DIV class="Section1" align="left">
+					<P>Used as a component, 4DPop XLIFF manages localization files during database development.</P>
+					<P>Used as a stand-alone database, the editor manages the folder you choose as pending work folder.</P>
+					<P></P>
+				</DIV>
+			</DIV>
+			<H2>Component Installation</H2>
+			<DIV class="Section1" align="left">
+				<TABLE width="100%" border="0" cellspacing="4" cellpadding="2">
+					<TR>
+						<TD align="right" valign="top">1.</TD>
+						<TD>Create a  &quot;<I>Components</I>&quot; folder near the structure of your database (&quot;.4db&quot;)</TD>
+					</TR>
+					<TR>
+						<TD align="right" valign="top">2.</TD>
+						<TD>Place the folder &quot;<I>4DPop XLIFF.4dbase</I>&quot;* or an alias of this folder into the folder &quot;<I>Components</I>&quot;</TD>
+					</TR>
+					<TR>
+						<TD align="right" valign="top">3.</TD>
+						<TD>Open your database.</TD>
+					</TR>
+					<TR>
+						<TD align="right" valign="top">4.</TD>
+						<TD>If the componant 4DPop is installed a new button &quot;xliff&quot; apears in the toolbar. It allows opening the editor.<P><IMG src="Images/4DPopPalette.png" alt="" height="68" width="428" border="0"></P>
+							<P>If the componant 4DPop is not installed you must, to open the editor, select in the menu &quot; Execute the line &quot;Method...&quot; then select &quot;xliff_EDITOR&quot; then clic on the button &quot;Execute&quot;</P>
+						</TD>
+					</TR>
+				</TABLE>
+				<P><FONT size="-1">*On Macintosh, the component is a package with extension &quot;.4dbase&quot; who is not necessarily visible according to the adjustabilitys of your preferences.</FONT></P>
+				<P><IMG src="Images/editorMac.png" alt="" width="477" height="465"></P>
+				<P></P>
+				<H2>Use</H2>
+				<DIV class="Section1" align="left">
+					<P>At the first opening of the editor, this one behaves differently depending of you use an autonomous database or of a component.</P>
+				</DIV>
+				<UL>
+					<DIV class="Section1" align="left">
+						<LI>In the case of a autonomous database, you must localize your working folder. Then you can modify it in the editor preferences (cf. Infra).<LI>In the case of a componant, the working folder is automatically fixed to the current folder &quot;resources&quot; of your database.</DIV>
+				</UL>
+				<DIV class="Section1" align="left">
+					<P>In bouth cases, it works identically.</P>
+					<P><B><I>Note</I></B> : In the component interface and in this document, the bias is not to translate the terms referencing the tags or attributes of the xliff norm, their translation could generate a certain confusion. There are essentially the terms &quot;<I>resname</I>&quot; &quot;<I>source</I>&quot; &quot;<I>target</I>&quot; &quot;<I>translate</I>&quot; &quot;<I>group</I>&quot; &amp; &quot;<I>trans-unit</I>&quot;.</P>
+					<H2> Strategy</H2>
+					<P>The editor was conceived to facilitate the localization of an application in development course, thats to say:  </P>
+					<UL>
+						<LI>To give a simplified interface by report to professional tools while limiting itself to what is necessary for the integration of the files in 4D.
+						<LI>To have access to an integrated tool but being able to be eliminated at the time of the deployment, this is possible with the new architecture of the components.
+						<LI>Create the necessary files and allow their easy usage in the method editor and the form editor or again in the Toolbox of 4D.
+						<LI>Generate normalized files that you will be able to furnish to localizators that will be able to use their tools and return back the files to day that it suffices to place them in the folder &quot;resources&quot; of the database so that they be immediately and without other manipulation available for the users.  </UL>
+					<P>The principle of the XLIFF norm drives to determine a language <I>source</I> in which are written all the strings. This language will be the reference language (the one from which will be done all the translations).  The second language is the language said <I>target</I> Who will be used for the dialogs, warnings, prints… This is the language of the user.</P>
+					<P>The editor was created to manage 2 languages: a language <I>source</I> Who will be often the English and the language of the interface at the moment of the development, but these two languages are able be identical. This are the localizators that will furnish the other language sets from the files that you will furnish for them.</P>
+					<P>To the first opening, the editor strives to determine on the basis of the content of the work file, language of the system and of the one of the application the values by default for the language <I>source</I> and the language <I>target</I>. This research can for example in the case of an empty folder, of a Swedish system and of a 4D English to deduct that the language <I>source</I> will be the English and the language <I>target</I> the Swedish one. In the case of a French system and of a 4D French the language <I>source</I> and the language <I>target</I> will be in french. The latter cases is completely normal, it under hears that you will write your chains in French and that all the translations will be done from the French.</P>
+					<P>Although you can modify these languages in the preferences dialog of the editor (cf.  Infra). Keep in mind that 4D determines to the opening of the database a current language that must be the development language <I>target</I>. If this is not clear for you, go back to the 4D documentation to know how is chosen the current language to the start. This choice will be function of your organization and modifies the behaviour of the editor.</P>
+					<UL>
+						<LI>If you choose only one language, the editor does ask you to type one chain and does itself the duplicate it in the file. After recording, you obtain a file that you can transmit to the localizer do his translation.  (Scenario 1)<LI>In the case where language <I>source</I> and language <I>target</I> are different, you must type the string in the two languages.  At the moment of the recording, the editor creates a localized file (the one of the language <I>target</I>) and a second one intend for the localisateur, without that you need to type it again it.  (Scenario 2)</UL>
+					<TABLE width="860" border="1" cellspacing="0" cellpadding="2">
+						<TR height="18">
+							<TD align="center" valign="middle" width="99" height="18"></TD>
+							<TD align="center" valign="middle" width="51" height="18"><B><I>source</I></B></TD>
+							<TD align="center" valign="middle" width="42" height="18"><B><I>target</I></B></TD>
+							<TD align="center" valign="middle" nowrap width="174" height="18"><B>Entry</B></TD>
+							<TD align="center" valign="middle" width="227" height="18"><B>Xliff files</B></TD>
+							<TD align="center" valign="middle" width="227" height="18"><B>Files on Disk</B></TD>
+						</TR>
+						<TR height="100">
+							<TD align="center" valign="middle" width="99" height="100"><B>Scenario 1</B></TD>
+							<TD align="center" valign="middle" width="51" height="100">fr</TD>
+							<TD align="center" valign="middle" width="42" height="100">fr</TD>
+							<TD align="center" valign="middle" nowrap width="174" height="100"><I>source</I> = &quot;Annuler&quot;</TD>
+							<TD width="227" height="100"><CODE><FONT size="-1">&lt;trans-unit&gt;<BR>
+										     &lt;source&gt;Annuler&lt;/source&gt;<BR>
+										     &lt;target&gt;Annuler&lt;/target&gt;<BR>
+										&lt;/trans-unit&gt;</FONT></CODE></TD>
+							<TD width="227" height="100"><IMG src="Images/scenario1.png" alt="" width="158" height="67" border="0"></TD>
+						</TR>
+						<TR height="201">
+							<TD align="center" valign="middle" width="99" height="201"><B>Scenario 2</B></TD>
+							<TD align="center" valign="middle" width="51" height="201">en</TD>
+							<TD align="center" valign="middle" width="42" height="201">fr</TD>
+							<TD align="center" valign="middle" nowrap width="174" height="201"><I>source</I> = &quot;Cancel&quot;
+								<P><I>target</I> = &quot;Annuler&quot;</P>
+							</TD>
+							<TD width="227" height="201"><CODE><FONT size="-1">&lt;trans-unit&gt;<BR>
+										     &lt;source&gt;Cancel&lt;/source&gt;<BR>
+										     &lt;target&gt;Annuler&lt;/target&gt;<BR>
+										&lt;/trans-unit&gt;</FONT></CODE>
+								<P><CODE><FONT size="-1">+</FONT></CODE></P>
+								<P><CODE><FONT size="-1">&lt;trans-unit&gt;<BR>
+											     &lt;source&gt;Cancel&lt;/source&gt;<BR>
+											     &lt;target&gt;Cancel&lt;/target&gt;<BR>
+											&lt;/trans-unit&gt;</FONT></CODE></P>
+							</TD>
+							<TD width="227" height="201"><IMG src="Images/scenario2.png" alt="" width="168" height="102" border="0"></TD>
+						</TR>
+					</TABLE>
+					<P></P>
+					<H2>Editor window</H2>
+					<P>The interface varies following the platform and the OS, but available functionalities remain the same.</P>
+					<TABLE width="180" border="0" cellspacing="2" cellpadding="4">
+						<TR valign="middle">
+							<TD><IMG src="Images/editorMac.png" alt="" width="330" align="absmiddle" border="0"></TD>
+							<TD><IMG src="Images/editorXP.png" alt="" width="330" align="absmiddle" border="0"></TD>
+							<TD><IMG src="Images/editorVista.png" alt="" width="330" border="0"></TD>
+						</TR>
+						<TR>
+							<TD align="center"><B><FONT size="-1">Master window Mac OS X </FONT></B></TD>
+							<TD align="center"><B><FONT size="-1">Master window </FONT></B><FONT size="-1"><B> Windows XP</B></FONT></TD>
+							<TD align="center"><B><FONT size="-1">Master window </FONT></B><FONT size="-1"><B> Windows Vista</B></FONT></TD>
+						</TR>
+					</TABLE>
+					<P>The editor master window is divided into 5 zones</P>
+					<H3>1] Toolbar</H3>
+					<P>The toolbar allows access to current functions (listed from left to right).</P>
+					<P>Mac OS X:</P>
+					<P><IMG src="Images/toolbarMac.png" alt="" width="628" border="0"></P>
+					<OL>
+						<LI>Editor and Current Database Preferences
+						<LI>Current File Informations
+						<LI>Add a File
+						<LI>Add a Group
+						<LI>Add a String
+						<LI>Search in the Current File
+						
+						<LI>Visualize the Source File
+					</OL>
+					<P>Windows XP :</P>
+					<P><IMG src="Images/toolbarXP.png" alt="" width="628" height="25" border="0"></P>
+					<DIV class="Section1" align="left">
+						<DIV class="Section1" align="left">
+							<DIV class="Section1" align="left">
+								<OL>
+									<LI>New : File, Group or String<LI>Delete Current Element<LI>Editor and Current Database Preferences
+									<LI>Current File Informations
+									<LI>Search in the Current File  Current File Informations
+									<LI>Action (Description of the button in the Status Bar)
+								</OL>
+								<P>Windows Vista :</P>
+								<P><IMG src="Images/toolbarVista.png" alt="" width="626" height="55" border="0"></P>
+								<DIV class="Section1" align="left">
+									<DIV class="Section1" align="left">
+										<DIV class="Section1" align="left">
+											<DIV class="Section1" align="left">
+												<DIV class="Section1" align="left">
+													<DIV class="Section1" align="left">
+														<OL>
+															<LI>New : File, Group or String<LI> Delete Current Element <LI> Current File Informations
+															<LI>Action (Description of the button in the Status Bar)
+															<LI>Search in the Current File
+															<LI>Editor and Current Database Preferences
+														</OL>
+													</DIV>
+												</DIV>
+											</DIV>
+										</DIV>
+									</DIV>
+								</DIV>
+							</DIV>
+						</DIV>
+					</DIV>
+					<H3>2] List of Files</H3>
+					<P>This zone lists the xliff files of the folder &quot;.lproj&quot; corresponding to the current database language. Selection of a file get it loaded and updates the right part of the window.</P>
+					<P>Under this list, presented in a permanent manner (XP) or to the request, a visualization zone of the attributes of the selected element</P>
+					<P><IMG src="Images/attributes.png" alt="" width="216" height="136" border="1"></P>
+					<H3>3] Xliff Current File (Strings List)</H3>
+					<P>This zone presents in a hierarchical list the <I>group</I> and <I>trans-unit</I> of the xliff file being edited. The Label displayed is the <I>resname</I>, on the right the element Id. The selection of an element updates the edition zone of the current element.</P>
+					<P>A specific icon signals a note associated to the String.</P>
+					<P> <IMG src="Images/list.png" alt="" width="311" border="1"></P>
+					<P>A double click on the line opens a window to edit the note. To the closing of the window, if the entry zone is empty, the note is saved, otherwise the note is modified or created if she did not exist yet.</P>
+					<P><IMG src="Images/note.png" alt="" border="1"></P>
+					<H3>4] Current Element</H3>
+					<P>This zone to enter the <I>resname</I> and ID for one Element <I>group</I> to which ones add the String <I>source</I>, the Attribute <I>translate</I> and eventually, according to the strategy used (cf. <I>supra</I>) the String <I>target</I> for one Element <I>trans-unit</I>.</P>
+				</DIV>
+				<DIV class="Section1" align="center">
+					<TABLE width="122" border="1" cellspacing="2" cellpadding="2">
+						<TR>
+							<TD>
+								<DIV align="center">
+									<IMG src="Images/Current_1.png" alt="" width="350" border="1"></DIV>
+							</TD>
+							<TD><IMG src="Images/Current_2.png" alt="" width="350" border="1"></TD>
+						</TR>
+						<TR align="center">
+							<TD>
+								<P><B><FONT size="-1">Scenario 1 - language <I>source</I> = language <I>target</I></FONT></B></P>
+							</TD>
+							<TD><B><FONT size="-1">Scenario 2 - language <I>source</I> ≠ language <I>target</I></FONT></B></TD>
+						</TR>
+					</TABLE>
+					      </DIV>
+				<DIV class="Section1" align="left">
+					<P>The button &quot;Complete&quot; allows calculating automatically a <I>resname</I> from the value of the string <I>source</I>, from auto-completion parameters and preferences of the current file (cf. <I>infra</I>).</P>
+					<H3>5] Status Bar</H3>
+					<DIV class="Section1" align="left">
+						<DIV class="Section1" align="left">
+							<DIV class="Section1" align="left">
+								<P> The statute bar groups together the following functions.</P>
+							</DIV>
+						</DIV>
+					</DIV>
+					<TABLE width="100%" border="0" cellspacing="2" cellpadding="0">
+						<TR>
+							<TD align="center" valign="middle" width="80"><B>Label</B></TD>
+							<TD align="center" valign="middle" width="54"><B>OS X</B></TD>
+							<TD align="center" valign="middle" width="50"><B>XP</B></TD>
+							<TD align="center" valign="middle" width="49"><B>Vista</B></TD>
+							<TD align="center" valign="middle" width="608"><B>Function</B></TD>
+						</TR>
+						<TR>
+							<TD align="center" valign="middle" width="80"><B>Switch</B></TD>
+							<TD align="center" valign="middle" width="54"><IMG src="Images/switchMac.png" alt="" width="31" height="24" border="0"></TD>
+							<TD align="center" valign="middle" width="50"><IMG src="Images/switchXP.png" alt="" width="32" height="20" border="0"></TD>
+							<TD align="center" valign="middle" width="49"><IMG src="Images/switchVista.png" alt="" width="29" height="26" border="0"></TD>
+							<TD width="608">Close the <I>Editor window</I> and displays <I>insertion Palette</I> (cf. <I>Infra</I>)</TD>
+						</TR>
+						<TR>
+							<TD align="center" valign="middle" width="80"><B>Attributs</B></TD>
+							<TD align="center" valign="middle" width="54"><IMG src="Images/attributeMac.png" alt="" width="32" height="24" border="0"></TD>
+							<TD align="center" valign="middle" width="50">-</TD>
+							<TD align="center" valign="middle" width="49"><IMG src="Images/attributeVista.png" alt="" width="29" height="26" border="0"></TD>
+							<TD width="608">Display/Hide the attributes of the current Element</TD>
+						</TR>
+						<TR>
+							<TD align="center" valign="middle" width="80"><B>Standard</B></TD>
+							<TD align="center" valign="middle" width="54"><IMG src="Images/normeMac.png" alt="" width="32" height="24" border="0"></TD>
+							<TD align="center" valign="middle" width="50"><IMG src="Images/normeXP.png" alt="" width="32" height="20" border="0"></TD>
+							<TD align="center" valign="middle" width="49"><IMG src="Images/normeVista.png" alt="" width="29" height="26" border="0"></TD>
+							<TD width="608">Open the standard document available on the site <I>www.oasis-open.org</I></TD>
+						</TR>
+						<TR>
+							<TD align="center" valign="middle" width="80"><B>Action</B></TD>
+							<TD align="center" valign="middle" width="54"><IMG src="Images/action.png" alt="" width="32" height="24" border="0"></TD>
+							<TD align="center" valign="middle" width="50"></TD>
+							<TD align="center" valign="middle" width="49"></TD>
+							<TD width="608">Contextual shortcut to current actions.</TD>
+						</TR>
+					</TABLE>
+					<P>The button &quot;<B><I>Action</I></B>&quot; displays a menu grouping together the current actions.</P>
+					<TABLE width="100%" border="0" cellspacing="2" cellpadding="4">
+						<TR>
+							<TD width="310"><IMG src="Images/actionMenu.png" alt="" width="310" height="256" border="0"></TD>
+							<TD valign="top">The line &quot;<I><B>Validate using the DTD</B></I>&quot; allows launching a validation and to post the first error eventually met. A valid file is signaled by a validation notch, a file presenting an abnormality is preceded of an alarm icon.
+								<P>     <IMG src="Images/dtd.png" alt="" width="139" height="40" border="1"></P>
+								<P>&quot;<I><B>Import a STR# resource </B></I>&quot; allows importing in the form of an a group a STR# resource . This function allows passing progressively from the old to the new localization mechanism. To work, You must place the resources to import in a named file &quot;<I>Localized.rsrc</I>&quot;, a file in the current language and a file in the <I>source</I> language, if it's different. To the guest you indicate the Nº of string list to import. If the id is valid, a group is created from the (of the two) resources.</P>
+							</TD>
+						</TR>
+					</TABLE>
+					<P></P>
+					<H2>Copy, Paste</H2>
+					<P>When a group is selected and copied through the menu &quot;Edit&quot;, his name and his definition are placed in the clipboard. It is then possible to paste the entirety of the group, of its strings and attributes in another file or in the current file (duplicate) by selecting the item &quot;Copy&quot; from the Edit menu.</P>
+					<P>When a list of strings is selected and copied through the menu &quot;Edit&quot;, the text of his reference (&quot;:xliff:<I>resname</I>&quot;) and his definition are placed in the clipboard. It is then possible to paste the string and its attributes in another group of the current file or of another file. The reference can be pasted in a entry zone cf. <I>infra</I>.</P>
+					<P></P>
+					<H2>Insert of the xliff references in the methods and the form objects</H2>
+					<H3>1] Drag, Drop</H3>
+					<P>The insertion of xliff references is done in the majority of cases by drag & Drop from the string list. The result depending on element dragged (group ou string), window of first plan and eventually of the behavior of modifyer keys:</P>
+					<TABLE width="100%" border="1" cellspacing="2" cellpadding="2">
+						<TR>
+							<TD align="center" valign="middle" width="78">Element Dragged</TD>
+							<TD align="center" valign="middle" width="160">Front window</TD>
+							<TD align="center" valign="middle">Action</TD>
+						</TR>
+						<TR>
+							<TD align="center" valign="top" width="78">String*</TD>
+							<TD align="center" valign="top" width="160">Method Editor</TD>
+							<TD>Pasted Text: &quot;<B>Read string translation</B>(&quot;<I>Resname</I>&quot;)&quot;
+								<P>If the string includes an accolade sequence opening and closing {..} the pasted text will be : &quot;<B>Replace string</B>(<B>Read string translation</B>(&quot;<I>Resname</I>&quot;);&quot;{...}&quot;; replacement)&quot;</P>
+							</TD>
+						</TR>
+						<TR>
+							<TD align="center" valign="top" width="78">String*</TD>
+							<TD align="left" valign="top" width="160">Form Editor</TD>
+							<TD align="left" valign="top">
+								<TABLE width="100%" border="0" cellspacing="2" cellpadding="2">
+									<TR valign="top">
+										<TD align="right" valign="top" width="154">Empty Zone</TD>
+										<TD valign="top">Creation of a static text object localized (reference &quot;:xliff:<I>resname</I>&quot;)</TD>
+									</TR>
+									<TR valign="top">
+										<TD align="right" valign="top" width="154">Button</TD>
+										<TD valign="top">The title of the button is referenced in the xliff file (:xliff:<I>resname</I>)</TD>
+									</TR>
+									<TR valign="top">
+										<TD align="right" valign="top" width="154">Zone de groupe</TD>
+										<TD valign="top">The Title of the zone is referenced in the xliff file (:xliff:<I>resname</I>)</TD>
+									</TR>
+								</TABLE>
+							</TD>
+						</TR>
+						<TR>
+							<TD align="center" valign="top" width="78">String*</TD>
+							<TD align="left" valign="top" width="160">Text entry zone
+								<P>e.g. menu title or of line in the menu editor</P>
+							</TD>
+							<TD align="left" valign="top">Pasted Text:
+								<P>&quot;:xliff:<I>Resname</I>&quot;</P>
+							</TD>
+						</TR>
+						<TR>
+							<TD align="center" valign="top" width="78">Group</TD>
+							<TD align="center" valign="top" width="160">Method Editor</TD>
+							<TD>Pasted Text: (creation of an array from a group)<BR>
+								<P>&quot;<B>ARRAY TEXT</B>($tTxt_Labels;N)<BR>
+									$tTxt_Labels{1}:=<B>Read string tranlation</B>(&quot;First <I>Resname</I>&quot;)<BR>
+									...<BR>
+									$tTxt_Labels{N}:=<B>Read string tranlation</B>(&quot;Nth <I>Resname</I>&quot;)</P>
+								<P>Si les <I>resnames</I> are incremented (<I>Resname</I>1, <I>Resname</I>2, ..., <I>Resname</I>N) the pasted text will be:<BR>
+									<B> ARRAY TEXT </B>($tTxt_Labels;N)<BR>
+									<B>For</B> ($Lon_i;1;N;1)<BR>
+									$tTxt_Labels{$Lon_i}:=<B>Read string tranlation</B>(&quot;<I>Resname</I>&quot;+String($Lon_i))<BR>
+									<B>End For &quot;</B></P>
+							</TD>
+						</TR>
+						<TR>
+							<TD align="center" valign="top" width="78">Group
+								<P>+</P>
+								<P>Capital</P>
+							</TD>
+							<TD align="center" valign="top" width="160">Éditeur de méthode</TD>
+							<TD>Pasted Text: (Creation of a menu from a group)<BR>
+								<P>&quot;$a16_Menu:=<B>Create menu</B><BR>
+									<B>APPEND MENU ITEM</B>($a16_Menu;<B>Read string tranlation</B>(&quot;Premier <I>Resname</I>&quot;))<BR>
+									...<BR>
+									<B>APPEND MENU ITEM</B>($a16_Menu;<B>Read string tranlation</B>(&quot;Nième <I>Resname</I>&quot;))</P>
+								<P>If the <I>resnames</I> are incremented (<I>Resname</I>1, <I>Resname</I>2, ..., <I>Resname</I>N) the pasted text will be:<BR>
+									$a16_Menu:=<B>Create menu</B><BR>
+									<B>For</B> ($Lon_i;1;N;1)<BR>
+									<B>APPEND MENU ITEM</B>($a16_Menu;<B>Read string tranlation</B>(&quot;<I>Resname</I>&quot;+String($Lon_i))<BR>
+									<B>End For &quot;</B></P>
+							</TD>
+						</TR>
+					</TABLE>
+					<P>* The text in the container is determined according to the type of the window of first plan at drag start. You can invert the carried out choice (code or reference) in keeping Option key pressed when you begin the Drag.</P>
+					<H3>2] Copy, Paste</H3>
+					<P>It is possible to select a line of the string list, to copy it, then to paste it in the form of a reference in an entry zone of the palette property where in all entry zones for which drag & drop is ineffective. The text placed in the clipboard is in the form &quot;:xliff:<I>Resname</I>&quot;.</P>
+					<P></P>
+					<DIV class="Section1" align="left">
+						<DIV class="Section1" align="left">
+							<DIV class="Section1" align="left">
+								<H2>Insertion palette</H2>
+								<P>Once the strings are created, you can use the palette that represents a more reduced interface while presenting only the string list zone of the current file and a selection menu to select a current file in the status bar zone.</P>
+								<P><IMG src="Images/Palette_2.png" alt="" width="250" height="278" border="1"></P>
+								<P>The Drag&drop and Copy paste are active to insert the xliff references in the editors of 4D as described above.  It is not possible to modify the files in the palette.<BR>
+									The zone placed between the list of strings and the status bar allows to visualize the selected string in the current language.</P>
+							</DIV>
+						</DIV>
+					</DIV>
+					<P></P>
+					<H2>Preferences</H2>
+					<P> The position of the editor window, palette, the last edited used file, the position of the delimiters in the editor are memorized automatically for the machine and returned at the next opening.</P>
+					<P>The preferences for the editor, the current database or the current file are accessible through the preferences icon of the editor.</P>
+					<H3>1] General editor preferences</H3>
+					<P><IMG src="Images/preferences_1.png" alt="" border="1"></P>
+					<H4>a) Current resources folder</H4>
+					<P>Allows setting up the working resources folder in the case of a stand alone database.  When the database is used as component, the working resources folder is the one of the database and cannot be modified.</P>
+					<DIV class="Section1" align="left">
+						<DIV class="Section1" align="left">
+							<DIV class="Section1" align="left">
+								<H4>b) Default values</H4>
+								<P>It is the xliff version used, XML encodage and default comments at the time of creation for new files.<BR>
+									The comments zone accepts variable zones (between accolades opening and closing) that will be evaluated at the time of the file creation:<BR>
+									- {year} will be replaced by the year<BR>
+									- {month} will be replaced by the month<BR>
+									- {date} will be replaced by the date<BR>
+									- {database} will be replaced by the name of the structure file<BR>
+								</P>
+							</DIV>
+						</DIV>
+					</DIV>
+					<H3>2] Current base parameters</H3>
+					<P><IMG src="Images/preferences_2.png" alt="" width="540" height="250" border="1"></P>
+					<P>This is there that are modified the languages <I>source</I> and <I>target</I> of the current database.</P>
+					<H3>3] Current files parameters</H3>
+					<P><IMG src="Images/preferences_3.png" alt="" width="540" height="490" border="0"></P>
+					<H4>a) Attributs of the current file</H4>
+					<P>This page allows showing and to modify the attributes of the current file in edition:  xliff Version, encodage and comments.</P>
+					<H4>a) Complete</H4>
+					<P>Auto-complétion parameters of the <I>resnames</I> Current file.  The different options modify the behavior of the button &quot; Complete&quot; of the current element  edition zone.</P>
+					<H3>4] Auto completion parameters (interbase)</H3>
+					<P><IMG src="Images/preferences_4.png" alt="" width="540" height="250" border="1"></P>
+					<P></P>
+					<P><B><I>Note</I></B> : Preferences are stored in the file &quot;<I>4D XLIFF Editor preference.xml</I>&quot; placed in the file active 4D folder for the preferences &quot;interbases&quot; and the folder &quot;<I>Preferences</I>&quot; folder of the current database for the items specific to the database.</P>
+					<DIV class="Section1" align="left">
+						<DIV class="Section1" align="left">
+							<H2> Source code provided</H2>
+						  <P>This component is given in compiled version, but you will find the code source in the folder &quot;Sources&quot; inside the component folder.</P>
+							<P></P>
+						</DIV>
+					</DIV>
+				</DIV>
+			</DIV>
+		</DIV>
+	</BODY>
+
+</HTML>

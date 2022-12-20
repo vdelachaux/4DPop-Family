@@ -1,0 +1,8 @@
+$Dom_root:=DOM Parse XML source(<caret/>)
+
+If (OK=1)
+	
+	
+	DOM CLOSE XML($Dom_root)
+	
+End if

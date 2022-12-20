@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE macros SYSTEM "http://www.4d.com/dtd/2007/macros.dtd" >
+
+<!--
+4DPop KeepIt v12
+vincent@de-lachaux.net
+-->
+
+<macros>
+    
+    <macro name="-" in_menu="true" type_ahead="false"><text/></macro>
+    
+    <macro name="Snippets list…/€"
+        in_menu="true"
+        type_ahead="true"
+        type_ahead_text="$$"
+        version="2">
+        <text><method>Keepit_macro</method></text>
+    </macro>
+    
+    <macro name="New Snippet… "
+        in_menu="true"
+        type_ahead="false"
+        version="2">
+        <text><method>Keepit_macro("new")</method></text>
+    </macro>
+    
+    <macro name="-" in_menu="true" type_ahead="false"><text/></macro>
+    
+    <macro name="hashtag…/#"
+        in_menu="true"
+        type_ahead="true"
+        type_ahead_text="#"
+        version="2">
+        <text><method>Hashtag_macro("set")</method></text>
+    </macro>
+    
+    <macro name="hashtag…/#"
+        in_menu="false"
+        type_ahead="false"
+        method_event="on_save"
+        version="2">
+        <text><method>Hashtag_macro("save";"<method_path/>")</method></text>        
+    </macro>
+    
+</macros>

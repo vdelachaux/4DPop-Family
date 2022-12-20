@@ -1,0 +1,83 @@
+/*Method that run in a unique new process*/
+// ----------------------------------------------------
+// Project method: <method_name/>
+// Database: <database_name/>
+// <keepit name="UID"/>
+// <keepit name="_created"/>
+// ----------------------------------------------------
+// Description
+//
+// ----------------------------------------------------
+// Declarations
+C_TEXT($1)
+
+C_LONGINT($Lon_parameters)
+C_TEXT($Txt_entryPoint)
+
+If (False)
+	C_TEXT(<method_name/> ;$1)
+End if
+
+// ----------------------------------------------------
+// Initialisations
+$Lon_parameters:=Count parameters
+
+If ($Lon_parameters>=1)
+	
+	$Txt_entryPoint:=$1
+	
+End if
+
+// ----------------------------------------------------
+Case of
+	//___________________________________________________________
+	: (Length($Txt_entryPoint)=0)
+	
+	Case of
+		//……………………………………………………………………
+		: (Method called on error=Current method name)
+		
+		//Error handling manager
+		
+		//……………………………………………………………………
+		: (Method called on event=Current method name)
+		
+		//Event manager
+		
+		//……………………………………………………………………
+	Else
+		
+		//This method must be executed in a unique new process
+		BRING TO FRONT(New process("<method_name/>";12*1024;"<method_name/>";"_run";*))
+		
+		//……………………………………………………………………
+	End case
+	
+	//___________________________________________________________
+	: ($Txt_entryPoint="_run")
+	//First launch of this method executed in a new process
+	<method_name/> ("_declarations")
+	<method_name/> ("_init")
+	//{
+	
+	//}
+	<method_name/> ("_deinit")
+	//___________________________________________________________
+	: ($Txt_entryPoint="_declarations")
+	
+	
+	//___________________________________________________________
+	: ($Txt_entryPoint="_init")
+	
+	
+	//___________________________________________________________
+	: ($Txt_entryPoint="_deinit")
+	
+	
+	//___________________________________________________________
+Else
+	
+	ASSERT(False;"Unknown entry point ("+$Txt_entryPoint+")")
+	
+	//___________________________________________________________
+End case

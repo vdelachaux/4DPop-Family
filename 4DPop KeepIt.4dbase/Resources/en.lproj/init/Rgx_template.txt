@@ -1,0 +1,25 @@
+/*Match regex template*/
+ARRAY LONGINT($tLon_length;0x0000)
+ARRAY LONGINT($tLon_position;0x0000)
+
+$Txt_target:="<caret/>"
+$Txt_pattern:=""
+$Lon_start:=1
+
+Repeat
+	
+	$Boo_OK:=Match regex($Txt_pattern;$Txt_target;$Lon_start;$tLon_position;$tLon_length)
+	
+	If ($Boo_OK)
+		
+		For ($Lon_i;0;$Lon_count;1)
+			
+			$Txt_group:=Substring($Txt_target;$tLon_position{$Lon_i};$tLon_length{$Lon_i})
+			
+		End for
+		
+		$Lon_start:=$Lon_start+1
+		
+	End if
+	
+Until (Not($Boo_OK))

@@ -1,0 +1,116 @@
+{
+	"tags": [
+		{
+			"label": "TagsdatabaseName",
+			"tag": "<database_name/>"
+		},
+		{
+			"label": "-",
+			"tag": ""
+		},
+		{
+			"label": "Tags4dUserName",
+			"tag": "<user_4D/>"
+		},
+		{
+			"label": "TagssystemUserName",
+			"tag": "<user_os/>"
+		},
+		{
+			"label": "-",
+			"tag": ""
+		},
+		{
+			"label": "TagsmethodName",
+			"tag": "<method_name/>"
+		},
+		{
+			"label": "TagsmethodType",
+			"tag": "<method_type/>"
+		},
+		{
+			"label": "TagsmethodPath",
+			"tag": "<method_path/>"
+		},
+		{
+			"label": "-",
+			"tag": ""
+		},
+		{
+			"label": "Tagsuid",
+			"tag": "<uid/>"
+		},
+		{
+			"label": "TagscurrentDate",
+			"tag": "<date format=\"\"/>"
+		},
+		{
+			"label": "TagscurrentTime",
+			"tag": "<time format=\"\"/>"
+		},
+		{
+			"label": "-",
+			"tag": ""
+		},
+		{
+			"label": "TagsHighlightedMethodText",
+			"tag": "<selection/>"
+		},
+		{
+			"label": "TagsCaret",
+			"tag": "<caret/>"
+		},
+		{
+			"label": "-",
+			"tag": ""
+		},
+		{
+			"label": "TagsClipboardContents",
+			"tag": "<clipboard/>"
+		},
+		{
+			"label": "Tagsfile",
+			"tag": "<file url=\"\" encoding=\"UTF-8\"/>"
+		},
+		{
+			"label": "-",
+			"tag": ""
+		},
+		{
+			"label": "TagsprojectMethod",
+			"tag": "<method></method>"
+		},
+		{
+			"label": "TagskeepitItem",
+			"tag": "<keepit name=\"\"/>"
+		},
+		{
+			"label": "-",
+			"tag": ""
+		},
+		{
+			"label": "Tagsask",
+			"tag": "<ask message=\"\" type=\"text\"/>"
+		},
+		{
+			"label": "-",
+			"tag": ""
+		},
+		{
+			"label": "Tagsiteration",
+			"tag": "<iteration count=\"%\"/>"
+		},
+		{
+			"label": "TagsiterationCounter",
+			"tag": "<iteration/>"
+		},
+		{
+			"label": "-",
+			"tag": ""
+		},
+		{
+			"label": "tagMethodAttribute",
+			"tag": "<method-attribute type=\"%\" value=\"true\"/>"
+		}
+	]
+}

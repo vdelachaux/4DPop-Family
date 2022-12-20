@@ -1,0 +1,6 @@
+//insert the BOM (UTF-16, little-endian) {
+CONVERT FROM TEXT($Txt_buffer;"UTF-16";$Blb_buffer)
+INSERT IN BLOB($Blb_buffer;0;2)
+$Blb_buffer{0}:=0x00FF
+$Blb_buffer{1}:=0x00FE
+//}

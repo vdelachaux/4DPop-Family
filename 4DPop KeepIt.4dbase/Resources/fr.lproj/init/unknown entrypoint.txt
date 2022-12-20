@@ -1,0 +1,1 @@
+ASSERT(Faux;"Unknown entry Point: \""+<caret/>+"\"")
