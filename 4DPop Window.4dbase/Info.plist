@@ -6,19 +6,19 @@
     <key>CFBundleDisplayName</key>
     <string>4DPop Window</string>
     <key>CFBundleShortVersionString</key>
-    <string>19R7</string>
+    <string>19R8</string>
     <key>CFBundleLongVersionString</key>
-    <string>19R7 (288)</string>
+    <string>19R8 (292)</string>
     <key>NSHumanReadableCopyright</key>
-    <string>©vdl 2009-2022</string>
+    <string>©vdl 2009-2023</string>
     <key>CFBundleVersion</key>
-    <string>289</string>
+    <string>293</string>
     <key>CSResourcesFileMapped</key>
     <string></string>
     <key>CFBundleName</key>
     <string>4DPop Window</string>
     <key>CFBundleGetInfoString</key>
-    <string>19R7</string>
+    <string>19R8</string>
   </dict>
 
 </plist>
