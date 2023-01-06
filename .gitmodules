@@ -1,3 +1,51 @@
 [submodule "4DPop"]
 	path = 4DPop
 	url = https://github.com/vdelachaux/4DPop
+[submodule "4DPop-AppMaker"]
+	path = 4DPop-AppMaker
+	url = https://github.com/vdelachaux/4DPop-AppMaker
+[submodule "4DPop-Git"]
+	path = 4DPop-Git
+	url = https://github.com/vdelachaux/4DPop-Git
+[submodule "4DPop-XLIFF-Pro"]
+	path = 4DPop-XLIFF-Pro
+	url = https://github.com/vdelachaux/4DPop-XLIFF-Pro
+[submodule "4DPop-XLIFF"]
+	path = 4DPop-XLIFF
+	url = https://github.com/vdelachaux/4DPop-XLIFF
+[submodule "4DPop-Window"]
+	path = 4DPop-Window
+	url = https://github.com/vdelachaux/4DPop-Window
+[submodule "4DPop-sqlSchemas"]
+	path = 4DPop-sqlSchemas
+	url = https://github.com/vdelachaux/4DPop-sqlSchemas
+[submodule "4DPop-Rulers"]
+	path = 4DPop-Rulers
+	url = https://github.com/vdelachaux/4DPop-Rulers
+[submodule "4DPop-QuickOpen"]
+	path = 4DPop-QuickOpen
+	url = https://github.com/vdelachaux/4DPop-QuickOpen
+[submodule "4DPop-Pasteboard"]
+	path = 4DPop-Pasteboard
+	url = https://github.com/vdelachaux/4DPop-Pasteboard
+[submodule "4DPop-Macros"]
+	path = 4DPop-Macros
+	url = https://github.com/vdelachaux/4DPop-Macros
+[submodule "4DPop-KeepIt"]
+	path = 4DPop-KeepIt
+	url = https://github.com/vdelachaux/4DPop-KeepIt
+[submodule "4DPop-Image-Buddy"]
+	path = 4DPop-Image-Buddy
+	url = https://github.com/vdelachaux/4DPop-Image-Buddy
+[submodule "4DPop-Constants-Editor"]
+	path = 4DPop-Constants-Editor
+	url = https://github.com/vdelachaux/4DPop-Constants-Editor
+[submodule "4DPop-Commands"]
+	path = 4DPop-Commands
+	url = https://github.com/vdelachaux/4DPop-Commands
+[submodule "4DPop-ColorChart"]
+	path = 4DPop-ColorChart
+	url = https://github.com/vdelachaux/4DPop-ColorChart
+[submodule "4DPop-Bookmarks"]
+	path = 4DPop-Bookmarks
+	url = https://github.com/vdelachaux/4DPop-Bookmarks

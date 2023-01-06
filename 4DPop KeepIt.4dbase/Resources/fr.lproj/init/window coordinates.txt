@@ -1,4 +1,0 @@
-C_ENTIER LONG($Lon_bottom;$Lon_left;$Lon_right;$Lon_top;$Lon_windowRef)
-
-$Lon_windowRef:=Fenetre formulaire courant
-COORDONNEES FENETRE($Lon_left;$Lon_top;$Lon_right;$Lon_bottom;$Lon_windowRef)

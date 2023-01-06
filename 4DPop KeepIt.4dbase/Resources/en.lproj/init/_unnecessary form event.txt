@@ -1,1 +1,0 @@
-ASSERT(false;"Form event activated unnecessarily ("+String($Lon_formEvent)+")")

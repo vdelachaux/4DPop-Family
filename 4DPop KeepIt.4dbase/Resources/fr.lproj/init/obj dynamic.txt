@@ -1,1 +1,0 @@
-(OBJET Lire pointeur(Objet nommé;"<caret/>"))->

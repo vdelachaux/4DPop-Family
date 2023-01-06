@@ -1,4 +1,0 @@
-$Lon_wRef:=Current form window
-GET WINDOW RECT($Lon_left;$Lon_top;$Lon_right;$Lon_bottom;$Lon_wRef)
-$Lon_width:=$Lon_right-$Lon_left
-$Lon_height:=$Lon_bottom-$Lon_top
