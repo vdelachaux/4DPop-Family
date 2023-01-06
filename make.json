@@ -1,0 +1,76 @@
+{
+  "components": [
+    {
+      "name": "4DPop AppMaker",
+      "family": true
+    },
+    {
+      "name": "4DPop",
+      "family": true
+    },
+    {
+      "name": "4DPop Bookmarks",
+      "family": true
+    },
+    {
+      "name": "4DPop Clipboard",
+      "family": false
+    },
+    {
+      "name": "4DPop ColorChart",
+      "family": true
+    },
+    {
+      "name": "4DPop Commands",
+      "family": true
+    },
+    {
+      "name": "4DPop Constants Editor",
+      "family": true
+    },
+    {
+      "name": "4DPop Git",
+      "family": true
+    },
+    {
+      "name": "4DPop Image Buddy",
+      "family": true
+    },
+    {
+      "name": "4DPop KeepIt",
+      "family": true
+    },
+    {
+      "name": "4DPop Macros",
+      "family": true
+    },
+    {
+      "name": "4DPop Pasteboard",
+      "family": true
+    },
+    {
+      "name": "4DPop QuickOpen",
+      "family": true
+    },
+    {
+      "name": "4DPop Rulers",
+      "family": true
+    },
+    {
+      "name": "4DPop sqlSchemas",
+      "family": true
+    },
+    {
+      "name": "4DPop Window",
+      "family": true
+    },
+    {
+      "name": "4DPop XLIFF",
+      "family": true
+    },
+    {
+      "name": "4DPop XLIFF Pro",
+      "family": true
+    }
+  ]
+}
