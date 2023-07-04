@@ -33,3 +33,10 @@ Even if you are used to installing components in the "Components" folder of your
 1. Download the **Source code (zip)** provided
 2. Unzip the archive and copy the components you want to install into the "Components" folder next to 4D.exe or the one for your database.
 
+## Status
+
+|Name|Status|
+|-|-|
+|4DPop AppMaker|[![Build](https://github.com/vdelachaux/4DPop-AppMaker/actions/workflows/build.yml/badge.svg)](https://github.com/vdelachaux/4DPop-AppMaker/actions/workflows/build.yml)
+|4DPop Macros|[![Build](https://github.com/vdelachaux/4DPop-Macros/actions/workflows/build.yml/badge.svg)](https://github.com/vdelachaux/4DPop-Macros/actions/workflows/build.yml)
+
