@@ -37,5 +37,6 @@ Even if you are used to installing components in the "Components" folder of your
 
 |Name|Status|
 |-|-|
+|4DPop AppMaker|[![Build](https://github.com/vdelachaux/4DPop-AppMaker/actions/workflows/build.yml/badge.svg)](https://github.com/vdelachaux/4DPop-AppMaker/actions/workflows/build.yml)
 |4DPop Macros|[![Build](https://github.com/vdelachaux/4DPop-Macros/actions/workflows/build.yml/badge.svg)](https://github.com/vdelachaux/4DPop-Macros/actions/workflows/build.yml)
 
