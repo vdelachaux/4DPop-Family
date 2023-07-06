@@ -43,6 +43,3 @@
 [submodule "4DPop-ColorChart"]
 	path = 4DPop-ColorChart
 	url = https://github.com/vdelachaux/4DPop-ColorChart
-[submodule "4DPop-Bookmarks"]
-	path = 4DPop-Bookmarks
-	url = https://github.com/vdelachaux/4DPop-Bookmarks
