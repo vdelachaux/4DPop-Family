@@ -1,6 +1,3 @@
-[submodule "4DPop-XLIFF"]
-	path = 4DPop-XLIFF
-	url = https://github.com/vdelachaux/4DPop-XLIFF
 [submodule "4DPop-Window"]
 	path = 4DPop-Window
 	url = https://github.com/vdelachaux/4DPop-Window
