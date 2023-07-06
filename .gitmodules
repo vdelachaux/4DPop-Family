@@ -1,6 +1,3 @@
-[submodule "4DPop"]
-	path = 4DPop
-	url = https://github.com/vdelachaux/4DPop
 [submodule "4DPop-AppMaker"]
 	path = 4DPop-AppMaker
 	url = https://github.com/vdelachaux/4DPop-AppMaker
