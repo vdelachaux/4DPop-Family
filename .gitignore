@@ -1,4 +1,8 @@
 # Ignore invisible files/folders except .gitignore
 .*
 !.gitignore
-4DPop-Family-*
+
+4DPop*/
+!4DPop-Family-*
+!4DPop-Family-*/Components/*.4dbase
+4DPop-Family-main.dmg
