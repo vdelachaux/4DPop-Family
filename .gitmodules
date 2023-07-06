@@ -1,6 +1,3 @@
-[submodule "4DPop-QuickOpen"]
-	path = 4DPop-QuickOpen
-	url = https://github.com/vdelachaux/4DPop-QuickOpen
 [submodule "4DPop-Pasteboard"]
 	path = 4DPop-Pasteboard
 	url = https://github.com/vdelachaux/4DPop-Pasteboard
