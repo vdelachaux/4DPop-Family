@@ -1,6 +1,3 @@
-[submodule "4DPop-Commands"]
-	path = 4DPop-Commands
-	url = https://github.com/vdelachaux/4DPop-Commands
 [submodule "4DPop-ColorChart"]
 	path = 4DPop-ColorChart
 	url = https://github.com/vdelachaux/4DPop-ColorChart
