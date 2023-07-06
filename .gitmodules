@@ -1,6 +1,3 @@
-[submodule "4DPop-sqlSchemas"]
-	path = 4DPop-sqlSchemas
-	url = https://github.com/vdelachaux/4DPop-sqlSchemas
 [submodule "4DPop-QuickOpen"]
 	path = 4DPop-QuickOpen
 	url = https://github.com/vdelachaux/4DPop-QuickOpen
