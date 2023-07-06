@@ -1,9 +1,6 @@
 [submodule "4DPop-AppMaker"]
 	path = 4DPop-AppMaker
 	url = https://github.com/vdelachaux/4DPop-AppMaker
-[submodule "4DPop-Git"]
-	path = 4DPop-Git
-	url = https://github.com/vdelachaux/4DPop-Git
 [submodule "4DPop-XLIFF-Pro"]
 	path = 4DPop-XLIFF-Pro
 	url = https://github.com/vdelachaux/4DPop-XLIFF-Pro
