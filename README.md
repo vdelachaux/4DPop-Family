@@ -4,9 +4,28 @@
 # 4DPop-Family
 All-in-one compiled [4Dpop components](https://github.com/vdelachaux/4DPop)
 
-## Installation
+## Installation v20+
 
-Download the [version](https://github.com/vdelachaux/4DPop-Family/releases) corresponding to your version of 4D
+There's a folder for each version (e.g. **4DPop-Family-20** for the component version corresponding to **4D v20**+).
+
+In each folder, you will find a subfolder `Components`, where all components are available in compiled mode
+
+* Users of **Windows** or macOS on **Intel** processor can use the components located in the `Components` folder.
+
+* A **4DPop-Family-vXX.dmg** file is available for macOS on **ARM** processor users, where are the _notarized components_.  
+
+## Status
+
+|||
+|----|----|
+|4DPop AppMaker|[![Build](https://github.com/vdelachaux/4DPop-AppMaker/actions/workflows/build.yml/badge.svg)](https://github.com/vdelachaux/4DPop-AppMaker/actions/workflows/build.yml)
+|4DPop Macros|[![Build](https://github.com/vdelachaux/4DPop-Macros/actions/workflows/build.yml/badge.svg)](https://github.com/vdelachaux/4DPop-Macros/actions/workflows/build.yml)
+
+## 
+
+### *Before v20*
+
+Download the version corresponding to your version of 4D
 
 ### 📌 **About 19R versions**.  
 >Due to a difference in the 4D compiler between the **19R5** and **19R6** releases, the [**R5 version of the components**](https://github.com/vdelachaux/4DPop-Family/releases/tag/v19R5) is only compatible with the **4D 19R5**.    
@@ -32,11 +51,3 @@ Even if you are used to installing components in the "Components" folder of your
 
 1. Download the **Source code (zip)** provided
 2. Unzip the archive and copy the components you want to install into the "Components" folder next to 4D.exe or the one for your database.
-
-## Status
-
-|Name|Status|
-|-|-|
-|4DPop AppMaker|[![Build](https://github.com/vdelachaux/4DPop-AppMaker/actions/workflows/build.yml/badge.svg)](https://github.com/vdelachaux/4DPop-AppMaker/actions/workflows/build.yml)
-|4DPop Macros|[![Build](https://github.com/vdelachaux/4DPop-Macros/actions/workflows/build.yml/badge.svg)](https://github.com/vdelachaux/4DPop-Macros/actions/workflows/build.yml)
-
