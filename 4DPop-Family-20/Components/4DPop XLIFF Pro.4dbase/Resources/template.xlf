@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xliff xmlns:d4="http://www.4d.com/d4-ns" version="1.0">
+  <file datatype="x-STR#" original="Undefined" source-language="$4DEVAL($1.language)" target-language="$4DEVAL($1.language)">
+    <header>
+      <prop-group name="4DPop XLIFF Pro">
+        <prop prop-type="version">$4DEVAL($1.version)</prop>
+      </prop-group>
+    </header>
+    <body>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,9 @@
+{
+  "name": ":xliff:Ruler",
+  "media": "4DPop.png",
+  "helptip": ":xliff:ToolHelpTip",
+  "handler": "_4DPopRulers",
+  "tools": {
+    "method": "main"
+  }
+}

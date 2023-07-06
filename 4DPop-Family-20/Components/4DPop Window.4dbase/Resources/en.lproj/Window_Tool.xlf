@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--                         Translation file.
+This file is distributed under the same license as the product package.-->
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+
+  <file datatype="x-STR#" original="undefined" source-language="en" target-language="en">
+    <header>
+      <prop-group name="4DPop XLIFF Pro">
+        <prop prop-type="version">3.0</prop>
+      </prop-group>
+    </header>
+    <body>
+      <group resname="WindowNames">
+        <trans-unit id="EF1lMfOkIKgFXpYDeQph0Q" resname="FormMethod">
+          <source>Form Method: </source>
+          <target>Form Method: </target>
+        </trans-unit>
+        <trans-unit id="EiSSTSZHb14Amy8a81Qsaw" resname="Trigger">
+          <source>Trigger: </source>
+          <target>Trigger: </target>
+        </trans-unit>
+        <trans-unit id="QOaXUQYqO+6WaGu5q9fHOQ" resname="Form">
+          <source>Form</source>
+          <target>Form</target>
+        </trans-unit>
+        <trans-unit id="+SlIgYl+LNxpJgdrohNgyg" resname="Method">
+          <source>Method: </source>
+          <target>Method: </target>
+        </trans-unit>
+        <trans-unit id="dVJv5oZ2JXlakFAiQ0FR+w" resname="ObjectMethod">
+          <source>Object Method: </source>
+          <target>Object Method: </target>
+        </trans-unit>
+        <trans-unit id="2uoSyQF1satWpcE7eIlEEg" resname="Methods">
+          <source>Method:</source>
+          <target>Method:</target>
+        </trans-unit>
+        <trans-unit id="fpv9uKpIyQnyCqUhhWFOwQ" resname="find">
+          <source>Find: </source>
+          <target>Find: </target>
+        </trans-unit>
+        <trans-unit id="NeDwXwbvw80zisTURDdfBw" resname="class">
+          <source>Class:</source>
+          <target>Class:</target>
+        </trans-unit>
+        
+        <trans-unit id="1Ulqk744jwTS_Lq212sapg" resname="_explorer">
+          <source>{project} - Explorer</source>
+          <target>{project} - Explorer</target>
+        </trans-unit>
+        <trans-unit id="7kWKYNJhvoy_MxBP2aAMTw" resname="explorer">
+          <source>Explorer</source>
+          <target>Explorer</target>
+        </trans-unit>
+      </group>
+      <group resname="MenuLabels">
+        <trans-unit id="qA_UGfFvJL4sf9ptF1+1Mw" resname="MenuLabelsFormMethod">
+          <source>Form Method</source>
+          <target>Form Method</target>
+        </trans-unit>
+        <trans-unit id="xaCGlO_d8xrhnIFDFdB6ow" resname="MenuLabelsTriggers">
+          <source>Triggers</source>
+          <target>Triggers</target>
+        </trans-unit>
+        <trans-unit id="zUKr8gr0fo+6VzDzLUtuzg" resname="MenuLabelsForms">
+          <source>Forms</source>
+          <target>Forms</target>
+        </trans-unit>
+        <trans-unit id="FjJnl65AkGQuv0R5igctUQ" resname="MenuLabelsProjectMethods">
+          <source>Project Methods</source>
+          <target>Project Methods</target>
+        </trans-unit>
+        <trans-unit id="nvpTZ4c4+tUjVElvpvMIDg" resname="MenuLabelsObjectMethod">
+          <source>Object Method</source>
+          <target>Object Method</target>
+        </trans-unit>
+        <trans-unit id="Vx89iPMWU7EPy9My3MykJQ" resname="MenuLabelsForm">
+          <source>Form</source>
+          <target>Form</target>
+        </trans-unit>
+        <trans-unit id="tolayoYOtzJgT1R2rdpqvA" resname="MenuLabelsOthers">
+          <source>Others</source>
+          <target>Others</target>
+        </trans-unit>
+        <trans-unit id="7cb8omClQMb1KmmP5i_pHg" resname="MenuLabelsDatabaseMethods">
+          <source>Database Methods</source>
+          <target>Database Methods</target>
+        </trans-unit>
+        <trans-unit id="BS+HWdIZeb5FMnzjtrrx2Q" resname="MenuLabelsOptions">
+          <source>Options</source>
+          <target>Options</target>
+        </trans-unit>
+        <trans-unit id="cV53WzEEXCQPLiLw2_4LAg" resname="MenulabelsshowAllWindows">
+          <source>Show all windows</source>
+          <target>Show all windows</target>
+        </trans-unit>
+        <trans-unit id="5md4xiW5a7stPKPvoMU+uw" resname="Menulabelsresearches">
+          <source>Finds</source>
+          <target>Finds</target>
+        </trans-unit>
+        <trans-unit id="MrwmarBdCNKJc5SLauKR0w" resname="MenuLabelClasses">
+          <source>Classes</source>
+          <target>Classes</target>
+        </trans-unit>
+      </group>
+      <group resname="Strings">
+        <trans-unit id="UXXen5ubCS6_7d1jdRaKog" resname="StringsWindows">
+          <source>Windows</source>
+          <target>Windows</target>
+        </trans-unit>
+        <trans-unit id="drkujiwsCccrDaYKJU2IGQ" resname="StringsStacksWindows">
+          <source>Stack the windows</source>
+          <target>Stack the windows</target>
+        </trans-unit>
+        <trans-unit id="ZkaYhaboLG7j1iekn2vmDw" resname="StringsPutFrontmostWindowInScreen">
+          <source>Recover</source>
+          <target>Recover</target>
+        </trans-unit>
+        <trans-unit id="uCJx2eQOSKKECFwnOLXoGQ" resname="StringsNextWindow">
+          <source>Next window</source>
+          <target>Next window</target>
+        </trans-unit>
+        <trans-unit id="ba0BuqfXbYzdzEZN+nBcsA" resname="StringsApplication">
+          <source>Application</source>
+          <target>Application</target>
+        </trans-unit>
+        <trans-unit id="jRbfbP41VMgcHtfNLuDvfg" resname="StringsDefaultAction">
+          <source>Default action</source>
+          <target>Default action</target>
+        </trans-unit>
+        
+      </group>
+      <group resname="4DPop">
+        <trans-unit id="FWEfzWJtvEo4QaDx12EzEg" resname="ToolName">
+          <source>Windows</source>
+          <target>Windows</target>
+        </trans-unit>
+        <trans-unit id="1lFQq43KH9LWF1V_zgoA9A" resname="ToolTip">
+          <source>A tidy window menu</source>
+          <target>A tidy window menu</target>
+        </trans-unit>
+      </group>
+      
+      <group resname="dialog preferences">
+        <trans-unit id="QnlNnuf+nEli2aIil6v3Vw" resname="Options_1">
+          <source>"Windows" menu in the main menu</source>
+          <target>"Windows" menu in the main menu</target>
+        </trans-unit>
+        <trans-unit id="NRH3s9q5z8xTxjpqkQYZOg" resname="submenuComment">
+          <source>Invert with the Maj key.</source>
+          <target>Invert with the Maj key.</target>
+        </trans-unit>
+        <trans-unit id="LeEkCsWCWe35SrntP0eDdg" resname="Options_2">
+          <source>List of opened methods</source>
+          <target>List of opened methods</target>
+        </trans-unit>
+        <trans-unit id="MW31d2U3TLj6tGHXEr7cmg" resname="Options_3">
+          <source>Prefix the names of windows in development mode</source>
+          <target>Prefix the names of windows in development mode</target>
+        </trans-unit>
+        <trans-unit id="FmO46bKnTnPR_1ByYPMO4A" resname="bCancel">
+          <source>Cancel</source>
+          <target>Cancel</target>
+        </trans-unit>
+        <trans-unit id="ugx8ASXkIusdRdtjDUmKjA" resname="bOK">
+          <source>OK</source>
+          <target>OK</target>
+        </trans-unit>
+        <trans-unit id="uaYUj5l79iBMvMfMPspJjQ" resname="submenu">
+          <source>Show windows menu in a submenu</source>
+          <target>Show windows menu in a submenu</target>
+        </trans-unit>
+        <trans-unit id="YSpuKyTPhyBBdda_gFPfOw" resname="defaultAction">
+          <source>Default action (click):</source>
+          <target>Default action (click):</target>
+        </trans-unit>
+        <trans-unit id="Po6lfsTD7Ua0nm_BTWS7SA" resname="invertFrontWindow">
+          <source>Invert frontmost window and next window</source>
+          <target>Invert frontmost window and next window</target>
+        </trans-unit>
+        <trans-unit id="2WiIJh_O4EMFWNnOxEJNqA" resname="stackwindows">
+          <source>Stack windows</source>
+          <target>Stack windows</target>
+        </trans-unit>
+        <trans-unit id="xIIEEi_1RH9uFC5REBeOBg" resname="prefix">
+          <source>Prepend title of windows with the name of the database</source>
+          <target>Prepend title of windows with the name of the database</target>
+        </trans-unit>
+        <trans-unit id="xjPyMZq+RmqsSibrbJPwmA" resname="palette">
+          <source>Palette of opened windows</source>
+          <target>Palette of opened windows</target>
+        </trans-unit>
+        <trans-unit id="LZ+XbHSudiUWtPS6EmEUKA" resname="preferences">
+          <source>4DPop Window - Preferences</source>
+          <target>4DPop Window - Preferences</target>
+        </trans-unit>
+        <trans-unit id="Fm9XoBPw_ZRpKkLGNganFg" resname="tools">
+          <source>Tools (background tasks)</source>
+          <target>Tools (background tasks)</target>
+        </trans-unit>
+        <trans-unit id="BMHmQ5aXdyNp72VJnduqAA" resname="4dpopPaletteButtonsOptions">
+          <source>4DPop Palette (button's options)</source>
+          <target>4DPop Palette (button's options)</target>
+        </trans-unit>
+        <trans-unit id="9VUK01wkvDf9MM6iQps_Tg" resname="showMenu">
+          <source>Show menu</source>
+          <target>Show menu</target>
+        </trans-unit>
+        <trans-unit id="WJ_dz8MDFiSufGXkNfICuA" resname="settings">
+          <source>Settings</source>
+          <target>Settings</target>
+        </trans-unit>
+      </group>
+      <group resname="Palette">
+        <trans-unit id="SaiC_+Bra7ynJUb+Zhk_RQ" resname="Items_close">
+          <source>Close</source>
+          <target>Close</target>
+        </trans-unit>
+        <trans-unit id="rbRFoU0FVefuiKG09BdM7Q" resname="Items_foreground">
+          <source>Foreground</source>
+          <target>Foreground</target>
+        </trans-unit>
+        <trans-unit id="9hq1ILbg5bylCTn+dWzWyg" resname="Items_minimize">
+          <source>Minimize</source>
+          <target>Minimize</target>
+        </trans-unit>
+        <trans-unit id="wKEWL7o5d0e3adotVBwgQQ" resname="Items_maximize">
+          <source>Maximize</source>
+          <target>Maximize</target>
+        </trans-unit>
+        <trans-unit id="BYp+u8eIRDkmLqJFcDUW+Q" resname="Items_hide">
+          <source>Hide</source>
+          <target>Hide</target>
+        </trans-unit>
+        <trans-unit id="MG2iuP2z9BltD7JvAhWaoQ" resname="Items_show">
+          <source>Show</source>
+          <target>Show</target>
+        </trans-unit>
+        <trans-unit id="aSLDmRcwmFVjV_PXT+mdhA" resname="paletteTitle">
+          <source>4DPop Window</source>
+          <target>4DPop Window</target>
+        </trans-unit>
+      </group>
+      
+      <group resname="Method Properties">
+        <trans-unit id="lA_NSHZZcFNmyKzAVaLqNA" resname="Proc_info_offeredAsAWebService">
+          <source>Offered as a Web Service</source>
+          <target>Offered as a Web Service</target>
+        </trans-unit>
+        <trans-unit id="g_A4CmMsBZYOvY_Mndm+Pw" resname="Proc_info_publishedInWsdl">
+          <source>Published in WSDL</source>
+          <target>Published in WSDL</target>
+        </trans-unit>
+        <trans-unit id="Idi6BaEph7BIWgChznEdmw" resname="Proc_info_availableThrough4dHtml">
+          <source>Available through 4D HTML tags and URLs [4DACTION...]</source>
+          <target>Available through 4D HTML tags and URLs [4DACTION...]</target>
+        </trans-unit>
+        <trans-unit id="7uRQj4pUqfLgC1WPCVJkLQ" resname="Proc_info_sharedByComponentsAndHostDatabase">
+          <source>Shared by components and host database</source>
+          <target>Shared by components and host database</target>
+        </trans-unit>
+        <trans-unit id="HR0Lu4ThSXDPwbBXnR26Ww" resname="Proc_info_invisible">
+          <source>Invisible</source>
+          <target>Invisible</target>
+        </trans-unit>
+        <trans-unit id="s4y3hyzKJZCe5vDapO3SIg" resname="Proc_info_availableThroughSql">
+          <source>Available through SQL</source>
+          <target>Available through SQL</target>
+        </trans-unit>
+        <trans-unit id="tcOaSifrKIQCKfX316P85Q" resname="Proc_info_executeOnServer">
+          <source>Execute on Server</source>
+          <target>Execute on Server</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+
+
+
+
+
+
+
+
+</xliff>

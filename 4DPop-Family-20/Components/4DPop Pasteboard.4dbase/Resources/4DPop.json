@@ -1,0 +1,15 @@
+{
+  "name": ":xliff:4DPopTool",
+  "media": "4DPop.png",
+  "handler": "_4DPopPastebooard",
+  "tools": [
+    {
+      "name": ":xliff:4DPopTool_1",
+      "method": "pasteboard"
+    },
+    {
+      "name": ":xliff:4DPopTool_2",
+      "method": "dragContainer"
+    }
+  ]
+}

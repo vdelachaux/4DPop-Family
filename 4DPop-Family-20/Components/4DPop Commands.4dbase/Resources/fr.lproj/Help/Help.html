@@ -1,0 +1,108 @@
+<HTML XMLNS:V="urn:schemas-microsoft-com:vml" XMLNS:O="urn:schemas-microsoft-com:office:office" XMLNS:W="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>4DPop Commands</TITLE>
+<LINK href="../../Common/style.css" rel="stylesheet" type="text/css">
+</HEAD>
+<BODY>
+<DIV class="Section1" align="left">
+  <HR>
+  <TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+    <TR>
+      <TD width="100"><IMG src="../../Common/4d.png" border="0"></TD>
+      <TD valign="middle"><TABLE width="100%" border="0" cellspacing="0" cellpadding="4" height="100%">
+          <TR>
+            <TD width="339"><H1 class="style6">4DPop Commands</H1></TD>
+            <TD></TD>
+          </TR>
+          <TR>
+            <TD colspan="2"><IFRAME src="../../Common/Localisation.html" frameborder="0" scrolling="no" align="middle" height="40" width="100%" NORESIZE="true"></IFRAME></TD>
+          </TR>
+        </TABLE></TD>
+    </TR>
+  </TABLE>
+</DIV>
+<DIV class="Section1" align="left">
+  <HR>
+  <P class="style3">4DPop Commands permet de retrouver rapidement le nom d'une commande en Français ou en Anglais, d'accéder à la page de la documentation en ligne ou de coller dans l'éditeur de méthode la commande choisie avec sa syntaxe et une explication succinte de la valeurs des paramètres attendus.</P>
+  <HR>
+  <H2 class="style6">Installation</H2>
+  <TABLE BORDER="0" ALIGN="center" CELLPADDING="2" CELLSPACING="4">
+    <TR>
+      <TD ALIGN="right" VALIGN="top">1.</TD>
+      <TD>Créez un dossier <I class="fileAndFolder">&quot;Components&quot;</I> à côté du fichier de structure de votre base (<EM class="fileAndFolder">&quot;.4db&quot;</EM>)</TD>
+    </TR>
+    <TR>
+      <TD ALIGN="right" VALIGN="top">2.</TD>
+      <TD><P>Placer le dossier &quot;<I class="fileAndFolder">4DPop Commands.4dbase</I>&quot;* ou un alias de ce dernier dans le dossier &quot;<SPAN class="fileAndFolder"><I>Components</I></SPAN><I>&quot;</I>.</P>
+        <P>Si vous utilisez le composant <I class="fileAndFolder">&quot;4DPop&quot;</I>, déposer le dossier/package <I class="fileAndFolder">&quot;4DPop Commands.4dbase&quot;</I> sur la palette pour créer automatiquement le raccourci dans le dossier <I class="fileAndFolder">&quot;Components&quot;</I> et redémarrer la base.</P>
+    </TR>
+    <TR>
+      <TD ALIGN="right" VALIGN="top">3.</TD>
+      <TD>Ouvrez votre base.</TD>
+    </TR>
+    <TR>
+      <TD ALIGN="right" VALIGN="top">4.</TD>
+      <TD>Si le composant 4DPop est installé un nouveau bouton <SPAN class="Command4D">&quot;Commandes&quot;</SPAN> se trouve dans la barre d'outils.
+        Un clic sur le bouton ouvre le dialogue de recherche
+        <P ALIGN="center"><IMG src="Images/4DPop Palette.png" width="823" height="68"></P>
+        <P>Si le composant 4DPop n'est pas installé il faut, pour ouvrir l'outil, sélectionner dans le menu <I class="fileAndFolder">&quot;Exécuter&quot;</I> la ligne <I class="fileAndFolder">&quot;Méthodes...&quot;</I> puis dans la liste des méthodes proposées sélectionner <I class="fileAndFolder">&quot;Commandes&quot;</I> et enfin cliquer sur le bouton <I class="fileAndFolder">&quot;Exécuter&quot;</I> (la méthode peut également être appelée depuis toute méthode de la base hôte)</P></TD>
+    </TR>
+  </TABLE>
+  <P class="note">*Sur Macintosh, le composant est un package dont l'extension <I class="fileAndFolder style7">&quot;.4dbase&quot;</I> n'est pas obligatoirement visible en fonction des réglages de vos préférences d'affichage.</P>
+  <HR>
+  <h2>Utilisation <a href="http://www.screencast.com/t/KcKSGvjui" target="_blank"><img src="../../Common/movie.png" alt="" width="32" height="32" border="0" align="top"></a></h2>
+  <P>L'outil  présente une palette unique de recherche vous invitant à saisir une partie d'un nom de commande, au fur et à mesure de la frappe, la liste des commandes trouvées est mise à jour, elle regroupe les noms des commandes 4D.</P>
+  <TABLE border="0" align="center" cellpadding="2" cellspacing="12.2">
+    <TR>
+      <TD><IMG src="Images/query1.png" width="345" height="398"></TD>
+      <TD><IMG src="Images/query2.png" width="345" height="398"></TD>
+    </TR>
+  </TABLE>
+  <P> Deux actions sont  possibles à ce stade :</P>
+  <OL>
+    <OL>
+      <OL>
+        <LI>Un double clic sur une ligne de la liste ouvre dans votre navigateur la page de documentation en ligne de la commande.</LI>
+        <LI>Glisser une commande sur l'éditeur de méthode permet d'y coller la commande, sa syntaxe et, sous forme de commentaires, une description des paramètres.</LI>
+      </OL>
+    </OL>
+  </OL>
+  <P align="center"><IMG src="Images/query3.png" width="884" height="485" border="1"></P>
+  <BLOCKQUOTE>
+    <P>Si la touche Option/Alt est enfoncée au moment du glissé, le texte collé sera : <SPAN class="Command4D"><STRONG>Nom commande </STRONG>(Nº  de  la  commande)</SPAN>.</P>
+  </BLOCKQUOTE>
+  <HR>
+  <H2>Paramètres</H2>
+  <TABLE width="100%" border="0" cellspacing="2" cellpadding="2">
+    <TR>
+      <TD valign="top"><P>Un clic sur le bouton &quot;i&quot; en haut à droite de la fenêtre présente les réglages possibles :</P>
+        <OL>
+          <OL>
+            <LI>La langue pour l'ouverture de la documentation en ligne (Français, Anglais, Allemand).</LI>
+            <LI>L'URL du site de documentation à utiliser.</LI>
+            <LI>Une boîte à cocher permettant d'activer ou non les commentaires au moment du déposer d'une commande dans l'éditeur de méthode. (Le fonctionnement de cette option est inversé si la touche majuscule est enfoncée au moment de glisser la commande)</LI>
+            <LI>Une boîte permet, si elle est cochée, de limiter la recherche à la seule langue de l'application.</LI>
+          </OL>
+        </OL>
+        <P>Les paramètres sont enregistrés dans le fichier <i class="fileAndFolder">&quot;4dPop v11 preference.xml&quot;</i> qui se situe dans le dossier des préférences de 4D.</P></TD>
+      <TD valign="top"><P><IMG src="Images/parameters.png" width="345" height="398" hspace="30" align="top"></P></TD>
+    </TR>
+  </TABLE>
+  <HR align="left" width="100%">
+  <H2>Quoi de neuf</H2>
+  <BLOCKQUOTE>
+    <H4>version 1.2 :</H4>
+    <UL>
+      <LI>Les commandes peuvent être maintenant présentées dans les deux langues</LI>
+    </UL>
+  </BLOCKQUOTE>
+  <HR>
+  <H2>Code source fourni</H2>
+  <P>Ce composant est fourni en version compilée, mais vous trouverez le code source dans le dossier <I class="fileAndFolder">&quot;SOURCES&quot;</I> à l'intérieur du dossier du composant.</P>
+  <HR>
+  <H2>Forum</H2>
+  <P>Un forum  pour 4DPop est disponible à cette adresse : <A HREF="http://forums.4d.fr/Forum/FR/1467485/0/0" TITLE="4DPop Forum" TARGET="_blank">Forum 4DPop</A></P>
+</DIV>
+</BODY>
+</HTML>

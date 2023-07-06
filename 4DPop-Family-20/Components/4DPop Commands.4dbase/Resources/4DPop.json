@@ -1,0 +1,8 @@
+{
+  "name": ":xliff:4DPopToolName",
+  "media": "4DPop.png",
+  "handler": "_4DPopCommands",
+  "tools": {
+    "method": "commands"
+  }
+}

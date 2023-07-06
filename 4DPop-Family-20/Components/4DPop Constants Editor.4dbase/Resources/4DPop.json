@@ -1,0 +1,8 @@
+{
+  "name": "Constants",
+  "media": "4DPop.png",
+  "handler": "_4DPopConstants",
+  "tools": {
+    "method": "editor"
+  }
+}

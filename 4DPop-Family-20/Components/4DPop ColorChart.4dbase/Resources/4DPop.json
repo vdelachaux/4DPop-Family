@@ -1,0 +1,8 @@
+{
+  "name": ":xliff:ColorChart_ColorChart",
+  "media": "4DPop.png",
+  "handler": "_4DPopColorChart",
+  "tools": {
+    "method": "open"
+  }
+}

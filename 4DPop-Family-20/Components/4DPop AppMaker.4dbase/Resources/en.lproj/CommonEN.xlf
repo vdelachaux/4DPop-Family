@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- 
+   Translation file for 4D products.
+   Copyright (C) 2008 4D SAS.
+   This file is distributed under the same license as the 4D product package.
+-->
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+   <file datatype="x-STR#" original="undefined" product-version="v11" source-language="en" target-language="en">
+      <header>
+         <prop-group name="Xliff-Editor.4dbase">
+            <prop prop-type="version">1.0</prop>
+         </prop-group>
+         <note>The character "%" (out of a numerical context) is a meta-character that will be replaced (often by a numeric value) before the string is displayed</note>
+         <note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable's name and must not be localised</note>
+         <note>\r, \t and \n are meta-characters.</note>
+      </header>
+      <body>
+         <group id="79" resname="StandardMenus_1">
+            <trans-unit id="dGAkMBRMs2h3jtW5Pzs4AQ" resname="CommonMenuFile">
+               <source>File</source>
+               <target>File</target>
+            </trans-unit>
+            <trans-unit id="0lXIJ_0pSUydJehsDDEsSw" resname="CommonMenuQuit">
+               <source>Quit</source>
+               <target>Quit</target>
+            </trans-unit>
+            <trans-unit id="BL0qJs5SRYhE73lP1hfjSA" resname="CommonMenuEdit">
+               <source>Edit</source>
+               <target>Edit</target>
+            </trans-unit>
+            <trans-unit id="xoFtbWl37ZIrMbo8FL6DfQ" resname="CommonMenuMode">
+               <source>Mode</source>
+               <target>Mode</target>
+            </trans-unit>
+         </group>
+         <group resname="Messages">
+            <trans-unit id="slf+n_GIxNgavbtVb3Madg" resname="WarningReplaceFileOrFolder">
+               <source>An item named "{ItemName}" already exists in this location. Do you want to replace it with the one you're moving?</source>
+               <target>An item named "{ItemName}" already exists in this location. Do you want to replace it with the one you're moving?</target>
+            </trans-unit>
+            <trans-unit id="CEnzeL14WNScoW077u1hDw" resname="WarningDeleteFileOrFolder">
+               <source>Do you really want to delete "{ItemName}" element?</source>
+               <target>Do you really want to delete "{ItemName}" element?</target>
+            </trans-unit>
+            <trans-unit id="TjuTb3duakkzQ08OO7K50Q" resname="WarningDeleteSelectedItems">
+               <source>Do you really want to delete the selected elements?</source>
+               <target>Do you really want to delete the selected elements?</target>
+            </trans-unit>
+         </group>
+         <group resname="HelpAppleMenu_1">
+            <trans-unit id="ZhOxhuELfpVs34sE19a14Q" resname="HelpAppleTitle" translate="no">
+               <source>Aide 4D</source>
+            </trans-unit>
+         </group>
+         <group resname="CommonStyles">
+            <trans-unit id="ypyGnJUkrapiXgkTG9gduA" resname="CommonSize">
+               <source>Size</source>
+               <target>Size</target>
+            </trans-unit>
+            <trans-unit id="IFgRx_dQVYboK+bgOm0s9A" resname="CommonStyle">
+               <source>Style</source>
+               <target>Style</target>
+            </trans-unit>
+            <trans-unit id="asZFxUe6ywLi8xFboG0a8A" resname="CommonUnderline">
+               <source>Underline</source>
+               <target>Underline</target>
+            </trans-unit>
+            <trans-unit id="+Ju6wOJCpHPbvw0J8u_Jrg" resname="CommonItalic">
+               <source>Italic</source>
+               <target>Italic</target>
+            </trans-unit>
+            <trans-unit id="euLCzqXkXImeuGUlYb8MFw" resname="CommonBold">
+               <source>Bold</source>
+               <target>Bold</target>
+            </trans-unit>
+         </group>
+         <group id="131" resname="StandardMenus_2">
+            <trans-unit id="ndGGgpKJI3mBauQzZpe9Jg" resname="CommonMenuItemUndo">
+               <source>Undo</source>
+               <target>Undo</target>
+            </trans-unit>
+            <trans-unit id="WxgkxUceI1I7A5Tvx6lZZw" resname="CommonMenuItemCut">
+               <source>Cut</source>
+               <target>Cut</target>
+            </trans-unit>
+            <trans-unit id="RBs946x1uRd+XkXk3LbtmQ" resname="CommonMenuItemCopy">
+               <source>Copy</source>
+               <target>Copy</target>
+            </trans-unit>
+            <trans-unit id="nNV85wBh+6r_0ipzAe6pPw" resname="CommonMenuItemPaste">
+               <source>Paste</source>
+               <target>Paste</target>
+            </trans-unit>
+            <trans-unit id="GA+ydGXkb0OQmTO3OzI_Lg" resname="CommonMenuItemClear">
+               <source>Clear</source>
+               <target>Clear</target>
+            </trans-unit>
+            <trans-unit id="RVyHyCu3by5GY9FhFLj1ng" resname="CommonMenuItemSelectAll">
+               <source>Select All</source>
+               <target>Select All</target>
+            </trans-unit>
+            <trans-unit id="z9pjP3XeVOzzcMPt4awW9w" resname="CommonMenuItemShowClipboard">
+               <source>Show Clipboard</source>
+               <target>Show Clipboard</target>
+            </trans-unit>
+            <trans-unit id="+z_zosZyBxOsaRDcpekVJQ" resname="ObsoleteModeDesign">
+               <source>Design</source>
+               <target>Design</target>
+            </trans-unit>
+            <trans-unit id="QW53mjLp8hNT7dwhIvaK6A" resname="ObsoleteModeUser">
+               <source>User</source>
+               <target>User</target>
+            </trans-unit>
+            <trans-unit id="Cb9VZONVog4kjHwoWJcK4w" resname="ObsoleteModeCreatedMenu">
+               <source>Custom Menus</source>
+               <target>Custom Menus</target>
+            </trans-unit>
+            <trans-unit id="VQ0aajfGhcjAtrOGFkXw5g" resname="CommonMenuItemQuit">
+               <source>Quit</source>
+               <target>Quit</target>
+            </trans-unit>
+            <trans-unit id="FhdU3pO17fjg7+WRuopj6Q" resname="CommonMenuItemDesign">
+               <source>Return to Design mode</source>
+               <target>Return to Design mode</target>
+            </trans-unit>
+         </group>
+         <group id="407" resname="ExplorerLists">
+            <trans-unit id="9AW+kCpDll2UN_SB9pk3CA" resname="CommonNewEmptyForm">
+               <source>New empty form</source>
+               <target>New empty form</target>
+            </trans-unit>
+         </group>
+         <group id="1000" resname="StandardButtons">
+            <trans-unit id="HnkDKmFhevUG6Vv+gUIxNQ" resname="CommonOK">
+               <source>OK</source>
+               <target>OK</target>
+            </trans-unit>
+            <trans-unit id="ylKovE7TmWUkhucyn8+xpQ" resname="CommonCancel">
+               <source>Cancel</source>
+               <target>Cancel</target>
+            </trans-unit>
+            <trans-unit id="Hqjl+g237bjVKmji1n31Ag" resname="CommonRetry">
+               <source>Retry</source>
+               <target>Retry</target>
+            </trans-unit>
+            <trans-unit id="dMxm6ki628HhdViGFrjbKw" resname="CommonQuit">
+               <source>Quit</source>
+               <target>Quit</target>
+            </trans-unit>
+            <trans-unit id="TEDVYN77YbR6TVP9nyxOuA" resname="CommonAdd">
+               <source>Add</source>
+               <target>Add</target>
+            </trans-unit>
+            <trans-unit id="BHonukyjIVwx2uTne5AHjg" resname="CommonDelete">
+               <source>Delete</source>
+               <target>Delete</target>
+            </trans-unit>
+            <trans-unit id="qqMQ6U1yNzX56bAwBrdORQ" resname="CommonEdit">
+               <source>Edit</source>
+               <target>Edit</target>
+            </trans-unit>
+            <trans-unit id="ZpdsfNlcXKA2X9ckjskgSQ" resname="CommonDone">
+               <source>Done</source>
+               <target>Done</target>
+            </trans-unit>
+            <trans-unit id="Ua1nu96g3umEWmWMqhaf3w" resname="CommonApply">
+               <source>Apply</source>
+               <target>Apply</target>
+            </trans-unit>
+            <trans-unit id="rhi6ri1PkX6gi5wUxLIstw" resname="CommonLoadDial">
+               <source>Load...</source>
+               <target>Load...</target>
+            </trans-unit>
+            <trans-unit id="Av6W5Nrt4Ql0yCsjCodziQ" resname="CommonSaveDial">
+               <source>Save...</source>
+               <target>Save...</target>
+            </trans-unit>
+            <trans-unit id="xdNXT6opt8yFGAFCrURGCA" resname="CommonOrderBy">
+               <source>Order by</source>
+               <target>Order by</target>
+            </trans-unit>
+            <trans-unit id="mAg8kHAbtB9yDer2kRsaoQ" resname="CommonUse">
+               <source>Use</source>
+               <target>Use</target>
+            </trans-unit>
+            <trans-unit id="cUtzjRGa6kWhympJ+tTF2w" resname="CommonBack">
+               <source>&lt; Back</source>
+               <target>&lt; Back</target>
+            </trans-unit>
+            <trans-unit id="z+QyWnXrcbNeihKCTDxLOg" resname="CommonNext">
+               <source>Next &gt;</source>
+               <target>Next &gt;</target>
+            </trans-unit>
+            <trans-unit id="OCsKsHC_hubKVfrVDTPdvg" resname="CommonCreate">
+               <source>Create</source>
+               <target>Create</target>
+            </trans-unit>
+            <trans-unit id="aGBO5GUb6lrJCUtuKOYY+w" resname="CommonExportDial">
+               <source>Export...</source>
+               <target>Export...</target>
+            </trans-unit>
+            <trans-unit id="8dIBBR9XPbPu9CRxqVZHjA" resname="CommonPreview">
+               <source>Preview</source>
+               <target>Preview</target>
+            </trans-unit>
+            <trans-unit id="eMCDtbDzlx1+EK5y7kQFKw" resname="CommonRemove">
+               <source>Remove</source>
+               <target>Remove</target>
+            </trans-unit>
+            <trans-unit id="05QBCUQ+E4Ix83TwgmHPyg" resname="CommonOpen">
+               <source>Open</source>
+               <target>Open</target>
+            </trans-unit>
+            <trans-unit id="h73CD6mks4iOMUtrJYLROA" resname="CommonClose">
+               <source>Close</source>
+               <target>Close</target>
+            </trans-unit>
+            <trans-unit id="RlUaV10XXtFUYVBa802Kgg" resname="CommonExpandAll">
+               <source>Expand all</source>
+               <target>Expand all</target>
+            </trans-unit>
+            <trans-unit id="OVodit+Zi2gnp_8gfLLc+w" resname="CommonCollapseAll">
+               <source>Collapse all</source>
+               <target>Collapse all</target>
+            </trans-unit>
+            <trans-unit id="xGKt6c1ggPufEM6Td2fhcw" resname="CommonYes">
+               <source>Yes</source>
+               <target>Yes</target>
+            </trans-unit>
+            <trans-unit id="ao6BKm+67nhKUPNCsq1WPA" resname="CommonNo">
+               <source>No</source>
+               <target>No</target>
+            </trans-unit>
+            <trans-unit id="fFnUtt5QAWQq3i1RtiQx3Q" resname="CommonDuplicate">
+               <source>Duplicate</source>
+               <target>Duplicate</target>
+            </trans-unit>
+            <trans-unit id="KvSjRbd9sX7b_Dn40p4DNg" resname="CommonRename">
+               <source>Rename</source>
+               <target>Rename</target>
+            </trans-unit>
+            <trans-unit id="JR9KU_3GwXb8AStyUqnITw" resname="CommonPrint">
+               <source>Print</source>
+               <target>Print</target>
+            </trans-unit>
+            <trans-unit id="JslF+Lg4GrJgA9YEeyy23w" resname="CommonSelect">
+               <source>Select...</source>
+               <target>Select...</target>
+            </trans-unit>
+            <trans-unit id="9UnLNGU7ovbrN3GTsFKMYA" resname="CommonStop">
+               <source>Stop</source>
+               <target>Stop</target>
+            </trans-unit>
+            <trans-unit id="qFuef53fw7ahZmBdppcMzA" resname="CommonDontSaveDial">
+               <source>Don't Save</source>
+               <target>Don't Save</target>
+            </trans-unit>
+            <trans-unit id="14l6fdgiBGwIu4tJ6ohY_g" resname="CommonRestart">
+               <source>Restart</source>
+               <target>Restart</target>
+            </trans-unit>
+         </group>
+         <group resname="Labels">
+            <trans-unit id="k1On2oFDHxu23a2cw0SVKg" resname="FileInVolume">
+               <source>"{file}" in volume "{volume}"</source>
+               <target>"{file}" in volume "{volume}"</target>
+            </trans-unit>
+            <trans-unit id="JV5VA8gurYoxSV_L3CRyJQ" resname="ShowOnDisk">
+               <source>Show on disk</source>
+               <target>Show on disk</target>
+            </trans-unit>
+            <trans-unit id="03bd35_oEjQFq_oRSGpkcw" resname="CopyPath">
+               <source>Copy the path</source>
+               <target>Copy the path</target>
+            </trans-unit>
+            <trans-unit id="IkawbKu4tsfJcsPYZF+x4A" resname="MessageLabel">
+               <source>Message:</source>
+               <target>Message:</target>
+            </trans-unit>
+         </group>
+         <group resname="Characters">
+            <trans-unit id="ybXCoURHrgvnu9laQrIEUg" resname="CommonEllipse">
+               <source>…</source>
+               <target>…</target>
+            </trans-unit>
+            <trans-unit id="MBMSSJO_0R1+R9B0n8hp1g" resname="CommonQuote">
+               <source>"</source>
+               <target>"</target>
+            </trans-unit>
+            <trans-unit id="vzXdeF5LDRNwWzaN4a9e9A" resname="CommonApostrophe">
+               <source>'</source>
+               <target>'</target>
+            </trans-unit>
+         </group>
+      </body>
+   </file>
+</xliff>

@@ -1,0 +1,8 @@
+{
+  "name": "Schemas",
+  "media": "4DPop.png",
+  "handler": "_4DPopSql",
+  "tools": {
+    "method": "main"
+  }
+}

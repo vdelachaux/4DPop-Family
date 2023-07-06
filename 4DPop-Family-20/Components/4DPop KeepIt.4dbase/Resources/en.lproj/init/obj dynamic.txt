@@ -1,0 +1,1 @@
+(OBJECT Get pointer(Object named;"<caret/>"))->

@@ -1,0 +1,7 @@
+{
+  "name": "Snippet",
+  "media": "4DPop.png",
+  "handler": "_4DPopKeepIt",
+  "default": "list",
+  "onDrop": "onDrop"
+}

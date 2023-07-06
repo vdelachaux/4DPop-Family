@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--               
+Translation file.
+Copyright (C) 2007-2023    4D SAS.
+This file is distributed under the same license as the product package.
+-->
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+  <file datatype="plaintext" original="Undefined" source-language="en" target-language="en">
+    <header>
+      <prop-group name="4DPop XLIFF Pro">
+        <prop prop-type="version">3.0</prop>
+        
+      </prop-group>
+    </header>
+    <body>
+      <group resname="TEST GROUP">
+        <trans-unit id="726EDAD96CDF4A8B9189E1DDEC6B27A1" resname="no-translate with note" translate="no">
+          <source>www.4d.com</source>
+          <note>Main site URL</note>
+        </trans-unit>
+        <trans-unit id="two_id" resname="missingGermanTranslation">
+          <source>Missing German translation</source>
+          <target>Missing German translation</target>
+        </trans-unit>
+        <trans-unit id="9" resname="missingFrenchUnit">
+          <source>Missing French Unit</source>
+          <target>Missing French Unit</target>
+        </trans-unit>
+        <trans-unit id="637560D1352445B991967F6BB50D5215" resname="helloWorld with note">
+          <source>Hello World!</source>
+          <target>Hello World!</target>
+          <note>A "Hello, World!" program is a computer program that outputs or displays "Hello, World!" to the user.</note>
+        </trans-unit>
+        <trans-unit id="0B94AF98448241E5B86D6DC5F7255D2D" resname="NEW ELEMENT">
+          <source>Not the same resname as "new element"</source>
+          <target>Not the same resname as "new element"</target>
+        </trans-unit>
+        <trans-unit id="0B94AF98448241E5B86D6DC5F7255D2C" resname="new element">
+          <source>Not the same resname as "NEW ELEMENT"</source>
+          <target>Not the same resname as "NEW ELEMENT"</target>
+        </trans-unit>
+        <trans-unit d4:includeIf="win" id="AE9E027B8B36449CA278453223F9B1AF" resname="platformDependent">
+          <source>Windows string</source>
+          <target>Windows string</target>
+        </trans-unit>
+        <trans-unit d4:includeIf="mac" id="7D6678E5DE2145038F2F0338DF8C4634" resname="platformDependent" translate="macOS string">
+          <source>macOS string</source>
+          <target>macOS string</target>
+        </trans-unit>
+        <trans-unit id="62BFF83A354A4A83B1E1B0AA2D209790" resname="duplicateResname">
+          <source>Duplicate_1</source>
+          <target>Duplicate_1</target>
+        </trans-unit>
+        <trans-unit id="E89EE009E2D5458-2023E9CE64FFF78D410DA" resname="duplicateResname">
+          <source>Duplicate_2</source>
+          <target>Duplicate_2</target>
+        </trans-unit>
+      </group>
+      <group resname="Indexed strings">
+        <trans-unit id="sQx8qotbF99xnRneCxm8+A" resname="String_1">
+          <source>zz</source>
+          <target>zz</target>
+        </trans-unit>
+        <trans-unit id="yTyklc+LaB96xQrqtchVnA" resname="String_2">
+          <source>qq</source>
+          <target>qq</target>
+        </trans-unit>
+      </group>
+      
+      <group resname="Group 1">
+        <trans-unit id="gZ4XUQ0XolVVQ0wMQgyhQQ" resname="String 1">
+          <source>zz</source>
+          <target>zz</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+
+
+
+</xliff>

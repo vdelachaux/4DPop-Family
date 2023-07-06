@@ -1,0 +1,57 @@
+{
+	"application": {
+		"icon": "/.PRODUCT_RESOURCES/Images/WatchIcons/Watch_693.png"
+	},
+	"method": {
+		"icon": "/.PRODUCT_RESOURCES/Images/ObjectIcons/Icon_602.png",
+		"name": ".common_method"
+	},
+	"form": {
+		"icon": "/.PRODUCT_RESOURCES/Images/ObjectIcons/Icon_601.png",
+		"name": ".36;3"
+	},
+	"formMethod": {
+		"icon": "/.PRODUCT_RESOURCES/Images/ObjectIcons/Icon_602.png",
+		"name": ".common_formMethod"
+	},
+	"objectMethod": {
+		"icon": "/.PRODUCT_RESOURCES/Images/ObjectIcons/Icon_602.png",
+		"name": ".common_objectMethod"
+	},
+	"class": {
+		"icon": "/.PRODUCT_RESOURCES/Images/ObjectIcons/Icon_628.png"
+	},
+	"trigger": {
+		"icon": "/.PRODUCT_RESOURCES/Images/ObjectIcons/Icon_600.png",
+		"name": ".common_Trigger"
+	},
+	"find": {
+		"icon": "/.PRODUCT_RESOURCES/Images/WatchIcons/Watch_873.png"
+	},
+	"other": {
+		"icon": "/.PRODUCT_RESOURCES/Images/ObjectIcons/Icon_459.png"
+	},
+	"databaseMethod": {
+		"icon": "/.PRODUCT_RESOURCES/Images/ObjectIcons/Icon_622.png",
+		"methods" : [
+			".DatabaseMethodName_OnStartup",
+			".DatabaseMethodName_OnServerStartup",
+			".DatabaseMethodName_OnExit",
+			".DatabaseMethodName_OnServerShutdown",
+			".DatabaseMethodName_OnServerOpenConnection",
+			".DatabaseMethodName_OnWebConnection",
+			".DatabaseMethodName_OnServerCloseConnection",
+			".DatabaseMethodName_OnWebAuthentication",
+			".DatabaseMethodName_OnBackupStartup",
+			".DatabaseMethodName_OnBackupShutdown",
+			".DatabaseMethodName_OnDrop",
+			".DatabaseMethodName_OnSQLAuthentication",
+			".DatabaseMethodName_OnWebSessionClose",
+			".DatabaseMethodName_OnSystemEvents",
+			".DatabaseMethodName_OnHostDatabaseEvent",
+			".DatabaseMethodName_OnRESTAuthentication",
+			".DatabaseMethodName_OnMobileAppAuthentication",
+			".DatabaseMethodName_OnMobileAppAction"
+		]
+	}
+}

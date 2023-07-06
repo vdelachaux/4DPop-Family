@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+
+  <dict>
+    <key>CFBundleShortVersionString</key>
+    <string>20</string>
+    <key>CFBundleLongVersionString</key>
+    <string>20 (86)</string>
+    <key>NSHumanReadableCopyright</key>
+    <string>©4D SAS 2009-2023</string>
+    <key>CFBundleVersion</key>
+    <string>87</string>
+    <key>CFBundleName</key>
+    <string>4DPop ColorChart</string>
+    <key>CFBundleGetInfoString</key>
+    <string>20</string>
+    <key>CFBundleDisplayName</key>
+    <string>4DPop ColorChart</string>
+  </dict>
+
+</plist>

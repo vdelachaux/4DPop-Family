@@ -1,0 +1,53 @@
+/*Method with entry points*/
+/ ----------------------------------------------------
+// Project method : <method_name/> - (<database_name/>)
+// <keepit name="UID"/>
+// <keepit name="_created"/>
+// ----------------------------------------------------
+// Description:
+//
+// ----------------------------------------------------
+// Declarations
+C_TEXT($1)
+
+C_LONGINT($Lon_parameters)
+C_TEXT($Txt_entryPoint)
+
+If (False)
+	C_TEXT(<method_name/> ;$1)
+End if
+
+// ----------------------------------------------------
+// Initialisations
+$Lon_parameters:=Count parameters
+
+If (Asserted($Lon_parameters >= 1 ;"Missing parameter"))
+	
+	$Txt_entryPoint:=$1
+	
+Else
+	
+	ABORT
+	
+End if
+
+// ----------------------------------------------------
+Case of
+	//====================================
+	: ($Txt_entryPoint="<caret/>")
+	
+	
+	
+	
+	
+	//====================================
+Else
+	
+	ASSERT(False;"Unknown entry point: \""+$Txt_entryPoint+"\"")
+	
+	
+	//====================================
+End case
+
+// ----------------------------------------------------
+// End

@@ -1,0 +1,106 @@
+[
+  {
+    "char": "A",
+    "unicode": "0x0001F1E6"
+  },
+  {
+    "char": "B",
+    "unicode": "0x0001F1E7"
+  },
+  {
+    "char": "C",
+    "unicode": "0x0001F1E8"
+  },
+  {
+    "char": "D",
+    "unicode": "0x0001F1E9"
+  },
+  {
+    "char": "E",
+    "unicode": "0x0001F1EA"
+  },
+  {
+    "char": "F",
+    "unicode": "0x0001F1EB"
+  },
+  {
+    "char": "G",
+    "unicode": "0x0001F1EC"
+  },
+  {
+    "char": "H",
+    "unicode": "0x0001F1ED"
+  },
+  {
+    "char": "I",
+    "unicode": "0x0001F1EE"
+  },
+  {
+    "char": "J",
+    "unicode": "0x0001F1EF"
+  },
+  {
+    "char": "K",
+    "unicode": "0x0001F1F0"
+  },
+  {
+    "char": "L",
+    "unicode": "0x0001F1F1"
+  },
+  {
+    "char": "M",
+    "unicode": "0x0001F1F2"
+  },
+  {
+    "char": "N",
+    "unicode": "0x0001F1F3"
+  },
+  {
+    "char": "O",
+    "unicode": "0x0001F1F4"
+  },
+  {
+    "char": "P",
+    "unicode": "0x0001F1F5"
+  },
+  {
+    "char": "Q",
+    "unicode": "0x0001F1F6"
+  },
+  {
+    "char": "R",
+    "unicode": "0x0001F1F7"
+  },
+  {
+    "char": "S",
+    "unicode": "0x0001F1F8"
+  },
+  {
+    "char": "T",
+    "unicode": "0x0001F1F9"
+  },
+  {
+    "char": "U",
+    "unicode": "0x0001F1FA"
+  },
+  {
+    "char": "V",
+    "unicode": "0x0001F1FB"
+  },
+  {
+    "char": "W",
+    "unicode": "0x0001F1FC"
+  },
+  {
+    "char": "X",
+    "unicode": "0x0001F1FD"
+  },
+  {
+    "char": "Y",
+    "unicode": "0x0001F1FE"
+  },
+  {
+    "char": "Z",
+    "unicode": "0x0001F1FF"
+  }
+]

@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>4DPop AppMaker</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="../../Common/style.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="20" topmargin="20" marginwidth="20" marginheight="20">
+<div class="Section1"> </div>
+<div class="Section1" align="left">
+<hr>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <TR>
+    <TD width="100"><IMG src="../../Common/4d.png" border="0"></TD>
+    <TD valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="4" height="100%">
+        <TR>
+          <TD width="253"><H1>4DPop AppMaker</H1></TD>
+          <TD><IFRAME src="../../Components.html" frameborder="0" scrolling="no" align="middle" height="40" width="100%" NORESIZE="true"></IFRAME></TD>
+        </TR>
+        <TR>
+          <TD colspan="2"><IFRAME src="../../Common/Localisation.html" frameborder="0" scrolling="no" align="middle" height="40" width="100%" NORESIZE="true"></IFRAME></TD>
+        </TR>
+      </table></TD>
+  </TR>
+</table>
+<hr>
+<p>4DPop AppMaker est un outil d'aide à la génération d'application et/ou de composant. Il permet, après paramétrage, en un seul clic de générer votre application ou votre composant et d'effectuer un certain nombre de tâches fastidieuses et répétitives.</p>
+<hr>
+<h2>Installation</h2>
+<table width="100%" border="0" cellspacing="4" cellpadding="2">
+  <tr>
+    <td align="right" valign="top">1.</td>
+    <td>Créez un dossier &quot;<i>Components</i>&quot; à côté du fichier de structure de votre base (&quot;.4db&quot;)</td>
+  </tr>
+  <tr>
+    <td align="right" valign="top">2.</td>
+    <td>Placer le dossier &quot;<i>4DPop AppMAker.4dbase</i>&quot;* ou un alias de ce dernier dans le dossier &quot;<i>Components</i>&quot;</td>
+  </tr>
+  <tr>
+    <td align="right" valign="top">3.</td>
+    <td>Ouvrez votre base.</td>
+  </tr>
+  <tr>
+    <td align="right" valign="top">4.</td>
+    <td>Si le composant 4DPop est installé un nouveau bouton &quot;AppMaker&quot; se trouve dans la barre d'outils. Il permet de lancer la génération ou d'ouvrir le générateur afin de le paramétrer
+      <p><img src="Images/4DPopPalette.png" alt="" width="297" height="84" border="0"></p></td>
+  </tr>
+</table>
+<div class="Section1" align="left">
+  <p>*Sur Macintosh le composant est un package dont l'extension &quot;.4dbase&quot; n'est pas obligatoirement visible en fonction des réglages de vos préférences d'affichage.</p>
+  <hr>
+  <h2>Utilisation</h2>
+  <p>Un simple clic sur le bouton &quot;Appmaker&quot;  de la palette 4DPop lance la compilation et la génération de la base courante en prenant en compte les paramètres définis dans le projet courant (le fichier <span class="fileAndFolder">~/Base.4dbase/Preference/BuildApp/BuildApp.xml</span>).</p>
+  <p align="center"><img src="Images/run.png" width="414" height="150"></p>
+  <p>Si ce raccourci est déjà appréciable, le composant permet également d'automatiser plus de tâches que devons répéter avant et après chaque génération.</p>
+  <p>L'accès aux paramètres de <em>4DPop AppMaker</em> se fait par le menu associé au bouton de la palette (déployé par un clic  sur la flèche ou un clic long). Ce menu propose deux choix :</p>
+  <ul>
+    <li><span class="fileAndFolder"><b>Construire</b></span> équivalent du clic simple sur le bouton
+    <li><span class="fileAndFolder"><b>Paramètres…</b></span> qui affiche le dialogue principal du composant dont voici les différentes pages
+  </ul>
+  <table width="100%" height="3353" border="0" align="left" cellpadding="2" cellspacing="2">
+    <tr valign="top">
+      <td align="left" valign="top"><p>• La première page permet de lancer la génération lorsque les paramètres ont été modifiés.</p>
+        <p>Il suffit de cliquer sur le gros bouton, l'action est équivalente au clic simple sur le bouton de la palette.</p></td>
+      <td nowrap><img src="Images/page1.png" alt="" width="730" height="652" border="0"></td>
+    </tr>
+    <tr valign="top">
+      <td>• La deuxième page permet de modifier les clefs du fichier BuildApp.xml courant.
+        (<span class="fileAndFolder">~/Base.4dbase/Preference/BuildApp/BuildApp.xml</span>)
+        <p>Pour chaque clef listée à gauche est présenté sa description dans la partie supérieure droite et les icônes de la ou des plate-forme concernée(s). </p>
+        <p>Si le paramètre a un sens pour la plate-forme courante, il est possible de le modifier dans le panneau inférieur droit qui s'adapte au type de données à renseigner.</p>
+        <p>Si la clef ne concerne pas la plate-forme courante, les données sont affichées mais non modifiables comme le symbolise le cadenas affiché au niveau de la zone d'aide.</p>
+        <p>Les clefs renseignées sont soulignées.</p>
+        <p>Pour supprimer une clef, il faut  cliquer dessus en maintenant la touche Option sur Mac (Alt sur PC) enfoncée.</p>
+      <p>Reférence : <a href="http://doc.4d.com/4D-Cles-XML-BuildApplication-12.1/4D-Cles-XML-BuildApplication.100-564191.fr.html" target="_blank">4D Clés XML BuildApplication</a></p></td>
+      <td nowrap><img src="Images/page2.png" alt="" width="730" height="652" border="0"></td>
+    </tr>
+    <tr valign="top">
+      <td><p>• La page &quot;Préparatifs&quot; permet d'indiquer le nom d'une méthode de votre base qui sera exécutée avant la compilation et la génération. Cette méthode doit retourner <strong>Vrai</strong> pour que le processus de génération puisse continuer. Si la méthode retourne <strong>Faux</strong>, la génération est annulée. </p>
+        <p>Note : Pensez à déclarer cette méthode &quot;Partagée entre composants et base hôte&quot;. </p>
+        <p>Dans le tableau de couples clef/valeur vous déterminez qu'elles informations seront incluses dans le fichier <span class="fileAndFolder">infoplist.strings</span> qui sera généré dans tous les dossiers de langue de votre base. Sur Macintosh, ce fichier est utilisé conjointement au fichier <span class="fileAndFolder"><a href="http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjCTutorial/08Configuring/08Configuring.html" target="_blank" class="fileAndFolder">info.plist</a></span> situé à la racine du package. Ces deux fichiers assurent  l'affichage des informations du package.</p>
+        <div align="center">
+          <p><img src="Images/infos.png" alt="" width="480" height="474" border="0"></p>
+        </div></td>
+      <td nowrap><img src="Images/page3.png" alt="" width="730" height="652" border="0"></td>
+    </tr>
+    <tr valign="top">
+      <td>• La page de &quot;Finitions&quot; sert à indiquer les fichiers/dossiers qui seront copiés ou supprimés dans le package après génération par 4D. La génération faite par défaut par 4D copie le fichier &quot;mabase.4DC&quot; et le dossier &quot;resources&quot; mais ignore certains fichier parfois utiles que nous devons intégrer à la main comme le fichier &quot;mabase.htm&quot; pour le fichier d'aide ou bien le dossier &quot;Macros v2&quot; par exemble. De même le dossier &quot;resources&quot; est recopié dans sa totalité. Vous pouvez vouloir supprimer de la version distribué des fichiers ou dossiers qui ne concerne que la version de développement.
+        <p>Vous pouvez enfin, sur cette page, indiquer le nom d'une méthode de votre base qui sera lancée à la fin du processus de génération. Là encore, pensez à la déclarer &quot;Partagée entre composants et base hôte&quot; </p></td>
+      <td nowrap><img src="Images/page4.png" alt="" width="730" height="652" border="0"></td>
+    </tr>
+    <tr valign="top">
+      <td height="709">• La dernière page regroupe quelques options :
+        <ol>
+          <li><strong>Incrémenter le numéro de build</strong> (actif si un fichier info.plist est présent à côté du fichier structure de la base) : Si cette option est cochée, le composant va récupérer le numéro de compilation stocké dans la clef &quot;Bundle version&quot; du fichier info.plist, l'incrémenter d'une unité et le mettre à jour si la génération se déroule correctement. ce numéro est présenté (sur Macintosh) à côté du Nº de version dans la vue en liste du Finder :<br>
+            <img src="Images/liste.png" alt="" width="487" height="452" border="0">
+          <li><strong>Compresser le fichier source</strong> est une option qui place une version zippée du &quot;.4db&quot; dans un dossier &quot;SOURCES&quot; à la racine du dossier &quot;.4dbase&quot;. C'est la sauvegarde du fichier qui a été utilisé pour générer l'application ou le composant.
+          <li><strong>Supprimer le contenu spécifique Mac</strong> (actif sur Macintosh). Si cette option est cochée les fichiers invisibles, souvent gênant lors de la distribution sur PC, sont supprimés de l'application finale.
+            Cette option est ignorée quand la génération est lancée sur Windows.
+          <li><strong>Fermer cette fenêtre si aucune erreur</strong> permet de fermer automatiquement la fenêtre &quot;AppMaker&quot; lorsque la génération, lancée depuis la page 1, s'est correctement déroulée.
+          <li><strong>Révéler le fichier cible quand c'est fini</strong> permet d'ouvrir le dossier contenant l'application ou le composant généré.
+        </ol></td>
+      <td nowrap><p><img src="Images/page5.png" alt="" width="730" height="652" border="0"></p></td>
+    </tr>
+  </table>
+</div>
+<div class="Section1" align="left">
+<hr>
+  <h2>Méthode publiées</h2>
+  <p>Plusieurs méthodes sont publiées par le composant. Ce sont des utilitaires ou des points d'entrés destinés à être utilisés par les méthodes de votre bases qui sont exécutées avant et après la génération. </p>
+  <p>Elles seront décrites ultérieurement. En voici la liste.</p>
+  <ul>
+    <li><strong>APP_MAKER_Get_target_path</strong></li>
+    <li><strong>AppMaker_DELETE_FOLDER</strong></li>
+    <li><strong>AppMaker_DELETE_MAC_CONTENT</strong></li>
+    <li><strong>AppMaker_DUPLICATE_FOLDER</strong></li>
+    <li><strong>AppMaker_Get_infoPlistKey</strong></li>
+    <li><strong>AppMaker_SET_infoPlistKey</strong></li>
+    <li><strong>AppMaker_SET_BARBER</strong></li>
+    <li><strong>AppMaker_SET_MESSAGE</strong></li>
+  </ul>
+  <p><em>Note</em> : Il est préférable d'appeler ces méthodes grâce à le commande <strong>EXECUTER</strong> <strong>METHODE</strong>  afin de pouvoir supprimer le composant 4DPop AppMaker de votre base distribuée.</p>
+  <hr><h2>Code source fourni</h2>
+  <p>Ce composant est fourni en version compilée, mais vous trouverez le code source dans le dossier "SOURCES" à l'intérieur du dossier du composant.</p>
+</div>
+</body>
+</html>

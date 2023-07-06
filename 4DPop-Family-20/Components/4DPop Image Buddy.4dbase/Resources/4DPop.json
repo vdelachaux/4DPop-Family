@@ -1,0 +1,9 @@
+{
+  "name": ":xliff:ToolName",
+  "media": "4DPop.png",
+  "ondrop": "onDrop",
+  "handler": "_4DPopImageBuddy",
+  "tools": {
+    "method": "browser"
+  }
+}

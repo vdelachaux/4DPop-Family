@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--               
+Translation file.
+Copyright (C) 2007-2018 4D SAS.
+This file is distributed under the same license as the product package.
+-->
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+  <file datatype="plaintext" original="Undefined" source-language="en" target-language="fr">
+    <header>
+      <prop-group name="Xliff-Editor.4dbase">
+        <prop prop-type="version">2.0</prop>
+        <prop prop-type="resname-autofill">1</prop>
+      </prop-group>
+    </header>
+    <body>
+      <group resname="TEST GROUP">
+        <trans-unit id="1" resname="no-translate with note" translate="no">
+          <source>www.4d.com</source>
+          <note>Main site URL</note>
+        </trans-unit>
+        <trans-unit id="2" resname="missingGermanTranslation">
+          <source>Missing German translation</source>
+          <target state="new">Missing German translation</target>
+        </trans-unit>
+        <trans-unit id="9" resname="missingFrenchUnit">
+          <source>Missing French Unit</source>
+          <target state="new">Missing French Unit</target>
+        </trans-unit>
+        <trans-unit id="3" resname="helloWorld with note">
+          <source>Hello World!</source>
+          <target state="new">Hello World!</target>
+          <note>A "Hello, World!" program is a computer program that outputs or displays "Hello, World!" to the user.</note>
+        </trans-unit>
+        <trans-unit id="2" resname="NEW ELEMENT">
+          <source>Not the same resname as "new element"</source>
+          <target state="new">Not the same resname as "new element"</target>
+        </trans-unit>
+        <trans-unit id="4" resname="new element">
+          <source>Not the same resname as "NEW ELEMENT"</source>
+          <target state="new">Not the same resname as "NEW ELEMENT"</target>
+        </trans-unit>
+        <trans-unit d4:includeIf="win" id="3" resname="platformDependent">
+          <source>Windows string</source>
+          <target state="new">Windows string</target>
+        </trans-unit>
+        <trans-unit d4:includeIf="mac" id="9" resname="platformDependent" translate="macOS string">
+          <source>macOS string</source>
+          <target state="new">macOS string</target>
+        </trans-unit>
+        <trans-unit id="1" resname="duplicateResname">
+          <source>Duplicate_1</source>
+          <target state="new">Duplicate_1</target>
+        </trans-unit>
+        <trans-unit id="4" resname="duplicateResname">
+          <source>Duplicate_2</source>
+          <target state="new">Duplicate_2</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
