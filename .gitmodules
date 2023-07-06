@@ -1,6 +1,3 @@
-[submodule "4DPop-Image-Buddy"]
-	path = 4DPop-Image-Buddy
-	url = https://github.com/vdelachaux/4DPop-Image-Buddy
 [submodule "4DPop-Constants-Editor"]
 	path = 4DPop-Constants-Editor
 	url = https://github.com/vdelachaux/4DPop-Constants-Editor
