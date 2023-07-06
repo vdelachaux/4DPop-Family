@@ -1,6 +1,3 @@
-[submodule "4DPop-KeepIt"]
-	path = 4DPop-KeepIt
-	url = https://github.com/vdelachaux/4DPop-KeepIt
 [submodule "4DPop-Image-Buddy"]
 	path = 4DPop-Image-Buddy
 	url = https://github.com/vdelachaux/4DPop-Image-Buddy
