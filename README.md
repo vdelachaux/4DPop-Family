@@ -5,7 +5,7 @@
 
 All 4DPop components, which I maintain, are compiled and notarized in a single archive.
 
-## Installation v20+
+## Installation
 
 There's a folder for each version (e.g. **4DPop-Family-20** for the component version corresponding to **4D v20**+).
 
@@ -13,9 +13,10 @@ In each folder, you will find a subfolder `Components`, where all components are
 
 * Users of **Windows** or macOS on **Intel** processor can use the components located in the `Components` folder.
 
-* A **4DPop-Family-XX.dmg** file is available for macOS on **ARM** processor users, where are the _notarized components_.  
+* A **4DPop-Family-XX.dmg** file is available for macOS on **ARM** processor users, where are the _notarized components_.
 
-----
+Download the version corresponding to your version of 4D
+
 > 📌 You can also click on the `release` tag of each component below to access its latest version.
 
 ## Content
@@ -38,12 +39,6 @@ In each folder, you will find a subfolder `Components`, where all components are
 |[4DPop sqlSchemas](https://github.com/vdelachaux/4DPop-sqlSchemas)|![](https://img.shields.io/badge/macOS-notarized-green) |[![release](https://img.shields.io/github/v/release/vdelachaux/4DPop-sqlSchemas?include_prereleases)](https://github.com/vdelachaux/4DPop-sqlSchemas/releases/latest)|[![Build](https://github.com/vdelachaux/4DPop-sqlSchemas/actions/workflows/build.yml/badge.svg)](https://github.com/vdelachaux/4DPop-sqlSchemas/actions/workflows/build.yml)
 |[4DPop Window](https://github.com/vdelachaux/4DPop-Window)|![](https://img.shields.io/badge/macOS-notarized-green) |[![release](https://img.shields.io/github/v/release/vdelachaux/4DPop-Window?include_prereleases)](https://github.com/vdelachaux/4DPop-Window/releases/latest)|[![Build](https://github.com/vdelachaux/4DPop-Window/actions/workflows/build.yml/badge.svg)](https://github.com/vdelachaux/4DPop-Window/actions/workflows/build.yml)
 |[4DPop XLIFF-Pro](https://vdelachaux.github.io/4DPop-XLIFF-Pro)|![](https://img.shields.io/badge/macOS-notarized-green) |[![release](https://img.shields.io/github/v/release/vdelachaux/4DPop-XLIFF-Pro?include_prereleases)](https://github.com/vdelachaux/4DPop-XLIFF-Pro/releases/latest)|[![Build](https://github.com/vdelachaux/4DPop-XLIFF-Pro/actions/workflows/build.yml/badge.svg)](https://github.com/vdelachaux/4DPop-XLIFF-Pro/actions/workflows/build.yml)
-
-----
-
-### *Before v20*
-
-Download the version corresponding to your version of 4D
 
 ### 📌 **About 19R versions**.  
 >Due to a difference in the 4D compiler between the **19R5** and **19R6** releases, the [**R5 version of the components**](https://github.com/vdelachaux/4DPop-Family/releases/tag/v19R5) is only compatible with the **4D 19R5**.    
