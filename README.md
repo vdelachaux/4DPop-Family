@@ -57,4 +57,4 @@ Even if you are used to installing components in the "Components" folder of your
 2. Unzip the archive and copy the components you want to install into the "Components" folder next to 4D.exe or the one for your database.
 
 ## 📌 **About 19R versions**.  
->Due to a difference in the 4D compiler between the **19R5** and **19R6** releases, the [**R5 version of the components**](https://github.com/vdelachaux/4DPop-Family/releases/tag/v19R5) is only compatible with the **4D 19R5**. 
+>Due to a difference in the 4D compiler between the **19R5** and **19R6** releases, the **R5 version of the components** is only compatible with the **4D 19R5**. 
