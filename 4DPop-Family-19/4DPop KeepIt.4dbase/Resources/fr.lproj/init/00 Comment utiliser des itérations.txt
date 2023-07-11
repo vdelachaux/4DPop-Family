@@ -1,0 +1,5 @@
+/*Une itération permet de répeter une ligne de code
+et d'utiliser le compteur comme incrément*/
+
+//Example: declaration de 20 tvariables texte: vTEXT_1 to vTEXT_20
+<iteration 20/>C_TEXTE(vTEXT_<iteration/>)

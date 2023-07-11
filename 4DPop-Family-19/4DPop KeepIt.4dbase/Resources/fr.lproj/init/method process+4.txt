@@ -1,0 +1,83 @@
+/*Methode démarrant un nouveau process*/
+// ----------------------------------------------------
+// Project method: <method_name/>
+// Database: <database_name/>
+// <keepit name="UID"/>
+// <keepit name="_created"/>
+// ----------------------------------------------------
+// Description
+//
+// ----------------------------------------------------
+// Declarations
+C_TEXTE($1)
+
+C_ENTIER LONG($Lon_parameters)
+C_TEXTE($Txt_entryPoint)
+
+Si (Faux)
+	C_TEXTE(<method_name/> ;$1)
+Fin de si
+
+// ----------------------------------------------------
+// Initialisations
+$Lon_parameters:=Nombre de parametres
+
+Si ($Lon_parameters>=1)
+	
+	$Txt_entryPoint:=$1
+	
+Fin de si
+
+// ----------------------------------------------------
+Au cas ou
+	//___________________________________________________________
+	: (Longueur($Txt_entryPoint)=0)
+	
+	Au cas ou
+		//……………………………………………………………………
+		: (Methode appelee sur erreur=Nom methode courante)
+		
+		//Error handling manager
+		
+		//……………………………………………………………………
+		: (Methode appelee sur evenement=Nom methode courante)
+		
+		//Event manager
+		
+		//……………………………………………………………………
+	Sinon
+		
+		//This method must be executed in a unique new process
+		PASSER AU PREMIER PLAN(Nouveau process("<method_name/>";12*1024;"<method_name/>";"_run";*))
+		
+		//……………………………………………………………………
+	Fin de cas
+	
+	//___________________________________________________________
+	: ($Txt_entryPoint="_run")
+	//First launch of this method executed in a new process
+	<method_name/> ("_declarations")
+	<method_name/> ("_init")
+	//{
+	
+	//}
+	<method_name/> ("_deinit")
+	//___________________________________________________________
+	: ($Txt_entryPoint="_declarations")
+	
+	
+	//___________________________________________________________
+	: ($Txt_entryPoint="_init")
+	
+	
+	//___________________________________________________________
+	: ($Txt_entryPoint="_deinit")
+	
+	
+	//___________________________________________________________
+Sinon
+	
+	ASSERT(Faux;"Unknown entry Point ("+$Txt_entryPoint+")")
+	
+	//___________________________________________________________
+Fin de cas

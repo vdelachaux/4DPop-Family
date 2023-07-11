@@ -1,0 +1,9 @@
+/*Inclus le texte surligné de la méthode dans le code.
+
+Note: Cette macro doit être appelée avec le raccourci Cmd-Alt-$ (Cmd-€)
+*/
+Boucle ($Lon_i;1;Taille tableau(<selection/>);1)
+	
+	<selection/>{$Lon_i}:=<caret/>
+	
+Fin de boucle

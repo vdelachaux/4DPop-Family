@@ -1,0 +1,8 @@
+/*Exaemple de commentaire KeepIt.
+
+Tout ce qui est dans ce bloc sera ignoré au moment de l'extraction du contenu de la macro.
+
+Le premier bloc de commentaire trouvé est utilisé pour afficher la bulle d'aide dans la liste des items
+*/
+
+// Ceci est un commentaire 4D, il sera collé dans la méthode

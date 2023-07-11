@@ -1,0 +1,4 @@
+/*Sélectionnez cet item et copier le (Fichier > Copier) : Le résultat sera mis dans le presse-papiers*/
+//Vous vous appelez <ask message="Quel est votre prénom ?" type="text"/>
+//Vous avez <ask message="Quel est votre âge ?" type="integer"/> ans
+//Vous êtes un <ask message="Quel est votre genre ?" type="{homme;femme}"/>

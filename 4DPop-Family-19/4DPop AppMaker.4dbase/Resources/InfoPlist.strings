@@ -1,0 +1,6 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "4DPop AppMaker";
+CFBundleShortVersionString = "19 (233)";
+CFBundleGetInfoString = "19 (233)";
+NSHumanReadableCopyright = "© 4D SAS 2009-2021";

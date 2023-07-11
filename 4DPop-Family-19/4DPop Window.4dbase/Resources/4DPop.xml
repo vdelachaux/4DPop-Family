@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<tools name=":xliff:ToolName" popup="true" helptip=":xliff:ToolTip" picture="4DPop.png"
+    default="Tool_Default" initproc="4DPopWindow_init">
+
+    <tool method="Tool_Menu"/>
+
+</tools>

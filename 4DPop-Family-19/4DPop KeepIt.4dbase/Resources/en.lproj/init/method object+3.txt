@@ -1,0 +1,26 @@
+/*Template for object method*/
+// ----------------------------------------------------
+// Object method : <method_name/> - (<database_name/>)
+// <keepit name="UID"/>
+// <keepit name="_created"/>
+// ----------------------------------------------------
+// Declarations
+C_LONGINT($Lon_formEvent)
+
+// ----------------------------------------------------
+// Initialisations
+$Lon_formEvent:=Form event
+
+// ----------------------------------------------------
+Case of
+	
+	//______________________________________________________
+	: ($Lon_formEvent=<caret/>)
+	
+	//______________________________________________________
+Else
+	
+	<keepit name="_Unnecessary form event"/>
+	
+	//______________________________________________________
+End case

@@ -1,0 +1,17 @@
+//Copyright © 2009-2012 4DPop
+//La permission est donnée, gratuitement, à n'importe quelle personne d'obtenir une copie 
+//de ce logiciel et des fichiers de documentation associés (le "Logiciel"), d'utiliser le 
+//Logiciel sans restrictions, ce qui inclut sans limites le droit d'utiliser, copier, 
+//modifier, fusionner, publier, distribuer, sous-licencier et/ou vendre des copies du 
+//Logiciel, et de permettre aux personnes auxquelles le Logiciel est fourni de faire 
+//ainsi, avec les conditions suivantes :
+//
+//La notice de copyright ci-dessus et cette notice doivent être incluses dans toutes les 
+//copies ou portions substantielles du Logiciel.
+//
+//THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+//INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
+//PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+//LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT 
+//OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR 
+//OTHER DEALINGS IN THE SOFTWARE.
