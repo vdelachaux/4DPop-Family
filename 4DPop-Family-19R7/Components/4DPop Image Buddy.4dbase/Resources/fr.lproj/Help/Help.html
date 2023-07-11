@@ -1,0 +1,297 @@
+<HTML XMLNS:V="urn:schemas-microsoft-com:vml" XMLNS:O="urn:schemas-microsoft-com:office:office" XMLNS:W="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>4DPop Image Buddy</TITLE>
+<LINK href="../../Common/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style13 {font-size: 12px; font-weight: bold; font-family: Verdana, Arial, Helvetica, sans-serif; }
+.style15 {font-weight: bold}
+.style16 {
+	font-size: 12px;
+	font-weight: bold;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+<DIV CLASS="Section1"> </DIV>
+<DIV CLASS="Section1" ALIGN="left">
+  <HR>
+  <TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+    <TR>
+      <TD WIDTH="100"><IMG SRC="../../Common/4d.png" BORDER="0"></TD>
+      <TD VALIGN="middle"><TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="4" HEIGHT="100%">
+          <TR>
+            <TD WIDTH="244"><H1>4DPop<BR>
+                Image Buddy</H1></TD>
+            <TD></TD>
+          </TR>
+          <TR>
+            <TD COLSPAN="2"><IFRAME SRC="../../Common/Localisation.html" FRAMEBORDER="0" SCROLLING="no" ALIGN="middle" HEIGHT="40" WIDTH="100%" NORESIZE="true"></IFRAME></TD>
+          </TR>
+        </TABLE></TD>
+    </TR>
+  </TABLE>
+  <HR>
+  <P>4DPop Image Buddy est un outil destinés à la gestion des images situées dans le dossier &quot;Resources&quot; de la base en cours de développement ou de l'un de ses sous-dossier.</P>
+  <HR>
+  <H2>Installation du composant</H2>
+  <DIV CLASS="Section1" ALIGN="left">
+    <TABLE BORDER="0" ALIGN="center" CELLPADDING="2" CELLSPACING="4">
+      <TR>
+        <TD ALIGN="right" VALIGN="top">1.</TD>
+        <TD>Créez un dossier <span class="fileAndFolder">&quot;Components&quot;</span> à côté du fichier de structure de votre base (<span class="fileAndFolder">&quot;.4db&quot;</span>)</TD>
+      </TR>
+      <TR>
+        <TD ALIGN="right" VALIGN="top">2.</TD>
+        <TD>Placer le dossier <span class="fileAndFolder">&quot;4DPop Image Buddy.4dbase&quot;</span>* ou un alias de ce dernier dans le dossier &quot;Components&quot;</TD>
+      </TR>
+      <TR>
+        <TD ALIGN="right" VALIGN="top">3.</TD>
+        <TD>Ouvrez votre base.</TD>
+      </TR>
+      <TR>
+        <TD ALIGN="right" VALIGN="top">4.</TD>
+        <TD>Si le composant 4DPop est installé un nouveau bouton <span class="fileAndFolder">&quot;Image Buddy&quot; </span>se trouve dans la barre d'outils. Il permet d'ouvrir l'éditeur.
+          <P ALIGN="center"><IMG SRC="Images/4DPopPalette.png" ALT="" BORDER="0"></P>
+          <P>Si le composant 4DPop n'est pas installé il faut, pour lancer l'éditeur, sélectionner dans le menu <span class="fileAndFolder">&quot;Exécuter&quot;</span> la ligne <span class="fileAndFolder">&quot;Méthodes...&quot;</span> puis dans la liste des méthodes proposées sélectionner <span class="fileAndFolder">&quot;Pictures_Browser&quot;</span> et enfin cliquer sur le bouton <span class="fileAndFolder">&quot;Exécuter&quot;</span> (la méthode <span class="fileAndFolder">&quot;Pictures_Browser&quot;</span> peut également être appelée depuis toute méthode de la base hôte)</P></TD>
+      </TR>
+    </TABLE>
+    <P class="note">*Sur Macintosh, le composant est un package dont l'extension &quot;.4dbase&quot; n'est pas obligatoirement visible en fonction des réglages de vos préférences d'affichage.</P>
+    <P>Le composant affiche un &quot;Navigateur d'images&quot;</P>
+    <P ALIGN="center"><IMG SRC="Images/Editor.png" ALT="" WIDTH="483" HEIGHT="709" BORDER="0"></P>
+    <P></P>
+    <DIV CLASS="Section1" ALIGN="left">
+      <DIV CLASS="Section1" ALIGN="left">
+        <DIV CLASS="Section1" ALIGN="left">
+          <HR>
+          <H2>Fenêtre du navigateur</H2>
+          <P>L'éditeur comporte 4 parties de haut en bas :</P>
+          <H3>1. Liste des dossiers</H3>
+          <P>Cette liste reflète la hiérarchie du dossier <span class="fileAndFolder">&quot;Resources&quot;</span> de la base en cours de développement.<BR>
+            Elle est construite à l'ouverture de l'éditeur et peut être modifiée via le menu contextuel ou par glissé-déposé.<br>
+          un menu contextuel est disponible sur les éléments de cette liste.</P>
+          <TABLE BORDER="0" ALIGN="center" CELLPADDING="4" CELLSPACING="4">
+            <TR valign="top">
+              <TD VALIGN="top"><TABLE WIDTH="99%" BORDER="0" CELLPADDING="2" CELLSPACING="4">
+                  <TR>
+                    <TD WIDTH="21%" valign="top" nowrap class="Command4D"><span class="style13">Nouveau dossier...</span></TD>
+                    <TD width="79%" valign="top">Création d'un nouveau dossier dans le dossier &quot;Resources&quot; ou dans le dossier sélectionné.</TD>
+                  </TR>
+                  <TR>
+                    <TD valign="top" nowrap class="Command4D"><hr></TD>
+                    <TD VALIGN="top">&nbsp;</TD>
+                  </TR>
+                  <TR>
+                    <TD valign="top" nowrap class="Command4D"><span class="style13">Renommer...</span></TD>
+                    <TD VALIGN="top">Renomme le dossier sélectionné</TD>
+                  </TR>
+                  <TR>
+                    <TD valign="top" nowrap class="Command4D"><span class="style13">Dupliquer</span></TD>
+                    <TD valign="top">Duplique le dossier sélectionné. Ce dernier devient le dossier courant</TD>
+                  </TR>
+                  <TR>
+                    <TD valign="top" nowrap class="Command4D"><hr class="style15"></TD>
+                    <TD valign="top">&nbsp;</TD>
+                  </TR>
+                  <TR>
+                    <TD valign="top" nowrap class="Command4D"><span class="style13">Supprimer</span></TD>
+                    <TD valign="top">Supprimer le dossier sélectionné. Le contenu du dossier est d'abord supprimé</TD>
+                  </TR>
+                  <TR>
+                    <TD valign="top" nowrap class="Command4D"><hr></TD>
+                    <TD VALIGN="top">&nbsp;</TD>
+                  </TR>
+                  <TR>
+                    <TD valign="top" nowrap class="Command4D"><span class="style13">Montrer sur le disque</span></TD>
+                    <TD VALIGN="top">Ouvre le dossier sélectionné et affiche son contenu dans une fenêtre système.</TD>
+                  </TR>
+                  <TR>
+                    <TD valign="top" nowrap class="Command4D"><hr></TD>
+                    <TD valign="top">&nbsp;</TD>
+                  </TR>
+                  <TR>
+                    <TD valign="top" nowrap class="Command4D"><span class="style13">Importer les ressources &quot;PICT&quot; du fichier…</span></TD>
+                    <TD rowspan="3" valign="top"><p>Ces 3 outils de migration permettent de relire les anciennes ressources <span class="fileAndFolder">'PICT'</span> et <span class="fileAndFolder">'cicn'</span> ou les images de la bibliothèque et de les convertir en fichier au format '.png' dans le dossier sélectionné.<br>
+                      Les nouveaux fichiers sont créé dans le dossier sélectionné ou à la racine du dossier <span class="fileAndFolder">'Resources'</span> s'il n'y a pas de dossier courant.<br>
+                      Lors de l'importation de ressources <span class="fileAndFolder">'PICT'</span>,si des ressources <span class="fileAndFolder">'MASK'</span> (cf. documentation 2004) existent pour toutes ou parties des images importées<span class="fileAndFolder"></span>, celles-ci sont combinées au moment de la sauvegarde et le fichier résultant est créé avec une couche alpha et de la transparence. </p>                    </TD>
+                  </TR>
+                  <TR valign="top" class="Command4D">
+                    <TD nowrap><span class="style13">Importer les ressources &quot;cicn&quot; du fichier…</span></TD>
+                  </TR>
+                  <TR valign="top" class="Command4D">
+                    <TD nowrap><span class="style13">Importer les images de la bibliothèque</span></TD>
+                  </TR>
+                  <TR>
+                    <TD valign="top" nowrap class="Command4D"><hr></TD>
+                    <TD valign="top">&nbsp;</TD>
+                  </TR>
+                  <TR>
+                    <TD valign="top" nowrap class="Command4D"><span class="style13">Actualiser</span></TD>
+                    <TD valign="top"><p>Reconstruit la liste des images du dossier sélectionné. Si la touche majuscule est enfoncée, La liste des images est construite pour le dossier sélectionné et les sous-dossiers sans limitation de niveau.</p>                    </TD>
+                  </TR>
+              </TABLE></TD>
+            </TR>
+          </TABLE>
+          <P><strong>Note</strong> : Certains items ne sont pas disponibles pour le dossier racine ou en client-serveur.</P>
+          <P>Si vous déposez un fichier image depuis le bureau ou depuis la liste des images (cf. <I>infra</I>) sur un dossier, une copie de cette image est ajoutée dans le dossier cible.<BR>
+            Si vous déposez une image statique depuis un formulaire ou la bibliothèque d'image de 4D sur un dossier, après saisie de son nom, une image est ajoutée dans le dossier cible (au format 4pct).</P>
+          <H3>2. Liste des images</H3>
+          <P>La liste des images affiche les images du dossier sélectionné sous forme de vignettes.<BR>
+            La sélection d'une ou de plusieurs images se fait par clic éventuellement associé à la touche majuscule pour étendre la sélection de façon continue ou à la touche commande pour une sélection discontinue.<BR>
+            La navigation se fait avec les touches flèche haut, bas, gauche et droite.<BR>
+            Un menu contextuel est disponible en fonction de la sélection.</P>
+          <TABLE BORDER="0" ALIGN="center" CELLPADDING="4" CELLSPACING="4">
+            <TR valign="top">
+              <TD><IMG SRC="Images/ImageContext.png" ALT="" WIDTH="213" HEIGHT="239" BORDER="0"></TD>
+              <TD><TABLE WIDTH="100%" BORDER="0" CELLSPACING="4" CELLPADDING="2">
+                  <TR>
+                    <TD valign="top" class="Command4D"><span class="style16">Ouvrir</span></TD>
+                    <TD valign="top">Ouvre l'image sélectionnée avec le logiciel par défaut définie dans votre système.</TD>
+                  </TR>
+                  <TR>
+                    <TD valign="top" class="Command4D"><span class="style16">Renommer...</span></TD>
+                    <TD valign="top">Renomme l'image sélectionnée</TD>
+                  </TR>
+                  <TR>
+                    <TD valign="top" class="Command4D"><span class="style16">Dupliquer</span></TD>
+                    <TD valign="top">Duplique l'image sélectionnée.</TD>
+                  </TR>
+                  <TR>
+                    <TD valign="top" class="Command4D"><hr></TD>
+                    <TD valign="top">&nbsp;</TD>
+                  </TR>
+                  <TR>
+                    <TD valign="top" class="Command4D"><span class="style16">Copier</span></TD>
+                    <TD valign="top">Met l'image dans le presse-papiers, elle pourra être collée sur le bureau par exemple</TD>
+                  </TR>
+                  <TR>
+                    <TD valign="top" class="Command4D"><hr></TD>
+                    <TD valign="top">&nbsp;</TD>
+                  </TR>
+                  <TR>
+                    <TD valign="top" class="Command4D"><span class="style16">Transformer…</span></TD>
+                    <TD valign="top">Ouvre un dialogue de conversion (cf. <I>infra</I>)</TD>
+                  </TR>
+                  <TR>
+                    <TD valign="top" class="Command4D"><hr></TD>
+                    <TD valign="top">&nbsp;</TD>
+                  </TR>
+                  <TR>
+                    <TD valign="top" class="Command4D"><span class="style16">Supprimer</span></TD>
+                    <TD valign="top">Supprimer la ou les image(s) sélectionnée(s).</TD>
+                  </TR>
+              </TABLE></TD>
+            </TR>
+          </TABLE>
+          <P>Vous pouvez faire glisser une image vers un formulaire en cours d'édition : Un objet image de la bibliothèque est créé et automatiquement lié au fichier du dossier &quot;Resources&quot; (cf &quot;Référencement automatique des image&quot; dans le manuel &quot;4D v11 Mise à jour&quot;).<BR>
+            Vous pouvez également, depuis cette liste, déposer une image sur un éditeur, dans le dock ou la barre des tâches par exemple, pour l'ouvrir avec ce logiciel.</P>
+          <H3>3. Zone de prévisualisation et d'information</H3>
+          <P>Cette zone permet de visualisation affiche également le nom, la largeur, la hauteur et le poids de l'image sélectionnée.<BR>
+            Vous pouvez également faire glisser cette image vers l'éditeur de formulaire, un autre logiciel ou le bureau.</P>
+          <H3>4. Pied</H3>
+          <P>Cette zone comprend un bouton &quot;Action&quot; lié à un menu d'utilitaires (cf. <I>infra</I>), une zone de saisie permettant de filtrer les images affichée par leur nom et une zone d'informations indiquant le nombre d'images trouvée dans le dossier sélectionné.</P>
+          <DIV CLASS="Section1" ALIGN="left">
+            <DIV CLASS="Section1" ALIGN="left">
+              <DIV CLASS="Section1" ALIGN="left">
+                <DIV CLASS="Section1" ALIGN="left">
+                  <DIV CLASS="Section1" ALIGN="left">
+                    <HR>
+                    <H2>Transformer une image</H2>
+                    <TABLE ALIGN="center" CELLPADDING="0">
+                      <TR>
+                        <TD><IMG SRC="Images/Convert.png" ALT="" BORDER="0" LIVESRC="Images/Convert.tiff" WIDTH="570" HEIGHT="528"></TD>
+                        <TD ALIGN="left" VALIGN="top"><P ALIGN="left">Le dialogue de Transformation permet  :</P>
+                          <DIV ALIGN="left">
+                            <UL>
+                              <LI>
+                                <P>d'appliquer une transformation miroir</P>
+                              </LI>
+                              <LI>
+                                <P>de passer l'image en niveau de gris</P>
+                              </LI>
+                              <LI>
+                                <P>d'effectuer une réduction de taille</P>
+                              </LI>
+                              <LI>
+                                <P>de changer le type de l'image</P>
+                              </LI>
+                            </UL>
+                          </DIV></TD>
+                      </TR>
+                    </TABLE>
+                    <P>&nbsp;</P>
+                  </DIV>
+                </DIV>
+              </DIV>
+            </DIV>
+          </DIV>
+          <HR>
+          <H2>Utilitaires</H2>
+        </DIV>
+      </DIV>
+      <DIV ALIGN="center">
+        <table width="100%" border="0" align="center" cellpadding="8" cellspacing="0">
+          <tr valign="top">
+            <td width="37%"><div align="center"><img src="Images/ActionMenu.png" alt="" width="389" height="107" border="0"></div></td>
+            <td width="63%"><div align="left">
+              <p>Le menu associé au bouton action regroupe les utilitaires de migration décrit plus haut.</p>
+              </div>
+            <div align="left"></div></td>
+          </tr>
+        </table>
+      </DIV>
+      </DIV>
+    <DIV CLASS="Section1" ALIGN="left">
+      <HR>
+      <TABLE width="100%" border="1" cellpadding="4" cellspacing="0" bordercolor="#999999">
+        <TR>
+          <TD valign="top" nowrap><H3>Note  :</H3></TD>
+          <TD valign="top"><UL>
+            <LI>Vous pouvez ajouter des images à la racine du dossier <span class="fileAndFolder">&quot;Resources&quot;</span> sans ouvrir l'éditeur : Il suffit de déposer une image ou encore un ou plusieurs fichiers image sur l'icône de 4DPop Image Buddy dans la palette 4DPop.<BR>
+            
+            <LI>Vous pouvez dans le cadre d'une conversion faire glisser une image statique depuis un formulaire pour créer une image dans le dossier resources puis supprimer l'original et glisser l'image nouvellement créée dans le formulaire pour bénéficier des avantages du nouveau mécanisme de référencement automatique des images.<BR>
+            <LI>
+              <DIV ALIGN="left">Pour gagner de la place pour visualiser les images vous pouvez réduire la liste des dossiers grâce au séparateur. Si la zone de liste est trop petite, celle-ci est transformée en menu hiérarchique.</DIV>
+              <DIV ALIGN="center"><BR>
+                  <IMG SRC="Images/FolderMenu.png" ALT="" WIDTH="504" HEIGHT="74" BORDER="0"></DIV>
+              <BR>
+              La sélection d'un dossier se fait alors en dépliant ce menu. Dans cette configuration il n'est plus possible de déposer une image pour la copier dans le dossier &quot;Resources&quot;. Pour retrouver la liste des dossiers originelle, il suffit d'agrandir la zone.
+            </UL>
+            <UL>
+              <LI>De même la zone de prévisualisation peut être masquée en faisant glisser au maximum vers le bas le séparateur séparant cette zone de la liste des images.
+              <LI>La position des séparateurs et celle de la fenêtre du navigateur est mémorisée d'une session à l'autre (dans le fichier <span class="fileAndFolder">&quot;~/Preferences/4D/4dPop v11 preference.xml&quot;</span>).
+          </UL></TD>
+        </TR>
+      </TABLE>
+      <HR>
+      <DIV CLASS="Section1" ALIGN="left">
+        <DIV CLASS="Section1" ALIGN="left">
+          <H2>Client-Serveur</H2>
+          <P>En mode distant, Certaines opérations sur les dossiers sont pour le moment inactivées (supprimer, renommer et dupliquer) par contre lors de l'ajout ou de la suppression ou de la modification d'une image, celle-ci est transférée sur le serveur qui met à jour son dossier <span class="fileAndFolder">&quot;Resources&quot;</span> puis notifie les clients de la modification.</P>
+          <HR>
+          <H2>Quoi de neuf</H2>
+          <BLOCKQUOTE>
+            <H4>version 1.2 :</H4>
+            <UL>
+              <LI>Fonctionnement en Client/Serveur.</LI>
+              <LI>Mémorisation de la position de la fenêtre et de celle des séparateurs</LI>
+              <LI>Ajout du déposé d'image sur le bouton de la palette 4DPop</LI>
+              <LI>Correction de bugs</LI>
+            </UL>
+          </BLOCKQUOTE>
+          <HR>
+          <H2>Code source fourni</H2>
+          <P>Ce composant est fourni en version compilée, mais vous trouverez le code source dans le dossier <span class="fileAndFolder">&quot;SOURCES&quot;</span> à l'intérieur du dossier du composant.</P>
+          <HR>
+          <H2>Forum</H2>
+          <P>Un forum  pour 4DPop est disponible à cette adresse : <A HREF="http://forums.4d.fr/Forum/FR/1467485/0/0" TITLE="4DPop Forum" TARGET="_blank" class="Command4D">Forum 4DPop</A></P>
+          <P></P>
+        </DIV>
+      </DIV>
+    </DIV>
+  </DIV>
+</DIV>
+</BODY>
+</HTML>

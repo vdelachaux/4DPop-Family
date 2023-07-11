@@ -1,0 +1,11 @@
+$Lon_parameters:=Nombre de parametres
+
+Si (Asserted($Lon_parameters >= <ask message="Nombre de paramètres minimum ?" type="integer"/> ;"Missing parameter"))
+	
+	<caret/>
+	
+Sinon
+	
+	STOP
+	
+Fin de si

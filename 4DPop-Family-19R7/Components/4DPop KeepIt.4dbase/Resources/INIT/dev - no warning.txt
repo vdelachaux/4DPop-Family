@@ -1,0 +1,4 @@
+  //%W-518.1 - Pointer in COPY ARRAY
+  //%W-518.5 - Pointer in array declaration
+  //%W-518.7 - Using the function Undefined isn't advised
+  //%W-533.3 - Assumes that the array index is of type real

@@ -1,0 +1,27 @@
+%attributes = {"lang":"us"}
+$Lon_parameters:=Count parameters:C259
+
+If (Asserted:C1132($Lon_parameters>=<ask message="Number of requested parameters?" type="integer"/> ;"Missing parameter"))
+	
+	#_IF <ask message="\1"/>=0
+	<keepit name="comment - No parameter required"/>
+	#_ENDIF
+	#_IF <ask message="\1"/>>0
+	// Required parameters
+	<caret/>
+	
+	// Default values
+	
+	#_ENDIF
+	// Optional parameters
+	If ($Lon_parameters>=<ask message="\1+"/>)
+		
+		// <NONE>
+		
+	End if
+	
+Else
+	
+	ABORT:C156
+	
+End if

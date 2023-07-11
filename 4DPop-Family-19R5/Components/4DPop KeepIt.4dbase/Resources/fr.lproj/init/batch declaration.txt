@@ -1,0 +1,11 @@
+/*Déclaration en lot.
+
+Demande le nombre, le préfixe et le type de la variable
+puis construit le code approprié
+*/
+/*
+<ask message="Nombre de variables à déclarer :" type="integer"/>
+<ask message="Préfixe :" type="text"/>
+<ask message="Type :" type="{Blob;Booleen;Date;Entier long;Heure;Image;Pointeur;Reel;Texte}"/>
+*/
+<iteration count="<ask message="\1"/>"C_<ask message="\3"/>(<ask message="\2"/><iteration/>)

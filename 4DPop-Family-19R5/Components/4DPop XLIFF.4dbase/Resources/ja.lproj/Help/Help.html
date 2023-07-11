@@ -1,0 +1,439 @@
+<HTML>
+
+	<HEAD>
+		<TITLE>4DPop Xliff</TITLE>
+		<META http-equiv="content-type" content="text/html;charset=utf-8">
+<LINK href="../../Common/style.css" rel="stylesheet" type="text/css">
+	</HEAD>
+
+	<BODY leftmargin="20" marginheight="20" marginwidth="20" topmargin="20">
+		<DIV class="Section1" align="left">
+			<HR>
+			<TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+				<TR>
+					<TD width="100"><IMG src="../../Common/4d.png" border="0"></TD>
+					<TD valign="middle">
+						<TABLE width="100%" border="0" cellspacing="0" cellpadding="4" height="100%">
+							<TR>
+								<TD>
+								  <H1>4DPop XLIFF</H1>
+							  </TD>
+							  <TD>
+									
+								</TD>
+							</TR>
+							<TR>
+								<TD colspan="2">
+									<IFRAME src="../../Common/Localisation.html" frameborder="0" scrolling="no" align="middle" height="40" width="100%" NORESIZE="true"></IFRAME>
+								</TD>
+							</TR>
+						</TABLE>
+					</TD>
+				</TR>
+			</TABLE>
+			<HR>
+			<P>4DPop XLIFF はデータベースをローカライズするために使用する <A href="http://www.oasis-open.org/committees/xliff/documents/xliff-20020415.htm">XLIFF</A> ファイルを管理するために使用します。このデータベースはSTR#やTEXTリソースをXLIFF標準に変換する作業を簡単にします。</P>
+			<DIV class="Section1" align="left">
+				<DIV class="Section1" align="left">
+					<P>コンポーネントとして使用すれば、4DPop XLIFFはデータベース開発中のローカライズファイルを管理します。</P>
+					<P>スタンドアロンデータベースとして使用すれば、エディタは作業フォルダとして指定したフォルダを管理します。</P>
+					<P></P>
+				</DIV>
+			</DIV>
+			<H2>インストール</H2>
+			<DIV class="Section1" align="left">
+				<TABLE width="100%" border="0" cellspacing="4" cellpadding="2">
+					<TR>
+						<TD align="right" valign="top">1.</TD>
+						<TD>データベースのストラクチャファイル (&quot;.4db&quot;) と同階層に  &quot;<I>Components</I>&quot; フォルダを作成します。</TD>
+					</TR>
+					<TR>
+						<TD align="right" valign="top">2.</TD>
+						<TD>&quot;<I>4DPop XLIFF.4dbase</I>&quot;* フォルダまたはそのエイリアスを &quot;<I>Components&quot;</I> フォルダに置きます。</TD>
+					</TR>
+					<TR>
+						<TD align="right" valign="top">3.</TD>
+						<TD>データベースを開きます。</TD>
+					</TR>
+					<TR>
+						<TD align="right" valign="top">4.</TD>
+						<TD>&quot;<I>4DPop&quot;</I>コンポーネントを使用している場合、&quot;xliff&quot; ツールはパレットに表示され、クリックすればエディタが表示されます。
+						  <P><IMG src="Images/4DPopPalette.png" alt="" height="68" width="428" border="0"></P>
+							<P>&quot;<I>4DPop&quot;</I> コンポーネントがインストールされていない場合、ツールを開くためには <EM>&quot;実行&quot;</EM> メニューの <EM>&quot;メソッド...&quot;</EM> を選択し、<EM>&quot;xliff_EDITOR&quot;</EM> を選択して &quot;実行&quot;ボタンをクリックします。</P>
+					  </TD>
+					</TR>
+				</TABLE>
+				<P><FONT size="-1">*Macintoshでは、コンポーネントは拡張子が &quot;.4dbase&quot; のコンポーネントです。</FONT></P>
+				<P align="center"><IMG src="Images/editorMac.png" alt="" width="477" height="465"></P>
+			  <P></P>
+				<H2>使用</H2>
+				<DIV class="Section1" align="left">
+					<P>4DPop Xliffをコンポーネントとして使用するか、独立したデータベースとして使用するかで、エディタを最初に開いた際の処理が異なります。</P>
+			  </DIV>
+				<UL>
+					<DIV class="Section1" align="left">
+						<LI>独立したデータベースとして使用する場合、作業フォルダを指定しなければなりません。これは後ほどエディタの環境設定で変更できます。
+						<LI>コンポーネントの場合、作業フォルダはデータベースの &quot;Resources&quot; 固定となります。
+					</DIV>
+				</UL>
+				<DIV class="Section1" align="left">
+					<P>いずれの場合もそのあとの動作は同じです。</P>
+					
+					<H2> Strategy</H2>
+					<P>エディタはアプリケーション開発時のローカライズを簡単にするという目的で作成されています:  </P>
+					<UL>
+						<LI>プロフェッショナルツールとして単純化されたインターフェースを提供。
+						<LI>統合されたツールとしてアクセス可能であり、かつ配布時には機能を削除できます。これは新しいコンポーネントアーキテクチャで可能となりました。
+						<LI>必要なファイルを作成し、メソッド江日田やフォームエディタ、ツールボックスでの利用がとても簡単にできます。
+						<LI>正規化されたファイルを生成することで、ローカライザにそのファイルを提供し、彼らは自身のxliffツールを使用して翻訳yを行うことができます。  
+					</UL>
+					<P>XLIFF標準の原理は、<I>source</I>で言語を指定し、その言語ですべての文字列を記述することにあります。この言語は参照言語となり、この言語から他の言語に翻訳されます。2番目の言語は<I>target</I> と呼ばれ、ダイアログや警告などのインターフェースで使用されます。</P>
+					<P>エディタは2つの言語を管理するよう作られています。<I>source</I> はしばしばEnglishであり、開発時の言語です。この言語から他の言語に翻訳をおこない、配布します。</P>
+					<P>最初に開かれるとき、エディタは作業ファイルの内容と、システム言語、およびアプリケーション言語を決定しようとします。この結果、例えば日本語システム上で、<I>source</I>がEnglish (en-us)、<I>target</I>が Japanese (ja) などの判断を行います。フランス語システム上のフランス版４Dの場合は、<I>source</I> も <I>target</I> もフランス語となります。後者のケースは通常あることで、元の言語がフランス語で書かれ、翻訳はフランス語からされることになります。</P>
+					<P>エディタの環境設定ダイアログでランゲージを変更できますが、4Dは起動時にカレント言語を決定し、それが開発の<I>target</I>言語になることを覚えておいてください。もしよくお分かりにならない場合は、4Dのドキュメントで、起動時にどのように言語が決定されるかを参照してください。この選択により、エディタの振る舞いが変わります。</P>
+					<UL>
+						<LI>1つの言語のみを選択した場合、エディタは一つの文字列の入力を要求します。そしてエディタがその文字列を複製します。保存後、翻訳者に渡すことのできるファイルが出来上がります。  (シナリオ 1)
+						<LI><I>source</I> と <I>target</I> 言語が異なる場合、2つの文字列を入力する必要があります。保存時、エディタはローカライズ済みのファイルとローカライズ用のファイルを作成します。  (シナリオ 2)
+					</UL>
+					<TABLE width="860" border="1" align="center" cellpadding="2" cellspacing="0" bordercolor="#999999">
+		  <TR height="18">
+							<TD align="center" valign="middle" width="99" height="18"></TD>
+							<TD align="center" valign="middle" width="51" height="18"><B><I>source</I></B></TD>
+							<TD align="center" valign="middle" width="42" height="18"><B><I>target</I></B></TD>
+							<TD align="center" valign="middle" nowrap width="174" height="18"><B>入力</B></TD>
+							<TD align="center" valign="middle" width="227" height="18"><B>Xliff ファイル</B></TD>
+							<TD align="center" valign="middle" width="227" height="18"><B>作成されるファイル</B></TD>
+						</TR>
+						<TR height="100">
+							<TD align="center" valign="middle" width="99" height="100"><B>シナリオ 1</B></TD>
+							<TD align="center" valign="middle" width="51" height="100">fr</TD>
+							<TD align="center" valign="middle" width="42" height="100">fr</TD>
+							<TD align="center" valign="middle" nowrap width="174" height="100"><I>source</I> = &quot;Annuler&quot;</TD>
+							<TD width="227" height="100"><CODE><FONT size="-1">&lt;trans-unit&gt;<BR>
+										     &lt;source&gt;Annuler&lt;/source&gt;<BR>
+										     &lt;target&gt;Annuler&lt;/target&gt;<BR>
+										&lt;/trans-unit&gt;</FONT></CODE></TD>
+							<TD width="227" height="100"><IMG src="Images/scenario1.png" alt="" width="158" height="67" border="0"></TD>
+						</TR>
+						<TR height="201">
+							<TD align="center" valign="middle" width="99" height="201"><B>シナリオ 2</B></TD>
+							<TD align="center" valign="middle" width="51" height="201">en</TD>
+							<TD align="center" valign="middle" width="42" height="201">fr</TD>
+							<TD align="center" valign="middle" nowrap width="174" height="201"><I>source</I> = &quot;Cancel&quot;
+								<P><I>target</I> = &quot;Annuler&quot;</P>
+							</TD>
+							<TD width="227" height="201"><CODE><FONT size="-1">&lt;trans-unit&gt;<BR>
+										     &lt;source&gt;Cancel&lt;/source&gt;<BR>
+										     &lt;target&gt;Annuler&lt;/target&gt;<BR>
+										&lt;/trans-unit&gt;</FONT></CODE>
+								<P><CODE><FONT size="-1">+</FONT></CODE></P>
+								<P><CODE><FONT size="-1">&lt;trans-unit&gt;<BR>
+											     &lt;source&gt;Cancel&lt;/source&gt;<BR>
+											     &lt;target&gt;Cancel&lt;/target&gt;<BR>
+											&lt;/trans-unit&gt;</FONT></CODE></P>
+							</TD>
+							<TD width="227" height="201"><IMG src="Images/scenario2.png" alt="" width="168" height="102" border="0"></TD>
+						</TR>
+					</TABLE>
+				  <P></P>
+					<H2>エディタウィンドウ</H2>
+					<P>インタフェースはプラットフォームとOSで異なります。しかし機能は同じです。</P>
+					<TABLE width="180" border="0" align="center" cellpadding="4" cellspacing="2">
+				  <TR valign="middle">
+							<TD><IMG src="Images/editorMac.png" alt="" width="330" align="absmiddle" border="0"></TD>
+							<TD><IMG src="Images/editorXP.png" alt="" width="330" align="absmiddle" border="0"></TD>
+							<TD><IMG src="Images/editorVista.png" alt="" width="330" border="0"></TD>
+						</TR>
+						<TR>
+							<TD align="center"><B><FONT size="-1">Mac OS X </FONT></B></TD>
+							<TD align="center"><FONT size="-1"><B>Windows XP</B></FONT></TD>
+							<TD align="center"><FONT size="-1"><B>Windows Vista</B></FONT></TD>
+						</TR>
+					</TABLE>
+				  <P>マスタウィンドウは5つのエリアに分けられています。</P>
+					<H3>1] ツールバー</H3>
+					<P>ツールバーから機能にアクセスできます。</P>
+					<P>Mac OS X:</P>
+					<P align="left"><IMG src="Images/toolbarMac.png" alt="" width="628" border="0"></P>
+	  <OL>
+						<LI>エディタおよびカレントデータベース環境設定
+						<LI>カレントのファイル情報
+						<LI>ファイル追加
+						<LI>グループ追加
+						<LI>文字リソース追加
+						<LI>ファイル内を検索
+						
+						<LI>ソースファイルを表示
+					</OL>
+					<P>Windows XP :</P>
+					<P><IMG src="Images/toolbarXP.png" alt="" width="628" height="25" border="0"></P>
+					<DIV class="Section1" align="left">
+						<DIV class="Section1" align="left">
+							<DIV class="Section1" align="left">
+								<OL>
+									<LI>新規 : ファイル、グループ、文字リソース
+									<LI>選択した要素を削除
+									<LI>エディタおよびカレントデータベース環境設定
+									<LI>カレントのファイル情報
+									<LI>ファイル内を検索
+									<LI>アクション (ステータスバーにボタンの説明)
+								</OL>
+								<P>Windows Vista :</P>
+								<P><IMG src="Images/toolbarVista.png" alt="" width="626" height="55" border="0"></P>
+								<DIV class="Section1" align="left">
+									<DIV class="Section1" align="left">
+										<DIV class="Section1" align="left">
+											<DIV class="Section1" align="left">
+												<DIV class="Section1" align="left">
+													<DIV class="Section1" align="left">
+														<OL>
+															<LI>新規 : ファイル、グループ、文字リソース
+															<LI>選択した要素を削除
+															<LI>カレントのファイル情報
+															<LI>アクション (ステータスバーにボタンの説明)
+															<LI>ファイル内を検索
+															<LI>エディタおよびカレントデータベース環境設定
+															</OL>
+												  </DIV>
+												</DIV>
+											</DIV>
+										</DIV>
+									</DIV>
+								</DIV>
+						  </DIV>
+						</DIV>
+					</DIV>
+					<H3>2] ファイルのリスト</H3>
+					<P>このエリアには、データベース言語に対応する &quot;.lproj&quot; フォルダのxliffファイルがリストされます。ファイルを選択すると、そのファイルがロードされ、ウィンドウの右側が更新されます。</P>
+					<P>リストの下には、XPでは固定で、他の場合は設定に従い、選択された要素の属性を表示するエリアがあります。</P>
+					<P align="center"><IMG src="Images/attributes.png" alt="" width="216" height="136" border="1"></P>
+				  <H3>3] Xliff カレントファイル (文字列リスト)</H3>
+					<P>このエリアには階層リストで、編集中のxliffファイルの <I>group</I> と <I>trans-unit</I> が表示されます。表示されるラベルは <I>resname</I> で右には要素IDが表示されます。要素を選択すると、編集エリアが更新されます。</P>
+					<P>文字列にメモが割り当てられている場合、アイコンでそのことが示されます。</P>
+					<P align="center"> <IMG src="Images/list.png" alt="" width="311" border="1"></P>
+				  <P>行をダブルクリックすると、メモを編集するウィンドウが表示されます。メモはウィンドウを閉じるときに保存されます。</P>
+					<P align="center"><IMG src="Images/note.png" alt="" border="1"></P>
+				  <H3>4] 要素</H3>
+					<P>このエリアで文字列リソースを追加します。</P>
+				</DIV>
+				<DIV class="Section1" align="center">
+					<TABLE width="122" border="0" cellspacing="0" cellpadding="4">
+<TR>
+							<TD>
+								<DIV align="center">
+									<IMG src="Images/Current_1.png" alt="" width="350" border="1"></DIV>
+							</TD>
+							<TD><IMG src="Images/Current_2.png" alt="" width="350" border="1"></TD>
+						</TR>
+						<TR align="center">
+							<TD>
+								<P><B><FONT size="-1">シナリオ</FONT><FONT size="-1"> 1 -  <I>source</I>言語 = <I>target</I></FONT></B>言語</P>
+							</TD>
+							<TD><B><FONT size="-1">シナリオ</FONT><FONT size="-1"> 2 - <I>source言語</I> ≠ <I>target言語</I></FONT></B></TD>
+						</TR>
+					</TABLE>
+			        </DIV>
+				<DIV class="Section1" align="left">
+					<P>&quot;Complete&quot;ボタンをクリックすると、 <I>resname</I> は <I>source</I> の内容と環境設定の設定に基づき、自動で設定されます。</P>
+					<H3>5] ステータスバー</H3>
+					<DIV class="Section1" align="left">
+						<DIV class="Section1" align="left">
+							<DIV class="Section1" align="left">
+								<P> ステータスバーには以下の機能がまとめられています。</P>
+							</DIV>
+						</DIV>
+					</DIV>
+					<TABLE width="100%" border="0" cellspacing="2" cellpadding="0">
+						<TR>
+							<TD align="center" valign="middle" width="80"><B>ラベル</B></TD>
+							<TD align="center" valign="middle" width="54"><B>OS X</B></TD>
+							<TD align="center" valign="middle" width="50"><B>XP</B></TD>
+							<TD align="center" valign="middle" width="49"><B>Vista</B></TD>
+							<TD align="center" valign="middle" width="608"><B>機能</B></TD>
+						</TR>
+						<TR>
+							<TD align="center" valign="middle" width="80"><B>スイッチ</B></TD>
+							<TD align="center" valign="middle" width="54"><IMG src="Images/switchMac.png" alt="" width="31" height="24" border="0"></TD>
+							<TD align="center" valign="middle" width="50"><IMG src="Images/switchXP.png" alt="" width="32" height="20" border="0"></TD>
+							<TD align="center" valign="middle" width="49"><IMG src="Images/switchVista.png" alt="" width="29" height="26" border="0"></TD>
+							<TD width="608"><I>エディタウィンドウ</I> を閉じて、<I>挿入パレット</I>を表示する。</TD>
+						</TR>
+						<TR>
+							<TD align="center" valign="middle" width="80"><B>属性</B></TD>
+							<TD align="center" valign="middle" width="54"><IMG src="Images/attributeMac.png" alt="" width="32" height="24" border="0"></TD>
+							<TD align="center" valign="middle" width="50">-</TD>
+							<TD align="center" valign="middle" width="49"><IMG src="Images/attributeVista.png" alt="" width="29" height="26" border="0"></TD>
+							<TD width="608">カレントの要素の属性の表示/非表示を切り替える。</TD>
+						</TR>
+						<TR>
+							<TD align="center" valign="middle" width="80"><B>標準</B></TD>
+							<TD align="center" valign="middle" width="54"><IMG src="Images/normeMac.png" alt="" width="32" height="24" border="0"></TD>
+							<TD align="center" valign="middle" width="50"><IMG src="Images/normeXP.png" alt="" width="32" height="20" border="0"></TD>
+							<TD align="center" valign="middle" width="49"><IMG src="Images/normeVista.png" alt="" width="29" height="26" border="0"></TD>
+							<TD width="608">サイト <I>www.oasis-open.org</I> を開く。</TD>
+						</TR>
+						<TR>
+							<TD align="center" valign="middle" width="80"><B>アクション</B></TD>
+							<TD align="center" valign="middle" width="54"><IMG src="Images/action.png" alt="" width="32" height="24" border="0"></TD>
+							<TD align="center" valign="middle" width="50"></TD>
+							<TD align="center" valign="middle" width="49"></TD>
+							<TD width="608">アクションにアクセスするコンテキストメニュー</TD>
+						</TR>
+					</TABLE>
+					<P>ボタン&quot;<B><I>アクション</I></B>&quot; には、現在利用可能なアクションがメニューとして表示されます。</P>
+					<TABLE width="100%" border="0" cellspacing="2" cellpadding="4">
+						<TR>
+							<TD width="310"><IMG src="Images/actionMenu.png" alt="" width="310" height="256" border="0"></TD>
+							<TD valign="top">&quot;<I><B>DTDを使用して検証</B></I>&quot; は検証を行い、発生した最初のエラーを返します。妥当なファイルはチェックマークが、妥当でないファイルには警告マークがつきます。
+							  <P>     <IMG src="Images/dtd.png" alt="" width="139" height="40" border="1"></P>
+								<P>&quot;<I><B>STR# リソースを読み込み </B></I>&quot; を使用してSTR#リソースを読み込むことができます。この機能を使用して、古いものから新しいローカライズのメカニズムに徐々に移行することが可能です。これを動作させるには、リソースを &quot;<I>Localized.rsrc</I>&quot; ファイルに置きます。 <I>source</I> とカレントの言語が異なる場合、それぞれのファイルを用意します。リソース番号を指定すると、それが有効か検証したのち、groupが作成されます。</P>
+						  </TD>
+						</TR>
+					</TABLE>
+					<P></P>
+					<H2>コピー/ペースト</H2>
+					<P>グループを選択して編集メニューからコピーを行うと、名前と定義がクリップボードに格納されます。そののち、編集メニューからペーストを選択すると、他のファイルやカレントのファイルにコピーできます。</P>
+					<P>文字リストを選択してコピーを選択すると、テキスト参照 (&quot;:xliff:<I>resname</I>&quot;) とその定義がクリップボードに格納されます。そののち、カレントファイルの他のグループや他のファイルにペーストできます。参照は入力エリアにペーストできます。</P>
+					
+					<H2>メソッドやフォームオブジェクトにxliff参照を挿入する</H2>
+					<H3>1] ドラッグ＆ドロップ</H3>
+					<P>xliff参照の挿入は、文字のリストからドラッグ＆ドロップで行うことができます。結果はドラッグされた要素 (グループまたは文字列) 、ドロップ先のウィンドウ、そしてモディファイアキーにより異なります:</P>
+					<TABLE width="100%" border="1" cellpadding="2" cellspacing="0" bordercolor="#999999">
+		  <TR>
+							<TD align="center" valign="middle" width="78">ドラッグされた要素</TD>
+							<TD align="center" valign="middle" width="160">フロントウィンドウ</TD>
+							<TD align="center" valign="middle">アクション</TD>
+						</TR>
+						<TR>
+							<TD align="center" valign="top" width="78">文字*</TD>
+							<TD align="center" valign="top" width="160">メソッドエディタ</TD>
+							<TD>ペーストされるテキスト: &quot;<B>Get localized string </B>(&quot;<I>Resname</I>&quot;)&quot;
+								<P>文字列が {..} を含む場合、挿入されるテキストは : &quot;<B>Replace string</B>(<B>Get localized string</B>(&quot;<I>Resname</I>&quot;);&quot;{...}&quot;; replacement)&quot;</P>
+							</TD>
+						</TR>
+						<TR>
+							<TD align="center" valign="top" width="78">文字*</TD>
+							<TD align="center" valign="top" width="160">フォームエディタ</TD>
+							<TD align="left" valign="top">
+								<TABLE width="100%" border="0" cellspacing="2" cellpadding="2">
+									<TR valign="top">
+										<TD align="right" valign="top" width="154">空のエリア</TD>
+										<TD valign="top">ローカライズされたスタティックテキストオブジェクトを作成 ( &quot;:xliff:<I>resname</I>&quot;)</TD>
+									</TR>
+									<TR valign="top">
+										<TD align="right" valign="top" width="154">ボタン</TD>
+										<TD valign="top">ボタンのタイトルにxliff参照を挿入 (:xliff:<I>resname</I>)</TD>
+									</TR>
+									<TR valign="top">
+										<TD align="right" valign="top" width="154">グループエリア</TD>
+										<TD valign="top">アリアのタイトルにxliff参照を挿入 (:xliff:<I>resname</I>)</TD>
+									</TR>
+								</TABLE>
+							</TD>
+						</TR>
+						<TR>
+							<TD align="center" valign="top" width="78">文字*</TD>
+							<TD align="center" valign="top" width="160">テキスト入力エリア
+								<P>例： メニュータイトルやメニューエディタの行</P>
+							</TD>
+							<TD align="left" valign="top">ペーストされるテキスト:
+								<P>&quot;:xliff:<I>Resname</I>&quot;</P>
+							</TD>
+						</TR>
+						<TR>
+							<TD align="center" valign="top" width="78">グループ</TD>
+							<TD align="center" valign="top" width="160">メソッドエディタ</TD>
+							<TD>ペーストされるテキスト: (グループから配列を作成)<BR>
+								<P>&quot;<B>ARRAY TEXT</B>($tTxt_Labels;N)<BR>
+									$tTxt_Labels{1}:=<B>Get localized string</B>(&quot;First <I>Resname</I>&quot;)<BR>
+									...<BR>
+									$tTxt_Labels{N}:=<B>Get localized string</B>(&quot;Nth <I>Resname</I>&quot;)</P>
+								<P><I>resnames</I> がインクリメント (<I>Resname</I>1, <I>Resname</I>2, ..., <I>Resname</I>N) する場合、ペーストされるテキストは:<BR>
+									<B> ARRAY TEXT </B>($tTxt_Labels;N)<BR>
+									<B>For</B> ($Lon_i;1;N;1)<BR>
+									$tTxt_Labels{$Lon_i}:=<B>Get localized string</B>(&quot;<I>Resname</I>&quot;+String($Lon_i))<BR>
+									<B>End For &quot;</B></P>
+						  </TD>
+						</TR>
+						<TR>
+							<TD align="center" valign="top" width="78">グループ
+								<P>+</P>
+								<P>Capital</P>
+							</TD>
+							<TD align="center" valign="top" width="160">メソッドエディタ</TD>
+							<TD>ペーストされるテキスト: (グループからメニューを作成)<BR>
+								<P>&quot;$a16_Menu:=<B>Create menu</B><BR>
+									<B>APPEND MENU ITEM</B>($a16_Menu;<B>Get localized string</B>(&quot;<I>Resname</I>&quot;))<BR>
+									...<BR>
+									<B>APPEND MENU ITEM</B>($a16_Menu;<B>Get localized string</B>(&quot;<I>Resname</I>&quot;))</P>
+								<P><I>resnames</I> がインクリメント (<I>Resname</I>1, <I>Resname</I>2, ..., <I>Resname</I>N) する場合、ペーストされるテキストは:<BR>
+									$a16_Menu:=<B>Create menu</B><BR>
+									<B>For</B> ($Lon_i;1;N;1)<BR>
+									<B>APPEND MENU ITEM</B>($a16_Menu;<B>Get localized string</B>(&quot;<I>Resname</I>&quot;+String($Lon_i))<BR>
+									<B>End For &quot;</B></P>
+						  </TD>
+						</TR>
+					</TABLE>
+				  <P>* コンテナ中のテキストは、ドラッグが開始された時の最前面のウィンドウタイプに基づいて決定されます。ドラッグ開始時にOption/Altキーを押すと、コードまたは参照どちらを挿入するか、動作を反転させることができます。</P>
+					<H3>2] コピー/ペースト</H3>
+					<P>文字リストの行を選択してコピーし、プロパティリストの入力エリア等にペーストできます。これはドラッグ＆ドロップではできません。クリップボードには &quot;:xliff:<I>Resname</I>&quot; の形式で格納されます。 </P>
+					<P></P>
+					<DIV class="Section1" align="left">
+						<DIV class="Section1" align="left">
+							<DIV class="Section1" align="left">
+								<H2>挿入パレット</H2>
+								<P>文字列を作成したら、カレントファイルの文字リストエリアとカレントファイルの選択メニューだけで構成された小さなパレットを使用できます。</P>
+								<P align="center"><IMG src="Images/Palette_2.png" alt="" width="250" height="278" border="1"></P>
+							  <P>ドラッグ＆ドロップとコピー/ペーストが、xliff参照を4Dエディタに挿入するために使用できます。パレットのファイルを変更することはできません。<BR>
+							  文字列リストをステータスバーの間にあるエリアは、カレントの言語で選択された文字列を表示します。</P>
+							</DIV>
+						</DIV>
+					</DIV>
+					<P></P>
+					<H2>環境設定</H2>
+					<P> エディタウィンドウやパレットの位置、最後に編集されたファイル、エディタ内のスプリッタの位置は自動で記録され、次回開いた際に再現されます。</P>
+					<P>エディタのアイコンから、エディタの環境設定にアクセスできます。</P>
+					<H3>1] 一般環境設定</H3>
+					<P align="center"><IMG src="Images/preferences_1.png" alt="" border="1"></P>
+				  <H4>a) カレントのリソースフォルダ</H4>
+					<P>スタンドアロンデータベースにおいて、作業フォルダを指定するために使用します。データベースがコンポーネントと使用されている場合、作業フォルダは常にデータベースのResourcesフォルダです。</P>
+					<DIV class="Section1" align="left">
+						<DIV class="Section1" align="left">
+							<DIV class="Section1" align="left">
+								<H4>b) デフォルト値</H4>
+								<P>使用するxliffのバージョン、XMLのエンコーディング、新規ファイルを作成する際のデフォルトコメントです。<BR>
+								  コメントは{...}で囲まれた参照をサポートします。これはファイル生成時に解釈されます:<BR>
+								  - {year} は年で置き換えられます。 <BR>
+								  - {month} は月で置き換えられます。 <BR>
+								  - {date} は日で置き換えられます。 <BR>
+								  - {database} はストラクチャファイル名で置き換えられます。 <BR>
+							  </P>
+						  </DIV>
+						</DIV>
+					</DIV>
+					<H3>2] カレントの基本パラメタ</H3>
+					<P align="center"><IMG src="Images/preferences_2.png" alt="" width="540" height="250" border="1"></P>
+				  <P>ここで<I>source</I> と <I>target</I> 言語を設定します。</P>
+					<H3>3] カレントのファイルパラメタ</H3>
+					<P align="center"><IMG src="Images/preferences_3.png" alt="" width="540" height="490" border="0"></P>
+				  <H4>a) カレントファイルの属性</H4>
+					<P>このページではカレントのファイルの属性 (xliffバージョン、エンコード、そしてコメント) を表示し、また変更できます。</P>
+					<H4>a) Complete</H4>
+					<P>カレントファイルの <I>resnames</I> の自動決定動作を定義します。これは &quot; Complete&quot; ボタンの動作を変更します。</P>
+					<H3>4] Auto completion parameters (interbase)</H3>
+					<P align="center"><IMG src="Images/preferences_4.png" alt="" width="540" height="250" border="1"></P>
+				  <P></P>
+					<P><B><I>注</I></B> : 環境設定は4Dフォルダの &quot;<I>4D XLIFF Editor preference.xml</I>&quot; ファイルに書き込まれます。&quot;<I>Preferences</I>&quot; フォルダにはデータベース固有の設定が格納されます。</P>
+					<DIV class="Section1" align="left">
+						<DIV class="Section1" align="left">
+							<H2>ソースコード</H2>
+						  <P>このコンポーネントはコンパイル版で提供されますが、コンポーネントフォルダ内の&quot;Sources&quot; フォルダにはソースコードが含まれています。</P>
+							<P></P>
+					  </DIV>
+					</DIV>
+				</DIV>
+			</DIV>
+		</DIV>
+	</BODY>
+
+</HTML>

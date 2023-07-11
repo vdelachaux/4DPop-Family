@@ -1,0 +1,53 @@
+/*Method à points d'entrée*/
+// ----------------------------------------------------
+// Project method : <method_name/> - (<database_name/>)
+// <keepit name="UID"/>
+// <keepit name="_created"/>
+// ----------------------------------------------------
+// Description:
+//
+// ----------------------------------------------------
+// Declarations
+C_TEXTE($1)
+
+C_ENTIER LONG($Lon_parameters)
+C_TEXTE($Txt_entryPoint)
+
+Si (Faux)
+	C_TEXTE(<method_name/> ;$1)
+Fin de si
+
+// ----------------------------------------------------
+// Initialisations
+$Lon_parameters:=Nombre de parametres
+
+Si (Asserted($Lon_parameters >= 1 ;"Missing parameter"))
+	
+	$Txt_entryPoint:=$1
+	
+Sinon
+	
+	STOP
+	
+Fin de si
+
+// ----------------------------------------------------
+Au cas ou
+	//====================================
+	: ($Txt_entryPoint="<caret/>")
+	
+	
+	
+	
+	
+	//====================================
+Sinon
+	
+	ASSERT(Faux;"Unknown entry Point: \""+$Txt_entryPoint+"\"")
+	
+	
+	//====================================
+Fin de cas
+
+// ----------------------------------------------------
+// End

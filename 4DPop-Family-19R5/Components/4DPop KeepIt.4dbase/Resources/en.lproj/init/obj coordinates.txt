@@ -1,0 +1,3 @@
+C_LONGINT($Lon_bottom;$Lon_left;$Lon_right;$Lon_top;$Lon_windowRef)
+
+OBJECT GET COORDINATES(*;"";$Lon_left;$Lon_top;$Lon_right;$Lon_bottom)

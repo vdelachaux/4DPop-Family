@@ -1,0 +1,2 @@
+C_POINTEUR($Ptr_subformContainer)
+$Ptr_subformContainer:=OBJET Lire pointeur(Objet conteneur sous formulaire)

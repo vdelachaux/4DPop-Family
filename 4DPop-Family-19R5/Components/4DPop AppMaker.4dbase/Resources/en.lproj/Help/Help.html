@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>4DPop AppMaker</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="../../Common/style.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="20" topmargin="20" marginwidth="20" marginheight="20">
+<hr>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <TR>
+    <TD width="100"><IMG src="../../Common/4d.png" border="0"></TD>
+    <TD valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="4" height="100%">
+        <TR>
+          <TD width="253"><H1>4DPop AppMaker</H1></TD>
+          <TD><IFRAME src="../../Components.html" frameborder="0" scrolling="no" align="middle" height="40" width="100%" NORESIZE="true"></IFRAME></TD>
+        </TR>
+        <TR>
+          <TD colspan="2"><IFRAME src="../../Common/Localisation.html" frameborder="0" scrolling="no" align="middle" height="40" width="100%" NORESIZE="true"></IFRAME></TD>
+        </TR>
+      </table></TD>
+  </TR>
+</table>
+<hr>
+<p>4DPop AppMaker is an helper tool for the generation of application and / or component. It allows, after setting, with just one click, generate your application or your component and perform a number of tedious, repetitive tasks.</p>
+<hr>
+<h2>Component installation</h2>
+<table width="100%" border="0" cellspacing="4" cellpadding="2">
+  <tr>
+    <td align="right" valign="top">1.</td>
+    <td>Create a folder &quot;Components&quot; beside the structure file of your database (&quot;.4db&quot;)</td>
+  </tr>
+  <tr>
+    <td align="right" valign="top">2.</td>
+    <td>Place the folder &quot;<i>4DPop AppMAker.4dbase</i>&quot;* or an alias of the folder into the &quot;Components&quot; folder</td>
+  </tr>
+  <tr>
+    <td align="right" valign="top">3.</td>
+    <td>Open your database.</td>
+  </tr>
+  <tr>
+    <td align="right" valign="top">4.</td>
+    <td><p>If the componant 4DPop is installed a new button &quot;AppMaker&quot; will appear in the tool bar.</p>
+    <p><img src="Images/4DPopPalette.png" alt="" width="297" height="84" border="0"></p></td>
+  </tr>
+</table>
+<div class="Section1" align="left">
+  <p>*On Macintosh, the component is a package with a &quot;.4dbase&quot; extension and could not be visible depending on your display settings.</p>
+  <hr>
+  <h2>Utilisation</h2>
+  <p>Click on the button &quot;AppMaker&quot; in the 4DPop's palette will start the compilation and generation of the current database taking into account the parameters defined in the current  project (the file <span class="fileAndFolder">~/myBase.4dbase/Preference/BuildApp/BuildApp.xml</span>).</p>
+  <p align="center"><img src="Images/run.png" alt="" width="414" height="150"></p>
+  <p>If this shortcut is already appreciable, the component also automates the tasks we have to repeat before and after each release.</p>
+  <p>You can access to parameters of &quot;4DPop AppMaker&quot; through the menu associated with the 4DPop palette's button (displayed by clicking on the arrow or with a long click). The menu offers two choices:</p>
+  <ul>
+    <li><span class="fileAndFolder"><b>Build</b></span> who is equivalent of a simple click on the button.
+    <li><span class="fileAndFolder"><b>Settings…</b></span> that displays the main dialog of the component. Here are the different pages:
+    </ul>
+  <table height="3353" border="0" align="left" cellpadding="2" cellspacing="2">
+    <tr valign="top">
+      <td align="left" valign="top"><p>• The first page allow to start the generation when the settings were changed.</p>
+      <p>Just click the big button, the action is equivalent to a single click on the button of the pallet.</p></td>
+      <td nowrap><img src="Images/page1.png" alt="" width="730" height="652" border="0"></td>
+    </tr>
+    <tr valign="top">
+      <td>• The second page allows you to fill the XML keys of the current file BuildApp.XML.
+        (<span class="fileAndFolder">~/myBase.4dbase/Preference/BuildApp/BuildApp.xml</span>)
+        <p>For each XML key listed on the left, the description is presented in the upper right part with an indication of the relevant platform(s) as icons . </p>
+        <p>If the parameter has a meaning for the current platform, it is possible to change its value in the lower right panel. </p>
+        <p>If the key is not relevant for the current platform, the data are displayed but not editable. A padlock symbol is displayed into the help area. </p>
+        <p>The XML keys are underlined if there is data. </p>
+        <p>To delete a key, you must click on the label holding the Option key on Mac (Alt on PC). </p>
+      <p>Reference : <a href="http://doc.4d.com/4Dv13/help/Title/en/page1296.html" target="_blank">4D Clés XML BuildApplication</a></p></td>
+      <td nowrap><img src="Images/page2.png" alt="" width="730" height="652" border="0"></td>
+    </tr>
+    <tr valign="top">
+      <td><p>• The page &quot;Preparations&quot; allow to enter the name of a method of your database that will be run before compilation and generation. This method must return <strong>True</strong> if the generation process can continue. If the method returns <strong>False</strong>, the generation is canceled. </p>
+        <p>Remember to declare your method &quot;Shared between components and host database&quot;. </p>
+        <p>The key/value pairs listed in the table allow you enter information which will be included in the file infoplist.strings (generated in all the language folders). On Macintosh, this file is used with the <span class="fileAndFolder">info.plist</span> file in the root of the package. These two files allow to display the informations about the package.</p>
+        <div align="center">
+          <p><img src="Images/infos.png" alt="" width="480" height="474" border="0"></p>
+      </div></td>
+      <td nowrap><img src="Images/page3.png" alt="" width="764" height="686" border="0"></td>
+    </tr>
+    <tr valign="top">
+      <td>• The page &quot;Finishes&quot; is used to specify files/folders to be copied or to be removed from the package after generation. The default generation done by 4D copies the file &quot;mabase.4DC&quot; and the folder &quot;resources&quot; but ignores some useful files. So we must integrate files by hand like the file &quot;mabase.htm&quot; for the help file or the folder &quot;Macros v2&quot; for exemble. Similarly the folder &quot;resources&quot; is entirety copied. You may want to delete from the released version the files or folders that only concerns the development stage.
+<p>You can also, on this page, enter the name of a method of your database to be launched at the end of the process. Again, remember to check&quot;Shared between components and host database&quot;</p></td>
+      <td nowrap><img src="Images/page4.png" alt="" width="764" height="686" border="0"></td>
+    </tr>
+    <tr valign="top">
+      <td height="709">• The last page is for setting some options: 
+        <ol>
+          <li><strong>Increment build number</strong> (active only if a file &quot;info.plist &quot; is next to the structure of the database): If this option is checked, the value of the key &quot;Bundle version&quot; of the info.plist file will be incremented by one and updated if the build is successful. This number is displayed (on Macintosh) next to the version number in list mode: <br>
+            <img src="Images/liste.png" alt="" width="487" height="452" border="0">
+          <li><strong>Compress the source file</strong> is an option that creates a zipped version of &quot;.4 db&quot; and puts it in a folder &quot;Sources&quot; at the root of the folder &quot;.4 dbase&quot;. This is the backup of the file that was used to build the application or the component. 
+          <li><strong>Remove specific Mac content</strong> (active only on Macintosh). If this option is selected invisible files, often unwanted for PC, are deleted from the final application. This option is ignored when the generation is launched on Windows. 
+          <li><strong>Close this window if no errors</strong> allows to automatically close the window &quot;AppMaker&quot; when the generation is successful. 
+          <li><strong>Reveal the target file when it's over</strong>. Check this to open the folder containing the application or the component generated.
+      </ol></td>
+      <td nowrap><p><img src="Images/page5.png" alt="" width="764" height="686" border="0"></p></td>
+    </tr>
+  </table>
+</div>
+<div class="Section1" align="left">
+<hr>
+  <h2>Shared methods</h2>
+  <p>Several methods are shared by the component. </p>
+  <p>These are utilities or entry points to be used by  your database (principaly in the methods that are executed before and after generation if any).</p>
+  <p>These methods  will be documented later. Here's a list:</p>
+  <ul>
+    <li><strong>APP_MAKER_Get_target_path</strong></li>
+    <li><strong>AppMaker_DELETE_FOLDER</strong></li>
+    <li><strong>AppMaker_DELETE_MAC_CONTENT</strong></li>
+    <li><strong>AppMaker_DUPLICATE_FOLDER</strong></li>
+    <li><strong>AppMaker_Get_infoPlistKey</strong></li>
+    <li><strong>AppMaker_SET_infoPlistKey</strong></li>
+    <li><strong>AppMaker_SET_BARBER</strong></li>
+    <li><strong>AppMaker_SET_MESSAGE</strong></li>
+  </ul>
+  <p><em>Note</em>: It is best to call these methods with the command <strong>EXECUTE METHOD</strong> in order to allow remove the component 4DPop AppMaker from your distributed database.</p>
+  <hr><h2>Source code provided</h2>
+  <p>This component is provided in compiled version but you can find the source code in the &quot;SOURCES&quot; folder that is located inside the component folder.
+  </p>
+</div>
+</body>
+</html>

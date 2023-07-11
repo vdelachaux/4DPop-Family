@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--               
+Translation file.
+This file is distributed under the same license as the product package.
+-->
+<xliff version="1.0">
+    <file datatype="x-STR#" original="Undefined" source-language="en" target-language="en">
+        <header>
+            <prop-group name="Xliff-Editor.4dbase">
+                <prop prop-type="resname-autofill">1</prop>
+                <prop prop-type="resname-prefix">Menus_</prop>
+                <prop prop-type="resname-separator"></prop>
+                <prop prop-type="version">1.0</prop>
+                <prop prop-type="separator">_</prop>
+                <prop prop-type="prefix">4D_</prop>
+            </prop-group>
+        </header>
+        <body>
+            <group resname="Buttons">
+                <trans-unit id="2" resname="SaveButton">
+                    <source>Save</source>
+                    <target>Save</target>
+                </trans-unit>
+                <trans-unit id="3" resname="CancelButton">
+                    <source>Cancel</source>
+                    <target>Cancel</target>
+                </trans-unit>
+                <trans-unit id="9" resname="OKButton">
+                    <source>OK</source>
+                    <target>OK</target>
+                </trans-unit>
+                <trans-unit id="31" resname="YesButton">
+                    <source>Yes</source>
+                    <target>Yes</target>
+                </trans-unit>
+                <trans-unit id="32" resname="NoButton">
+                    <source>No</source>
+                    <target>No</target>
+                </trans-unit>
+                <trans-unit id="99" resname="NewButton">
+                    <source>New</source>
+                    <target>New</target>
+                </trans-unit>
+                <trans-unit id="100" resname="EditionButton">
+                    <source>Edition</source>
+                    <target>Edition</target>
+                </trans-unit>
+                <trans-unit id="101" resname="SourceButton">
+                    <source>Source</source>
+                    <target>Source</target>
+                </trans-unit>
+                <trans-unit id="104" resname="ChangeButton">
+                    <source>Change…</source>
+                    <target>Change…</target>
+                </trans-unit>
+            </group>
+            <group resname="Messages">
+                <trans-unit id="7" resname="FileName">
+                    <source>File name:</source>
+                    <target>File name:</target>
+                </trans-unit>
+                <trans-unit id="10" resname="DeleteGroup">
+                    <source>Are you sure that you want to delete the group "{groupname}" ?</source>
+                    <target>Are you sure that you want to delete the group "{groupname}" ?</target>
+                </trans-unit>
+                <trans-unit id="11" resname="DeleteItem">
+                    <source>Are you sure that you want to delete the item "{itemname}" ?</source>
+                    <target>Are you sure that you want to delete the item "{itemname}" ?</target>
+                </trans-unit>
+                <trans-unit id="30" resname="AreYouSure">
+                    <source>Are you sure?</source>
+                    <target>Are you sure?</target>
+                </trans-unit>
+                <trans-unit id="33" resname="RevertConfirmation">
+                    <source>Discard changes to "{file}"?</source>
+                    <target>Discard changes to "{file}"?</target>
+                </trans-unit>
+                <trans-unit id="47" resname="xliff_AnErrorOccurredTheResourcesFileCannotBeOpened.">
+                    <source>An error occurred, the resources file cannot be opened.</source>
+                    <target>An error occurred, the resources file cannot be opened.</target>
+                </trans-unit>
+                <trans-unit id="48" resname="xliff_TheLocalized.rsrcFileShouldBeInThe{Folder}.lproj folder.">
+                    <source>To import resources "STR #", they must be contained in a file named "Localized.rsrc" iin the "{Folder}.lproj"  folder.</source>
+                    <target>To import resources "STR #", they must be contained in a file named "Localized.rsrc" iin the "{Folder}.lproj"  folder.</target>
+                </trans-unit>
+                <trans-unit id="49" resname="xliff_STR#ID{id}ResourceNotFound.">
+                    <source>STR# ID {id} resource not found.</source>
+                    <target>STR# ID {id} resource not found.</target>
+                </trans-unit>
+                <trans-unit id="10" resname="DeleteFile">
+                    <source>Are you sure that you want to delete the file "{filename}" ?</source>
+                    <target>Are you sure that you want to delete the file "{filename}" ?</target>
+                </trans-unit>
+            </group>
+            <group resname="Tips">
+                <trans-unit id="12" resname="TipAddFile">
+                    <source>New xliff file</source>
+                    <target>New xliff file</target>
+                </trans-unit>
+                <trans-unit id="13" resname="TipNewGroup">
+                    <source>Add a group in the current file</source>
+                    <target>Add a group in the current file</target>
+                </trans-unit>
+                <trans-unit id="14" resname="TipNewTransUnit">
+                    <source>Add a string to the current group</source>
+                    <target>Add a string to the current group</target>
+                </trans-unit>
+                <trans-unit id="15" resname="TipDelete">
+                    <source>Delete the current element</source>
+                    <target>Delete the current element</target>
+                </trans-unit>
+                <trans-unit id="16" resname="TipInfo">
+                    <source>Current file's info</source>
+                    <target>Current file's info</target>
+                </trans-unit>
+                <trans-unit id="17" resname="TipPreferences">
+                    <source>Preferences</source>
+                    <target>Preferences</target>
+                </trans-unit>
+                <trans-unit id="27" resname="TipToggleWindow">
+                    <source>Switch between the editor and the pallet</source>
+                    <target>Switch between the editor and the pallet</target>
+                </trans-unit>
+                <trans-unit id="33" resname="TipString">
+                    <source>Show or Hide the string box</source>
+                    <target>Show or Hide the string box</target>
+                </trans-unit>
+                <trans-unit id="97" resname="TipsShowOrHideTheAttributesBox">
+                    <source>Show or Hide the attributes box</source>
+                    <target>Show or Hide the attributes box</target>
+                </trans-unit>
+                <trans-unit id="113" resname="Tips_XLIFF10Specification">
+                    <source>XLIFF 1.0 Specification</source>
+                    <target>XLIFF 1.0 Specification</target>
+                </trans-unit>
+                <trans-unit id="114" resname="Tips_ShortCuts">
+                    <source>Short cuts for the current actions.</source>
+                    <target>Short cuts for the current actions.</target>
+                </trans-unit>
+            </group>
+            <group resname="Default Values">
+                <trans-unit id="5" resname="NewGroup">
+                    <source>Group {id}</source>
+                    <target>Group {id}</target>
+                </trans-unit>
+                <trans-unit id="6" resname="NewItem">
+                    <source>Item {id} </source>
+                    <target>Item {id} </target>
+                </trans-unit>
+                <trans-unit id="8" resname="NewFile">
+                    <source>Untitled.xlf</source>
+                    <target>Untitled.xlf</target>
+                </trans-unit>
+            </group>
+            <group resname="Menus">
+                <trans-unit id="18" resname="MenuFile">
+                    <source>File</source>
+                    <target>File</target>
+                </trans-unit>
+                <trans-unit id="19" resname="MenuNew">
+                    <source>New</source>
+                    <target>New</target>
+                </trans-unit>
+                <trans-unit id="20" resname="Menuxliff">
+                    <source>File...</source>
+                    <target>File...</target>
+                </trans-unit>
+                <trans-unit id="21" resname="MenuGroup">
+                    <source>Group</source>
+                    <target>Group</target>
+                </trans-unit>
+                <trans-unit id="22" resname="MenuLine">
+                    <source>Item</source>
+                    <target>Item</target>
+                </trans-unit>
+                <trans-unit id="23" resname="MenuSave">
+                    <source>Save</source>
+                    <target>Save</target>
+                </trans-unit>
+                <trans-unit id="28" resname="MenuRevert">
+                    <source>Revert to Saved</source>
+                    <target>Revert to Saved</target>
+                </trans-unit>
+                <trans-unit id="34" resname="Menus_FillIn">
+                    <source>Fill in</source>
+                    <target>Fill in</target>
+                </trans-unit>
+                <trans-unit id="35" resname="Menus_Preferences…">
+                    <source>Preferences…</source>
+                    <target>Preferences…</target>
+                </trans-unit>
+                <trans-unit id="50" resname="Menus_Rename">
+                    <source>Rename…</source>
+                    <target>Rename…</target>
+                </trans-unit>
+                <trans-unit id="51" resname="Menus_Delete">
+                    <source>Delete.…</source>
+                    <target>Delete.…</target>
+                </trans-unit>
+                <trans-unit id="52" resname="Menus_Informations">
+                    <source>Informations…</source>
+                    <target>Informations…</target>
+                </trans-unit>
+                <trans-unit id="53" resname="Menus_ImportSTR#Resource…">
+                    <source>Import STR# Resource…</source>
+                    <target>Import STR# Resource…</target>
+                </trans-unit>
+                <trans-unit id="54" resname="Menus_AddAgroup">
+                    <source>Add a group</source>
+                    <target>Add a group</target>
+                </trans-unit>
+                <trans-unit id="55" resname="Menus_ShowTheFile">
+                    <source>Show file</source>
+                    <target>Show file</target>
+                </trans-unit>
+                <trans-unit id="98" resname="Menus_ValidateUsingDTD">
+                    <source>Validate using the DTD</source>
+                    <target>Validate using the DTD</target>
+                </trans-unit>
+                <trans-unit id="102" resname="Menu_Editor">
+                    <source>Editor…</source>
+                    <target>Editor…</target>
+                </trans-unit>
+            </group>
+            <group resname="Labels">
+                <trans-unit id="24" resname="WindowEditor">
+                    <source>Xliff Editor</source>
+                    <target>Xliff Editor</target>
+                </trans-unit>
+                <trans-unit id="25" resname="WindowPalette" translate="no">
+                    <source>Xliff</source>
+                </trans-unit>
+                <trans-unit id="26" resname="SearchLabel">
+                    <source>Find...</source>
+                    <target>Find...</target>
+                </trans-unit>
+                <trans-unit id="29" resname="DontSave">
+                    <source>Don't save</source>
+                    <target>Don't save</target>
+                </trans-unit>
+                <trans-unit id="61" resname="ResourcesFolder">
+                    <source>Resources Folder</source>
+                    <target>Resources Folder</target>
+                </trans-unit>
+                <trans-unit id="62" resname="DefaultValues">
+                    <source>Default values</source>
+                    <target>Default values</target>
+                </trans-unit>
+                <trans-unit id="63" resname="UseTheDatabasesFolder">
+                    <source>Use the database's folder</source>
+                    <target>Use the database's folder</target>
+                </trans-unit>
+                <trans-unit id="64" resname="UseTheFolder">
+                    <source>Use the folder:</source>
+                    <target>Use the folder:</target>
+                </trans-unit>
+                <trans-unit id="67" resname="Comments">
+                    <source>Comments</source>
+                    <target>Comments</target>
+                </trans-unit>
+                <trans-unit id="68" resname="MetalWindow">
+                    <source>Metal Window</source>
+                    <target>Metal Window</target>
+                </trans-unit>
+                <trans-unit id="69" resname="Languages">
+                    <source>Languages</source>
+                    <target>Languages</target>
+                </trans-unit>
+                <trans-unit id="70" resname="General">
+                    <source>General</source>
+                    <target>General</target>
+                </trans-unit>
+                <trans-unit id="71" resname="Database">
+                    <source>Database</source>
+                    <target>Database</target>
+                </trans-unit>
+                <trans-unit id="95" resname="Attributes">
+                    <source>Attributes</source>
+                    <target>Attributes</target>
+                </trans-unit>
+                <trans-unit id="96" resname="Values">
+                    <source>Values</source>
+                    <target>Values</target>
+                </trans-unit>
+                <trans-unit id="104" resname="SelectTheTargetResourceFolder">
+                    <source>Select the Target Resource Folder.</source>
+                    <target>Select the Target Resource Folder.</target>
+                </trans-unit>
+                <trans-unit id="106" resname="UseGroupsResname">
+                    <source>Use group's resname</source>
+                    <target>Use group's resname</target>
+                </trans-unit>
+                <trans-unit id="107" resname="UsePrefix">
+                    <source>Use prefix:</source>
+                    <target>Use prefix:</target>
+                </trans-unit>
+                <trans-unit id="108" resname="SeparatingCharacter">
+                    <source>Separating character:</source>
+                    <target>Separating character:</target>
+                </trans-unit>
+                <trans-unit id="109" resname="EscapedCharacters">
+                    <source>Escaped characters</source>
+                    <target>Escaped characters</target>
+                </trans-unit>
+                <trans-unit id="110" resname="MaximumSizeOfTheResname">
+                    <source>Maximum size of the resname</source>
+                    <target>Maximum size of the resname</target>
+                </trans-unit>
+                <trans-unit id="111" resname="Advanced">
+                    <source>Advanced</source>
+                    <target>Advanced</target>
+                </trans-unit>
+                <trans-unit id="112" resname="Labels_Files">
+                    <source>Files</source>
+                    <target>Files</target>
+                </trans-unit>
+                <trans-unit id="115" resname="DragAndDropInForm">
+                    <source>Drag &amp; drop in form:</source>
+                    <target>Drag &amp; drop in form:</target>
+                </trans-unit>
+                <trans-unit id="124" resname="StyledText">
+                    <source>Styled text</source>
+                    <target>Styled text</target>
+                </trans-unit>
+            </group>
+            <group resname="4D STR# 42">
+                <trans-unit id="2" resname="xliff_If">
+                    <source>If</source>
+                    <target>If</target>
+                </trans-unit>
+                <trans-unit id="3" resname="xliff_Else">
+                    <source>Else</source>
+                    <target>Else</target>
+                </trans-unit>
+                <trans-unit id="4" resname="xliff_EndIf">
+                    <source>End if</source>
+                    <target>End if</target>
+                </trans-unit>
+                <trans-unit id="5" resname="xliff_CaseOf">
+                    <source>Case of</source>
+                    <target>Case of</target>
+                </trans-unit>
+                <trans-unit id="7" resname="xliff_EndCase">
+                    <source>End case</source>
+                    <target>End case</target>
+                </trans-unit>
+                <trans-unit id="8" resname="xliff_While">
+                    <source>While</source>
+                    <target>While</target>
+                </trans-unit>
+                <trans-unit id="9" resname="xliff_EndWhile">
+                    <source>End while</source>
+                    <target>End while</target>
+                </trans-unit>
+                <trans-unit id="10" resname="xliff_For">
+                    <source>For</source>
+                    <target>For</target>
+                </trans-unit>
+                <trans-unit id="11" resname="xliff_EndFor">
+                    <source>End for</source>
+                    <target>End for</target>
+                </trans-unit>
+                <trans-unit id="12" resname="xliff_Repeat">
+                    <source>Repeat</source>
+                    <target>Repeat</target>
+                </trans-unit>
+                <trans-unit id="13" resname="xliff_Until">
+                    <source>Until</source>
+                    <target>Until</target>
+                </trans-unit>
+            </group>
+            <group resname="Managed Languages">
+                <trans-unit id="56" resname="Languages_1">
+                    <source>English</source>
+                    <target>English</target>
+                </trans-unit>
+                <trans-unit id="57" resname="Languages_2">
+                    <source>French</source>
+                    <target>French</target>
+                </trans-unit>
+                <trans-unit id="58" resname="Languages_3">
+                    <source>German</source>
+                    <target>German</target>
+                </trans-unit>
+                <trans-unit id="59" resname="Languages_4">
+                    <source>Italian</source>
+                    <target>Italian</target>
+                </trans-unit>
+                <trans-unit id="60" resname="Languages_5">
+                    <source>Japanese</source>
+                    <target>Japanese</target>
+                </trans-unit>
+                <trans-unit id="61" resname="Languages_6">
+                    <source>Spanish</source>
+                    <target>Spanish</target>
+                </trans-unit>
+                <trans-unit id="62" resname="Languages_7">
+                    <source>Chinese</source>
+                    <target>Chinese</target>
+                </trans-unit>
+                <trans-unit id="125" resname="Languages_8">
+                    <source>Russian</source>
+                    <target>Russian</target>
+                </trans-unit>
+                <trans-unit id="126" resname="Languages_9">
+                    <source>Slovenian</source>
+                    <target>Slovenian</target>
+                </trans-unit>
+                <trans-unit id="128" resname="Languages_10">
+                    <source>Polish</source>
+                    <target>Polish</target>
+                </trans-unit>
+                <trans-unit id="129" resname="Languages_11">
+                    <source>Czech</source>
+                    <target>Czech</target>
+                </trans-unit>
+            </group>
+            <group resname="DO NOT TRANSLATE">
+                <trans-unit id="66" resname="DOCTYPE" translate="no">
+                    <source>xliff PUBLIC "-//XLIFF//DTD XLIFF//EN"
+"http://www.oasis-open.org/committees/xliff/documents/xliff.dtd"</source>
+                </trans-unit>
+                <trans-unit id="67" resname="XliffComment" translate="no">
+                    <source>
+Translation file.
+This file is distributed under the same license as the product package.</source>
+                </trans-unit>
+            </group>
+            <group resname="Standard Buttons">
+                <trans-unit id="1" resname="CommonOK">
+                    <source>OK</source>
+                    <target>OK</target>
+                </trans-unit>
+                <trans-unit id="2" resname="CommonCancel">
+                    <source>Cancel</source>
+                    <target>Cancel</target>
+                </trans-unit>
+                <trans-unit id="3" resname="CommonRetry">
+                    <source>Retry</source>
+                    <target>Retry</target>
+                </trans-unit>
+                <trans-unit id="4" resname="CommonQuit">
+                    <source>Quit</source>
+                    <target>Quit</target>
+                </trans-unit>
+                <trans-unit id="5" resname="CommonAdd">
+                    <source>Add</source>
+                    <target>Add</target>
+                </trans-unit>
+                <trans-unit id="6" resname="CommonDelete">
+                    <source>Delete</source>
+                    <target>Delete</target>
+                </trans-unit>
+                <trans-unit id="7" resname="CommonEdit">
+                    <source>Edit</source>
+                    <target>Edit</target>
+                </trans-unit>
+                <trans-unit id="9" resname="CommonDone">
+                    <source>Done</source>
+                    <target>Done</target>
+                </trans-unit>
+                <trans-unit id="10" resname="CommonApply">
+                    <source>Apply</source>
+                    <target>Apply</target>
+                </trans-unit>
+                <trans-unit id="11" resname="CommonLoadDial">
+                    <source>Load...</source>
+                    <target>Load...</target>
+                </trans-unit>
+                <trans-unit id="12" resname="CommonSaveDial">
+                    <source>Save...</source>
+                    <target>Save...</target>
+                </trans-unit>
+                <trans-unit id="13" resname="CommonOrderBy">
+                    <source>Order by</source>
+                    <target>Order by</target>
+                </trans-unit>
+                <trans-unit id="14" resname="CommonUse">
+                    <source>Use</source>
+                    <target>Use</target>
+                </trans-unit>
+                <trans-unit id="15" resname="CommonBack">
+                    <source>&lt; Back</source>
+                    <target>&lt; Back</target>
+                </trans-unit>
+                <trans-unit id="16" resname="CommonNext">
+                    <source>Next &gt;</source>
+                    <target>Next &gt;</target>
+                </trans-unit>
+                <trans-unit id="17" resname="CommonCreate">
+                    <source>Create</source>
+                    <target>Create</target>
+                </trans-unit>
+                <trans-unit id="18" resname="CommonExportDial">
+                    <source>Export...</source>
+                    <target>Export...</target>
+                </trans-unit>
+                <trans-unit id="19" resname="CommonPreview">
+                    <source>Preview</source>
+                    <target>Preview</target>
+                </trans-unit>
+                <trans-unit id="20" resname="CommonRemove">
+                    <source>Remove</source>
+                    <target>Remove</target>
+                </trans-unit>
+                <trans-unit id="22" resname="CommonOpen">
+                    <source>Open</source>
+                    <target>Open</target>
+                </trans-unit>
+                <trans-unit id="23" resname="CommonClose">
+                    <source>Close</source>
+                    <target>Close</target>
+                </trans-unit>
+                <trans-unit id="24" resname="CommonExpandAll">
+                    <source>Expand all</source>
+                    <target>Expand all</target>
+                </trans-unit>
+                <trans-unit id="25" resname="CommonCollapseAll">
+                    <source>Collapse all</source>
+                    <target>Collapse all</target>
+                </trans-unit>
+            </group>
+            <group id="36" resname="4D STR# 36">
+                <trans-unit id="1" resname="4D_FormMethod">
+                    <source>Form Method: </source>
+                    <target>Form Method: </target>
+                </trans-unit>
+                <trans-unit id="2" resname="4D_Trigger">
+                    <source>Trigger: </source>
+                    <target>Trigger: </target>
+                </trans-unit>
+                <trans-unit id="3" resname="4D_FormFrench" translate="no">
+                    <source>Formulaire : </source>
+                </trans-unit>
+                <trans-unit id="3" resname="4D_FormEnglish" translate="no">
+                    <source>Form: </source>
+                </trans-unit>
+                <trans-unit id="4" resname="4D_Subtable">
+                    <source>Subtable: </source>
+                    <target>Subtable: </target>
+                </trans-unit>
+                <trans-unit id="5" resname="4D_Method">
+                    <source>Method: </source>
+                    <target>Method: </target>
+                </trans-unit>
+                <trans-unit id="9" resname="4D_ObjectMethod">
+                    <source>Object Method: </source>
+                    <target>Object Method: </target>
+                </trans-unit>
+            </group>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,47 @@
+// ----------------------------------------------------
+// Trigger : <method_name/>
+// Database: <database_name/>
+// <keepit name="UID"/>
+// <keepit name="_created"/>
+// ----------------------------------------------------
+// Description:
+// <caret/>
+// ----------------------------------------------------
+// Declarations
+C_LONGINT($0)
+
+C_LONGINT($Lon_errorCode;$Lon_triggerEvent)
+
+// ----------------------------------------------------
+// Initialisations
+$Lon_triggerEvent:=Trigger event
+
+$Lon_errorCode:=0  // Assume the database request will be granted
+
+// ----------------------------------------------------
+Case of
+	
+	//________________________________________
+	: ($Lon_triggerEvent=On Saving New Record Event)
+	
+	// Perform appropriate action for the saving of a newly created record
+	
+	//________________________________________
+	: ($Lon_triggerEvent=On Saving Existing Record Event)
+	
+	// Perform appropriate actions for the saving of an already existing record
+	
+	//________________________________________
+	: ($Lon_triggerEvent=On Deleting Record Event)
+	
+	// Perform appropriate actions for the deletion of a record
+	
+	//________________________________________
+End case
+
+// ----------------------------------------------------
+// Return
+$0:=$Lon_errorCode
+
+// ----------------------------------------------------
+// End

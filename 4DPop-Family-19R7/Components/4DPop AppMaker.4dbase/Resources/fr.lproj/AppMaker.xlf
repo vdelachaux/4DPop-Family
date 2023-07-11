@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <!--                                                 
+Translation file for 4D products.
+Copyright(C)2006 4D SA.
+This file is distributed under the same license as the 4D product package.
+-->
+
+<xliff version="1.0">
+   <file datatype="x-STR#" original="undefined" source-language="en" target-language="fr">
+      <header>
+         <prop-group name="Xliff-Editor.4dbase">
+            <prop prop-type="version">1.0</prop>
+         </prop-group>
+      </header>
+      <body>
+         <group resname="Generation">
+            <trans-unit id="1" resname="4dpopAppmaker">
+               <source>4DPop AppMaker</source>
+               <target>4DPop AppMaker</target>
+            </trans-unit>
+            <trans-unit id="2" resname="CompilationAndGeneration">
+               <source>Compilation &amp; generation..</source>
+               <target>Compilation &amp; génération...</target>
+            </trans-unit>
+            <trans-unit id="3" resname="preparationOfCopy">
+               <source>Preparation of copy...</source>
+               <target>Préparation de la copie...</target>
+            </trans-unit>
+            <trans-unit id="4" resname="IncrementVersionNumber">
+               <source>Increment version number</source>
+               <target>Incrément du numéro de version</target>
+            </trans-unit>
+            <trans-unit id="20" resname="Preparation">
+               <source>Preparation…</source>
+               <target>Préparation…</target>
+            </trans-unit>
+            <trans-unit id="21" resname="copy">
+               <source>Copy: </source>
+               <target>Copie : </target>
+            </trans-unit>
+            <trans-unit id="22" resname="preparingForRemoval">
+               <source>Preparing for removal…</source>
+               <target>Préparation de la suppression...</target>
+            </trans-unit>
+            <trans-unit id="23" resname="remove">
+               <source>Remove: </source>
+               <target>Suppression de : </target>
+            </trans-unit>
+            <trans-unit id="24" resname="executionOfMethod">
+               <source>Execution of method "{methodName}""</source>
+               <target>Exécution de la méthode "{methodName}"</target>
+            </trans-unit>
+            <trans-unit id="25" resname="methodFailed">
+               <source>Method failed ({methodName})</source>
+               <target>Échec ({methodName})</target>
+            </trans-unit>
+            <trans-unit id="26" resname="browse">
+               <source>Browse…</source>
+               <target>Parcourir…</target>
+            </trans-unit>
+            <trans-unit id="65" resname="compression">
+               <source>Compression…</source>
+               <target>Compression…</target>
+            </trans-unit>
+            <trans-unit id="66" resname="deleteMacOsSpecificFiles">
+               <source>Delete Mac OS specific files</source>
+               <target>Suppression des fichiers Mac OS</target>
+            </trans-unit>
+            <trans-unit id="76" resname="theBuildIsAchieved">
+               <source>The build is achieved</source>
+               <target>La génération est terminée</target>
+            </trans-unit>
+         </group>
+         <group resname="Editor">
+            <trans-unit id="16" resname="alphaSize">
+               <source>The size of this value is limited to </source>
+               <target>La longueur de cette valeur est limitée à </target>
+            </trans-unit>
+            <trans-unit id="19" resname="ApplicationName">
+               <source>Application name:</source>
+               <target>Nom de l'application :</target>
+            </trans-unit>
+            <trans-unit id="6" resname="AreYouSureYouWantToClearThisKey?">
+               <source>Are you sure you want to clear this key?</source>
+               <target>Êtes vous certain de vouloir détruire cette clef ?</target>
+            </trans-unit>
+            <trans-unit id="10" resname="boolean">
+               <source>Value:</source>
+               <target>Valeur :</target>
+            </trans-unit>
+            <trans-unit id="33" resname="comment">
+               <source>Comments:</source>
+               <target>Commentaires :</target>
+            </trans-unit>
+            <trans-unit id="34" resname="company-name">
+               <source>Company:</source>
+               <target>Entreprise :</target>
+            </trans-unit>
+            <trans-unit id="13" resname="component">
+               <source>Selected components will be integrated in the application. For a component, they will be ignored.</source>
+               <target>Les composants sélectionnés seront intégrés dans l'application. Pour un composant, ils seront ignorés.</target>
+            </trans-unit>
+            <trans-unit id="31" resname="copyright">
+               <source>Copyright:</source>
+               <target>Copyright :</target>
+            </trans-unit>
+            <trans-unit id="32" resname="creator">
+               <source>Creator:</source>
+               <target>Créateur :</target>
+            </trans-unit>
+            <trans-unit id="53" resname="deleteSpecificMacContent">
+               <source>Delete specific Mac content</source>
+               <target>Supprimez le contenu spécifique Mac</target>
+            </trans-unit>
+            <trans-unit id="46" resname="Editor_closeThisWindowIfNoError">
+               <source>Close this window if no error</source>
+               <target>Fermez cette fenêtre si aucune erreur</target>
+            </trans-unit>
+            <trans-unit id="45" resname="Editor_compressZipTheSourceFile4Db">
+               <source>Compress (ZIP) the source file (.4DB)</source>
+               <target>Compresser (ZIP) le fichier source (.4DB)</target>
+            </trans-unit>
+            <trans-unit id="44" resname="Editor_incrementTheBuildNumber">
+               <source>Increment the build number</source>
+               <target>Incrémenter le numéro de build</target>
+            </trans-unit>
+            <trans-unit id="55" resname="Editorcopy">
+               <source>Copy:</source>
+               <target>Copier :</target>
+            </trans-unit>
+            <trans-unit id="56" resname="Editordelete">
+               <source>Delete:</source>
+               <target>Effacer :</target>
+            </trans-unit>
+            <trans-unit id="54" resname="EditormethodToRunAfterGeneration">
+               <source>Method to run after generation:</source>
+               <target>Methode à exécuter après la génération :</target>
+            </trans-unit>
+            <trans-unit id="43" resname="EditormethodToRunBeforeGeneration">
+               <source>Method to run before generation:</source>
+               <target>Methode à exécuter avant la génération :</target>
+            </trans-unit>
+            <trans-unit id="30" resname="false">
+               <source>False</source>
+               <target>Faux</target>
+            </trans-unit>
+            <trans-unit id="12.2" resname="file">
+               <source>File:</source>
+               <target>Fichier :</target>
+            </trans-unit>
+            <trans-unit id="35" resname="file-description">
+               <source>File Description:</source>
+               <target>Description :</target>
+            </trans-unit>
+            <trans-unit id="58" resname="File…">
+               <source>File…</source>
+               <target>Fichier…</target>
+            </trans-unit>
+            <trans-unit id="52" resname="Finishes">
+               <source>Finishes</source>
+               <target>Finitions</target>
+            </trans-unit>
+            <trans-unit id="11" resname="folder">
+               <source>Folder:</source>
+               <target>Dossier :</target>
+            </trans-unit>
+            <trans-unit id="59" resname="Folder…">
+               <source>Folder…</source>
+               <target>Dossier…</target>
+            </trans-unit>
+            <trans-unit id="36" resname="internal-name">
+               <source>Internal Name</source>
+               <target>Nom interne :</target>
+            </trans-unit>
+            <trans-unit id="7" resname="ip">
+               <source>IP Address:</source>
+               <target>Adresse IP :</target>
+            </trans-unit>
+            <trans-unit id="48" resname="keys">
+               <source>Keys</source>
+               <target>Clefs</target>
+            </trans-unit>
+            <trans-unit id="37" resname="legal-trademark">
+               <source>Legal Trademark:</source>
+               <target>Marques légales :</target>
+            </trans-unit>
+            <trans-unit id="15" resname="licences">
+               <source>Licences in the table below will be included in the application.</source>
+               <target>Les licences du tableau ci-dessous seront intégrées à l'application.</target>
+            </trans-unit>
+            <trans-unit id="28" resname="no-component">
+               <source>There is no component installed</source>
+               <target>Il n'y a pas de composant installé</target>
+            </trans-unit>
+            <trans-unit id="27" resname="no-plugin">
+               <source>There is no plugin installed</source>
+               <target>Il n'y a pas de plugin installé</target>
+            </trans-unit>
+            <trans-unit id="51" resname="Options">
+               <source>Options</source>
+               <target>Options</target>
+            </trans-unit>
+            <trans-unit id="13" resname="plugin">
+               <source>Selected plugins will be integrated in the application. For a component, they will be ignored.</source>
+               <target>Les plugins sélectionnés seront intégrés dans l'application. Pour un composant, ils seront ignorés.</target>
+            </trans-unit>
+            <trans-unit id="8" resname="port">
+               <source>Port:</source>
+               <target>Port :</target>
+            </trans-unit>
+            <trans-unit id="50" resname="Preparations">
+               <source>Preparations</source>
+               <target>Préparatifs</target>
+            </trans-unit>
+            <trans-unit id="38" resname="private-build">
+               <source>Private Build:</source>
+               <target>Description personnelle :</target>
+            </trans-unit>
+            <trans-unit id="17" resname="selectFile">
+               <source>Select a file:</source>
+               <target>Sélectionnez un fichier :</target>
+            </trans-unit>
+            <trans-unit id="17" resname="selectFolder">
+               <source>Select a folder:</source>
+               <target>Sélectionnez un dossier :</target>
+            </trans-unit>
+            <trans-unit id="39" resname="special-build">
+               <source>Special Build:</source>
+               <target>Description de compilation :</target>
+            </trans-unit>
+            <trans-unit id="29" resname="true">
+               <source>True</source>
+               <target>Vrai</target>
+            </trans-unit>
+            <trans-unit id="49" resname="values">
+               <source>Values</source>
+               <target>Valeurs</target>
+            </trans-unit>
+            <trans-unit id="9" resname="version">
+               <source>Version number:</source>
+               <target>Numéro de version :</target>
+            </trans-unit>
+            <trans-unit id="5" resname="parametersWindowTitle">
+               <source>AppMaker Settings</source>
+               <target>Paramètres de AppMaker</target>
+            </trans-unit>
+            <trans-unit id="64" resname="4dXmlKeysBuildapplication">
+               <source>4D XML Keys BuildApplication</source>
+               <target>Clefs XML du BuildApplication 4D</target>
+            </trans-unit>
+            <trans-unit id="67" resname="Editor_revealTheTargetFileWhenItsOver">
+               <source>Reveal the target file when it's over</source>
+               <target>Révéler le fichier cible quand c'est fini</target>
+            </trans-unit>
+            <trans-unit id="17" resname="selectExe">
+               <source>Select a package:</source>
+               <target>Sélectionnez un package :</target>
+            </trans-unit>
+            <trans-unit id="70" resname="certificate">
+               <source>Name of certificate:</source>
+               <target>Nom du certificat :</target>
+            </trans-unit>
+            <trans-unit id="70" resname="signApplication">
+               <source>Sign application:</source>
+               <target>Signer l'application :</target>
+            </trans-unit>
+            <trans-unit id="72" resname="RemoveUnnecessaryResourcesForTheFinalUsers ">
+               <source>Remove unnecessary resources for the final users </source>
+               <target>Retirer les ressources inutiles pour les utilisateurs finaux</target>
+            </trans-unit>
+            <trans-unit id="74" resname="LaunchCompiledDatabase">
+               <source>Launch the target</source>
+               <target>Ouvrir la cible</target>
+            </trans-unit>
+            <trans-unit id="77" resname="exportProject">
+               <source>Export project</source>
+               <target>Exporter le project</target>
+            </trans-unit>
+            <trans-unit id="78" resname="gitRepository">
+               <source>Git Repository</source>
+               <target>Dépôt Git</target>
+            </trans-unit>
+         </group>
+         <group resname="help tips">
+            <trans-unit id="57" resname="tips.copy">
+               <source>Files or folders to add to the package. (same relative path as the source)</source>
+               <target>Fichiers ou dossiers à ajouter au paquet. (même chemin relatif que la source)</target>
+            </trans-unit>
+            <trans-unit id="60" resname="tips.delete">
+               <source>Files or folders to delete from the package. (relative path to target)</source>
+               <target>Les fichiers ou dossiers à supprimer dans le paquet. (chemin d'accès relatif à la cible)</target>
+            </trans-unit>
+            <trans-unit id="47" resname="tips.info.plist">
+               <source>These key / value pair are used to build the files "infoplist.strings"in each language.</source>
+               <target>Ces couples clef/valeur sont utilisés pour construire les fichiers "infoplist.strings" dans chaque langue.</target>
+            </trans-unit>
+            <trans-unit id="61" resname="tips.method.after">
+               <source>This method will be executed after build. </source>
+               <target>Cette méthode sera exécutée après la génération.</target>
+            </trans-unit>
+            <trans-unit id="42" resname="tips.method.before">
+               <source>This method will be executed before build. It should return True for the generation begins and be shared between the components and the host database</source>
+               <target>Cette méthode sera exécutée avant la génération. Elle doit retourner Vrai pour que la génération soit lancée et être partagé entre les composants et la base hôte.</target>
+            </trans-unit>
+            <trans-unit id="41" resname="tips.run">
+               <source>Click to build (Enter key)</source>
+               <target>Cliquez pour construire (Entrée)</target>
+            </trans-unit>
+            <trans-unit id="40" resname="tips.specificMacContent">
+               <source>On Macintosh, the generated package will be stripped of any Mac OS specific files (invisible files...)</source>
+               <target>Sur Macintosh, le package généré sera débarrassé de tous les fichiers spécifiques à Mac OS  (fichiers invisibles ...)</target>
+            </trans-unit>
+            <trans-unit id="77" resname="tips.LaunchCompiledDatabase">
+               <source>Open the compiled database or launch the final application or the server executable</source>
+               <target>Ouvre la base compilée ou lancer l'application finale ou le serveur</target>
+            </trans-unit>
+            <trans-unit id="78" resname="tips.RemoveUnnecessaryResourcesForTheFinalUsers">
+               <source>Removes, if any, the 4D SVG Help file, constants' files etc… in the compiled package and/or the standalone application and/or the Server executable.
+
+The items to remove are listed in the file "appMaker delete.xml" at the root of the preferences' folder of your database. If this file doesn't exist, a default set is used (file at the root of the resources' folder of this component)</source>
+               <target>Supprime, si besoin, le fichier d'aide 4D SVG, les fichiers de constantes etc… dans la base compilée et/ou l'application enginée et/ou l'application Serveur.
+
+Les éléments à supprimer sont listés dans le fichier "AppMaker delete.xml" à la racine du dossier des préférences de votre base. Si ce fichier n'existe pas, un ensemble par défaut est utilisé (fichier à la racine du dossier Resources de ce composant)</target>
+            </trans-unit>
+            <trans-unit id="79" resname="tips.exportStructure">
+               <source>Export forms &amp; methods as textual files to allow source control</source>
+               <target>Exportez les formulaires et les méthodes sous forme de fichiers texte pour permettre le contrôle de source</target>
+            </trans-unit>
+            <trans-unit id="80" resname="tips.gitRepository">
+               <source>Manage the folder as a local git repository</source>
+               <target>Gérer le dossier en tant que dépôt git local</target>
+            </trans-unit>
+         </group>
+         <group resname="4DPop">
+            <trans-unit id="62" resname="4DPop_run">
+               <source>Build</source>
+               <target>Construire</target>
+            </trans-unit>
+            <trans-unit id="63" resname="4DPop_parameters">
+               <source>Paramaters…</source>
+               <target>Paramètres…</target>
+            </trans-unit>
+         </group>
+         <group resname="window_">
+            <trans-unit id="69" resname="Window_compiler">
+               <source>Compiler</source>
+               <target>Compilateur</target>
+            </trans-unit>
+         </group>
+      </body>
+   </file>
+</xliff>

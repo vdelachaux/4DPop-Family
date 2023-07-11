@@ -1,0 +1,3 @@
+C_ENTIER LONG($Lon_bottom;$Lon_left;$Lon_right;$Lon_top;$Lon_windowRef)
+
+OBJET LIRE COORDONNEES(*;"<caret/>";$Lon_left;$Lon_top;$Lon_right;$Lon_bottom)

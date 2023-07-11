@@ -1,0 +1,20 @@
+%attributes = {"lang":"us"}
+/*<ask message="question" {type=""}/>
+
+a question "\x" where x is a sequence number of a question will be replaced by the corresponding answer.
+	
+Values for type:
+	- "text":  (default) for a textual response
+	- "integer": for a numeric integer value
+	- "real": for a numeric value
+	- "table": for a table name of the database
+	- "field": for a field name of the database
+	- "{item 1; item 2; ... ; item N}": for a customized choice list
+	
+	This sample ask for the name of an array, then create a loop for its size.
+*/
+For ($Lon_i;1;Size of array:C274(<ask message="What is the name of the array variable?"/>);1)
+		
+	<ask message="\1"/>{$Lon_i}:=<caret/>
+		
+End for

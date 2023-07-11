@@ -1,0 +1,10 @@
+/*
+Use the highlighted method text to include it in the code.
+
+Note: You must call this macro with the shortcut Cmd-Opt-$ (Ctrl-€)
+*/
+For ($Lon_i;1;Size of array(<selection/>);1)
+	
+	<selection/>{$Lon_i}:=<caret/>
+	
+End for

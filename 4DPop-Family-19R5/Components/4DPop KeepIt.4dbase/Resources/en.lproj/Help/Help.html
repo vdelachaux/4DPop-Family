@@ -1,0 +1,339 @@
+<html>
+<head>
+<title>4DPop KeepIt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="../../Common/style.css" rel="stylesheet" type="text/css">
+</head>
+<body leftmargin="20" marginheight="20" marginwidth="20" topmargin="20">
+<hr>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100"><img src="../../Common/4d.png" border="0"> </td>
+    <td valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="4" height="100%">
+        <tr>
+          <td><h1> 4DPop KeepIt </h1></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2"><iframe src="../../Common/Localisation.html" frameborder="0" scrolling="no" align="middle" height="40" width="100%" noresize="true"> </iframe></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<hr>
+<p> <i>4DPop KeepIt</i> is a snippets manager, these little bits of code or text that you reuse everywhere. In other words, this tool allows you to store pieces of code and reuse it when you need it by a simple keys combination, a drag and drop or a copy and paste.<br>
+  <br>
+  The items stored are saved from one session to another and are accessible from all of the databases from the time the component is loaded. </p>
+<p> One more thing… 4DPop KeepIt is very similar to macros 4D, but easier to use and especially more powerful. </p>
+<p>&nbsp;</p>
+<hr>
+<h2> Component installation </h2>
+<table width="100%" border="0" cellspacing="4" cellpadding="2">
+  <tr>
+    <td align="right" valign="top"> 1. </td>
+    <td> Place the folder &quot;<i>4DPop KeepIt.4dbase</i>&quot;* or an alias of it &quot;<i>Components</i>&quot; next to the 4D executable** so that the component will be loaded for all the databases </td>
+  </tr>
+  <tr>
+    <td align="right" valign="top"> 2. </td>
+    <td> Open your database. </td>
+  </tr>
+  <tr>
+    <td align="right" valign="top"> 3. </td>
+    <td> If the componant 4DPop is installed a new button &quot;KeepIt&quot; apears in the toolbar. It allows opening the editor.
+      <p> <img src="../../fr.lproj/Help/Images/4DPopPalette.png" alt="" border="0"> </p>
+      <p class="Command4D"> If the componant 4DPop is not installed you must, to open the editor, create a method wich call the command <i><b>KeepIt_tool</b></i> </p></td>
+  </tr>
+</table>
+<p> <font size="-1"> *On Macintosh, the component is a package with extension &quot;.4dbase&quot; who is not necessarily visible according to the adjustabilitys of your preferences. </font> <br>
+<font size="-1">**On Macintosh, the Components folder is inside the 4D application package, at the root of the folder &quot;Contents&quot; </font></p>
+<p>&nbsp; </p>
+<hr>
+<h2> Memorize a fragment </h2>
+<p> Select a snippet of code in the editor, drag it on the toolbar 4DPop and drop it on the button &quot;KeepIt&quot;, at the prompt, enter a name for this new item and confirm. That's it! </p>
+<h2>&nbsp; </h2>
+<hr>
+<h2>Use a fragment </h2>
+<p> In the editor, type &quot;$$&quot; + Tab. A popup menu appears, select the desired item and that's it ! Its content is pasted into the editor. </p>
+<p>&nbsp;</p>
+<hr>
+<h2>Tags</h2>
+<p>The snippets can contain tags which will be evaluated at the time of the use of the item. The tags are using the same syntax than the macros tags of 4D.. </p>
+<h3> In addition of the <a href="http://doc.4d.com/4Dv13/help/Title/en/page1034.html" target="_blank">macros tags of 4D</a> that are all recognized*, <em> 4DPop KeepIt </em> adds the following tags:</h3>
+<table width="100%" border="1" cellpadding="2" cellspacing="0" bordercolor="#999999">
+  <tr>
+    <td width="12%" valign="top"><p align="center"> <strong> Tags </strong> </p></td>
+    <td width="88%" valign="top"><div align="center"> <strong> Description </strong> </div></td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="center"> <strong> &lt;uid/&gt; </strong> </div></td>
+    <td valign="top"> Tag replaced by an UID generated at the time of the use. </td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="center"> <strong> &lt;database_name&gt; </strong> </div></td>
+    <td valign="top"> Tag replaced by the name of the structure file. </td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="center"> <strong> &lt;keepit/&gt; </strong> </div></td>
+    <td valign="top"> Tag replaced by the content of another KeepIt item<br>
+      <br>
+      Attribute:<br>
+      <table width="100%" cellspacing="2" cellpadding="2">
+        <tr>
+          <td width="30"/>
+          <td width="1138"><p><b>• </b><em><strong>name</strong></em> : The name of the KeepIt item to include. Example: the tag « &lt;keepit name=&quot;common_declaration&quot;/&gt; » will be replace by the result of the item named « common_declaration ». </p></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="center"> <strong> &lt;ask/&gt; </strong> </div></td>
+    <td valign="top"><p> This tag allows you to create an interactive macro, ie a macro that allows the user to change the result by entering values in response to questions. The engine asks questions and uses the answers in the returned text.<br>
+      <p> Attribut :<br>
+      <table width="100%" cellspacing="2" cellpadding="2">
+        <tr>
+          <td width="30">&nbsp;</td>
+          <td width="1138"><p><b>• </b><strong><em>message</em></strong>: is the message text to be presented in the request information dialog. </p>
+            <p> If this attribute is like &quot;\#&quot; where # is the number of one precedent question, the content will be automatically replaced by the answer to the question #.<br>
+              <br>
+              ARRAY TEXT(&lt;ask message=&quot;Name of the array?&quot;/&gt;&lt;ask message=&quot;Size of the array?&quot;/&gt;)<br>
+              For($Lon_i;1;Size of array(&lt;ask message=&quot;\1&quot;/&gt;);1)<br>
+                  &lt;ask message=&quot;\1&quot;/&gt;{$Lon_i}:=&quot;&lt;ask message=&quot;Default value?&quot;/&gt;&quot;<br>
+              End for<br>
+              <br>
+              Will display successively:<br>
+              - A first dialog asking for the name of the table.<br>
+              - A second dialog to request the array size.<br>
+              - Finally a third box to ask for the default. </p>
+            <p> <br>
+              The two tags «&lt;ask message=&quot;\1&quot;/&gt;» will be replaced by the answer to question#1 ie the table name.<br>
+              So, if you answer successively «$arrayText», «10» & «empty» the generated code will be:<br>
+              <br>
+              <strong>ARRAY TEXT</strong> ($arrayText;10)<br>
+              <strong>For</strong> ($Lon_i;1; <strong>Size of array</strong> ($arrayText);1)<br>
+                  $arrayText{$Lon_i}:=&quot;empty&quot;<br>
+              <strong>End for</strong> </p></td>
+        </tr>
+        <tr>
+          <td width="30">&nbsp;</td>
+          <td><b>• </b><em><strong>type</strong></em>: if this attribute is given, it determines the type of response expected. The value of this attribute can be<br>
+                           o «text» (default) to accept text input,<br>
+                           o «integer» for an integer value, <br>
+                           o «real» for a real numeric value, <br>
+                           o «table» to select a table from the list of database tables,<br>
+                           o «field» to choose in the list of fields,<br>
+                           o «user» or « group » to provide choice in the list of users or groups defined in the database, <br>
+                           o «{value 1;value 2; … ;value n}» to display a list of custom values.<br>
+               o «{label 1:valeur 1;label 2:valeur 2; … ;label n:valeur n}» to display a label different of the value.</td>
+        </tr>
+  </table>  </tr>
+  <tr>
+    <td valign="top"><div align="center"> <strong> &lt;file/&gt; </strong> </div></td>
+    <td valign="top">Tag replaced by the content of a text file .<br>
+      <br>
+      Attribut :<br>
+      <table width="100%" cellspacing="2" cellpadding="2">
+        <tr>
+          <td width="30" align="left" valign="top">&nbsp;</td>
+          <td width="1138" align="left" valign="top"><p> <b>• </b><em><strong>url </strong> </em>is the POSIX path of the file to load and can take several forms:<br>
+                             o absolute path (file://…),<br>
+                             o relative path to the folder «Resources» of the database (#…)<br>
+                             o relative path to the folder «Resources» of  4DPop KeepIt (/…) </p></td>
+        </tr>
+      </table>
+      <br>
+      <p> Note : The file may contain tags which will be first interpreted. </p></td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="center"> <strong> &lt;iteration/&gt; </strong> </div></td>
+    <td valign="top"> This tag allows you to repeat a line of the macro.<br>
+      <br>
+      Attribut :<br>
+      <table width="100%" cellspacing="2" cellpadding="2">
+        <tr>
+          <td width="30" align="left" valign="top">&nbsp;</td>
+          <td width="1138" align="left" valign="top"><p> <b>• </b><em><strong>count</strong></em> is the number of identical line to insert. If this attribute is omitted, the tag returns the current value of the counter. Example the line:<br>
+                        &lt;iteration count=&quot;10&quot;/&gt;C_TEXT(vTEXT_&lt;iteration/&gt;)<br>
+              will be replaced by 10 lines:<br>
+                         <strong> C_TEXTE </strong> (vTEXT_1)<br>
+                         <strong> C_TEXTE </strong> (vTEXT_2)<br>
+                        …<br>
+                         <strong> C_TEXTE </strong> (vTEXT_10) </p></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="center"> <strong> &lt;method-attribute/&gt; </strong> </div></td>
+    <td valign="top"> This item allows you to set a project method attribute.<br>
+      <br>
+      Attribut :<br>
+      <table width="100%" cellspacing="2" cellpadding="2">
+        <tr>
+          <td width="30" align="left" valign="top">&nbsp;</td>
+          <td width="1138" align="left" valign="top"><p> <b>• </b><em><strong>type</strong></em> is the value indicating the type of attribute to set. Supported values are those of the 4D command <strong> METHOD SET ATTRIBUTE</strong>.<br>
+            </p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top">&nbsp;</td>
+          <td align="left" valign="top"><b>• </b><em><strong>value</strong></em> is the value to set: «true» to select and «false» to deselect the option. The default value is «true». Example:<br>
+                      &lt;method-attribute type=&quot;1&quot; value=&quot;true&quot;/&gt;<br>
+            Sets the attribute «invisible» to true.</td>
+        </tr>
+      </table>
+      <p> This tag is ignored if it is not a project method.</p></td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="center"><strong>&lt;method_type/&gt;</strong></div></td>
+    <td valign="top">Tag replaced by the type of the current edited method. The results is those given by the command &quot;METHOD RESOLVE PATH&quot; except for object method that is 8858.</td>
+  </tr>
+  <tr>
+    <td valign="top"><p align="center"><strong>#_IF<br>
+      #_ELSE<br>
+      #_ENDIF</strong></p></td>
+    <td valign="top"><p>These tags allow processing to perform portions of conditional macro so.<br>
+      example:</p>
+        <blockquote>
+          <p>#_IF &lt;ask message=&quot;Are you a woman ?&quot; type=&quot;{Yes:1;No:0}&quot;/&gt;=1<br>
+            //OK, you are a woman!<br>
+            #_ELSE<br>
+            //You are probably a man<br>
+            #_ENDIF</p>
+        </blockquote>
+      <p>return in method one or the other line of comment depending on your response.</p></td>
+  </tr>
+</table>
+<p> *4DPop KeepIt does not treat the attribute &quot;index&quot; of the tag &lt;clipboard&gt;. This tag is generally replaced by the text contents of the clipboard at the time of the call.<br>
+*4DPop KeepIt accepts, for tag &lt;date/&gt;, the formats &quot;y&quot;, &quot;m&quot; &amp; &quot;d&quot; to display only the year, month or day. Are also accepted formats such as &quot;y/m/d&quot; in any order and with any character separator. Example &quot;m-y&quot; gives &quot;1-2013&quot; between 1/1/2013 and 31/1/2013. &quot;©2009 - &lt;date format=&quot;y&quot;/&gt;&quot; will be replaced by &quot;© 2009-2012&quot; in 2012.</p>
+<p>&nbsp; </p>
+<hr>
+<h2>Managing snippets </h2>
+<p> A click on the button &quot;<i>KeepIt</i>&quot; of the toolbar 4DPop, opens the KeepIt editor. </p>
+<table width="7%" border="0" cellspacing="2" cellpadding="0" align="center">
+  <tr>
+    <td><img src="Images/KeepItmainWindowCollapsed.png" alt="" width="370" height="924" border="0"><img src="Images/KeepItmainWindow.png" alt="" width="859" height="924"> </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p align="left"> With the list, you can drag an item in the method editor or copy it to place its contents, after interpretation, in the clipboard. </p>
+<table width="100%" border="0" cellpadding="4" cellspacing="2">
+  <tr>
+    <td width="592" valign="top"><p> There is a <strong>wizard</strong> for building most of these tags. To insert a tag in the macro, use the menu &quot;Tags&quot; and select the item you want. If necessary, the wizard helps you build the element according to your answers.</p>
+      <p> Note: The hierarchical item &quot;Result of method&quot; lists the methods of your database that have the attribute &quot;Shared by components and host database&quot; checked.</p>
+      <p> KeepIt accepts <strong>comments</strong> delimited by the sequence «/ * ... * /». All that is between «/*» and «*/» will be deleted from the text returned in the method editor but if there is tags, they will first be interpreted. Comments allow you to document your snippets. The first comment found in the macro is used as the text of the tooltip when the item is hovered in the list. In the absence of comment in the macro, the beginning of the text fragment is used as tooltip.</p>
+      <p> Other tags (listed below) are used by KeepIt for doing a <strong>tokenization</strong> of the macro. That allows you to share fragments in a team where developers use a 4DUS or  a 4DFR. You can tokeniser a snippet by selecting the corresponding item in the &quot;Actions&quot; menu</p>
+      <p> Double-click on an item in the list to rename it. The right pane allows you to edit the text attached to an item.</p>
+      <p> A context menu in the list is available to perform common actions.</p>
+      <p> It is possible to export an item in a text document via the context menu item &quot;Export ...&quot; or by dragging the item on the desktop by holding down the Option on Mac or Alt  on PC. In the second case the generated document is the name of the item being dragged. </p>
+      <p> Conversely, it is possible to import the contents of a text document in a new snippet via the menu &quot;Import ...&quot; or by dropping a text document on the list of items. In the second case the item automatically takes the name of the document.</p>
+      <p> <br>
+      </p></td>
+    <td width="893" valign="top"><p align="center"> <img src="Images/list.png" alt="" width="804" height="864" border="0"> </p></td>
+  </tr>
+</table>
+<hr>
+<h2>4DPop KeepIt and the 4D macros</h2>
+<p> KeepIt installs 3 macros when it is loading:</p>
+<table width="100%" cellpadding="1">
+  <tr>
+    <td width="8%"><div align="center"><strong>Name</strong></div></td>
+    <td width="7%"><div align="center"><strong>Shortcut</strong></div></td>
+    <td width="6%"><div align="center"><strong>Text entry</strong></div></td>
+    <td width="79%"><div align="center"></div></td>
+  </tr>
+  <tr>
+    <td height="40"><div align="center"><strong>KeepIt</strong></div></td>
+    <td><div align="center">Cmd + &quot;€&quot;*</div></td>
+    <td><div align="center">$$</div></td>
+    <td>Display the selection menu item to insert. This method of activation, that is equivalent to type the text &quot;$$&quot; + Tab, has the advantage of preserving the mechanism of the tags &lt;selection/&gt; and &lt;carret/&gt; that are otherwise ignored.</td>
+  </tr>
+  <tr>
+    <td height="27"><div align="center"><strong>KeepIt =</strong></div></td>
+    <td><div align="center">Cmd + &quot;=&quot;</div></td>
+    <td><div align="center">++</div></td>
+    <td>Calls the last snippet, without having to display the list and to select the item.</td>
+  </tr>
+  <tr>
+    <td height="24"><div align="center"><strong>KeepIt +</strong></div></td>
+    <td><div align="center">Cmd + &quot;±&quot;</div></td>
+    <td><div align="center"></div></td>
+    <td>This macro, called when text is selected in the Method Editor, proposes to create a new fragment.</td>
+  </tr>
+</table>
+* € = alt+$ sur Mac (AltGr + e sur PC)
+<p>There is a shared method <span class="Command4D"> <b> Keepit_get_item_by_name </b> </span> that can be used with your 4D macros. Placed between the element tags &quot;<span class="macro">&lt;method&gt;</span>&quot; and &quot;<span class="macro">&lt;/method&gt;</span>&quot; with a name of a KeepIt's item as parameter, this method return the text associated to the named item. Consider for example a Keepit's item named &quot;<i>database_name</i>&quot; containing the text &quot;<span class="macro">&lt;database_name/&gt;</span>&quot;. In a macro file, you can insert the name of the current database by including in your macro text: <span class="macro"> &lt;method&gt;Keepit_get_item_by_name (&quot;database_name&quot;)&lt;/ method&gt;</span>.</p>
+<p><br>
+</p>
+<hr>
+<h2>Source code provided </h2>
+<p> This component is given in compiled version, but you will find the code source in the folder &quot;Sources&quot; inside the component folder. </p>
+<p>&nbsp;</p>
+<hr>
+<h2> Forum </h2>
+<p> A dedicated forum is available here: <a href="http://forums.4d.fr/Forum/FR/1467485/0/0" title="4DPop Forum" target="_blank"> 4DPop Forum </a><br>
+  <br>
+</p>
+<hr>
+<h3>Annexe - Tags for tokenisation </h3>
+Using these tags helps build macros that will be used indiferently in a 4DFR or a 4DINTL.
+<table width="100%" border="1" cellpadding="2" cellspacing="0" bordercolor="#999999">
+  <tr>
+    <td align="center" valign="top" width="172"><b> &lt;command/&gt; </b> </td>
+    <td> Tag replaced by the localised name of a 4D command.
+      <p> <b> Attribute:<br>
+        • number </b> : Command number as should be passed to the 4D command <span class="Command4D"> Command name </span> . </p>
+      <p> This tag will be useful for build macros that will be usable with all versions of 4D (INTL or FR) </p></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" width="172"><b> &lt;constant/&gt; </b> </td>
+    <td> Tag replaced by the localised name 4D constant
+      <p> <b> Attribute:<br>
+        • id </b> : Resources ID and constant index separated by a dot. Example <span class="Code4D"> <span class="macro"> &lt;constant id=&quot;2.2&quot;/&gt; </span> </span> for the constant &quot; <span class="Code4D"> On load </span>&quot; </p>
+      <p> This tag will be useful for build macros that will be usable with all versions of 4D (INTL or FR) </p></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" width="172"><b> &lt;if/&gt;<br>
+      &lt;else/&gt;<br>
+      &lt;end_if/&gt;<br>
+      &lt;case_of/&gt;<br>
+      &lt;end_case/&gt;<br>
+      &lt;while/&gt;<br>
+      &lt;end_while/&gt;<br>
+      &lt;for/&gt;<br>
+      &lt;end_for/&gt;<br>
+      &lt;repeat/&gt;<br>
+      &lt;until/&gt; </b> </td>
+    <td valign="top"> These Tags will be replaced by the localized version of the control flow structures of 4D.
+      <p> The use of these tags allow to build macros that will be usable with all versions of 4D (INTL or FR) </p>
+      <p> For example this code: </p>
+      <p> <span class="Code4D"> <span class="macro"> //Run 4DPop<br>
+        //This code is available even if the component is not present like in the final application.<br>
+        &lt;if/&gt; (&lt;command number=&quot;34&quot;/&gt;(&lt;command number=&quot;492&quot;/&gt;))<br>
+        &lt;command number=&quot;222&quot;/&gt;($tTxt_Components;0)<br>
+        &lt;command number=&quot;1001&quot;/&gt;($tTxt_Components)<br>
+        &lt;if/&gt; (&lt;command number=&quot;230&quot;/&gt;($tTxt_Components;&quot;4DPop&quot;)&gt;0)<br>
+        &lt;command number=&quot;1007&quot;/&gt;(&quot;4DPop_Palette&quot;)<br>
+        &lt;end_if/&gt;<br>
+        &lt;end_if/&gt; </span> </span> </p>
+      <p> Will be pasted in a 4D INTL like this: </p>
+      <p class="Code4D"> //Run 4DPop<br>
+        //This code is available even if the component is not present like in the final application.<br>
+        <b> If </b> ( <b> Not </b> ( <b> Is compiled mode </b> ))<br>
+        <b> ARRAY TEXT </b> ($tTxt_Components;0)<br>
+        <b> COMPONENT LIST </b> ($tTxt_Components)<br>
+        <b> If </b> ( <b> Find in array </b> ($tTxt_Components;&quot;4DPop&quot;)&gt;0)<br>
+        <b> EXECUTE METHOD </b> (&quot;4DPop_Palette&quot;)<br>
+        <b> End if </b> <br>
+        <b> End if </b> </p>
+      <p> and like this in a 4D FR: </p>
+      <p class="Code4D"> //Run 4DPop<br>
+        //This code is available even if the component is not present like in the final application.<br>
+        <b> Si </b> ( <b> Non </b> ( <b> Mode compile </b> ))<br>
+        <b> TABLEAU TEXTE </b> ($tTxt_Components;0)<br>
+        <b> LISTE COMPOSANTS </b> ($tTxt_Components)<br>
+        <b> Si </b> ( <b> Chercher dans tableau </b> ($tTxt_Components;&quot;4DPop&quot;)&gt;0)<br>
+        <b> EXECUTER METHODE </b> (&quot;4DPop_Palette&quot;)<br>
+        <b> Fin de si </b> <br>
+        <b> Fin de si </b> </p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

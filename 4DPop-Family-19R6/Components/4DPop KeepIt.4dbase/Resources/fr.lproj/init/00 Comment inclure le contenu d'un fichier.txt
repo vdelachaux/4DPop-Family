@@ -1,0 +1,9 @@
+/*Inclure le contenu d'un fichier :
+
+- file://...    est un chemin absolu
+- #...           est un chemin relatif dans le dossier resources de la base
+- /...           est un chemin relatif dans le dossier resources de 4DPop KeepIt
+
+Note: Les balises présentes dans le fichier sont interprétées
+*/
+<file url="/licence.txt"/>

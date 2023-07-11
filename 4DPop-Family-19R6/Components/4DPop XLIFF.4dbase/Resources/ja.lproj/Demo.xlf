@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--     
+			Translation file for 4D products.
+			Copyright (c) 4D SA, 2007-2012. All right reserved.
+			This file is distributed under the same license as the 4D product package.
+-->
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd"><xliff version="1.0">
+   <file datatype="x-STR#" original="undefined" source-language="en" target-language="ja">
+      <header>
+         <prop-group name="Xliff-Editor.4dbase">
+            <prop prop-type="version">1.0</prop>
+         </prop-group>
+      </header>
+      <body>
+         <group id="15999" resname="Infos_Dialogs">
+            <trans-unit id="1" resname="demo_name" translate="yes">
+               <source>4D XLIFF Editor</source>
+               <target>4D XLIFF エディタ</target>
+            </trans-unit>
+            <trans-unit id="2" resname="demo_author" translate="yes">
+               <source>By 4D France's Programm Team</source>
+               <target>By 4D France's Program Team</target>
+            </trans-unit>
+            <trans-unit id="3" resname="demo_tutorialText" translate="yes">
+               <source>The purpose of this database is to minimize the impact of the passage from STR# and TEXT resources to XLIFF standard.
+
+Mainly conceived to be used as a component, it allows management of localization's files of your data bases during development.
+
+Used as an autonomous database, the editor manages the contents of a folder that you'll indicate to him as being the work folder.</source>
+               <target>このデータベースの目的は、STR#とTEXTリソースを簡単にXLIFF標準に変換する方法を提供することにあります。
+
+コンポーネントとして提供することで、開発中にデータベースのローカライズを行うことができます。
+自立したデータベースとして使用することで、エディタは作業フォルダとして指定されたフォルダの内容を管理します。</target>
+            </trans-unit>
+            <trans-unit id="4" resname="demo_legalText" translate="yes">
+               <source>In no event, 4D SAS shall be liable for the information and other data contained in this demo database ; such information and data being fictitious and provided for the sole purpose of illustration.
+4D and its logo are registered trademarks of 4D SAS.
+All other trade names, logos and trademarks on or in this demo database are trademarks or registered trademarks of their respective holders.</source>
+               <target>In no event, 4D SAS shall be liable for the information and other data contained in this demo database ; such information and data being fictitious and provided for the sole purpose of illustration.
+4D and its logo are registered trademarks of 4D SAS.
+All other trade names, logos and trademarks on or in this demo database are trademarks or registered trademarks of their respective holders.</target>
+            </trans-unit>
+            <trans-unit id="5" resname="demo_version" translate="no">
+               <source>version 1.0.0</source>
+               <target>version 1.0.0</target>
+            </trans-unit>
+            <trans-unit id="6" resname="demo_webSite" translate="no">
+               <source>www.4d.fr</source>
+               <target>www.4d.fr</target>
+            </trans-unit>
+            <trans-unit id="7" resname="demo_copyright" translate="yes">
+               <source>4D SAS © 2007
+All rights reserved.</source>
+               <target>4D SAS © 2007
+All rights reserved.</target>
+            </trans-unit>
+            <trans-unit id="8" resname="demo_aboutMenuLib" translate="yes">
+               <source>About "4D XLIFF Editor"…</source>
+               <target>"4D XLIFF エディタ"について…</target>
+            </trans-unit>
+         </group>
+      </body>
+   </file>
+</xliff>

@@ -1,0 +1,118 @@
+<HTML XMLNS:V="urn:schemas-microsoft-com:vml" XMLNS:O="urn:schemas-microsoft-com:office:office" XMLNS:W="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>4DPop Commands</TITLE>
+<LINK href="../../Common/style.css" rel="stylesheet" type="text/css">
+</HEAD>
+<BODY>
+<DIV class="Section1" align="left">
+  <HR>
+  <TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+    <TR>
+      <TD width="100"><IMG src="../../Common/4d.png" border="0"></TD>
+      <TD valign="middle"><TABLE width="100%" border="0" cellspacing="0" cellpadding="4" height="100%">
+          <TR>
+            <TD width="339"><H1>4DPop Commands</H1></TD>
+            <TD></TD>
+          </TR>
+          <TR>
+            <TD colspan="2"><IFRAME src="../../Common/Localisation.html" frameborder="0" scrolling="no" align="middle" height="40" width="100%" NORESIZE="true"></IFRAME></TD>
+          </TR>
+        </TABLE></TD>
+    </TR>
+  </TABLE>
+</DIV>
+<DIV class="Section1" align="left">
+  <HR>
+  <P>4DPop Commands を使用すると、英語あるいはフランス語版のコマンド名を素早く検索して、オンラインドキュメントにアクセスしたり、シンタックス付きでコマンドをメソッドエディタにペーストしたり、必要とされる引数に関する説明を表示したりできます。</P>
+  <HR>
+  <H2>インストール</H2>
+  <TABLE BORDER="0" ALIGN="center" CELLPADDING="2" CELLSPACING="4">
+    <TR>
+      <TD ALIGN="right" VALIGN="top">1.</TD>
+      <TD>データベースのストラクチャファイル (&quot;.4db&quot;) と同階層に  &quot;<I>Components</I>&quot; フォルダを作成します。</TD>
+    </TR>
+    <TR>
+      <TD ALIGN="right" VALIGN="top">2.</TD>
+      <TD><P>&quot;<I>4DPop Commands.4dbase</I>&quot;* フォルダまたはそのエイリアスを &quot;<I>Components&quot;</I> フォルダに置きます。</P>
+        <P>&quot;<I>4DPop&quot;</I> コンポーネントを使用している場合、&quot;<I>4DPop Commands.4dbase</I>&quot; フォルダ/パッケージをパレットにドロップすると、<I>Components</I> フォルダにエイリアスが作成され、データベースが再起動されます。</P>
+      </TD>
+    </TR>
+    <TR>
+      <TD ALIGN="right" VALIGN="top">3.</TD>
+      <TD>データベースを開きます。</TD>
+    </TR>
+    <TR>
+      <TD ALIGN="right" VALIGN="top">4.</TD>
+      <TD>&quot;<I>4DPop&quot;</I>コンポーネントを使用している場合、&quot;<I>4D Commands</I>&quot; ツールはパレットに表示され、クリックすればツールウィンドウが表示されます。
+        <P ALIGN="center"><IMG src="Images/4DPop Palette.png" width="823" height="68"></P>
+      <P>&quot;<I>4DPop&quot;</I> コンポーネントがインストールされていない場合、ツールを開くためには  <EM>&quot;実行&quot;</EM> メニューの <EM>&quot;メソッド...&quot;</EM> を選択し、<EM>&quot;Commands&quot;</EM> を選択して &quot;実行&quot;ボタンをクリックします。</P>
+      </TD>
+    </TR>
+  </TABLE>
+  <P><FONT size="-1">*Macintoshでは、コンポーネントは拡張子が &quot;.4dbase&quot; のコンポーネントです。</FONT></P>
+  <HR>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="37%"><h2 align="left">利用方法</h2></td>
+      <td width="63%"><div align="right"><a href="http://www.screencast.com/users/vdl/folders/Jing/media/7f08e7f1-23d7-41b6-bd8a-afff89467c01" target="_blank" class="Command4D">ビデオを見る</a></div></td>
+    </tr>
+  </table>
+  <P>ツールを選択するとパレットウィンドウが表示され、コマンド名 (の一部) を入力すると、4Dコマンドのリストが表示されます。</P>
+  <TABLE border="0" align="center" cellpadding="2" cellspacing="12.2">
+    <TR>
+      <TD><IMG src="Images/query1.png" width="345" height="398"></TD>
+      <TD><IMG src="Images/query2.png" width="345" height="398"></TD>
+    </TR>
+  </TABLE>
+  <P> ここで2つのアクションを実行できます:</P>
+  <OL>
+    <OL>
+      <OL>
+        <LI>リスト中のコマンドをダブルクリックすると、そのコマンドのオンラインドキュメントをブラウザに表示します。</LI>
+        <LI>コマンドをメソッドエディタにドラッグすると、コマンド名とシンタックス、および引数の説明がコメントでペーストされます。</LI>
+      </OL>
+    </OL>
+  </OL>
+  <P align="center"><IMG src="Images/query3.png" width="947" height="426" border="1"></P>
+  <BLOCKQUOTE>
+    <BLOCKQUOTE>
+      <BLOCKQUOTE>
+        <P>ドラッグ＆ドロップ中にOption (Mac OS) / Alt (Windows) キーを押すと、ペーストされるテキストは以下のようになります:<SPAN class="style2"><TT><STRONG>Command name</STRONG> (# Command).</TT></SPAN> </P>
+      </BLOCKQUOTE>
+    </BLOCKQUOTE>
+  </BLOCKQUOTE>
+  <HR>
+  <H2>引数</H2>
+  <TABLE width="100%" border="0" cellspacing="2" cellpadding="2">
+    <TR valign="top">
+      <TD><P>ウィンドウの右上にある &quot;i&quot; ボタンをクリックすると、設定ダイアログが表示されます:</P>
+        <OL>
+          <OL>
+            <LI>オンラインドキュメントのランゲージ (French, English, German)。</LI>
+            <LI>使用するドキュメントサイトのURL。</LI>
+            <LI>メソッドエディタにドロップした際にコメントを挿入するか設定するチェックボックス。 (このオプションはドラッグ時にShiftキーが押されていると、動作が反転します。)</LI>
+            <LI>検索対象をカレントの4Dアプリケーションのランゲージに限定するチェックボックス。</LI>
+          </OL>
+        </OL>      
+      <P>この設定は4D環境設定フォルダの &quot;4dPop v11 preference.xml&quot; に保存されます。 </P></TD>
+      <TD><P><IMG src="Images/parameters.png" width="345" height="398" hspace="30" align="left"></P>      </TD>
+    </TR>
+  </TABLE>
+  <hr>
+  <H2>リリースノート</H2>
+  <BLOCKQUOTE>
+    <H4>version 1.2 :</H4>
+    <UL>
+      <LI>コマンド名が英語とフランス語で表示されるようになりました。</LI>
+    </UL>
+  </BLOCKQUOTE>
+  <HR>
+  <H2>ソースコード</H2>
+  <P>このコンポーネントはコンパイル版で提供されますが、コンポーネントフォルダ内の&quot;Sources&quot; フォルダにはソースコードが含まれています。</P>
+  <HR>
+  <H2>Forum</H2>
+  <P>4DPopに関するディスカッションは <A HREF="http://forums.4d.fr/Forum/FR/1467485/0/0" TITLE="4DPop Forum" TARGET="_blank">Forum 4DPop</A> で提供されています。</P>
+</DIV>
+</BODY>
+</HTML>

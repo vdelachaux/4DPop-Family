@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<tools name=":xliff:Ruler" picture="4DPop.png" helptip=":xliff:ToolHelpTip">
+
+	<tool name="Rulers" method="4DPop_ScreenRuler"/>
+	
+</tools>

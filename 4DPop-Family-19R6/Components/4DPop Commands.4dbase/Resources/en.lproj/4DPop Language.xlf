@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <!--                 Translation file.
+This file is distributed under the same license as the product package.-->
+
+<xliff version="1.0">
+   <file datatype="x-STR#" original="undefined" source-language="en" target-language="en">
+      <header>
+         <prop-group name="Xliff-Editor.4dbase">
+            <prop prop-type="version">1.0</prop>
+         </prop-group>
+      </header>
+      <body>
+         <group id="15000" resname="Messages">
+            <trans-unit id="11" resname="4DPopToolName">
+               <source>Commands</source>
+               <target>Commands</target>
+            </trans-unit>
+            <trans-unit id="11" resname="Doc">
+               <source>Documentation</source>
+               <target>Documentation</target>
+            </trans-unit>
+            <trans-unit id="4" resname="DocumentationWebSite">
+               <source>URL:</source>
+               <target>URL:</target>
+            </trans-unit>
+            <trans-unit id="1" resname="HelpText">
+               <source>To find a command, type one or more keywords separated by space in the search box.  When some commands are found, you can select one with the arrow keys then:
+
+- Double-click on a command name to open the online html help in your browser. Type "Enter" if the dialog is opened via the macro does the same.
+
+- Drag a command from the list to the method editor to paste command &amp; syntax. If the dialog is opened via the macro, a "Carriage Return" closes the window and paste the command in the code editor.
+
+- Press Alt key during drag, the pasted text will be "Command name (command)".</source>
+               <target>To find a command, type one or more keywords separated by space in the search box.  When some commands are found, you can select one with the arrow keys then:
+
+- Double-click on a command name to open the online html help in your browser. Type "Enter" if the dialog is opened via the macro does the same.
+
+- Drag a command from the list to the method editor to paste command &amp; syntax. If the dialog is opened via the macro, a "Carriage Return" closes the window and paste the command in the code editor.
+
+- Press Alt key during drag, the pasted text will be "Command name (command)".</target>
+            </trans-unit>
+            <trans-unit id="6" resname="Lang_1" translate="no">
+               <source>Français</source>
+            </trans-unit>
+            <trans-unit id="7" resname="Lang_2" translate="no">
+               <source>English</source>
+            </trans-unit>
+            <trans-unit id="8" resname="Lang_3" translate="no">
+               <source>Deutsch</source>
+            </trans-unit>
+            <trans-unit id="13" resname="Lang_4" translate="no">
+               <source>Español</source>
+            </trans-unit>
+            <trans-unit id="14" resname="Lang_5" translate="no">
+               <source>日本</source>
+            </trans-unit>
+            <trans-unit id="15" resname="Lang_6" translate="no">
+               <source>Português</source>
+            </trans-unit>
+            <trans-unit id="2" resname="Language">
+               <source>Doc language:</source>
+               <target>Doc language:</target>
+            </trans-unit>
+            <trans-unit id="5" resname="Options">
+               <source>Options</source>
+               <target>Options</target>
+            </trans-unit>
+            <trans-unit id="6" resname="PasteWithComments">
+               <source>With the comments</source>
+               <target>With the comments</target>
+            </trans-unit>
+            <trans-unit id="6" resname="SearchLanguage">
+               <source>Application Language only</source>
+               <target>Application Language only</target>
+            </trans-unit>
+            <trans-unit id="9" resname="search_placeholder">
+               <source>Keywords separated by space</source>
+               <target>Keywords separated by space</target>
+            </trans-unit>
+            <trans-unit id="16" resname="popupWindow">
+               <source>Popup window</source>
+               <target>Popup window</target>
+            </trans-unit>
+            <trans-unit id="17" resname="ChangeWillBeEffectiveTheNextTime">
+               <source>The change will be effective the next time</source>
+               <target>The change will be effective the next time</target>
+            </trans-unit>
+            <trans-unit id="18" resname="belowTheCommand">
+               <source>Below the command</source>
+               <target>Below the command</target>
+            </trans-unit>
+            <trans-unit id="19" resname="showCommandNumber">
+               <source>Show Command Number</source>
+               <target>Show Command Number</target>
+            </trans-unit>
+            <trans-unit id="20" resname="PasteWithSyntax">
+               <source>Paste with syntax</source>
+               <target>Paste with syntax</target>
+            </trans-unit>
+         </group>
+      </body>
+   </file>
+</xliff>

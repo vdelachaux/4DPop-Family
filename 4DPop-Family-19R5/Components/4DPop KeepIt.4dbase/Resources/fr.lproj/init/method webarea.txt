@@ -1,0 +1,72 @@
+/*Template de méthode pour une zone web*/
+// ----------------------------------------------------
+// Object method : <method_name/> - (<database_name/>)
+// <keepit name="_created"/>
+// ----------------------------------------------------
+// Declarations
+C_ENTIER LONG($Lon_errorCode;$Lon_formEvent)
+C_TEXTE($Txt_description;$Txt_url;$Txt_webArea)
+
+// ----------------------------------------------------
+// Initialisations
+$Lon_formEvent:=Evenement formulaire
+$Txt_webArea:=OBJET Lire nom(Objet courant)
+
+// ----------------------------------------------------
+Au cas ou
+	
+	//______________________________________________________
+	: ($Lon_formEvent=Sur chargement)
+	
+	//This filter disable the "auto" drag & drop of a link
+	TABLEAU TEXTE($tTxt_url;0x0000)
+	TABLEAU BOOLEEN($tBoo_allow;0x0000)
+	
+	AJOUTER A TABLEAU($tTxt_url;"*")  //all
+	AJOUTER A TABLEAU($tBoo_allow;Faux)  //forbidden
+	
+	WA FIXER FILTRES URL(*;$Txt_webArea;$tTxt_url;$tBoo_allow)
+	
+	//______________________________________________________
+	: ($Lon_formEvent=Sur fin chargement URL)
+	
+	//Active the contextual menu in debug mode
+	WA FIXER PREFERENCE(*;$Txt_webArea;wa autoriser menu contextuel;Non(Mode compile))
+	
+	//______________________________________________________
+	: ($Lon_formEvent=Sur erreur chargement URL)
+	
+	WA LIRE DERNIERE ERREUR URL(*;$Txt_webArea;$Txt_url;$Txt_description;$Lon_errorCode)
+	
+	//______________________________________________________
+	: ($Lon_formEvent=Sur refus ouverture fenêtre)
+	
+	$Txt_url:=WA Lire dernier URL filtre(*;$Txt_webArea)
+	
+	//______________________________________________________
+	: ($Lon_formEvent=Sur filtrage URL)
+	
+	$Txt_url:=WA Lire dernier URL filtre(*;$Txt_webArea)
+	
+	Au cas ou
+		//…………………………………………………………
+		: ($Txt_url="about:blank")
+		
+		//…………………………………………………………
+		: ($Txt_url="")
+		
+		//…………………………………………………………
+	Sinon
+		
+		ASSERT(Faux;"unknow url: "+$Txt_url)
+		
+		//…………………………………………………………
+	Fin de cas
+	
+	//______________________________________________________
+Sinon
+	
+	<keepit name="_Unnecessary form event"/>
+	
+	//______________________________________________________
+Fin de cas

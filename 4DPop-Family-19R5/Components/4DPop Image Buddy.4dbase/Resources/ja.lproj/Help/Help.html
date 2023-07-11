@@ -1,0 +1,204 @@
+<HTML XMLNS:V="urn:schemas-microsoft-com:vml" XMLNS:O="urn:schemas-microsoft-com:office:office" XMLNS:W="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>4DPop Image Buddy</TITLE>
+<LINK href="../../Common/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style13 {
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.style15 {
+	font-weight: bold
+}
+.style16 {
+	font-size: 12px;
+	font-weight: bold;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+<DIV class="Section1"> </DIV>
+<DIV class="Section1" align="left">
+  <HR>
+  <TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+    <TR>
+      <TD width="100"><IMG src="../../Common/4d.png" border="0"></TD>
+      <TD valign="middle"><TABLE width="100%" border="0" cellspacing="0" cellpadding="4" height="100%">
+          <TR>
+            <TD width="244"><H1>4DPop<BR>
+                Image Buddy</H1></TD>
+            <TD></TD>
+          </TR>
+          <TR>
+            <TD colspan="2"><IFRAME src="../../Common/Localisation.html" frameborder="0" scrolling="no" align="middle" height="40" width="100%" NORESIZE="true"></IFRAME></TD>
+          </TR>
+        </TABLE></TD>
+    </TR>
+  </TABLE>
+  <HR>
+  <P>4DPop Image Buddy は &quot;Resources&quot; フォルダやそのサブフォルダに格納された画像を管理するためのツールです。</P>
+  <HR>
+  <H2>インストール</H2>
+  <DIV class="Section1" align="left">
+    <TABLE width="100%" border="0" cellspacing="4" cellpadding="2">
+      <TR>
+        <TD align="right" valign="top">1.</TD>
+        <TD>データベースのストラクチャファイル (&quot;.4db&quot;) と同階層に&quot;<I>Components</I>&quot; を作成します。 </TD>
+      </TR>
+      <TR>
+        <TD align="right" valign="top">2.</TD>
+        <TD>&quot;<I>4DPop Image Buddy.4dbase</I>&quot;* フォルダまたはそのエイリアスを &quot;<I>Components&quot;</I> フォルダに置きます。</TD>
+      </TR>
+      <TR>
+        <TD align="right" valign="top">3.</TD>
+        <TD>データベースを開きます。</TD>
+      </TR>
+      <TR>
+        <TD align="right" valign="top">4.</TD>
+        <TD>&quot;<I>4DPop&quot;</I>コンポーネントを使用している場合、新しいボタン&quot;Image Buddy&quot; がツールバーに表示され、クリックすればエディタが表示されます。
+          <P align="left"><IMG src="Images/4DPopPalette.png" alt="" border="0"></P>
+        <P>&quot;<I>4DPop&quot;</I> コンポーネントがインストールされていない場合、ツールを開くためには <EM>&quot;実行&quot;</EM> メニューの <EM>&quot;メソッド...&quot;</EM> を選択し、<EM>&quot;Pictures_Browser&quot;</EM> を選択して &quot;実行&quot;ボタンをクリックします。</P></TD>
+      </TR>
+    </TABLE>
+    <P><FONT size="-1">*Macintoshでは、コンポーネントは拡張子が &quot;.4dbase&quot; のコンポーネントです。</FONT></P>
+    <P align="center"><IMG src="Images/Editor.png" alt="" border="0"></P>
+    <DIV class="Section1" align="left">
+      <DIV class="Section1" align="left">
+        <DIV class="Section1" align="left">
+          <HR>
+          <H2>エディタウィンドウ</H2>
+          <P>エディタには4つのエリアがあります:</P>
+          <H3>1. フォルダリスト</H3>
+          <P>このエリアにはデータベースの &quot;Resources&quot; フォルダの階層構造が表示されます。このリストは起動時に作成され、コンテキストメニューもしくはドラッグ＆ドロップで変更できます。</P>
+          <TABLE width="100%" border="0" cellspacing="4" cellpadding="4">
+            <TR>
+              <TD width="5"><IMG src="Images/FolderContext.png" alt="" border="0"></TD>
+              <TD valign="middle"><TABLE width="100%" border="0" cellspacing="4" cellpadding="2" height="0%">
+                  <TR>
+                    <TD><B>新規フォルダ</B></TD>
+                    <TD>&quot;Resources&quot; フォルダまたは選択したフォルダ内に新しいフォルダを作成します。</TD>
+                  </TR>
+                  <TR>
+                    <TD><B>開く</B></TD>
+                    <TD valign="middle">選択したフォルダを開き、システムウィンドウにその内容を表示します。</TD>
+                  </TR>
+                  <TR>
+                    <TD><B>名称変更...</B></TD>
+                    <TD>選択したフォルダの名称を変更します。</TD>
+                  </TR>
+                  <TR>
+                    <TD><B>複製</B></TD>
+                    <TD>選択したフォルダを複製します。</TD>
+                  </TR>
+                  <TR>
+                    <TD><B>削除</B></TD>
+                    <TD>選択したフォルダとその内容を削除します。</TD>
+                  </TR>
+                  <TR>
+                    <TD><B>再読み込み</B></TD>
+                    <TD>選択したフォルダのピクチャリストを再構築します。</TD>
+                  </TR>
+                </TABLE></TD>
+            </TR>
+          </TABLE>
+          <P>デスクトップやフォルダからピクチャをドラッグすると、ピクチャが格納先フォルダにコピーされます。<BR>
+          4Dフォームや4Dのピクチャライブラリからフォルダにスタティックピクチャをドロップすると、名前を入力した後、ピクチャはPNGフォーマットで格納先フォルダに追加されます。</P>
+          <H3>2. ピクチャリスト</H3>
+          <P>ピクチャリストには選択したフォルダ内のピクチャのアイコンが表示されます。Shift + クリックで複数のピクチャを選択できます。またCommand/Ctrl + クリックで非連続のピクチャを選択できます。上下左右の矢印キーを使用してピクチャの選択を変更することもできます。選択に応じてコンテキストメニューが表示されます。</P>
+          <TABLE width="100%" border="0" cellspacing="4" cellpadding="4">
+            <TR>
+              <TD width="5"><IMG src="Images/ImageContext.png" alt="" border="0"></TD>
+              <TD valign="middle"><TABLE width="100%" border="0" cellspacing="4" cellpadding="2">
+                  <TR>
+                    <TD><B>開く</B></TD>
+                    <TD>システムのデフォルトピクチャアプリケーションを使用して、選択したピクチャを開きます。</TD>
+                  </TR>
+                  <TR>
+                    <TD><B>名称変更...</B></TD>
+                    <TD>選択したピクチャの名称を変更します。</TD>
+                  </TR>
+                  <TR>
+                    <TD><B>複製</B></TD>
+                    <TD>選択したピクチャを複製します。</TD>
+                  </TR>
+                  <TR>
+                    <TD><B>コピー</B></TD>
+                    <TD>ピクチャをペーストボードにコピーします。</TD>
+                  </TR>
+                  <TR>
+                    <TD><B>削除</B></TD>
+                    <TD>選択したピクチャを削除します。</TD>
+                  </TR>
+                </TABLE></TD>
+            </TR>
+          </TABLE>
+          <P>ピクチャを4Dフォームにドロップできます。ピクチャは4Dピクチャライブラリに作成され、 &quot;Resources&quot;フォルダのピクチャにリンクされます。<BR>
+          また同じリストから、アプリケーションアイコンやDockやツールバーにドラッグして、そのソフトでピクチャを開くこともできます。</P>
+          <H3>3. 情報とプレビューゾーン</H3>
+          <P>このエリアには選択したピクチャのプレビュー、幅と高さ、そしてサイズが表示されます。<BR>
+          またピクチャをこのエリアからフォームエディタや他のソフトウェア、デスクトップにドロップできます。</P>
+          <H3>4. フッタ</H3>
+          <P>このエリアにはユーティリティメニューを表示するアクションボタン、名前を入力して格納されたピクチャをフィルタするためのエリア、選択されたフォルダ内のピクチャの数を表示するエリアがまとめられています。</P>
+          <HR>
+          <H2>ユーティリティ</H2>
+        </DIV>
+      </DIV>
+      <IMG src="Images/ActionMenu.png" alt="" border="0">
+      <P>これらのユーティリティはPICTやcicnリソース、またはピクチャライブラリからピクチャを読み込み、PNGフォーマットに変換し、選択したフォルダ (またはフォルダが選択されていなければ &quot;Resources&quot; フォルダ) に格納します。</P>
+    </DIV>
+    <DIV class="Section1" align="left">
+      <HR>
+      <P><B><I>注</I></B> :</P>
+      <UL>
+        <LI>エディタを開かなくとも、<EM>&quot;Resources&quot; フォルダのルート</EM> にピクチャを格納できます。これを行うには、ピクチャを4DPopパレットのImage Buddyアイコンにドロップします。<BR>
+        <LI>Shiftキーを押したままフォルダを選択するか<EM>&quot;再読み込み&quot;</EM> を選択すると、ピクチャリストは選択したフォルダとそのサブフォルダのピクチャで再構築されます。<BR>
+        <LI>データベースを変換する際、4DフォームからスタティックピクチャをドラッグしてResourcesフォルダにピクチャを作成し、フォーム上のオリジナルを削除、そして新しく作成したピクチャを4Dフォームにドロップすれば、新しいピクチャ参照を利用することができます。<BR>
+        <LI>
+          <DIV ALIGN="left">より多くのピクチャを表示させるには、すぴりったを移動してフォルダリストをリサイズします。フォルダリストが小さくなると、階層ポップアップメニューに変わります。</DIV>
+          <DIV ALIGN="center"><BR>
+            <IMG SRC="Images/FolderMenu.png" ALT="" BORDER="0"></DIV>
+          <BR>
+          この場合、フォルダの選択はポップアップメニューで行います。この設定では、 &quot;Resources&quot; フォルダにピクチャをドロップできません。これを可能にするには、スプリッタを使用してフォルダリストを拡げます。
+      </UL>
+      <UL>
+        <LI>同様に、プレビューエリアもスプリッタを使用して非表示にできます。
+        <LI>ウィンドウとスプリッタの位置はファイル <EM>&quot;~/Preferences/4D/4dPop v11 preference.xml&quot;</EM> に記録されます。
+        <LI>'PICT' リソースの読み込み中、対応する'MASK' リソースが存在すれば (2004のドキュメント参照) 、それらは結果の <EM>'png'</EM> ピクチャに統合され、アルファレイヤと透過が作成されます。
+      </UL>
+      </TD>
+      </TR>
+      </TABLE>
+      <P>&nbsp;</P>
+      <HR>
+      <DIV CLASS="Section1" ALIGN="left">
+        <DIV CLASS="Section1" ALIGN="left">
+          <H2>クライアント/サーバ</H2>
+          <P>リモートモードでは、フォルダに対するいくつかの処理が無効になります (削除、名称変更、複製) が、ピクチャの追加、削除、更新はサーバに転送され、<EM>&quot;Resources&quot;</EM> フォルダを更新し、クライアントに通知します。</P>
+          <HR>
+          <H2>リリースノート</H2>
+          <BLOCKQUOTE>
+            <H4>version 1.2 :</H4>
+            <UL>
+              <LI>クライアント/サーバのサポート</LI>
+              <LI>ウィンドウとスプリッタの位置を記憶</LI>
+              <LI>4DPopパレットのImage Buddyボタン上へのピクチャのドロップを追加</LI>
+              <LI>バグの修正</LI>
+            </UL>
+          </BLOCKQUOTE>
+          <HR>
+          <H2>ソースコード</H2>
+          <P>このコンポーネントはコンパイル版で提供されますが、コンポーネントフォルダ内の&quot;Sources&quot; フォルダにはソースコードが含まれています。</P>
+          <HR>
+          <H2>Forum</H2>
+          <P>4DPopに関するディスカッションは <A HREF="http://forums.4d.fr/Forum/FR/1467485/0/0" TITLE="4DPop Forum" TARGET="_blank">Forum 4DPop</A> で提供されています。</P>
+        </DIV>
+      </DIV>
+    </DIV>
+  </DIV>
+</DIV>
+</BODY>
+</HTML>

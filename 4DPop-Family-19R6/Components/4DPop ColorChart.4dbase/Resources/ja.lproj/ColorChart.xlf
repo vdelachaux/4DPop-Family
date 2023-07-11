@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--     
+Translation file.
+This file is distributed under the same license as the product package.-->
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd"><xliff version="1.0">
+   <file datatype="x-STR#" original="undefined" source-language="en" target-language="ja">
+      <header>
+         <prop-group name="Xliff-Editor.4dbase">
+            <prop prop-type="version">1.0</prop>
+         </prop-group>
+      </header>
+      <body>
+         <group resname="ColorChart">
+            <trans-unit id="4" resname="ColorChart_Hue">
+               <source>Hue:</source>
+               <target>色相:</target>
+            </trans-unit>
+            <trans-unit id="5" resname="ColorChart_Saturation">
+               <source>Saturation:</source>
+               <target>彩度:</target>
+            </trans-unit>
+            <trans-unit id="6" resname="ColorChart_Luminosity">
+               <source>Luminosity:</source>
+               <target>明度:</target>
+            </trans-unit>
+            <trans-unit id="7" resname="ColorChart_HSL">
+               <source>HSL</source>
+               <target>HSL</target>
+            </trans-unit>
+            <trans-unit id="8" resname="ColorChart_RGB">
+               <source>RGB</source>
+               <target>RGB</target>
+            </trans-unit>
+            <trans-unit id="9" resname="ColorChart_ColorChart">
+               <source>Color Chart</source>
+               <target>カラーチャート</target>
+            </trans-unit>
+            <trans-unit id="10" resname="ColorChart_Ex">
+               <source>Ex:</source>
+               <target>例:</target>
+            </trans-unit>
+            <trans-unit id="11" resname="ColorChart_WebColorsOnly">
+               <source>Web colors only</source>
+               <target>Webカラーのみ</target>
+            </trans-unit>
+            <trans-unit id="12.1" resname="ColorChart_Fgd">
+               <source>Fgd</source>
+               <target>Fgd</target>
+            </trans-unit>
+            <trans-unit id="10" resname="ColorChart_Bgd">
+               <source>Bgd</source>
+               <target>Bgd</target>
+            </trans-unit>
+            <trans-unit id="11" resname="ColorChart_InOrderTo">
+               <source>In order to create a sample, drag and drop from the large color area.
+The samples will be memorized as well as their names.
+They can then be dragged to the 4D method editor in order to generate the code corresponding to the foreground and background colors.
+E.g.: SET RGB COLORS (*;"Sample1";2356+;456456)</source>
+               <target>サンプルを作成するには、カラーエリアからドラッグ＆ドロップします。
+サンプルおよびその名前は記憶されます。
+その後、4Dメソッドエディタにドラッグして、前景色や背景色に対応するコードを生成できます。
+例 SET RGB COLORS (*;"Sample1";2356+;456456)</target>
+            </trans-unit>
+            <trans-unit id="12.1" resname="ColorChart_Mode1">
+               <source>256 hues</source>
+               <target>色相 256</target>
+            </trans-unit>
+            <trans-unit id="13" resname="ColorChart_Mode2">
+               <source>256 saturations</source>
+               <target>彩度 256</target>
+            </trans-unit>
+            <trans-unit id="13" resname="ColorChart_Mode3">
+               <source>256 luminosities</source>
+               <target>明度 256</target>
+            </trans-unit>
+            <trans-unit id="13" resname="ColorChart_Mode4">
+               <source>16 hues x 16 luminosities</source>
+               <target>色相 16 x 明度 16</target>
+            </trans-unit>
+            <trans-unit id="13" resname="ColorChart_Mode5">
+               <source>16 hues x 16 saturations</source>
+               <target>色相 16 x 彩度 16</target>
+            </trans-unit>
+            <trans-unit id="13" resname="ColorChart_Mode6">
+               <source>16 luminosities x 16 saturations</source>
+               <target>明度 16 x 彩度 16</target>
+            </trans-unit>
+            <trans-unit id="19" resname="ColorChart_Sample">
+               <source>Sample</source>
+               <target>例題</target>
+            </trans-unit>
+         </group>
+      </body>
+   </file>
+</xliff>

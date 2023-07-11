@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<tools name="Xliff Pro" picture="4DPop.png">
+
+    <tool name="Editor" method="4DPop_XLIFF_EDITOR"/>
+	
+</tools>

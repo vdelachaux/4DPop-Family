@@ -1,0 +1,193 @@
+<html XMLNS:V="urn:schemas-microsoft-com:vml" XMLNS:O="urn:schemas-microsoft-com:office:office" XMLNS:W="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<link href="../../Common/style.css" rel="stylesheet" type="text/css">
+		<title>4DPop sqlSchemas</title>
+	</head>
+
+
+
+	<body>
+		<div class="Section1">
+			<hr>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="100"><img src="../../Common/4d.png" border="0"></td>
+					<td valign="middle">
+						<table width="100%" border="0" cellspacing="0" cellpadding="4" height="100%">
+							<tr>
+								<td width="97">
+									<h1>4DPop sqlSchemas</h1>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<iframe src="../../Common/Localisation.html" frameborder="0" scrolling="no" align="middle" height="40" width="100%" NORESIZE="true"></iframe>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<div class="Section1" align="left">
+				<hr>
+				<p>4DPop sqlSchemas を使用して、<a href="http://www.4d.fr/documentation/4DdocV11/V6U/V6U00016.HTM">SQL外部接続</a> (ODBC, SQL Pass trough, 4D for Flex, ...) の間に使用するSQLスキーマをグラフィカルに定義できます。スキーマは<a href="http://www.4d-japan.com/docs/CMJ/CMJ10034.HTM">On SQL Authentication</a>データベースメソッドで適用されます。</p>
+		  	<p>ドキュメントで説明されているとおり、スキーマはシステムテーブルに格納されます : <a href="http://www.4d-japan.com/docs/CMJ/CMJ18423.HTM">4Dと4D SQLエンジン統合の原則</a></p>
+			</div>
+		</div>
+		<div class="Section1" align="left">
+			<h2>インストール</h2>
+			<p>&quot;<i>4DPop sqlSchema.4dbase</i>&quot;フォルダまたはフォルダのエイリアスを、ストラクチャファイルと同階層の&quot;<i>Components&quot;</i>フォルダに配置します。</p>
+			<p><center><img src="Images/Screen_1.png" width="893" border="1"></center></p>
+			<p>ダイアログを開くには&quot;<b><i>SC_Dial_Workshop</i>&quot;</b>メソッドを実行します。</p>
+			<p>&quot;<i>4DPop</i>&quot;コンポーネントを使用している場合、sqlSchemaツールはパレットに表示されます。クリックすればダイアログが表示されます。</p>
+			<img src="Images/4dpop.png">
+			<h2>利用方法</h2>
+			<p>ダイアログからスキーマのCREATE、DROP、RENAMEができます。特定の4Dグループにアクセス権をGRANTまたはREVOKEできます。スキーマを定義したら、それをテーブルに適用できます。スキーマを完全に定義したら、SQl定義をテキストファイルに保存できます。それを後で再読み込みすることもできます。</p>
+			<h3>ダイアログ</h3>
+
+			<table>
+				<tr>
+        	<td height="20" class="Section">グループ</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+					<td align="center" valign="middle"><img src="Images/users.png" height="111" width="258"></td>
+					<td align="left" valign="top">ここには定位済みのグループが表示されます。グループは<a href="http://www.4d-japan.com/docs/CMJ/CMJ00281.HTM">EDIT ACCESS</a>コマンドで編集できます。. 
+          スキーマでは2つの仮想グループ&lt;EVERYBODY&gt; と &lt;NOBODY&gt;も使用されます。
+          <p>&lt;EVERYBODY&gt; は制限が適用されないことを意味します。&lt;NOBODY&gt;は誰もアクセスがないことを意味します (REVOKE コマンド)。</p></td>
+				</tr>
+			</table>
+			<hr width="80%"/>
+			<table>
+				<tr>
+        	<td height="20" class="Section">スキーマ</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+					<td><img src="Images/Schemas.png"></td>
+					<td align="left" valign="top">ここでスキーマを作成し、4Dグループのアクセス権を定義します。DEFAULT_SCHEMAをDROPしたりRENAMEしたりすることはできません。
+							<p>READはグループのメンバが読み込みのみアクセスを持つことを意味します。</p>
+          <p>READ_WRITEはユーザが読み書きモードでアクセスできることを意味します。</p>
+          <p>ALLはユーザがストラクチャ定義 (Alter table, Create field, create indexs,...) にアクセスできることを意味します。</p>
+          </td>
+				</tr>
+			</table>
+			<hr width="80%"/>
+			<table>
+				<tr>
+        	<td height="20" class="Section">テーブル</td><td>&nbsp;</td>
+        </tr>
+				<tr>
+ 					<td><img src="Images/Tables.png"></td>
+					<td align="left" valign="top">
+          <p>ここでデータベースのテーブルにスキーマを適用します。</p>
+           <p>スキーマが割り当てられていないテーブルはすべてDEFAULT_SCHEMAに属します。</p>
+          </td>
+				</tr>
+			</table>
+			<hr width="80%" />
+			<table>
+				<tr>
+        	<td height="20" class="Section">プレビュー<h4><td>&nbsp;</td>
+        </tr>
+				<tr>
+					<td><img src="Images/Preview.png"></td>
+					<td align="left" valign="top">
+          <p>テキストエリアに、スキーマ定義を反映したSQL文が表示されます。</p>
+          </td>
+				</tr>
+			</table>
+			
+			
+
+			<hr />
+			<br />
+
+
+			<h2> コードライブラリ</h2>
+	コンポーネントから汎用のメソッドが提供されます。<br />
+<p>
+<table cellpadding="2">
+   <tr><td class="Library">SC_Dial_Workshop :</td>
+   <td> スキーマ定義ダイアログを開く。</td>
+   </tr>
+   <tr><td class="Library">SC_Get_Tables_from_SchemaID</i></b></font> :</td>
+   <td> 指定したスキーマIDに属するテーブルをテキスト配列に返す。</td>
+   </tr>
+   <tr><td class="Library">SC_Get_Tables_from_SchemaName</i></b></font> :</td>
+   <td>指定したスキーマ名に属するテーブルをテキスト配列に返す。</td>
+   </tr>
+   <tr><td class="Library">SC_GroupExists</i></b></font> :</td>
+   <td> 指定したグループが存在すればTrueを返す (仮想グループを含む)。</td>
+   </tr>
+	 <tr><td class="Library">SC_K_Default</i></b></font> :</td>
+	 <td> デフォルトスキーマ名を返す。</td>
+	 </tr>
+	 <tr><td class="Library">SC_K_Everybody</i></b></font> :</td>
+	 <td>&lt;EVERYBODY&gt; 仮想グループ名を返す。</td>
+	 </tr>
+	 <tr><td class="Library">SC_K_Nobody</i></b></font> :</td><td>&lt;NOBODY&gt;仮想グループ名を返す。</td>
+	 </tr>
+	 <tr><td class="Library">SC_Schema_Create</i></b></font> :</td>
+	 <td> スキーマを作成し、オプションでグループに権限を割り当てる。</td>
+	 </tr>
+	 <tr><td class="Library">SC_Schema_Drop</i></b></font> :</td>
+	 <td> 指定したスキーマをDROPする。</td>
+	 </tr>
+	 <tr><td class="Library">SC_Schema_Exists</i></b></font> :</td>
+	 <td>指定したスキーマが存在すればTrueを返す。</td>
+	 </tr>
+	 <tr><td class="Library">SC_Schema_Get_ID</i></b></font> :</td>
+	 <td> 指定したスキーマ名のIDを返す。</td>
+	 </tr>
+	 <tr><td class="Library">SC_Schema_Rename</i></b></font> :</td>
+	 <td> 指定したスキーマの名称を変更する。*</td>
+	 </tr>
+	 <tr><td class="Library">SC_Schema_Right_Grant</i></b></font> :</td>
+	 <td> 指定したスキーマ用の指定したグループにアクセス権をGRANTする。</td>
+	 </tr>
+	 <tr><td class="Library">SC_Schema_Right_Revoke</i></b></font> :</td>
+	 <td>指定したスキーマにアクセス権をREVOKEする。</td>
+	 </tr>
+	 <tr><td class="Library">SC_Schema_Rights_Grant</i></b></font> :</td>
+	 <td> 指定したスキーマにアクセス権をGRANTする。</td>
+	 </tr>
+	 <tr><td class="Library">SC_Schemas_Load</i></b></font> :</td>
+	 <td> 参照配列にスキーマテーブルをロードする。</td>
+	 </tr>
+	 <tr><td class="Library">SC_Schemas_Supported</i></b></font> :</td>
+	 <td> 4Dがスキーマをサポートする場合Trueを返す。</td>
+	 </tr>
+	 <tr><td class="Library">SC_Table_Exists</i></b></font> :</td>
+	 <td>指定したテーブルが存在すればTrueを返す。</td>
+	 </tr>
+	 <tr><td class="Library">SC_Table_Get_Schema</i></b></font> :</td>
+	 <td>指定したテーブルのスキーマ名を返す。</td>
+	 </tr>
+	 <tr><td class="Library">SC_Table_Get_Schema_ID</i></b></font> :</td>
+	 <td> 指定したテーブルのスキーマIDを返す。</td>
+	 </tr>
+	 <tr><td class="Library">SC_Table_Set_Schema_ID</i></b></font> :</td>
+	 <td> 指定したテーブルにスキーマを設定する。</td>
+	 </tr>
+	 <tr><td class="Library">SC_Tables_Load</i></b></font> :</td>
+	 <td> 参照配列にテーブルをロードする。</td>
+	 </tr>
+</table>
+
+* 未実装			
+</p>
+<hr />
+			<h2>ソースコード</h2>
+		  <p>このコンポーネントはコンパイル版で提供されますが、コンポーネントフォルダ内の&quot;Sources&quot; フォルダにはソースコードが含まれています。</p>
+			<br /><br />
+		</div>
+
+
+
+
+
+	</body>
+
+</html>

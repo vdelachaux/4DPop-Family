@@ -1,0 +1,204 @@
+<HTML XMLNS:V="urn:schemas-microsoft-com:vml" XMLNS:O="urn:schemas-microsoft-com:office:office" XMLNS:W="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>4DPop Image Buddy</TITLE>
+<LINK href="../../Common/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style13 {
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.style15 {
+	font-weight: bold
+}
+.style16 {
+	font-size: 12px;
+	font-weight: bold;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+<DIV class="Section1"> </DIV>
+<DIV class="Section1" align="left">
+  <HR>
+  <TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+    <TR>
+      <TD width="100"><IMG src="../../Common/4d.png" border="0"></TD>
+      <TD valign="middle"><TABLE width="100%" border="0" cellspacing="0" cellpadding="4" height="100%">
+          <TR>
+            <TD width="244"><H1>4DPop<BR>
+                Image Buddy</H1></TD>
+            <TD></TD>
+          </TR>
+          <TR>
+            <TD colspan="2"><IFRAME src="../../Common/Localisation.html" frameborder="0" scrolling="no" align="middle" height="40" width="100%" NORESIZE="true"></IFRAME></TD>
+          </TR>
+        </TABLE></TD>
+    </TR>
+  </TABLE>
+  <HR>
+  <P>4DPop Image Buddy is a tool used to manage pictures stored in the &quot;resources&quot; folder of the current database or one of it's sub folders.</P>
+  <HR>
+  <H2>Component installation</H2>
+  <DIV class="Section1" align="left">
+    <TABLE width="100%" border="0" cellspacing="4" cellpadding="2">
+      <TR>
+        <TD align="right" valign="top">1.</TD>
+        <TD>Create a folder &quot;<I>Components</I>&quot; beside the structure file of your database (&quot;.4db&quot;)</TD>
+      </TR>
+      <TR>
+        <TD align="right" valign="top">2.</TD>
+        <TD>Place the folder &quot;<I>4DPop Image Buddy.4dbase</I>&quot;* or an alias of the folder into the &quot;<I>Components</I>&quot; folder</TD>
+      </TR>
+      <TR>
+        <TD align="right" valign="top">3.</TD>
+        <TD>Open your database.</TD>
+      </TR>
+      <TR>
+        <TD align="right" valign="top">4.</TD>
+        <TD>If the componant 4DPop is installed a new button &quot;Image Buddy&quot; will appear in the tool bar. Clic on it to start the editor.
+          <P align="left"><IMG src="Images/4DPopPalette.png" alt="" border="0"></P>
+          <P>If the 4DPop component is not installed you have to start the editor, to do so, select the menu &quot;Execute&quot; line &quot;Methods...&quot; then select &quot;Pictures_Browser&quot; in the list ; clic the button &quot;Execute&quot;</P></TD>
+      </TR>
+    </TABLE>
+    <P><FONT size="-1">*On Macintosh, the component is a package with a &quot;.4dbase&quot; extension and could not be visible depending on your display settings.</FONT></P>
+    <P align="center"><IMG src="Images/Editor.png" alt="" border="0"></P>
+    <DIV class="Section1" align="left">
+      <DIV class="Section1" align="left">
+        <DIV class="Section1" align="left">
+          <HR>
+          <H2>Editor window</H2>
+          <P>The Editor contains 4 parts from top to bottom :</P>
+          <H3>1. Folders list</H3>
+          <P>This list displays the hierarchy of the &quot;Resources&quot; folder of the database in development. It is build at startup and can be modified by the contextual menu or drag & drop.</P>
+          <TABLE width="100%" border="0" cellspacing="4" cellpadding="4">
+            <TR>
+              <TD width="5"><IMG src="Images/FolderContext.png" alt="" border="0"></TD>
+              <TD valign="middle"><TABLE width="100%" border="0" cellspacing="4" cellpadding="2" height="0%">
+                  <TR>
+                    <TD><B>New</B></TD>
+                    <TD>Creates a new folder inside the &quot;Resources&quot; folder ; or the selected folder.</TD>
+                  </TR>
+                  <TR>
+                    <TD><B>Open</B></TD>
+                    <TD valign="middle">Opens the selected folder and displays the content into a system window.</TD>
+                  </TR>
+                  <TR>
+                    <TD><B>Rename...</B></TD>
+                    <TD>Rename the selected folder</TD>
+                  </TR>
+                  <TR>
+                    <TD><B>Duplicate</B></TD>
+                    <TD>Duplicate the selected folder.</TD>
+                  </TR>
+                  <TR>
+                    <TD><B>Delete</B></TD>
+                    <TD>Delete the selected folder and it's content</TD>
+                  </TR>
+                  <TR>
+                    <TD><B>Refresh the view</B></TD>
+                    <TD>Rebuilds the picture list of the selected folder</TD>
+                  </TR>
+                </TABLE></TD>
+            </TR>
+          </TABLE>
+          <P>Drag a picture from the desktop or from a folder, a copy of this picture is added to the destination folder.<BR>
+            If you drop a static picture from a 4D Form or a picture from the 4D Picture Library on to a folder, after typing it's name, a picture is added in the destination folder(in .png format).</P>
+          <H3>2. Pictures list</H3>
+          <P>Pictures list displays the icons of the pictures into the selected folder. Shit clic allows to select multiple pictures, and  command key allows discontinue selection to be made. Navigation is done with the arrow keys Up, Down, Left and Right. A contextual menu is displayed depending on the selection.</P>
+          <TABLE width="100%" border="0" cellspacing="4" cellpadding="4">
+            <TR>
+              <TD width="5"><IMG src="Images/ImageContext.png" alt="" border="0"></TD>
+              <TD valign="middle"><TABLE width="100%" border="0" cellspacing="4" cellpadding="2">
+                  <TR>
+                    <TD><B>Open</B></TD>
+                    <TD>Opens the selected picture with your system default picture application.</TD>
+                  </TR>
+                  <TR>
+                    <TD><B>Rename...</B></TD>
+                    <TD>Remanes the selected picture</TD>
+                  </TR>
+                  <TR>
+                    <TD><B>Duplicate</B></TD>
+                    <TD>Duplicate the selected picture.</TD>
+                  </TR>
+                  <TR>
+                    <TD><B>Copy</B></TD>
+                    <TD>Copy the picture into the pasteboard, it can the be pasted on the desktop for example</TD>
+                  </TR>
+                  <TR>
+                    <TD><B>Delete</B></TD>
+                    <TD>Delete the selected picture(s).</TD>
+                  </TR>
+                </TABLE></TD>
+            </TR>
+          </TABLE>
+          <P>You can drop a picture onto an edited 4D Form : A picture will be created into the 4D Picture Library and linked to the picture into the &quot;resources&quot; folder.<BR>
+            You can also, from this same list, drop a picture on an application icon in the Dock, or the Tool Bar for example, to open it with this software.</P>
+          <H3>3. Information and preview zone</H3>
+          <P>Into this zone you visualize the picture, it's width, height and the size of the selected picture.<BR>
+            You can equally drop this picture in the form editor, another software or the desktop.</P>
+          <H3>4. Footer</H3>
+          <P>This zone groups together a button &quot; Action&quot; linked to a utilities menu, a typing field allows filtering the stored pictures posted by their name and the information zone indicates the number of pictures found in the selected folder.</P>
+          <HR>
+          <H2>Utilities</H2>
+        </DIV>
+      </DIV>
+      <IMG src="Images/ActionMenu.png" alt="" border="0">
+      <P>These Utilities allows reading the PICT and cicn resources or the Picture Library pictures and convert them into png format, into the selected folder (or into the &quot;resources&quot; folder if there are no selected folder)</P>
+    </DIV>
+    <DIV class="Section1" align="left">
+      <HR>
+      <P><B><I>Notes</I></B> :</P>
+      <UL>
+        <LI>You can add pictures at the <EM><TT>&quot;Resources&quot; root folder</TT></EM> without opening the editor: Just Drop a picture or pictures on the Image Buddy icon in the 4DPop palette.<BR>
+        <LI>When you select a folder or ask <EM><TT>&quot;Refresh vue&quot;</TT></EM> while keeping the Shift key pressed, the pictures list is rebuilt for the selected folder and subfolders included.<BR>
+        <LI>While converting a database Drag a static picture from a 4D Form to create a picture in the resources folder, delete the original then drop the newly created picture on the 4D Form to get advantage of the new picture referencement.<BR>
+        <LI>
+          <DIV ALIGN="left">To visualize more pictures use the splitter to resize the folders list. If the folders list is too small, it's converted in a hierarchical pop-up menu.</DIV>
+          <DIV ALIGN="center"><BR>
+            <IMG SRC="Images/FolderMenu.png" ALT="" BORDER="0"></DIV>
+          <BR>
+          The folder selection is now made by deploying this pop-up. In this confuguration it's no more possible to drop a picture into the &quot;Resources&quot; folder. To get the folder zone back, just resize using the splitter, and grow the zone.
+      </UL>
+      <UL>
+        <LI>In the same way the preview zone can be hidden while moving the upper splitter to the bottom.
+        <LI>Window an splitters positions are saved for each session (in file <EM><TT>&quot;~/Preferences/4D/4dPop v11 preference.xml&quot;</TT></EM>).
+        <LI>During <TT>'PICT'</TT> resources import, if <TT>'MASK'</TT> resources exist (see documentation 2004) for one or some of the <TT>'PICT'</TT>, those are combined into the <EM><TT>'png'</TT></EM> resulting picture(s), creating alpha layer and transparency.
+      </UL>
+      </TD>
+      </TR>
+      </TABLE>
+      <P>&nbsp;</P>
+      <HR>
+      <DIV CLASS="Section1" ALIGN="left">
+        <DIV CLASS="Section1" ALIGN="left">
+          <H2>Client-Server</H2>
+          <P>In Remote Mode, some operations on folders are for now inactivated (delete, rename and duplicate) but if adding , deleting or modifying a picture, it is transfered on the server to update the <TT><EM>&quot;Resources&quot; folder</EM></TT> then notify the clients of the modification.</P>
+          <HR>
+          <H2>What's new</H2>
+          <BLOCKQUOTE>
+            <H4>version 1.2 :</H4>
+            <UL>
+              <LI>Working in Client/Server.</LI>
+              <LI>Memorize window and splitters positions</LI>
+              <LI>Added Drop of pictures on the Image Buddy button in 4DPop palette</LI>
+              <LI>Bug fix</LI>
+            </UL>
+          </BLOCKQUOTE>
+          <HR>
+          <H2> Source code provided</H2>
+          <P>This Componant is given in compiled version, but you can find the source code in the &quot;Sources&quot;folder, inside the Component folder.</P>
+          <HR>
+          <H2>Forum</H2>
+          <P>A discussion list on 4DPop is available at this adress: <A HREF="http://forums.4d.fr/Forum/FR/1467485/0/0" TITLE="4DPop Forum" TARGET="_blank">Forum 4DPop</A></P>
+        </DIV>
+      </DIV>
+    </DIV>
+  </DIV>
+</DIV>
+</BODY>
+</HTML>

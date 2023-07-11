@@ -1,0 +1,4 @@
+C_LONGINT($Lon_bottom;$Lon_left;$Lon_right;$Lon_top;$Lon_windowRef)
+
+$Lon_windowRef:=Current form window
+GET WINDOW RECT($Lon_left;$Lon_top;$Lon_right;$Lon_bottom;$Lon_windowRef)

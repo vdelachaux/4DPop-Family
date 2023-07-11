@@ -1,0 +1,12 @@
+C_LONGINT($0)
+
+ARRAY TEXT($tTxt_components;0x0000)
+COMPONENT LIST($tTxt_components)
+
+  //Run development tools
+If (Asserted(Find in array($tTxt_components;"_")>0))
+
+  //Test if database methods are damaged
+EXECUTE METHOD("_okForBackup";$0)
+
+End if 

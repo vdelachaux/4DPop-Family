@@ -1,0 +1,6 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "{name}";
+CFBundleShortVersionString = "{version} ({build})";
+CFBundleGetInfoString = "{version} ({build})";
+NSHumanReadableCopyright = "{copyright}";

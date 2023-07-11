@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--            Translation file.
+This file is distributed under the same license as the product package.-->
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd"><xliff version="1.0">
+   <file datatype="x-STR#" original="undefined" source-language="en" target-language="ja">
+      <body>
+         <group resname="WindowNames">
+            <trans-unit id="1" resname="FormMethod">
+               <source>Form Method: </source>
+               <target>フォームメソッド: </target>
+            </trans-unit>
+            <trans-unit id="2" resname="Trigger">
+               <source>Trigger: </source>
+               <target>トリガ: </target>
+            </trans-unit>
+            <trans-unit id="3" resname="Form">
+               <source>Form: </source>
+               <target>フォーム: </target>
+            </trans-unit>
+            <trans-unit id="5" resname="Method">
+               <source>Method: </source>
+               <target>メソッド: </target>
+            </trans-unit>
+            <trans-unit id="9" resname="ObjectMethod">
+               <source>Object Method: </source>
+               <target>オブジェクトメソッド: </target>
+            </trans-unit>
+            <trans-unit id="5" resname="Methods">
+               <source>Method</source>
+               <target>メソッド</target>
+            </trans-unit>
+         </group>
+         <group resname="MenuLabels">
+            <trans-unit id="6" resname="MenuLabelsFormMethod">
+               <source>Form Method</source>
+               <target>フォームメソッド</target>
+            </trans-unit>
+            <trans-unit id="7" resname="MenuLabelsTriggers">
+               <source>Triggers</source>
+               <target>トリガ</target>
+            </trans-unit>
+            <trans-unit id="8" resname="MenuLabelsForms">
+               <source>Forms</source>
+               <target>フォーム</target>
+            </trans-unit>
+            <trans-unit id="9" resname="MenuLabelsProjectMethods">
+               <source>Project Methods</source>
+               <target>プロジェクトメソッド</target>
+            </trans-unit>
+            <trans-unit id="10" resname="MenuLabelsObjectMethod">
+               <source>Object Method</source>
+               <target>オブジェクトメソッド</target>
+            </trans-unit>
+            <trans-unit id="8" resname="MenuLabelsForm">
+               <source>Form</source>
+               <target>フォーム</target>
+            </trans-unit>
+            <trans-unit id="20" resname="MenuLabelsOthers">
+               <source>Others</source>
+               <target>その他</target>
+            </trans-unit>
+            <trans-unit id="1" resname="MenuLabelsDatabaseMethods">
+               <source>Database Methods</source>
+               <target>データベースメソッド</target>
+            </trans-unit>
+            <trans-unit id="35" resname="MenuLabelsOptions">
+               <source>Options</source>
+               <target>オプション</target>
+            </trans-unit>
+         </group>
+         <group resname="Strings">
+            <trans-unit id="13" resname="StringsWindows">
+               <source>Windows</source>
+               <target>ウィンドウ</target>
+            </trans-unit>
+            <trans-unit id="14" resname="StringsStacksWindows">
+               <source>Stacks</source>
+               <target>スタック</target>
+            </trans-unit>
+            <trans-unit id="15" resname="StringsPutFrontmostWindowInScreen">
+               <source>Recover</source>
+               <target>画面内に戻す</target>
+            </trans-unit>
+            <trans-unit id="16" resname="StringsNextWindow">
+               <source>Next</source>
+               <target>次</target>
+            </trans-unit>
+            <trans-unit id="19" resname="StringsApplication">
+               <source>Application</source>
+               <target>アプリケーション</target>
+            </trans-unit>
+            <trans-unit id="36" resname="StringsDefaultAction">
+               <source>Default action</source>
+               <target>デフォルトアクション</target>
+            </trans-unit>
+         </group>
+         <group resname="Tool">
+            <trans-unit id="17" resname="ToolName">
+               <source>Windows</source>
+               <target>ウィンドウ</target>
+            </trans-unit>
+            <trans-unit id="18" resname="ToolTip">
+               <source>An ordered windows menu</source>
+               <target>並び替えたウィンドウメニュー</target>
+            </trans-unit>
+         </group>
+         <group id="405" resname="Database procs">
+            <trans-unit id="2" resname="DatabaseProcs_1">
+               <source>On Startup</source>
+               <target>On Startup</target>
+            </trans-unit>
+            <trans-unit id="3" resname="DatabaseProcs_2">
+               <source>On Server Startup</source>
+               <target>On Server Startup</target>
+            </trans-unit>
+            <trans-unit id="4" resname="DatabaseProcs_3">
+               <source>On Exit</source>
+               <target>On Exit</target>
+            </trans-unit>
+            <trans-unit id="5" resname="DatabaseProcs_4">
+               <source>On Server Shutdown</source>
+               <target>On Server Shutdown</target>
+            </trans-unit>
+            <trans-unit id="6" resname="DatabaseProcs_5">
+               <source>On Server Open Connection</source>
+               <target>On Server Open Connection</target>
+            </trans-unit>
+            <trans-unit id="7" resname="DatabaseProcs_6">
+               <source>On Web Connection</source>
+               <target>On Web Connection</target>
+            </trans-unit>
+            <trans-unit id="8" resname="DatabaseProcs_7">
+               <source>On Server Close Connection</source>
+               <target>On Server Close Connection</target>
+            </trans-unit>
+            <trans-unit id="9" resname="DatabaseProcs_8">
+               <source>On Web Authentication</source>
+               <target>On Web Authentication</target>
+            </trans-unit>
+            <trans-unit id="10" resname="DatabaseProcs_9">
+               <source>On Backup Startup</source>
+               <target>On Backup Startup</target>
+            </trans-unit>
+            <trans-unit id="11" resname="DatabaseProcs_10">
+               <source>On Backup Shutdown</source>
+               <target>On Backup Shutdown</target>
+            </trans-unit>
+            <trans-unit id="12" resname="DatabaseProcs_11">
+               <source>On Drop</source>
+               <target>On Drop</target>
+            </trans-unit>
+         </group>
+         <group resname="Preferences">
+            <trans-unit id="33" resname="Options_1">
+               <source>"Windows" menu in the main menu</source>
+               <target>"ウィンドウ" メニューをメインメニューに</target>
+            </trans-unit>
+            <trans-unit id="34" resname="Comment_1">
+               <source>Otherwise the windows are always in a sub-menu. Invert with the Maj key.</source>
+               <target>そうでなければ、ウィンドウは常にサブメニューにあります。Majキーで切り替えられます。</target>
+            </trans-unit>
+         </group>
+      </body>
+   </file>
+</xliff>

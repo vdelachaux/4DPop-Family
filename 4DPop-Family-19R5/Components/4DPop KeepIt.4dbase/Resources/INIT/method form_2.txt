@@ -1,0 +1,37 @@
+/*Template for form method*/
+// ----------------------------------------------------
+// Form method : <method_name/> - (<database_name/>)
+// <keepit name="UID"/>
+// <keepit name="_created"/>
+// ----------------------------------------------------
+// Declarations
+C_LONGINT($Lon_formEvent)
+
+// ----------------------------------------------------
+// Initialisations
+$Lon_formEvent:=Form event
+
+// ----------------------------------------------------
+
+Case of
+	//______________________________________________________
+	: ($Lon_formEvent=On Load)
+	
+	
+	SET TIMER(-1)
+	//______________________________________________________
+	: ($Lon_formEvent=On Unload)
+	
+	//______________________________________________________
+	: ($Lon_formEvent=On Timer)
+	SET TIMER(0)
+	
+	
+	
+	//______________________________________________________
+Else
+	
+	<keepit name="_unnecessary form event"/>
+	
+	//______________________________________________________
+End case

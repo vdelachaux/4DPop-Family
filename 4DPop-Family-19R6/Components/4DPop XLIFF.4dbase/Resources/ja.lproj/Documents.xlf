@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--     
+Translation file.
+This file is distributed under the same license as the product package.
+-->
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd"><xliff version="1.0">
+   <file datatype="x-STR#" original="Undefined" source-language="en" target-language="ja">
+      <body>
+         <group resname="Path">
+            <trans-unit id="1" resname="FileInVolume">
+               <source>"{file}" in volume "{volume}"</source>
+               <target>ボリューム "{volume}" の中の "{file}"</target>
+            </trans-unit>
+            <trans-unit id="10" resname="File">
+               <source>File "{file}"</source>
+               <target>ファイル "{file}"</target>
+            </trans-unit>
+            <trans-unit id="24" resname="CopyPath">
+               <source>Copy the path</source>
+               <target>パスをコピー</target>
+            </trans-unit>
+         </group>
+         <group resname="Size">
+            <trans-unit id="2" resname="Bytes">
+               <source>Bytes</source>
+               <target>バイト</target>
+            </trans-unit>
+            <trans-unit id="3" resname="Exa">
+               <source>Eb</source>
+               <target>EB</target>
+            </trans-unit>
+            <trans-unit id="4" resname="Peta">
+               <source>Pb</source>
+               <target>PB</target>
+            </trans-unit>
+            <trans-unit id="5" resname="Tera">
+               <source>Tb</source>
+               <target>TB</target>
+            </trans-unit>
+            <trans-unit id="6" resname="Giga">
+               <source>Gb</source>
+               <target>GB</target>
+            </trans-unit>
+            <trans-unit id="7" resname="Mega">
+               <source>Mb</source>
+               <target>MB</target>
+            </trans-unit>
+            <trans-unit id="8" resname="Kilo">
+               <source>Kb</source>
+               <target>KB</target>
+            </trans-unit>
+            <trans-unit id="9" resname="byte">
+               <source>byte</source>
+               <target>バイト</target>
+            </trans-unit>
+         </group>
+         <group resname="Messages">
+            <trans-unit id="11" resname="SaveModification">
+               <source>The file "{file}" was modified.
+Do you want to record the modifications?</source>
+               <target>ファイル "{file}" は更新されています。
+変更を記録しますか?</target>
+            </trans-unit>
+            <trans-unit id="12" resname="RevertConfirmation">
+               <source>Discard changes to "{file}"?</source>
+               <target>"{file}" への変更を破棄しますか?</target>
+            </trans-unit>
+            <trans-unit id="13" resname="NewFile">
+               <source>New file</source>
+               <target>新規ファイル</target>
+            </trans-unit>
+         </group>
+         <group resname="Labels">
+            <trans-unit id="14" resname="ShowFile">
+               <source>Show on disk</source>
+               <target>ディスク上に表示</target>
+            </trans-unit>
+            <trans-unit id="15" resname="DontSave">
+               <source>Don't save</source>
+               <target>保存しない</target>
+            </trans-unit>
+            <trans-unit id="16" resname="Open">
+               <source>Open</source>
+               <target>開く</target>
+            </trans-unit>
+            <trans-unit id="17" resname="FileName">
+               <source>File name:</source>
+               <target>ファイル名:</target>
+            </trans-unit>
+            <trans-unit id="18" resname="FileCreated">
+               <source>Created:</source>
+               <target>作成日:</target>
+            </trans-unit>
+            <trans-unit id="19" resname="FileModified">
+               <source>Modified:</source>
+               <target>更新日:</target>
+            </trans-unit>
+            <trans-unit id="20" resname="Size">
+               <source>Size:</source>
+               <target>サイズ:</target>
+            </trans-unit>
+            <trans-unit id="21" resname="Kind">
+               <source>Kind:</source>
+               <target>種類:</target>
+            </trans-unit>
+            <trans-unit id="22" resname="Where">
+               <source>Where:</source>
+               <target>場所:</target>
+            </trans-unit>
+            <trans-unit id="23" resname="ChooseDial">
+               <source>Choose…</source>
+               <target>選択…</target>
+            </trans-unit>
+         </group>
+      </body>
+   </file>
+</xliff>

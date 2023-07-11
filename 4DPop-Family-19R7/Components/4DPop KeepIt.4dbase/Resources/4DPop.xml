@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<tools 
+    name="KeepIt"
+    picture="4DPop.png"
+    ondrop="KeepIt_onDrop"
+    init="Hashtag_init"
+    default="KeepIt_tool">
+    <tool 
+        name="KeepIt" 
+        method="KeepIt_tool"/>
+    <tool 
+        name="#hashtags" 
+        method="hashtag_tool"/>
+</tools>
