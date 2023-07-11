@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <!--                         Translation file.
+This file is distributed under the same license as the product package.-->
+
+<xliff version="1.0">
+   <file datatype="x-STR#" original="undefined" source-language="en" target-language="en">
+      <header>
+         <prop-group name="Xliff-Editor.4dbase">
+            <prop prop-type="version">1.0</prop>
+         </prop-group>
+      </header>
+      <body>
+         <group resname="WindowNames">
+            <trans-unit id="1" resname="FormMethod">
+               <source>Form Method: </source>
+               <target>Form Method: </target>
+            </trans-unit>
+            <trans-unit id="2" resname="Trigger">
+               <source>Trigger: </source>
+               <target>Trigger: </target>
+            </trans-unit>
+            <trans-unit id="3" resname="Form">
+               <source>Form: </source>
+               <target>Form: </target>
+            </trans-unit>
+            <trans-unit id="5" resname="Method">
+               <source>Method: </source>
+               <target>Method: </target>
+            </trans-unit>
+            <trans-unit id="9" resname="ObjectMethod">
+               <source>Object Method: </source>
+               <target>Object Method: </target>
+            </trans-unit>
+            <trans-unit id="5" resname="Methods">
+               <source>Method:</source>
+               <target>Method:</target>
+            </trans-unit>
+            <trans-unit id="81" resname="Researches">
+               <source>Find: </source>
+               <target>Find: </target>
+            </trans-unit>
+         </group>
+         <group resname="MenuLabels">
+            <trans-unit id="6" resname="MenuLabelsFormMethod">
+               <source>Form Method</source>
+               <target>Form Method</target>
+            </trans-unit>
+            <trans-unit id="7" resname="MenuLabelsTriggers">
+               <source>Triggers</source>
+               <target>Triggers</target>
+            </trans-unit>
+            <trans-unit id="8" resname="MenuLabelsForms">
+               <source>Forms</source>
+               <target>Forms</target>
+            </trans-unit>
+            <trans-unit id="9" resname="MenuLabelsProjectMethods">
+               <source>Project Methods</source>
+               <target>Project Methods</target>
+            </trans-unit>
+            <trans-unit id="10" resname="MenuLabelsObjectMethod">
+               <source>Object Method</source>
+               <target>Object Method</target>
+            </trans-unit>
+            <trans-unit id="8" resname="MenuLabelsForm">
+               <source>Form</source>
+               <target>Form</target>
+            </trans-unit>
+            <trans-unit id="20" resname="MenuLabelsOthers">
+               <source>Others</source>
+               <target>Others</target>
+            </trans-unit>
+            <trans-unit id="1" resname="MenuLabelsDatabaseMethods">
+               <source>Database Methods</source>
+               <target>Database Methods</target>
+            </trans-unit>
+            <trans-unit id="35" resname="MenuLabelsOptions">
+               <source>Options</source>
+               <target>Options</target>
+            </trans-unit>
+            <trans-unit id="76" resname="MenulabelsshowAllWindows">
+               <source>Show all windows</source>
+               <target>Show all windows</target>
+            </trans-unit>
+            <trans-unit id="80" resname="Menulabelsresearches">
+               <source>Finds</source>
+               <target>Finds</target>
+            </trans-unit>
+         </group>
+         <group resname="Strings">
+            <trans-unit id="13" resname="StringsWindows">
+               <source>Windows</source>
+               <target>Windows</target>
+            </trans-unit>
+            <trans-unit id="14" resname="StringsStacksWindows">
+               <source>Stacks</source>
+               <target>Stacks</target>
+            </trans-unit>
+            <trans-unit id="15" resname="StringsPutFrontmostWindowInScreen">
+               <source>Recover</source>
+               <target>Recover</target>
+            </trans-unit>
+            <trans-unit id="16" resname="StringsNextWindow">
+               <source>Next</source>
+               <target>Next</target>
+            </trans-unit>
+            <trans-unit id="19" resname="StringsApplication">
+               <source>Application</source>
+               <target>Application</target>
+            </trans-unit>
+            <trans-unit id="36" resname="StringsDefaultAction">
+               <source>Default action</source>
+               <target>Default action</target>
+            </trans-unit>
+            <trans-unit id="48" resname="openedMethodEditors">
+               <source>Methods</source>
+               <target>Methods</target>
+            </trans-unit>
+         </group>
+         <group resname="4DPop">
+            <trans-unit id="17" resname="ToolName">
+               <source>Windows</source>
+               <target>Windows</target>
+            </trans-unit>
+            <trans-unit id="18" resname="ToolTip">
+               <source>An ordered windows menu</source>
+               <target>An ordered windows menu</target>
+            </trans-unit>
+         </group>
+         <group id="405" resname="Database procs">
+            <trans-unit id="2" resname="DatabaseProcs_1">
+               <source>On Startup</source>
+               <target>On Startup</target>
+            </trans-unit>
+            <trans-unit id="3" resname="DatabaseProcs_2">
+               <source>On Server Startup</source>
+               <target>On Server Startup</target>
+            </trans-unit>
+            <trans-unit id="4" resname="DatabaseProcs_3">
+               <source>On Exit</source>
+               <target>On Exit</target>
+            </trans-unit>
+            <trans-unit id="5" resname="DatabaseProcs_4">
+               <source>On Server Shutdown</source>
+               <target>On Server Shutdown</target>
+            </trans-unit>
+            <trans-unit id="6" resname="DatabaseProcs_5">
+               <source>On Server Open Connection</source>
+               <target>On Server Open Connection</target>
+            </trans-unit>
+            <trans-unit id="7" resname="DatabaseProcs_6">
+               <source>On Web Connection</source>
+               <target>On Web Connection</target>
+            </trans-unit>
+            <trans-unit id="8" resname="DatabaseProcs_7">
+               <source>On Server Close Connection</source>
+               <target>On Server Close Connection</target>
+            </trans-unit>
+            <trans-unit id="9" resname="DatabaseProcs_8">
+               <source>On Web Authentication</source>
+               <target>On Web Authentication</target>
+            </trans-unit>
+            <trans-unit id="10" resname="DatabaseProcs_9">
+               <source>On Backup Startup</source>
+               <target>On Backup Startup</target>
+            </trans-unit>
+            <trans-unit id="11" resname="DatabaseProcs_10">
+               <source>On Backup Shutdown</source>
+               <target>On Backup Shutdown</target>
+            </trans-unit>
+            <trans-unit id="12" resname="DatabaseProcs_11">
+               <source>On Drop</source>
+               <target>On Drop</target>
+            </trans-unit>
+         </group>
+         <group resname="dialog preferences">
+            <trans-unit id="33" resname="Options_1">
+               <source>"Windows" menu in the main menu</source>
+               <target>"Windows" menu in the main menu</target>
+            </trans-unit>
+            <trans-unit id="34" resname="submenuComment">
+               <source>Invert with the Maj key.</source>
+               <target>Invert with the Maj key.</target>
+            </trans-unit>
+            <trans-unit id="43" resname="Options_2">
+               <source>List of opened methods</source>
+               <target>List of opened methods</target>
+            </trans-unit>
+            <trans-unit id="45" resname="Options_3">
+               <source>Prefix the names of windows in development mode</source>
+               <target>Prefix the names of windows in development mode</target>
+            </trans-unit>
+            <trans-unit id="39" resname="escape">
+               <source>Escape</source>
+               <target>Escape</target>
+            </trans-unit>
+            <trans-unit id="40" resname="ok">
+               <source>OK</source>
+               <target>OK</target>
+            </trans-unit>
+            <trans-unit id="41" resname="submenu">
+               <source>Show windows menu in a submenu</source>
+               <target>Show windows menu in a submenu</target>
+            </trans-unit>
+            <trans-unit id="42" resname="defaultAction">
+               <source>Default action (click):</source>
+               <target>Default action (click):</target>
+            </trans-unit>
+            <trans-unit id="43" resname="invertFrontWindow">
+               <source>Invert frontmost window and next window</source>
+               <target>Invert frontmost window and next window</target>
+            </trans-unit>
+            <trans-unit id="44" resname="stackwindows">
+               <source>Stack windows</source>
+               <target>Stack windows</target>
+            </trans-unit>
+            <trans-unit id="45" resname="prefix">
+               <source>Prepend title of windows with the name of the database</source>
+               <target>Prepend title of windows with the name of the database</target>
+            </trans-unit>
+            <trans-unit id="46" resname="palette">
+               <source>Palette of opened windows</source>
+               <target>Palette of opened windows</target>
+            </trans-unit>
+            <trans-unit id="47" resname="preferences">
+               <source>4DPop Window - Preferences</source>
+               <target>4DPop Window - Preferences</target>
+            </trans-unit>
+            <trans-unit id="79" resname="tools">
+               <source>Tools (background tasks)</source>
+               <target>Tools (background tasks)</target>
+            </trans-unit>
+            <trans-unit id="80" resname="4dpopPaletteButtonsOptions">
+               <source>4DPop Palette (button's options)</source>
+               <target>4DPop Palette (button's options)</target>
+            </trans-unit>
+         </group>
+         <group resname="Palette">
+            <trans-unit id="49" resname="Items_close">
+               <source>Close</source>
+               <target>Close</target>
+            </trans-unit>
+            <trans-unit id="50" resname="Items_foreground">
+               <source>Foreground</source>
+               <target>Foreground</target>
+            </trans-unit>
+            <trans-unit id="51" resname="Items_minimize">
+               <source>Minimize</source>
+               <target>Minimize</target>
+            </trans-unit>
+            <trans-unit id="52" resname="Items_maximize">
+               <source>Maximize</source>
+               <target>Maximize</target>
+            </trans-unit>
+            <trans-unit id="53" resname="Items_hide">
+               <source>Hide</source>
+               <target>Hide</target>
+            </trans-unit>
+            <trans-unit id="54" resname="Items_show">
+               <source>Show</source>
+               <target>Show</target>
+            </trans-unit>
+            <trans-unit id="79" resname="paletteTitle">
+               <source>4DPop Window</source>
+               <target>4DPop Window</target>
+            </trans-unit>
+         </group>
+         <group id="405" resname="Database Methods">
+            <trans-unit id="64" resname="onBackupShutdown">
+               <source>On Backup Shutdown</source>
+               <target>On Backup Shutdown</target>
+            </trans-unit>
+            <trans-unit id="63" resname="onBackupStartup">
+               <source>On Backup Startup</source>
+               <target>On Backup Startup</target>
+            </trans-unit>
+            <trans-unit id="65" resname="onDrop">
+               <source>On Drop</source>
+               <target>On Drop</target>
+            </trans-unit>
+            <trans-unit id="57" resname="onExit">
+               <source>On Exit</source>
+               <target>On Exit</target>
+            </trans-unit>
+            <trans-unit id="61" resname="onServerCloseConnection">
+               <source>On Server Close Connection</source>
+               <target>On Server Close Connection</target>
+            </trans-unit>
+            <trans-unit id="59" resname="onServerOpenConnexion">
+               <source>On Server Open Connection</source>
+               <target>On Server Open Connection</target>
+            </trans-unit>
+            <trans-unit id="58" resname="onServerShutdown">
+               <source>On Server Shutdown</source>
+               <target>On Server Shutdown</target>
+            </trans-unit>
+            <trans-unit id="56" resname="onServerStartup">
+               <source>On Server Startup</source>
+               <target>On Server Startup</target>
+            </trans-unit>
+            <trans-unit id="68" resname="onSqlAuthentication">
+               <source>On SQL Authentication</source>
+               <target>On SQL Authentication</target>
+            </trans-unit>
+            <trans-unit id="55" resname="onStartup">
+               <source>On Startup</source>
+               <target>On Startup</target>
+            </trans-unit>
+            <trans-unit id="67" resname="onSystemEvent">
+               <source>On System Event</source>
+               <target>On System Event</target>
+            </trans-unit>
+            <trans-unit id="62" resname="onWebAuthentication">
+               <source>On Web Authentication</source>
+               <target>On Web Authentication</target>
+            </trans-unit>
+            <trans-unit id="60" resname="onWebConnection">
+               <source>On Web Connection</source>
+               <target>On Web Connection</target>
+            </trans-unit>
+            <trans-unit id="66" resname="onWebSessionSuspend">
+               <source>On Web Session Suspend</source>
+               <target>On Web Session Suspend</target>
+            </trans-unit>
+         </group>
+         <group resname="Method Properties">
+            <trans-unit id="76" resname="Proc_info_offeredAsAWebService">
+               <source>Offered as a Web Service</source>
+               <target>Offered as a Web Service</target>
+            </trans-unit>
+            <trans-unit id="77" resname="Proc_info_publishedInWsdl">
+               <source>Published in WSDL</source>
+               <target>Published in WSDL</target>
+            </trans-unit>
+            <trans-unit id="78" resname="Proc_info_availableThrough4dHtml">
+               <source>Available through 4D HTML tags and URLs [4DACTION...]</source>
+               <target>Available through 4D HTML tags and URLs [4DACTION...]</target>
+            </trans-unit>
+            <trans-unit id="80" resname="Proc_info_sharedByComponentsAndHostDatabase">
+               <source>Shared by components and host database</source>
+               <target>Shared by components and host database</target>
+            </trans-unit>
+            <trans-unit id="81" resname="Proc_info_invisible">
+               <source>Invisible</source>
+               <target>Invisible</target>
+            </trans-unit>
+            <trans-unit id="82" resname="Proc_info_availableThroughSql">
+               <source>Available through SQL</source>
+               <target>Available through SQL</target>
+            </trans-unit>
+            <trans-unit id="83" resname="Proc_info_executeOnServer">
+               <source>Execute on Server</source>
+               <target>Execute on Server</target>
+            </trans-unit>
+         </group>
+      </body>
+   </file>
+</xliff>

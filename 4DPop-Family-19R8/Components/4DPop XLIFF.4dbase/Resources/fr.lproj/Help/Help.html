@@ -1,0 +1,437 @@
+<HTML>
+<HEAD>
+<TITLE>4DPop XLIFF</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<LINK href="../../Common/style.css" rel="stylesheet" type="text/css">
+</HEAD>
+<BODY leftmargin="20" marginheight="20" marginwidth="20" topmargin="20">
+<HR>
+<TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+  <TR>
+    <TD width="100"><IMG src="../../Common/4d.png" border="0"></TD>
+    <TD valign="middle"><TABLE width="100%" border="0" cellspacing="0" cellpadding="4" height="100%">
+        <TR>
+          <TD><H1>4DPop XLIFF</H1></TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD colspan="2"><IFRAME src="../../Common/Localisation.html" frameborder="0" scrolling="no" align="middle" height="40" width="100%" NORESIZE="true"></IFRAME></TD>
+        </TR>
+      </TABLE></TD>
+  </TR>
+</TABLE>
+<HR>
+<P>4DPop XLIFF est une base destinée à la gestion des fichiers <A href="http://www.oasis-open.org/committees/xliff/documents/xliff-20020415.htm">XLIFF</A> pour la localisation de vos bases de données. Cette base comprend également des outils qui permettront de minimiser l'impact du passage des ressources STR# et TEXT au standard XLIFF.</P>
+<UL>
+  <LI>Utilisé en tant que composant, 4DPop XLIFF gère les fichiers de localisation de la base en cours de développement.</LI>
+  <LI>Utilisé en tant que base autonome l'éditeur gère le contenu d'un dossier que vous lui indiquerez comme étant le dossier de travail.
+  </LI>
+</UL>
+<HR>
+<H2>Installation du composant</H2>
+<TABLE width="100%" border="0" cellspacing="4" cellpadding="2">
+  <TR>
+    <TD align="right" valign="top">1.</TD>
+    <TD>Cr&eacute;ez un dossier &quot;<I>Components</I>&quot; &agrave; c&ocirc;t&eacute; du fichier de structure de votre base (&quot;.4db&quot;)</TD>
+  </TR>
+  <TR>
+    <TD align="right" valign="top">2.</TD>
+    <TD>Placer le dossier &quot;<I>4DPop XLIFF.4dbase</I>&quot;* ou un alias de ce dernier dans le dossier &quot;<I>Components</I>&quot;</TD>
+  </TR>
+  <TR>
+    <TD align="right" valign="top">3.</TD>
+    <TD>Ouvrez votre base.</TD>
+  </TR>
+  <TR>
+    <TD align="right" valign="top">4.</TD>
+    <TD>Si le composant 4DPop est installé un nouveau bouton &quot;xliff&quot; se trouve dans la barre d'outils. Il permet d'ouvrir l'éditeur.
+      <P><IMG src="Images/4DPopPalette.png" alt="" height="68" width="428" border="0"></P>
+      <P>Si le composant 4DPop n'est pas installé il faut, pour lancer l'éditeur, sélectionner dans le menu &quot;Exécuter&quot; la ligne &quot;Méthodes...&quot; puis dans la liste des méthodes proposées sélectionner &quot;xliff_EDITOR&quot; et enfin cliquer sur le bouton &quot;Exécuter&quot;</P></TD>
+  </TR>
+</TABLE>
+<P><FONT size="-1">*Sur Macintosh, le composant est un package dont l'extension &quot;.4dbase&quot; n'est pas obligatoirement visible en fonction des réglages de vos préférences d'affichage.</FONT></P>
+<P align="center"><IMG src="Images/editorMac.png" alt="" width="477" height="465"></P>
+<HR>
+<H2>Utilisation</H2>
+<P>À la première ouverture de l'éditeur, celui-ci se comporte différemment selon qu'il s'agit d'une base autonome ou d'un composant.</P>
+<UL>
+  <LI>Dans le cas d'une base autonome, il vous faut localiser le dossier de travail. Vous pourrez ensuite modifier celui-ci dans les préférences de l'éditeur (cf. Infra).
+  <LI>Dans le cas d'un composant, le dossier de travail est automatiquement fixé au dossier &quot;resources&quot; courant de votre base.
+</UL>
+<P>Dans les deux cas, la suite du fonctionnement est identique.</P>
+<TABLE width="100%" border="1" cellpadding="4" cellspacing="0" bordercolor="#999999">
+  <TR>
+    <TD valign="top" nowrap><H3>Note  :</H3></TD>
+    <TD>Dans l'interface du composant et ce document, le parti a été pris de ne pas traduire les termes faisant référence à des balises ou des attributs de la norme xliff, leur traduction pouvant engendrer une certaine confusion. Ce sont essentiellement les termes &quot;<I>resname</I>&quot; &quot;<I>source</I>&quot; &quot;<I>target</I>&quot; &quot;<I>translate</I>&quot; &quot;<I>group</I>&quot; &amp; &quot;<I>trans-unit</I>&quot;.</TD>
+  </TR>
+</TABLE>
+<HR>
+<H2>Stratégie</H2>
+<P>L'éditeur a été conçu pour faciliter la localisation d'une application en cours de développement, c'est-à-dire :</P>
+<UL>
+  <LI>Fournir une interface simplifiée par rapport à des outils plus professionnels en se limitant à ce qui est nécessaire pour l'intégration des fichiers dans 4D
+  <LI>Disposer d'un outil intégré mais pouvant être supprimé lors du déploiement, ce qui est possible avec la nouvelle architecture des composants
+  <LI>Créer les fichiers nécessaires et permettre leur utilisation aisée tant dans l'éditeur de méthode que l'éditeur de formulaire ou encore dans la boîte à outils de 4D.
+  <LI>Générer des fichiers normalisés que vous pourrez fournir à des localisateurs qui pourront utiliser leurs outils et vous rendre les fichiers à jour qu'il suffit de placer dans le dossier &quot;resources&quot; de la base pour qu'ils soient immédiatement et sans autre manipulation disponible pour les utilisateurs.
+</UL>
+<P>Le principe de la norme XLIFF conduit à déterminer une langue <I>source</I> dans laquelle sont écrites toutes les chaînes. Cette langue sera la langue de référence (celle à partir de laquelle se feront toutes les traductions). La deuxième langue de chaque fichier est la langue dite <I>target</I> qui sera utilisée pour les dialogues, alertes, impressions… C'est la langue de l'utilisateur.</P>
+<P>L'éditeur a été prévu pour gérer 2 langues : une langue <I>source</I> qui sera souvent l'anglais et la langue de l'interface au moment du développement, mais ces deux langues peuvent êtres identiques. Ce sont les localisateurs qui fourniront les autres jeux de langue à partir des fichiers que vous leur fournirez.</P>
+<P>À la première ouverture, l'éditeur s'efforce de déterminer sur la base du contenu du dossier de travail, de la langue du système et de celle de l'application les valeurs par défaut pour la langue <I>source</I> et la langue <I>target</I>. Cette recherche peut par exemple dans le cas d'un dossier vide, d'un système suédois et d'un 4D anglais déduire que la langue <I>source</I> sera l'anglais et la langue <I>target</I> le Suédois. Dans le cas d'un système français et d'un 4D français la langue <I>source</I> et la langue <I>target</I> seront le français. Ce dernier cas est tout à fait normal, il sous-entend que vous allez écrire vos chaînes en français et que toutes les traductions se feront à partir du Français.</P>
+<P>Quoi qu'il en soit vous pouvez modifier ces langues dans le dialogue des préférences de l'éditeur (cf. Infra). Gardez à l'esprit que 4D détermine à l'ouverture de la base une langue courante qui doit être la langue <I>target</I> de développement. Si ce n'est pas clair pour vous, reportez vous à la documentation de 4D pour savoir comment est choisie la langue courante de la base au démarrage. Ce choix sera fonction de votre organisation et modifie le fonctionnement de l'éditeur.</P>
+<UL>
+  <LI>Si vous optez pour une seule langue, l'éditeur ne vous demande de saisir qu'une seule chaîne et se charge de la dupliquer dans le fichier. Après enregistrement, vous obtenez un fichier dont vous pouvez transmettre une copie au localisateur pour qu'il fasse sa traduction. (Scénario 1)
+  <LI>Dans le cas ou la langue <I>source</I> et la langue <I>target</I> diffèrent, vous devez saisir la chaîne dans les deux langues. Au moment de l'enregistrement, l'éditeur créé un fichier localisé (celui de la langue <I>target</I>) et un deuxième destiné au localisateur, sans que vous ayez besoin de le ressaisir. (Scénario 2)
+</UL>
+<TABLE width="860" border="1" align="center" cellpadding="2" cellspacing="0" bordercolor="#999999">
+  <TR height="18">
+    <TD align="center" valign="middle" width="99" height="18"></TD>
+    <TD align="center" valign="middle" width="51" height="18"><B><I>source</I></B></TD>
+    <TD align="center" valign="middle" width="42" height="18"><B><I>target</I></B></TD>
+    <TD align="center" valign="middle" nowrap width="174" height="18"><B>Saisie</B></TD>
+    <TD align="center" valign="middle" width="227" height="18"><B>Fichier xliff</B></TD>
+    <TD align="center" valign="middle" width="227" height="18"><B>Fichiers sur disque</B></TD>
+  </TR>
+  <TR height="100">
+    <TD align="center" valign="middle" width="99" height="100"><B>Scénario 1</B></TD>
+    <TD align="center" valign="middle" width="51" height="100">fr</TD>
+    <TD align="center" valign="middle" width="42" height="100">fr</TD>
+    <TD align="center" valign="middle" nowrap width="174" height="100"><I>source</I> = &quot;Annuler&quot;</TD>
+    <TD width="227" height="100"><CODE>&lt;trans-unit&gt;<BR>
+       &lt;source&gt;Annuler&lt;/source&gt;<BR>
+       &lt;target&gt;Annuler&lt;/target&gt;<BR>
+&lt;/trans-unit&gt;</CODE></TD>
+    <TD width="227" height="100"><IMG src="Images/scenario1.png" alt="" width="158" height="67" border="0"></TD>
+  </TR>
+  <TR height="201">
+    <TD align="center" valign="middle" width="99" height="201"><B>Scénario 2</B></TD>
+    <TD align="center" valign="middle" width="51" height="201">en</TD>
+    <TD align="center" valign="middle" width="42" height="201">fr</TD>
+    <TD align="center" valign="middle" nowrap width="174" height="201"><I>source</I> = &quot;Cancel&quot;
+      <P><I>target</I> = &quot;Annuler&quot;</P></TD>
+    <TD width="227" height="201"><CODE>&lt;trans-unit&gt;<BR>
+       &lt;source&gt;Cancel&lt;/source&gt;<BR>
+       &lt;target&gt;Annuler&lt;/target&gt;<BR>
+&lt;/trans-unit&gt;</CODE>
+      <P><CODE>+</CODE></P>
+      <P><CODE>&lt;trans-unit&gt;<BR>
+       &lt;source&gt;Cancel&lt;/source&gt;<BR>
+       &lt;target&gt;Cancel&lt;/target&gt;<BR>
+&lt;/trans-unit&gt;</CODE></P></TD>
+    <TD width="227" height="201"><IMG src="Images/scenario2.png" alt="" width="168" height="102" border="0"></TD>
+  </TR>
+</TABLE>
+<HR>
+<H2>Fenêtre de l'éditeur</H2>
+<P>L'interface varie suivant la plate-forme et l'OS, mais les fonctionnalités disponibles restent les mêmes.</P>
+<TABLE width="180" border="0" align="center" cellpadding="4" cellspacing="2">
+  <TR valign="middle">
+    <TD><IMG src="Images/editorMac.png" alt="" width="330" align="absmiddle" border="0"></TD>
+    <TD><IMG src="Images/editorXP.png" alt="" width="330" align="absmiddle" border="0"></TD>
+    <TD><IMG src="Images/editorVista.png" alt="" width="330" border="0"></TD>
+  </TR>
+  <TR>
+    <TD align="center"><B><FONT size="-1">Fenêtre principale Mac OS X</FONT></B></TD>
+    <TD align="center"><B><FONT size="-1">Fenêtre principale</FONT></B><FONT size="-1"><B> Windows XP</B></FONT></TD>
+    <TD align="center"><B><FONT size="-1">Fenêtre principale</FONT></B><FONT size="-1"><B> Windows Vista</B></FONT></TD>
+  </TR>
+</TABLE>
+<P>La fenêtre principale de l'éditeur est divisée en 5 zones</P>
+<BLOCKQUOTE>
+  <H3>1] Barre d'outils</H3>
+  <P>La barre d'outils permet d'accéder aux fonctions courantes (listées de gauche à droite).</P>
+  <P><STRONG>Mac OS X</STRONG>:</P>
+  <BLOCKQUOTE>
+    <P><IMG src="Images/toolbarMac.png" alt="" width="628" border="0"></P>
+    <OL>
+      <LI>Préférences de l'éditeur et de la base courante </LI>
+      <LI>Informations sur le fichier courant </LI>
+      <LI>Ajout de fichier </LI>
+      <LI>Ajout de groupe </LI>
+      <LI>Ajout de chaîne </LI>
+      <LI>Suppression de l'élément courant</LI>
+      <LI>Recherche dans le fichier courant </LI>
+      <LI>Visualisation du fichier source </LI>
+    </OL>
+  </BLOCKQUOTE>
+  <P><STRONG>Windows XP</STRONG> :</P>
+  <BLOCKQUOTE>
+    <P><IMG src="Images/toolbarXP.png" alt="" width="628" height="25" border="0"></P>
+  </BLOCKQUOTE>
+</BLOCKQUOTE>
+<OL>
+  <OL>
+    <OL>
+      <LI>Nouveau : fichier, groupe ou chaîne</LI>
+      <LI>Suppression de l'élément courant</LI>
+      <LI>Préférences de l'éditeur et de la base courante </LI>
+      <LI>Informations sur le fichier courant </LI>
+      <LI>Recherche dans le fichier courant </LI>
+      <LI>Action (ce bouton est décrit dans la barre de statut) </LI>
+    </OL>
+  </OL>
+</OL>
+<BLOCKQUOTE>
+  <P><STRONG>Windows Vista</STRONG> :</P>
+  <BLOCKQUOTE>
+    <P><IMG src="Images/toolbarVista.png" alt="" width="626" height="55" border="0"></P>
+  </BLOCKQUOTE>
+</BLOCKQUOTE>
+<OL>
+  <OL>
+    <OL>
+      <LI>Nouveau : fichier, groupe ou chaîne</LI>
+      <LI>Suppression de l'élément courant</LI>
+      <LI>Informations sur le fichier courant </LI>
+      <LI>Action (ce bouton est décrit dans la barre de statut) </LI>
+      <LI>Recherche dans le fichier courant </LI>
+      <LI>Préférences de l'éditeur et de la base courante </LI>
+    </OL>
+  </OL>
+</OL>
+<BLOCKQUOTE>
+  <H3>2] Liste des fichiers (liste de gauche)</H3>
+  <P>Cette zone liste les fichiers xliff du dossier &quot;.lproj&quot; correspondant à la langue courante de la base. La sélection d'un fichier provoque son chargement et la mise à jour de la partie droite de la fenêtre.</P>
+  <P>Sous cette liste, présenté de façon permanente (XP) ou à la demande une zone de visualisation des attributs de l'élément sélectionné</P>
+  <P align="center"><IMG src="Images/attributes.png" alt="" width="216" height="136" border="1"></P>
+  <H3>3] Fichier xliff courant (liste des chaînes)</H3>
+  <P>Cette zone liste de façon hiérarchique les <I>group</I> et <I>trans-unit</I> du fichier xliff en cours d'édition. Le libellé affiché est le <I>resname</I>, à droite figure l'id de l'élément. La sélection d'un élément provoque la mise à jour de la zone d'édition de l'élément courant.</P>
+  <P>Une icône spécifique témoigne d'une note associée à la chaîne.</P>
+  <P align="center"> <IMG src="Images/list.png" alt="" width="342" height="218" border="1"></P>
+  <P>Un double-clic sur la ligne ouvre une fenêtre permettant d'éditer la note. À la fermeture de la fenêtre, si la zone de saisie est vide, la note est enregistrée, sinon la note est modifiée ou créé si elle n'existait pas encore.</P>
+  <P align="center"><IMG src="Images/note.png" alt="" border="1"></P>
+  <H3>4] Élément courant</H3>
+  <P>Cette zone permet de saisir le <I>resname</I> et l'ID pour un élément <I>group</I> auxquels s'ajoutent la chaîne <I>source</I>, l'attribut <I>translate</I> et éventuellement, selon la stratégie utilisée (cf. <I>supra</I>) la chaîne <I>target</I> pour un élément <I>trans-unit</I>.</P>
+</BLOCKQUOTE>
+<TABLE width="122" align="center" cellpadding="2" cellspacing="2">
+  <TR>
+    <TD align="center"> <IMG src="Images/Current_1.png" alt="" width="350" border="1"></TD>
+    <TD><IMG src="Images/Current_2.png" alt="" width="350" border="1"></TD>
+  </TR>
+  <TR align="center">
+    <TD><P><B><FONT size="-1">Scénario 1 - langue <I>source</I> = langue <I>target</I></FONT></B></P></TD>
+    <TD><B><FONT size="-1">Scénario 2 - langue <I>source</I> ≠ langue <I>target</I></FONT></B></TD>
+  </TR>
+</TABLE>
+<BLOCKQUOTE>
+  <P>Le bouton &quot;Compléter&quot; permet de calculer automatiquement un <I>resname</I> à partir de la valeur de la chaîne <I>source</I>, des paramètres d'auto-complétion et des préférences du fichier courant (cf. <I>infra</I>).</P>
+  <H3>5] Barre de statut</H3>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+  <P>La barre de statut regroupe les fonctions suivantes.</P>
+</BLOCKQUOTE>
+<TABLE width="100%" border="0" cellspacing="2" cellpadding="0">
+  <TR>
+    <TD align="center" valign="middle" width="80"><B>Libellé</B></TD>
+    <TD align="center" valign="middle" width="54"><B>OS X</B></TD>
+    <TD align="center" valign="middle" width="50"><B>XP</B></TD>
+    <TD align="center" valign="middle" width="49"><B>Vista</B></TD>
+    <TD align="center" valign="middle" width="608"><B>Fonction</B></TD>
+  </TR>
+  <TR>
+    <TD align="center" valign="middle" width="80"><B>Switch</B></TD>
+    <TD align="center" valign="middle" width="54"><IMG src="Images/switchMac.png" alt="" width="31" height="24" border="0"></TD>
+    <TD align="center" valign="middle" width="50"><IMG src="Images/switchXP.png" alt="" width="32" height="20" border="0"></TD>
+    <TD align="center" valign="middle" width="49"><IMG src="Images/switchVista.png" alt="" width="29" height="26" border="0"></TD>
+    <TD width="608">Ferme la <I>Fenêtre de l'éditeur</I> et affiche la <I>Palette d'insertion</I> (cf. <I>Infra</I>)</TD>
+  </TR>
+  <TR>
+    <TD align="center" valign="middle" width="80"><B>Attributs</B></TD>
+    <TD align="center" valign="middle" width="54"><IMG src="Images/attributeMac.png" alt="" width="32" height="24" border="0"></TD>
+    <TD align="center" valign="middle" width="50">-</TD>
+    <TD align="center" valign="middle" width="49"><IMG src="Images/attributeVista.png" alt="" width="29" height="26" border="0"></TD>
+    <TD width="608">Affichage/Masquage des attributs de l'élément courant</TD>
+  </TR>
+  <TR>
+    <TD align="center" valign="middle" width="80"><B>Norme</B></TD>
+    <TD align="center" valign="middle" width="54"><IMG src="Images/normeMac.png" alt="" width="32" height="24" border="0"></TD>
+    <TD align="center" valign="middle" width="50"><IMG src="Images/normeXP.png" alt="" width="32" height="20" border="0"></TD>
+    <TD align="center" valign="middle" width="49"><IMG src="Images/normeVista.png" alt="" width="29" height="26" border="0"></TD>
+    <TD width="608">Ouverture du document normatif disponible sur le site <I>www.oasis-open.org</I></TD>
+  </TR>
+  <TR>
+    <TD align="center" valign="middle" width="80"><B>Action</B></TD>
+    <TD align="center" valign="middle" width="54"><IMG src="Images/action.png" alt="" width="32" height="24" border="0"></TD>
+    <TD align="center" valign="middle" width="50"></TD>
+    <TD align="center" valign="middle" width="49"></TD>
+    <TD width="608">Raccourcis contextuel vers les actions courantes.</TD>
+  </TR>
+</TABLE>
+<BLOCKQUOTE>
+  <P>Le bouton &quot;<B><I>Action</I></B>&quot; affiche un menu regroupant les actions courantes.</P>
+</BLOCKQUOTE>
+<TABLE width="100%" border="0" cellspacing="2" cellpadding="4">
+  <TR>
+    <TD width="310"><IMG src="Images/actionMenu.png" alt="" width="310" height="256" border="0"></TD>
+    <TD valign="top">La ligne &quot;<I><B>Valider à l'aide de la DTD</B></I>&quot; permet de lancer une validation et d'afficher la première erreur éventuellement rencontrée. Un fichier validé est signalé par une coche de validation, un fichier présentant une anomalie est précédé d'une icône d'alerte.
+      <P>     <IMG src="Images/dtd.png" alt="" width="139" height="40" border="1"></P>
+      <P>&quot;<I><B>Importer une ressource STR#</B></I>&quot; permet d'importer sous forme d'un groupe une ressource STR#. Cette fonction permet de passer progressivement de l'ancien au nouveau mécanisme de localisation. Pour fonctionner, Vous devez placer les ressources à importer dans un fichier nommé &quot;<I>Localized.rsrc</I>&quot;, un fichier dans la langue courante et un fichier dans la langue <I>source</I>, si celle-ci est différente. À l'invite vous indiquez le Nº de la liste de chaînes à importer. Si l'ID est valide, un groupe est créé à partir de la (des deux) ressources.</P></TD>
+  </TR>
+</TABLE>
+<HR>
+<H2>Copier, coller</H2>
+<P>Lorsqu'un groupe est sélectionné et copié via le menu &quot;Edition&quot;, son nom et sa définition sont placés dans le presse-papiers. Il est alors possible de coller la totalité du groupe, de ses chaînes et attributs dans un autre fichier où dans le fichier courant (duplication) en sélectionnant l'item &quot;Coller&quot; du menu édition.</P>
+<P>Lorsqu'une chaîne de la liste est sélectionnée et copiée via le menu &quot;Edition&quot;, le texte de sa référence (&quot;:xliff:<I>resname</I>&quot;) et sa définition sont placés dans le presse-papiers. Il est alors possible de coller la chaîne et ses attributs dans un autre groupe du fichier courant ou d'un autre fichier. La référence peut être collée dans une zone de saisie cf. <I>infra</I>.</P>
+<TABLE width="100%" border="1" cellpadding="4" cellspacing="0" bordercolor="#999999">
+  <TR>
+    <TD valign="top" nowrap><H3>Note  :</H3></TD>
+    <TD>Les fichiers XLIFF sont chargés au démarrage de la base et à l'activation de l'application 4D si les fichiers ont étés modifiés.<BR>
+      Lorsque vous modifiez un ou plusieurs fichier XLIFF de votre base par l'intermédiaire du composant, les ajouts et modifications ne seront pris en compte qu'après désactivation puis réactivation de l'application 4D.</TD>
+  </TR>
+</TABLE>
+<HR>
+<H2>Client-Serveur</H2>
+<P>En mode distant, lors de l'enregistrement d'un fichier, celui-ci est tranféré sur le serveur qui met à jour son dossier &quot;Resources&quot; puis notifie les clients de la modification.</P>
+<HR>
+<H2>Insertion des références xliff dans les méthodes et les objets de formulaire</H2>
+<BLOCKQUOTE>
+  <H3>1] Glissé, déposé</H3>
+  <P>L'insertion de références xliff se fait dans la majorité des cas par glissé déposé depuis la liste des chaînes. Le résultat dépendant de l'élément glissé (groupe ou chaîne), de la fenêtre de premier plan et éventuellement de touches modificatrices de comportement :</P>
+</BLOCKQUOTE>
+<TABLE width="100%" border="1" cellpadding="2" cellspacing="0" bordercolor="#999999">
+  <TR>
+    <TD align="center" valign="middle" width="78">Élément glissé</TD>
+    <TD align="center" valign="middle" width="160">Fenêtre de premier plan</TD>
+    <TD align="center" valign="middle">Action</TD>
+  </TR>
+  <TR>
+    <TD align="center" valign="top" width="78">Chaîne*</TD>
+    <TD align="center" valign="top" width="160">Éditeur de méthode</TD>
+    <TD>Texte collé : &quot;<B>Lire traduction chaine</B>(&quot;<I>Resname</I>&quot;)&quot;
+      <P>Si dans le libellé de la chaîne se trouve une séquence d'accolade ouvrante et fermante {...} le texte collé sera : &quot;<B>Remplacer chaine</B>(<B>Lire traduction chaine</B>(&quot;<I>Resname</I>&quot;);&quot;{...}&quot;;remplacement)&quot;</P></TD>
+  </TR>
+  <TR>
+    <TD align="center" valign="top" width="78">Chaîne*</TD>
+    <TD align="left" valign="top" width="160">Éditeur de formulaire</TD>
+    <TD align="left" valign="top"><TABLE width="100%" border="0" cellspacing="2" cellpadding="2">
+        <TR valign="top">
+          <TD align="right" valign="top" width="154">Zone vide</TD>
+          <TD valign="top">Création d'un objet texte statique localisé (référence &quot;:xliff:<I>resname</I>&quot;)</TD>
+        </TR>
+        <TR valign="top">
+          <TD align="right" valign="top" width="154">Bouton</TD>
+          <TD valign="top">Le titre du bouton fait référence au fichier xliff (:xliff:<I>resname</I>)</TD>
+        </TR>
+        <TR valign="top">
+          <TD align="right" valign="top" width="154">Zone de groupe</TD>
+          <TD valign="top">Le titre de la zone fait référence au fichier xliff (:xliff:<I>resname</I>)</TD>
+        </TR>
+      </TABLE></TD>
+  </TR>
+  <TR>
+    <TD align="center" valign="top" width="78">Chaîne*</TD>
+    <TD align="left" valign="top" width="160">Zone de saisie de texte
+      <P>ex. titre de menu ou de ligne dans l'éditeur de menus</P></TD>
+    <TD align="left" valign="top">Texte collé :
+      <P>&quot;:xliff:<I>Resname</I>&quot;</P></TD>
+  </TR>
+  <TR>
+    <TD align="center" valign="top" width="78">Groupe</TD>
+    <TD align="center" valign="top" width="160">Éditeur de méthode</TD>
+    <TD>Texte collé : (création d'un tableau à partir d'un groupe)<BR>
+      <P>&quot;<B>TABLEAU TEXTE</B>($tTxt_Labels;N)<BR>
+        $tTxt_Labels{1}:=<B>Lire traduction chaine</B>(&quot;Premier <I>Resname</I>&quot;)<BR>
+        ...<BR>
+        $tTxt_Labels{N}:=<B>Lire traduction chaine</B>(&quot;Nième <I>Resname</I>&quot;)</P>
+      <P>Si les <I>resnames</I> sont incrémentés (<I>Resname</I>1, <I>Resname</I>2, ..., <I>Resname</I>N) le texte collé sera :<BR>
+        <B>TABLEAU TEXTE</B>($tTxt_Labels;N)<BR>
+        <B>Boucle</B> ($Lon_i;1;N;1)<BR>
+        $tTxt_Labels{$Lon_i}:=<B>Lire traduction chaine</B>(&quot;<I>Resname</I>&quot;+Chaine($Lon_i))<BR>
+        <B>Fin de boucle &quot;</B></P></TD>
+  </TR>
+  <TR>
+    <TD align="center" valign="top" width="78">Groupe
+      <P>+</P>
+      <P>Majuscule</P></TD>
+    <TD align="center" valign="top" width="160">Éditeur de méthode</TD>
+    <TD>Texte collé : (création d'un menu à partir d'un groupe)<BR>
+      <P>&quot;$a16_Menu:=<B>Creer menu</B><BR>
+        <B>AJOUTER LIGNE MENU</B>($a16_Menu;<B>Lire traduction chaine</B>(&quot;Premier <I>Resname</I>&quot;))<BR>
+        ...<BR>
+        <B>AJOUTER LIGNE MENU</B>($a16_Menu;<B>Lire traduction chaine</B>(&quot;Nième <I>Resname</I>&quot;))</P>
+      <P>Si les <I>resnames</I> sont incrémentés (<I>Resname</I>1, <I>Resname</I>2, ..., <I>Resname</I>N) le texte collé sera :<BR>
+        $a16_Menu:=<B>Creer menu</B><BR>
+        <B>Boucle</B> ($Lon_i;1;N;1)<BR>
+        <B>AJOUTER LIGNE MENU</B>($a16_Menu;<B>Lire traduction chaine</B>(&quot;<I>Resname</I>&quot;+Chaine($Lon_i))<BR>
+        <B>Fin de boucle &quot;</B></P></TD>
+  </TR>
+</TABLE>
+<BLOCKQUOTE>
+  <P>* Le texte placé dans le container est déterminé en fonction du type de la fenêtre de premier plan au début du glissé. Vous pouvez inverser le choix effectué (code ou référence) en maintenant la touche option lorsque vous débutez le glissé.</P>
+  <H3>2] Copié, collé</H3>
+  <P>Il est possible de sélectionner une ligne de la liste des chaînes, de la copier, puis de la coller sous forme de référence dans une zone de saisie de la palette des propriétés où dans toutes zones de saisie pour laquelle le glissé-déposé est inopérant. Le texte placé dans le presse-papier est de la forme &quot;:xliff:<I>Resname</I>&quot;.</P>
+</BLOCKQUOTE>
+<HR>
+<H2>Palette d'insertion</H2>
+<P>Une fois les chaînes créées, vous pouvez utiliser la palette qui représente une interface plus réduite en ne présentant que la zone de liste des chaînes du fichier courant et un menu de sélection de fichier courant dans la zone de barre de statut.</P>
+<P align="center"><IMG src="Images/Palette_2.png" alt="" width="250" height="278" border="1"></P>
+<P>Le glissé-déposé et le copié-collé sont actifs pour l'insertion des références xliff dans les éditeurs de 4D comme décrits ci-dessus. Il n'est pas possible de modifier les fichiers dans la palette.<BR>
+  La zone située entre la liste des chaînes et la barre de statut permet de prévisualiser la chaîne sélectionnée dans la langue courante.</P>
+<HR>
+<H2>Préférences</H2>
+<P>La position de la fenêtre de l'éditeur, de la palette, le dernier fichié édité/utilisé, la position des séparateurs dans l'éditeur sont automatiquement mémorisé pour la machine et restitué à l'ouverture.</P>
+<P>Les préférences pour l'éditeur, la base en cours ou le fichier courant sont accessible via l'icône de préférences de l'éditeur.</P>
+<BLOCKQUOTE>
+  <H3>1] Préférence générales de l'éditeur</H3>
+</BLOCKQUOTE>
+<P align="center"><IMG src="Images/preferences_1.png" alt="" border="1"></P>
+<BLOCKQUOTE>
+  <BLOCKQUOTE>
+    <H4>a) Dossier ressources courant</H4>
+    <P>Permet de fixer le dossier ressource de travail dans le cas d'un fonctionnement en tant que base autonome. Lorsque la base est utilisée comme composant, le dossier de travail estr obligatoirement le dossier ressource de la base et ne peut pas être modifié.</P>
+  </BLOCKQUOTE>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+  <BLOCKQUOTE>
+    <H4>b) Valeurs par défaut</H4>
+    <P>Il s'agit de la version xliff utilisée, de l'encodage XML et du commentaire par défaut utilisés lors de la création de nouveaux fichiers.<BR>
+      La zone de commentaires accepte des zones variables (entre accolades ouvrante et fermante) qui seront évaluées lors de la création du fichier :</P>
+    <UL>
+      <UL>
+        <UL>
+          <LI>- {year} sera remplacé par l'année</LI>
+          <LI>- {month} sera remplacé par le mois</LI>
+          <LI>- {date} sera remplacé par la date</LI>
+          <LI>- {database} sera remplacé par le nom du fichier de structure<BR>
+          </LI>
+        </UL>
+      </UL>
+    </UL>
+  </BLOCKQUOTE>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+  <H3>2] Paramètres de la base courante</H3>
+  <P align="center"><IMG src="Images/preferences_2.png" alt="" width="540" height="250" border="1"></P>
+  <P>C'est là que sont modifié les langues <I>source</I> et <I>target</I> de la base courante.</P>
+  <H3>3] Paramètres du fichier courant</H3>
+  <P align="center"><IMG src="Images/preferences_3.png" alt="" width="540" height="490" border="0"></P>
+  <BLOCKQUOTE>
+    <H4>a) Attributs du fichier courant</H4>
+    <P>Cette page permet de visualiser et de modifier les attributs du fichier en cours d'édition : Version xliff, encodage et commentaire.</P>
+    <H4>a) Compléter</H4>
+    <P>Paramètres d'auto-complétion des <I>resnames</I> du fichier courant. Les différentes options modifient le comportement du bouton &quot;Compléter&quot; de la zone d'édition de l'élément courant.</P>
+  </BLOCKQUOTE>
+  <H3>4] Paramètes d'auto complétion (interbase)</H3>
+  <P align="center"><IMG src="Images/preferences_4.png" alt="" width="540" height="250" border="1"></P>
+</BLOCKQUOTE>
+<TABLE width="100%" border="1" cellpadding="4" cellspacing="0" bordercolor="#999999">
+  <TR>
+    <TD valign="top" nowrap><H3>Note  :</H3></TD>
+    <TD>Les préférences sont enregistrées dans le fichier &quot;<I>4D XLIFF Editor preference.xml</I>&quot; situé dans le dossier 4D actif pour les préférences &quot;interbases&quot; et dans le dossier &quot;<I>Preferences</I>&quot; du dossier de la base courante pour les items spécifiques à la base.</TD>
+  </TR>
+</TABLE>
+<HR>
+<H2>Quoi de neuf</H2>
+<H4>version 1.2 :</H4>
+<UL>
+  <LI>Fonctionnement en Client/Serveur.</LI>
+  <LI>Un bouton de la barre doutils permet de trier les chaînes d'un groupe par ordre alphabétique. (Tri inverse si majuscule enfoncée)</LI>
+  <LI>Correction de bugs :</LI>
+</UL>
+<HR>
+<H2>Code source fourni</H2>
+<P>Ce composant est fourni en version compilée, mais vous trouverez le code source dans le dossier &quot;Sources&quot; à l'intérieur du dossier du composant.</P>
+<HR>
+<H2>Forum</H2>
+<P>Un forum  pour 4DPop est disponible à cette adresse : <A href="http://forums.4d.fr/Forum/FR/1467485/0/0" title="4DPop Forum" target="_blank">Forum 4DPop</A></P>
+</BODY>
+</HTML>

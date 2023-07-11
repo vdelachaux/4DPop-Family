@@ -1,0 +1,341 @@
+<html>
+<head>
+<title>4DPop KeepIt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="../../Common/style.css" rel="stylesheet" type="text/css">
+</head>
+<body leftmargin="20" marginheight="20" marginwidth="20" topmargin="20">
+<hr>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100"><img src="../../Common/4d.png" border="0"> </td>
+    <td valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="4" height="100%">
+        <tr>
+          <td><h1> 4DPop KeepIt </h1></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2"><iframe src="../../Common/Localisation.html" frameborder="0" scrolling="no" align="middle" height="40" width="100%" noresize="true"> </iframe></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<hr>
+<p> <i>4DPop KeepIt</i> est un gestionnaire de fragments* ces petits bouts de code ou de texte que vous réutilisez partout. En d'autres termes, cet outil permet de mémoriser des morceaux de code et de le réutiliser lorsque vous en avez besoin par un appel clavier, un glisser-déposer ou un copier-coller.<br>
+  <br>
+  Les éléments mémorisés sont sauvegardés d'une session à l'autre. Ils sont accessibles depuis toutes les bases à partir du moment où le composant est chargé. </p>
+<p> Encore une chose… 4DPop KeepIt est très similaire aux macros de 4D, mais plus facile à utiliser et surtout plus puissant. </p>
+<p> *&quot;snippets&quot; </p>
+<hr>
+<h2> Installation du composant </h2>
+<table width="100%" border="0" cellspacing="4" cellpadding="2">
+  <tr>
+    <td align="right" valign="top"> 1. </td>
+    <td> Placer le dossier &quot;<i>4DPop KeepIt.4dbase</i>&quot;* ou un alias de ce dernier dans le dossier &quot;<i>Components</i>&quot; situé à côté de l'executable 4D** afin que le composant soit chargé avec toutes les bases </td>
+  </tr>
+  <tr>
+    <td align="right" valign="top"> 2. </td>
+    <td> Ouvrez votre base. </td>
+  </tr>
+  <tr>
+    <td align="right" valign="top"> 3. </td>
+    <td> Si le composant 4DPop est installé un nouveau bouton &quot;KeepIt&quot; se trouve dans la barre d'outils. Il permet d'ouvrir l'éditeur.
+      <p> <img src="Images/4DPopPalette.png" alt="" border="0"> </p>
+      <p class="Command4D"> Si le composant 4DPop n'est pas installé il faut, pour afficher la fenêtre &quot;<i>4DPop KeepIt</i>&quot;, créer une méthode dans la base qui appelle la commande <i><b>KeepIt_tool</b></i> </p></td>
+  </tr>
+</table>
+<p> <font size="-1"> *Sur Macintosh, le composant est un package dont l'extension &quot;.4dbase&quot; n'est pas obligatoirement visible en fonction des réglages de vos préférences d'affichage. </font> <br>
+  <font size="-1">**Sur Macintosh, le dossier Components se trouve à l'intérieur du package 4D.app, à la racine du dossier &quot;Contents&quot; </font></p>
+<p>&nbsp; </p>
+<hr>
+<h2> Mémorisation d'un fragment </h2>
+<p> Sélectionnez un fragment de code dans l'éditeur, glissez le sur la palette <em> 4DPop </em> et déposez le sur le bouton &quot;KeepIt&quot;, à l'invite, donnez un nom à ce nouvel item, validez. C'est tout ! </p>
+<h2>&nbsp; </h2>
+<hr>
+<h2>Utilisation d'un fragment </h2>
+<p> Dans l'éditeur de méthode, tappez &quot;$$&quot; + tabulation pour afficher la liste des fragments, sélectionnez l'item désiré et c'est tout ! Son contenu est collé dans l'éditeur.</p>
+<p>&nbsp;</p>
+<hr>
+<h2>Balises</h2>
+<p>Le texte des fragments peut contenir des balises qui seront évaluées au moment de l'utilisation de l'item. Les balises reprennent la syntaxe des balises macros de 4D. </p>
+<h3>En plus des <a href="http://doc.4d.com/4Dv13/help/Title/fr/page1034.html" target="_blank">balises macros de 4D</a> qui sont toutes reconnues*, <em> 4DPop KeepIt </em> interprète les balises suivantes :</h3>
+<table width="100%" border="1" cellpadding="2" cellspacing="0" bordercolor="#999999">
+  <tr>
+    <td width="12%" valign="top"><p align="center"> <strong> Balises </strong> </p></td>
+    <td width="88%" valign="top"><div align="center"> <strong> Description </strong> </div></td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="center"> <strong> &lt;uid/&gt; </strong> </div></td>
+    <td valign="top"> Balise remplacée par un UID généré à la volée. </td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="center"> <strong> &lt;database_name&gt; </strong> </div></td>
+    <td valign="top"> Balise remplacée par le nom du fichier structure. </td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="center"> <strong> &lt;keepit/&gt; </strong> </div></td>
+    <td valign="top"> Balise remplacée par le contenu d'un élément KeepIt<br>
+      <br>
+      Attribut :<br>
+      <table width="100%" cellspacing="2" cellpadding="2">
+        <tr>
+          <td width="30"/>
+          <td width="1138"><p> <b>• </b><em><strong>name </strong> </em> : Nom de l'élément KeepIt à inclure.<br>
+              Exemple : la balise « &lt;keepit name=&quot;Déclarations communes&quot;/&gt; » sera remplacé par le résultat de l’élément « Déclarations communes ». </p></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="center"> <strong> &lt;ask/&gt; </strong> </div></td>
+    <td valign="top"><p> Cette balise permet de créer une macro interactive c'est à dire une macro qui permet à l'utilisateur de personnaliser le code inséré. Le moteur pose des questions et utilise les réponses dans le texte retourné.<br>
+      <p> Attribut :<br>
+      <table width="100%" cellspacing="2" cellpadding="2">
+        <tr>
+          <td width="30">&nbsp;</td>
+          <td width="1138"><p> <b>• </b><strong><em>message </em> </strong> : est le texte du message qui sera présenté dans la boîte de dialogue de demande d'information. </p>
+            <p> Si cet attribut de la forme &quot;\#&quot; # étant le numéro d’une question précédemment posée, c’est la réponse à cette question qui sera utilisée. Exemple le code suivant :<br>
+              <br>
+              TABLEAU TEXTE(&lt;ask message=&quot;Nom de tableau ?&quot;/&gt;&lt;ask message=&quot;Taille du tableau ?&quot;/&gt;)<br>
+              Boucle($Lon_i;1;Taille tableau(&lt;ask message=&quot;\1&quot;/&gt;);1)<br>
+                  &lt;ask message=&quot;\1&quot;/&gt;{$Lon_i}:=&quot;&lt;ask message=&quot;Valeur par défaut ?&quot;/&gt;&quot;<br>
+              Fin de boucle<br>
+              <br>
+              Va afficher successivement : <br>
+                  - Une boîte de dialogue pour demander le nom du tableau.<br>
+                  - Une deuxième boîte pour demander la taille du tableau.<br>
+                  - Une troisième boîte enfin pour renseigner la valeur par défaut. </p>
+            <p> <br>
+              Les 2 balises « &lt;ask message=&quot;\1&quot;/&gt; » seront remplacées par la réponse à la question 1, soit le nom du tableau.<br>
+              Ainsi si vous répondez dans l'ordre &quot;$arrayText&quot;, &quot;10&quot; et &quot;vide&quot; le code généré sera :<br>
+              <br>
+              <strong>TABLEAU TEXTE</strong> ($arrayText;10)<br>
+              <strong>Boucle</strong> ($Lon_i;1; <strong>Taille tableau</strong> ($arrayText);1)<br>
+                  $arrayText{$Lon_i}:=&quot;vide&quot;<br>
+              <strong>Fin de boucle</strong> </p></td>
+        </tr>
+        <tr>
+          <td width="30">&nbsp;</td>
+          <td><p><b>• </b><em><strong>type </strong> </em> : si cet attribut est présent, il détermine le type attendu de la réponse. La valeur de cet attribut peut être :<br>
+                           o « text » (valeur par défaut) pour accepter la saisie de texte,<br>
+                           o « integer » pour une valeur numérique entière,<br>
+                           o « real » pour une valeur numérique réelle,<br>
+                           o « table » pour choisir une table dans la liste des tables de la base,<br>
+                           o « field » pour le choix dans la liste des champs,<br>
+                           o « user » ou « group » pour offrir le choix dans la liste des utilisateurs ou des groupes définis dans la base,<br>
+                           o « {valeur 1 ; valeur 2 ; … ; valeur n} » pour proposer une liste de valeurs personnalisées.<br>
+               o « {label 1:valeur 1 ; label 2:valeur 2 ; … ; label n:valeur n} » pour proposer une liste de couple libellé/valeur.<br>
+</p>
+            </td>
+        </tr>
+  </table>  </tr>
+  <tr>
+    <td valign="top"><div align="center"> <strong> &lt;file/&gt; </strong> </div></td>
+    <td valign="top"> Cette balise permet d’inclure le contenu d’un fichier relu sur le disque.<br>
+      <br>
+      Attribut :<br>
+      <table width="100%" cellspacing="2" cellpadding="2">
+        <tr>
+          <td width="30" align="left" valign="top">&nbsp;</td>
+          <td width="1138" align="left" valign="top"><p> <b>• </b><em><strong>url </strong> </em> est l’attribut qui désigne le chemin POSIX du fichier à inclure. Le chemin peut être :<br>
+                             o absolu (file://…),<br>
+                             o relatif dans le dossier « Resources » de la base (#…)<br>
+                             o relatif dans le dossier « Resources » du composant 4DPop KeepIt (/…) </p></td>
+        </tr>
+      </table>
+      <br>
+      <p> Note : si le fichier contient des balises, celles-ci sont interprétées au moment de l’import. </p></td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="center"> <strong> &lt;iteration/&gt; </strong> </div></td>
+    <td valign="top"> Cette balise permet de répéter une ligne de la macro.<br>
+      <br>
+      Attribut :<br>
+      <table width="100%" cellspacing="2" cellpadding="2">
+        <tr>
+          <td width="30" align="left" valign="top">&nbsp;</td>
+          <td width="1138" align="left" valign="top"><p> <b>• </b><em><strong>count </strong> </em> : est le nombre de ligne identiques à insérer. Si cet attribut est omis, la balise retourne la valeur du compteur courant. Exemple la ligne :<br>
+                        &lt;iteration count=&quot;10&quot;/&gt;C_TEXTE(vTEXT_&lt;iteration/&gt;)<br>
+              sera remplacé par les 10 lignes :<br>
+                         <strong> C_TEXTE </strong> (vTEXT_1)<br>
+                         <strong> C_TEXTE </strong> (vTEXT_2)<br>
+                        …<br>
+                         <strong> C_TEXTE </strong> (vTEXT_10) </p></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="center"> <strong> &lt;method-attribute/&gt; </strong> </div></td>
+    <td valign="top"> Cet élément permet de fixer un attribut d'une méthode projet.<br>
+      <br>
+      Attribut :<br>
+      <table width="100%" cellspacing="2" cellpadding="2">
+        <tr>
+          <td width="30" align="left" valign="top">&nbsp;</td>
+          <td width="1138" align="left" valign="top"><p> <b>• </b><em><strong>type </strong> </em> : est la valeur indiquant le type d'attribut à définir. Les valeurs supportées sont celles de la commande <strong> METHODE FIXER ATTRIBUT </strong> de 4D.<br>
+            </p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top">&nbsp;</td>
+          <td align="left" valign="top"><b>• </b><em><strong>value </strong> </em> : est la valeur à fixer pour l’attribut «true» pour sélectionner et «false» pour désélectionner l’option. Si cet attribut est omis. La valeur par défaut est «true». <br>
+            Exemple :<br>
+                      &lt;method-attribute type=&quot;1&quot; value=&quot;true&quot;/&gt;<br>
+            Fixe l’attribut « invisible » de la méthode à vrai. </td>
+        </tr>
+      </table>
+      <p> Cette balise est ignorée s’il ne s’agit pas d’une méthode projet. </p></td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="center"><strong>&lt;method_type/&gt;</strong></div></td>
+    <td valign="top">Retourne le type de la méthode en cours d'édition. Le résultat est celui retourné par la commande METHODE RESOUDRE CHEMIN dans le paramètre typeMéthode. Pour les méthodes objets le type est 8858</td>
+  </tr>
+  <tr>
+    <td valign="top"><p align="center"><strong>#_IF<br>
+      #_ELSE<br>
+      #_ENDIF</strong></p>
+    </td>
+    <td valign="top"><p>Ces  balises de traitement permettent d'exécuter des portions de macro de manière conditionelle.<br>
+    Exemple :</p>
+      <blockquote>
+        <p>#_IF &lt;ask message=&quot;Are you a woman ?&quot; type=&quot;{Yes:1;No:0}&quot;/&gt;=1<br>
+          //OK, you are a woman!<br>
+          #_ELSE<br>
+          //You are probably a man<br>
+          #_ENDIF</p>
+      </blockquote>
+      <p>retournera dans la méthode l'un ou l'autre des commentaires en fonction de votre réponse.</p></td>
+  </tr>
+</table>
+<p> *4DPop KeepIt ne sait pas traiter l’attribut « index » de la balise &lt;clipboard&gt;. Cette balise est globalement remplacée par le contenu texte du presse-papiers au moment de l’appel. <br>
+*4DPop KeepIt reconnait pour la balise &lt;date/&gt; les formats y, m , d pour afficher uniquement l'année, le mois ou le jour. Sont également reconnus les formats du type &quot;y/m/d&quot; dans n'importe quelle ordre et avec n'importe quel séparateur. Exemple &quot;m-y&quot; retournera &quot;1-2013&quot; le 1/1/2013 ou &quot;©2009-&lt;date format=&quot;y&quot;/&gt;&quot; pour retourner &quot;©2009-2012&quot; en 2012.</p>
+<p>&nbsp; </p>
+<hr>
+<h2>Utilisation de l'éditeur </h2>
+<p> Un clic sur le bouton &quot;<i>KeepIt</i>&quot; de la barre d'outils 4DPop ou l'exécution de la méthode &quot;<i>KeepIt_tool</i>&quot; ouvre l'éditeur de <em> 4DPop KeepIt </em> . </p>
+<table width="7%" border="0" cellspacing="2" cellpadding="0" align="center">
+  <tr>
+    <td><img src="Images/KeepItmainWindowCollapsed.png" alt="" border="0"><img src="Images/KeepItmainWindow.png" alt=""> </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p> Avec la liste vous pouvez glisser-déposer un item dans l'éditeur de méthode ou bien le copier pour placer son contenu interprété dans le presse-papiers </p>
+<table width="100%" border="0" cellpadding="4" cellspacing="2">
+  <tr>
+    <td width="592" valign="top"><p> Il existe un <strong>assistant</strong> de construction pour la plupart de ces balises. Pour insérer une balise dans la macro, utilisez  le menu &quot;Balises&quot; et choisissez un item. Si besoin, l'assistant vous aide à construire l'élement en accord avec vos réponses. </p>
+      <p> Note : L'item hiérarchique &quot;Résultat de la méthode&quot; liste les méthodes de votre base qui ont l'attribut &quot;Partagé entre composants et base hôte&quot; coché. </p>
+      <p> KeepIt accepte des <strong> commentaires </strong> , éventuellement multi-ligne, délimités par la séquence /* ... */. Tout ce qui est dans les commentaires sera supprimé du texte retourné dans l'éditeur de méthode mais si des balises s'y trouvent, elles seront d'abord interprétées (poser une question, fixer un attribut). Les commentaires vous permettent de documenter vos fragments. Le premier commentaire trouvé dans le fragment est utilisé comme texte de la bulle d'aide lorsque l'élément est survolé dans la liste. À défaut de commentaire explicite, le début du texte du fragment est utilisé. </p>
+      <p> D'autres balises (listées plus bas) sont utilisées par KeepIt pour assurer la <strong> tokenisation </strong> des macros qui vous permet de partager des fragments dans une équipe ne travaillant pas tous avec un 4D US ou FR. Vous pouvez tokeniser un fragment en sélectionant l'item correspondant dans le menu &quot;Actions&quot; </p>
+      <p> Un double-clic sur un item de la liste permet de le renommer. Le panneau de droite permet d'éditer le texte attaché à un item. </p>
+      <p> Le menu contextuel dans la zone de liste permet les actions courantes disponibles également sous la forme de boutons dans la barre d'outils ou de menu lorsque la fenêtre &quot;KeepIt&quot; est affichée au premier plan. </p>
+      <p> Il est possible d'exporter un item dans un document texte via la ligne &quot;Exporter…&quot; du menu contextuel ou en glissant l'item sur le bureau en maintenant la touche Option sur Mac ou Alt sur PC. Dans le deuxième cas le document généré prend le nom de l'item glissé. </p>
+      <p> Inversement, il est possible d'importer le contenu d'un document texte dans un nouvel item via le menu &quot;Importer…&quot; ou en déposant un document texte sur la liste des items. Dans le deuxième cas l'item prend automatiquement le nom du document importé. </p>
+      <p> <br>
+      </p></td>
+    <td width="893" valign="top"><p> <img src="Images/list.png" alt="" width="893" height="892" border="0"> </p></td>
+  </tr>
+</table>
+<hr>
+<h2> 4DPop KeepIt et les macros 4D </h2>
+<p> KeepIt installe 3 macros lors de son chargement : </p>
+<table width="100%" cellpadding="1">
+  <tr>
+    <td width="8%"><div align="center"><strong>Nom</strong></div></td>
+    <td width="7%"><div align="center"><strong>Raccourci</strong></div></td>
+    <td width="6%"><div align="center"><strong>Saisie</strong></div></td>
+    <td width="79%"><div align="center"></div></td>
+  </tr>
+  <tr>
+    <td height="40"><div align="center"><strong>KeepIt</strong></div></td>
+    <td><div align="center">Cmd + &quot;€&quot;*</div></td>
+    <td><div align="center">$$</div></td>
+    <td>Afficher le menu de choix de l'item à insérer. Cette méthode d'activation, équivalent à taper le texte &quot;$$&quot;+ tabulation, a l'avantage de conserver le mécanisme des balises &lt;selection/&gt; et &lt;carret/&gt; des macros qui sont ignorées sinon.</td>
+  </tr>
+  <tr>
+    <td height="27"><div align="center"><strong>KeepIt =</strong></div></td>
+    <td><div align="center">Cmd + &quot;=&quot;</div></td>
+    <td><div align="center">++</div></td>
+    <td>Appel du dernier fragment sélectionné sans passer par l'affichage de la liste est la sélection. </td>
+  </tr>
+  <tr>
+    <td height="24"><div align="center"><strong>KeepIt +</strong></div></td>
+    <td><div align="center">Cmd + &quot;±&quot;</div></td>
+    <td><div align="center"></div></td>
+    <td>Cette macro, appelée alors que du texte est sélectionné dans l'éditeur de méthode, propose d'en faire un nouveau fragment.</td>
+  </tr>
+</table>
+* € = alt+$ sur Mac (AltGr + e sur PC)
+<p> La commande partagée du composant : <span class="Command4D"> <b> Keepit_get_item_by_name </b> </span> . permet d'insérer dans le retour de vos macros 4D le contenu de l'item <i> KeepIt </i> dont vous passez le nom en paramètre. Soit par exemple un item <i> KeepIt </i> nommé &quot; <i> <b> nom_de_la_base </b> </i> &quot; contenant le texte &quot; <span class="macro"> &lt;database_name/&gt; </span> &quot;. Dans un fichier macro, vous pouvez insérer le nom de la base en cours en intégrant dans votre macro le texte : <span class="macro"> &lt;method&gt;Keepit_get_item_by_name(&quot;nom_de_la_base&quot;)&lt;/method&gt;. </span></p>
+<p>&nbsp;</p>
+<hr>
+<h2> Code source fourni </h2>
+<p> Ce composant est fourni en version compilée, mais vous trouverez le code source dans le dossier &quot;Sources&quot; à l'intérieur du dossier du composant.</p>
+<p>&nbsp;</p>
+<hr>
+<h2> Forum </h2>
+<p> Un forum pour 4DPop est disponible à cette adresse : <a href="http://forums.4d.fr/Forum/FR/1467485/0/0" title="4DPop Forum" target="_blank"> Forum 4DPop </a> <br>
+  <br>
+  <br>
+</p>
+<hr>
+<h3> Annexe - Balises de tokenisation </h3>
+L'utilisation de ces balises permet de construire des macros qui seront utilisables autant avec une version FR qu'INTL de 4D<br>
+<table width="100%" border="1" cellpadding="2" cellspacing="0" bordercolor="#999999">
+  <tr>
+    <td align="center" valign="top" width="172"><b> &lt;command/&gt; </b> </td>
+    <td> Balise remplacée par le nom localisé d'une commande 4D en fonction de la langue du 4D utilisée
+      <p> <b> Attribut :<br>
+        • number </b> : Numéro de commande tel qu'il doit être passé à la commande 4D <span class="Command4D"> Nom commande </span> . </p></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" width="172"><b> &lt;constant/&gt; </b> </td>
+    <td> Balise remplacée par le nom localisé d'une constante 4D en fonction de la langue du 4D utilisée
+      <p> <b> Attribut :<br>
+        • id </b> : Numéro de <span class="Command4D"> ressource et numéro d'ordre séparé par un point </span> . exemple <span class="Code4D"> <span class="macro"> &lt;constant id=&quot;2.2&quot;/&gt; </span> </span> pour la constante &quot; <span class="Code4D"> Sur libération </span> &quot; </p></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" width="172"><b> &lt;if/&gt;<br>
+      &lt;else/&gt;<br>
+      &lt;end_if/&gt;<br>
+      &lt;case_of/&gt;<br>
+      &lt;end_case/&gt;<br>
+      &lt;while/&gt;<br>
+      &lt;end_while/&gt;<br>
+      &lt;for/&gt;<br>
+      &lt;end_for/&gt;<br>
+      &lt;repeat/&gt;<br>
+      &lt;until/&gt; </b> </td>
+    <td valign="top"> Balises qui seront remplacée par la version localisée des structures de boucle et condition du langage 4D en fonction de la langue du 4D utilisée.
+      <p> Exemple le code suivant: <br>
+        <span class="Code4D"><span class="macro">//Run 4DPop<br>
+        //This code is available even if the component is not present like in the final application.<br>
+        &lt;if/&gt; (&lt;command number=&quot;34&quot;/&gt;(&lt;command number=&quot;492&quot;/&gt;))<br>
+        &lt;command number=&quot;222&quot;/&gt;($tTxt_Components;0)<br>
+        &lt;command number=&quot;1001&quot;/&gt;($tTxt_Components)<br>
+        &lt;if/&gt; (&lt;command number=&quot;230&quot;/&gt;($tTxt_Components;&quot;4DPop&quot;)&gt;0)<br>
+        &lt;command number=&quot;1007&quot;/&gt;(&quot;4DPop_Palette&quot;)<br>
+        &lt;end_if/&gt;<br>
+        &lt;end_if/&gt; </span> </span> </p>
+      <p> Sera collé dans l'éditeur de méthode d'un 4D FR ainsi : <br>
+        //Run 4DPop<br>
+        //This code is available even if the component is not present like in the final application.<br>
+        <b> Si </b> ( <b> Non </b> ( <b> Mode compile </b> ))<br>
+        <b>    TABLEAU TEXTE </b> ($tTxt_Components;0)<br>
+        <b>    LISTE COMPOSANTS </b> ($tTxt_Components)<br>
+        <b>    Si </b> ( <b> Chercher dans tableau </b> ($tTxt_Components;&quot;4DPop&quot;)&gt;0)<br>
+        <b>       EXECUTER METHODE </b> (&quot;4DPop_Palette&quot;)<br>
+        <b>    Fin de si </b> <br>
+        <b> Fin de si </b> </p>
+      <p> et dans l'éditeur de méthode d'un 4D US : <br>
+        //Run 4DPop<br>
+        //This code is available even if the component is not present like in the final application.<br>
+        <b> If </b> ( <b> Not </b> ( <b> Is compiled mode </b> ))<br>
+        <b>    ARRAY TEXT </b> ($tTxt_Components;0)<br>
+        <b>    COMPONENT LIST </b> ($tTxt_Components)<br>
+        <b>    If </b> ( <b> Find in array </b> ($tTxt_Components;&quot;4DPop&quot;)&gt;0)<br>
+        <b>       EXECUTE METHOD </b> (&quot;4DPop_Palette&quot;)<br>
+        <b>    End if </b> <br>
+        <b> End if </b> </p></td>
+  </tr>
+</table>
+<p>&nbsp; </p>
+</body>
+</html>

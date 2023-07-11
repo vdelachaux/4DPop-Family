@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    List of the items to be deleted, if any, 
+    in the compiled package and/or the standalone application.
+    Each value is a relative path in the target. 
+    If the file/folder exist it will be deleted.
+-->
+<items>
+  <item>Components/4D SVG.4dbase/4D SVG.htm</item>
+  <item>Components/4D SVG.4dbase/QuickLook/</item>
+  <item>Components/4D SVG.4dbase/Resources/Common/</item>
+  <item>Components/4D SVG.4dbase/Resources/4D SVG.icns</item>
+  <item>Components/4D SVG.4dbase/Resources/4DPop.png</item>
+  <item>Components/4D SVG.4dbase/Resources/4DPop.xml</item>
+  <item>Components/4D SVG.4dbase/Resources/{localized}/4DPop.xlf</item>
+  <item>Components/4D Widgets.4dbase/Macros v2/</item>
+</items>

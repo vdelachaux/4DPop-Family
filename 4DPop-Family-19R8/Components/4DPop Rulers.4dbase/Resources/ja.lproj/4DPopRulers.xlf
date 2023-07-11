@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--     
+This file is distributed under the same license as the product package.
+-->
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd"><xliff version="1.0">
+   <file datatype="x-STR#" original="undefined" source-language="en" target-language="ja">
+      <body>
+         <group resname="Labels">
+            <trans-unit id="1" resname="Unit_1">
+               <source>Pixels</source>
+               <target>ピクセル</target>
+            </trans-unit>
+            <trans-unit id="2" resname="Unit_2">
+               <source>Inches</source>
+               <target>インチ</target>
+            </trans-unit>
+            <trans-unit id="3" resname="Unit_4">
+               <source>Centimeters</source>
+               <target>センチメートル</target>
+            </trans-unit>
+            <trans-unit id="4" resname="Unit_5" translate="no">
+               <source>Cm</source>
+            </trans-unit>
+            <trans-unit id="9" resname="YouHaveReallyASoLargeScreen?">
+               <source>You have really a so large screen?</source>
+               <target>本当に大きなスクリーンを持っていますか?</target>
+            </trans-unit>
+            <trans-unit id="16" resname="DeleteGuidelines">
+               <source>Delete Guidelines</source>
+               <target>ガイドラインを削除</target>
+            </trans-unit>
+            <trans-unit id="17" resname="ScreenSimulation">
+               <source>Screen Simulation</source>
+               <target>スクリーンのシミュレーション</target>
+            </trans-unit>
+         </group>
+         <group resname="Tips">
+            <trans-unit id="6" resname="Switch">
+               <source>Switch between the vertical and horizontal ruler</source>
+               <target>ルーラを縦と横でスイッチ</target>
+            </trans-unit>
+            <trans-unit id="7" resname="ChangeUnit">
+               <source>Change the unit.</source>
+               <target>単位変更</target>
+            </trans-unit>
+            <trans-unit id="8" resname="ModifyTheSizeOfTheWindow">
+               <source>Modify the size of the window.
+Option/Alt + click, to dimension the rule with the size of the screen.</source>
+               <target>ウィンドウのサイズを変更
+Option/Alt + クリックして、スクリーンサイズにルーラを合わせる。</target>
+            </trans-unit>
+            <trans-unit id="10" resname="ClickToMoveTheRule">
+               <source>Click to move the rule.
+Option/Alt + click to create a guide.</source>
+               <target>クリックしてルーラを移動
+Option/Alt + クリックしてガイドを作成。</target>
+            </trans-unit>
+            <trans-unit id="11" resname="DeleteGuide">
+               <source>Option/Alt + click to delete this guideline</source>
+               <target>Option/Alt + クリックしてガイドラインを削除</target>
+            </trans-unit>
+            <trans-unit id="13" resname="CloseButton">
+               <source>Close</source>
+               <target>閉じる</target>
+            </trans-unit>
+            <trans-unit id="14" resname="InteractiveTickMark">
+               <source>Use the interactive tick mark for more accurate measurements</source>
+               <target>より正確な計測を行うには、チックマークを使用します。</target>
+            </trans-unit>
+            <trans-unit id="15" resname="ClickHereToDisplayAMenu">
+               <source>Click here to display a menu</source>
+               <target>ここをクリックしてメニューを表示</target>
+            </trans-unit>
+         </group>
+         <group resname="Tool">
+            <trans-unit id="16" resname="Ruler">
+               <source>Ruler</source>
+               <target>ルーラ</target>
+            </trans-unit>
+            <trans-unit id="12.1" resname="ToolHelpTip">
+               <source>Display a ruler on screen</source>
+               <target>スクリーンにルーラを表示</target>
+            </trans-unit>
+         </group>
+      </body>
+   </file>
+</xliff>

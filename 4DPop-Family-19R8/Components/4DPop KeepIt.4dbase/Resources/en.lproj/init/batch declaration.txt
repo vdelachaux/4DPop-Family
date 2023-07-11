@@ -1,0 +1,11 @@
+/*Batch declaration for compilation.
+
+Asks the number, the prefix and the Type of the variable
+then creates the appropriate code
+*/
+/*
+<ask message="Number of variables to declare:" type="integer"/>
+<ask message="Prefix :" type="text"/>
+<ask message="Type :" type="{Blob;Boolean;Date;Longint;Time;Picture;Pointer;Real;Text}"/>
+*/
+<iteration count="<ask message="\1"/>"C_<ask message="\3"/>(<ask message="\2"/><iteration/>)

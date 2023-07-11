@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<tools name="SqlSchemas" picture="4DPop.png" helptip="Help for sqlSchema...">
+<tool name="Schemas" method="SC_Dial_Workshop"/>
+</tools>

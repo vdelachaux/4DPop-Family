@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <!--       
+Translation file.
+This file is distributed under the same license as the product package.-->
+
+<xliff version="1.0">
+   <file datatype="x-STR#" original="undefined" source-language="en" target-language="fr">
+      <header>
+         <prop-group name="Xliff-Editor.4dbase">
+            <prop prop-type="version">1.0</prop>
+         </prop-group>
+      </header>
+      <body>
+         <group resname="SignApplication">
+            <trans-unit id="92" resname="SignApplication">
+               <source>By default, Apple requires that applications downloaded from the internet be signed by the developer.
+
+The keys of this subset are specific to signature for application. They are useful only under MacOS</source>
+               <target>Par défaut, Apple impose que les applications téléchargées depuis internet soient signées par leur développeur.
+
+Les clés de ce groupe sont spécifiques à la signature de l'application. Elles ne sont utiles que sous MacOS</target>
+            </trans-unit>
+            <trans-unit id="92" resname="MacSignature">
+               <source>This key must be present and set to True in order for the certificate designated by the "MacCertificate" keys to be use to sign the built application.</source>
+               <target>Cette clé doit être présente et définie à Vrai pour que le certificat désigné par la clé "MacCertificate" soit utilisée pour signer l'application.</target>
+            </trans-unit>
+            <trans-unit id="93" resname="MacCertificate">
+               <source>This key indicates to the signing tool which certificate to use as signing identity. Quoting the signing tool manual page: it is either the desired certificate’s subject common name, or the fullname of a keychain identity preference.
+
+This key is mandatory if the MacSignature key is set to True. Otherwise, the merged application will not be signed and this key will not be take in account.</source>
+               <target>Cette clé indique à l'outil de signature le certificat à utiliser pour la signature. Selon la documenation de l'outil de signature: c'est soit le nom du certificat, soit le nom complet d'une identité du trousseau.
+
+Cette clé est obligatoire si la clé de MacSignature est définie à Vrai. Sinon, l'application ne sera pas signé et cette clé est ignorée.</target>
+            </trans-unit>
+         </group>
+         <group resname="General Parameters">
+            <trans-unit id="1" resname="/Preferences4D/BuildApp/BuildApplicationName">
+               <source>Name of the compiled file or built application.
+
+This name is limited to 27 characters, not counting the extension; up to 31 characters with a 4-character extension.
+
+If this key is not used, the compiled file or application will use the name of the structure file.</source>
+               <target>Nom du fichier compilé ou de l'application généré(e).
+
+Ce nom est limité à 27 caractères hors extension - soit 31 caractères, extension de 4 caractères comprise.
+
+Si cette clé n'est pas utilisée, le fichier compilé ou l'application portera le nom du fichier de structure.</target>
+            </trans-unit>
+            <trans-unit id="2" resname="/Preferences4D/BuildApp/BuildWinDestFolder">
+               <source>File access path of the Mac OS destination.
+
+If this key is not used, the location of the structure file will be used.
+
+The path can be fixed or relative to the structure file.</source>
+               <target>Chemin d'accès de destination pour la plate-forme Windows.
+
+Si cette clé n'est pas utilisée, l'emplacement du fichier de structure sera utilisé.
+
+Le chemin défini peut être absolu ou relatif au fichier de structure.</target>
+            </trans-unit>
+            <trans-unit id="3" resname="/Preferences4D/BuildApp/BuildMacDestFolder">
+               <source>File access path of the Mac OS destination.
+
+If this key is not used, the location of the structure file will be used.
+
+The path can be fixed or relative to the structure file.</source>
+               <target>Chemin d'accès de destination pour la plate-forme Mac OS.
+
+Si cette clé n'est pas passée, l'emplacement du fichier de structure sera utilisé.
+
+Le chemin défini peut être absolu ou relatif au fichier de structure.</target>
+            </trans-unit>
+            <trans-unit id="4" resname="DataFilePath">
+               <source>Data file pathname of the final application. The pathname set can be absolute or relative to the structure file (.4db). Three syntaxes are accepted:
+
+  • Multi-platform (Posix):
+      volumes/MacintoshHD/folder/mydata.4DD (absolute)
+      /folder/mydata.4DD (relative)
+  • Windows:
+      C:\mybase\folder\mydata.4DD (absolute)
+      \folder\mydata.4DD (relative)
+  • Mac OS (HFS):
+      Macintosh HD:folder:mydata.4DD (absolute)
+      :folder:mydata.4DD (relative)
+You should choose the syntax depending on the platform that the final application will be running on.
+
+If this key is not used or is invalid, on the initial startup of the final application, 4D will look for the data file next to the structure file and, if it does not find it, will display a standard open file dialog box so that the user can indicate its location.</source>
+               <target>Chemin d'accès du fichier de données de l'application générée. Le chemin défini peut être absolu ou relatif au fichier de structure (.4db). Trois syntaxes sont acceptées :
+
+  • Multi-plate-forme (Posix) :
+      volumes/MacintoshHD/dossier/mondata.4DD (absolu)
+      /dossier/mondata.4DD (relatif)
+  • Windows :
+      C:\mabase\dossier\mondata.4DD (absolu)
+      \dossier\mondata.4DD (relatif)
+  • Mac OS (HFS) :
+      Macintosh HD:dossier:mondata.4DD (absolu)
+      :dossier:mondata.4DD (relatif)
+
+Vous devez choisir la syntaxe à utiliser en fonction de la plate-forme d'exécution de l'application générée.
+
+Si cette clé n'est pas utilisée ou est invalide, au premier lancement de l'application générée, 4D recherche le fichier de données à côté du fichier de structure et, s'il ne le trouve pas, affiche une boîte de dialogue d'ouverture afin que l'utilisateur désigne son emplacement.</target>
+            </trans-unit>
+            <trans-unit id="5" resname="/Preferences4D/BuildApp/BuildCompiled">
+               <source>If this key is set to True, a compiled file is built.
+
+If this key is not passed or if it is set to False, the compiled file is not built.</source>
+               <target>Si cette clé contient la valeur True, un fichier compilé est généré.
+
+Si cette clé n'est pas passée ou si elle contient False, le fichier compilé n'est pas généré.</target>
+            </trans-unit>
+            <trans-unit id="6" resname="/Preferences4D/BuildApp/BuildApplicationLight">
+               <source>If this key is set to True, an application merged with 4D Runtime Volume License using a 4D Runtime Volume License Light serial number is built.
+
+If this key is not passed or is set to False, the "Light" merged application is not built.
+
+If no file access path is set using the RuntimeVLWinFolder or RuntimeVLMacFolder keys (depending on the operating system used for the build), or if the file access path is invalid, an error is returned and the current project build is stopped.</source>
+               <target>Si cette clé contient la valeur True, une application fusionnée à 4D Runtime Volume License à l'aide d'un numéro de série 4D Runtime Volume License Light est générée.
+
+Si cette clé n'est pas passée ou si elle contient False, l'application fusionnée "Light" n'est pas générée.
+
+Si aucun chemin d'accès n'est spécifié à l'aide de la clé RuntimeVLWinFolder ou RuntimeVLMacFolder (suivant la plate-forme de génération) ou si le chemin d'accès spécifié est invalide, une erreur est retournée et la génération pour le projet courant est stoppée.</target>
+            </trans-unit>
+            <trans-unit id="7" resname="/Preferences4D/BuildApp/BuildApplicationSerialized">
+               <source>If this key is set to True, an application merged with 4D Runtime Volume License using a 4D Runtime Volume License Pro (complete) serial number is built.
+
+If this key is not passed or is set to False, the "Pro" merged application is not built.
+
+If no file access path is set using the RuntimeVLWinFolder or RuntimeVLMacFolder keys (depending on the operating system used for the build), or if the file access path is invalid, an error is returned and the current project build is stopped.</source>
+               <target>Si cette clé contient la valeur True, une application fusionnée à 4D Runtime Volume License à l'aide d'un numéro de série 4D Runtime Volume License Pro (complet) est générée.
+
+Si cette clé n'est pas passée ou si elle contient False, l'application fusionnée "Pro" n'est pas générée.
+
+Si aucun chemin d'accès n'est spécifié à l'aide de la clé RuntimeVLWinFolder ou RuntimeVLMacFolder (suivant la plate-forme de génération) ou si le chemin d'accès spécifié est invalide, une erreur est retournée et la génération pour le projet courant est stoppée.</target>
+            </trans-unit>
+            <trans-unit id="8" resname="/Preferences4D/BuildApp/ArrayExcludedPluginName">
+               <source>By default, all plug-ins present in the Plugins folder are integrated into the built application. It is nevertheless possible to set a list of plug-ins to be excluded when building the application using this key.
+
+This key is used to set the list of plug-ins to be excluded based on their names (plug-in names are unique).
+
+You can also set a list of plug-ins to be excluded based on their numbers using the ArrayExcludedPluginID key.</source>
+               <target>Par défaut, tous les plug-ins présents dans le dossier Plugins sont intégrés à l'application générée. Il est toutefois possible de définir à l'aide de cette clé une liste de plug-ins à exclure au moment de la construction de l'application.
+
+Cette clé permet de définir la liste des plug-ins sur la base de leur nom (les noms des plug-ins sont uniques).
+
+Vous pouvez également définir une liste de plug-ins sur la base de leur numéro à l'aide de la clé ArrayExcludedPluginID.</target>
+            </trans-unit>
+            <trans-unit id="9" resname="/Preferences4D/BuildApp/ArrayExcludedPluginID">
+               <source>By default, all plug-ins present in the Plugins folder are integrated into the built application. It is nevertheless possible to set a list of plug-ins to be excluded when building the application using this key.
+
+This key is used to set the list of plug-ins to be excluded based on their ID (number). Plug-in IDs are shown on the "Plug-ins" page of the Application builder. You can also find the plug-in ID in its 4BNX resource.
+
+You can also set a list of plug-ins to be excluded based on their names using the ArrayExcludedPluginName key.</source>
+               <target>Par défaut, tous les plug-ins présents dans le dossier Plugins sont intégrés à l'application générée. Il est toutefois possible de définir à l'aide de cette clé une liste de plug-ins à exclure au moment de la construction de l'application.
+
+Cette clé permet de définir la liste des plug-ins sur la base de leur ID (leur numéro). Les IDs des plug-ins sont visibles dans la page "Plug-ins" du Générateur d'applications. Vous pouvez également lire l'ID d'un plug-in dans sa ressource 4BNX.
+
+Vous pouvez également définir une liste de plug-ins à exclure sur la base de leur nom à l'aide de la clé ArrayExcludedPluginName.</target>
+            </trans-unit>
+            <trans-unit id="82" resname="/Preferences4D/BuildApp/IncludeAssociatedFolders">
+               <source>This option allows to copy the "Plugins", "Resources", "Components" and "Extras" folders beside the compiled structure.</source>
+               <target>Cette option permet de copier les dossiers "Plugins", "Resources", "Components" et "Extras" à côté de la structure compilée.</target>
+            </trans-unit>
+            <trans-unit id="83" resname="/Preferences4D/BuildApp/BuildComponent">
+               <source>The compiled structure will be built in the "Components" folder. It will be included in a "package" suffixed ".4dbase".
+
+The "Resources" and "Extras" folders will also be copied into this package.</source>
+               <target>La structure compilée sera générée dans un dossier "Components". Elle sera incluse dans un "package" suffixé ".4dbase".
+
+Les dossiers "Resources" et "Extras" seront également copiés dans ce package.</target>
+            </trans-unit>
+            <trans-unit id="84" resname="/Preferences4D/BuildApp/ArrayExcludedComponentName">
+               <source>By default, all components present in the Components folder of the original structure are integrated into the built application. It is nevertheless possible to set a list of component names to be excluded when building the application using this key.</source>
+               <target>Par défaut, tous les composants présents dans le dossier Components de la structure d’origine sont intégrés à l’application générée. Il est toutefois possible de définir à l’aide de cette clé une liste de noms de composants à exclure au moment de la construction de l’application.</target>
+            </trans-unit>
+         </group>
+         <group resname="Licenses">
+            <trans-unit id="10" resname="ArrayLicenseWin">
+               <source>This key is used to specify the acces path of the license file(s) to be integrated into the Windows version of the application.
+
+These files can be located anywhere on your PC.
+If this key is not used, no license number will be integrated and the application will start in demo mode.</source>
+               <target>Cette clé permet de désigner le chemin d'accès du ou des fichier(s) de licence à intégrer à la version Windows de l'application.
+
+Ces fichiers peuvent se trouver à n'importe quel emplacement sur votre PC.
+Si cette clé n'est pas utilisée, aucun numéro de licence ne sera intégré et l'application démarrera en mode évaluation.</target>
+            </trans-unit>
+            <trans-unit id="11" resname="ArrayLicenseMac">
+               <source>This key is used to specify the acces path of the license file(s) to be integrated into the Mac OS version of the application.
+
+These files can be located anywhere on your Macintosh.
+If this key is not used, no license number will be integrated and the application will start in demo mode.</source>
+               <target>Cette clé permet de désigner le chemin d'accès du ou des fichier(s) de licence à intégrer à la version Mac OS de l'application.
+
+Ces fichiers peuvent se trouver à n'importe quel emplacement sur votre Macintosh.
+Si cette clé n'est pas utilisée, aucun numéro de licence ne sera intégré et l'application démarrera en mode évaluation.</target>
+            </trans-unit>
+         </group>
+         <group resname="CS">
+            <trans-unit id="12.2" resname="/Preferences4D/BuildApp/CS/BuildServerApplication">
+               <source>If this key is set to True, a Client/Server application is built.
+
+If the key is not passed or if it is set to False, the Client/Server application is not built.</source>
+               <target>Si cette clé contient la valeur True, une application Client/Serveur est générée.
+
+Si cette clé n'est pas passée ou si elle contient False, l'application Client/Serveur n'est pas générée.</target>
+            </trans-unit>
+            <trans-unit id="13" resname="/Preferences4D/BuildApp/CS/BuildCSUpgradeable">
+               <source>If this key is set to True, a Client update application, ready to download, is built for Mac OS and Windows.
+
+If the key is not passed or if it is set to False, the Client update application is not built.</source>
+               <target>Si cette clé contient la valeur True, une application Cliente de mise à jour, prête à télécharger, est générée pour les plates-formes Mac OS et Windows. 
+
+Si cette clé n'est pas passée ou si elle contient False, l'application Cliente de mise à jour n'est pas générée.</target>
+            </trans-unit>
+            <trans-unit id="14" resname="IPAddress">
+               <source>This key contains the IP address of the application server (where applicable). This key is not mandatory since 4th Dimension features internal mechanisms for managing the network. However, an IP address is required in certain cases (WAN, specific port numbers, etc.).
+
+When it is specified, the IP address is stored in a file named "EnginedServer.xml," which is placed in the 4D Extensions folder of the client application.</source>
+               <target>Cette clé contient l'adresse IP de l'application serveur (le cas échéant). Cette clé n'est pas obligatoire car 4e Dimension dispose de mécanismes internes pour la prise en charge du réseau. Toutefois, dans certains cas (WAN, numéros de port spécifique, etc.), une adresse IP est requise.
+
+Lorsqu'elle est spécifiée, l'adresse IP est stockée dans un fichier nommé "EnginedServer.xml", placé dans le dossier 4D Extensions de l'application cliente.</target>
+            </trans-unit>
+            <trans-unit id="15" resname="PortNumber">
+               <source>This key contains the TCP port number of the desired server. By default, the port number is set to 19813 and it is generally not required to specify it. This key is required when the server's port number has been modified.
+
+When it is specified, the IP address is stored in a file named "EnginedServer.xml," which is placed in the 4D Extensions folder of the client application.</source>
+               <target>Cette clé contient le numéro de port TCP du serveur visé. Par défaut, ce numéro de port est le 19813 et il n'est généralement pas obligatoire de le préciser. Cette clé est requise lorsque le numéro de port du serveur a été modifié.
+
+Lorsqu'il est spécifié, le numéro de port TCP est stocké dans un fichier nommé "EnginedServer.xml", placé dans le dossier 4D Extensions de l'application cliente.</target>
+            </trans-unit>
+            <trans-unit id="16" resname="/Preferences4D/BuildApp/CS/HardLink">
+               <source>This key allows you to modify the signature for client and server applications. The maximum length is 31 characters.</source>
+               <target>Cette clé permet de modifier la signature qui associe les applications clientes et le serveur. Sa taille maximum est de 31 caractères.</target>
+            </trans-unit>
+            <trans-unit id="17" resname="RangeVersMin">
+               <source>This key allows you to specify the minimum Client version; earlier versions will not be authorized to connect to the Server (for example, 2). 
+
+This key is used in conjunction with RangeVersMax.
+
+The version number must be specified using the CurrentVers key.</source>
+               <target>Cette clé permet de spécifier le numéro de version minimal du Client, au-dessous duquel il ne sera pas autorisé à se connecter au Serveur (par exemple 2).
+
+Cette clé s'utilise conjointement à RangeVersMax.
+
+Le numéro de version doit être spécifié à l'aide de la clé CurrentVers.</target>
+            </trans-unit>
+            <trans-unit id="18" resname="RangeVersMax">
+               <source>This key allows you to specify the maximum Client version; later versions will not be authorized to connect to the Server (for example, 3).
+
+This key is used in conjunction with RangeVersMin.
+
+The version number must be specified using the CurrentVers key.</source>
+               <target>Cette clé permet de spécifier le numéro de version maximal du Client, au-dessus duquel il ne sera pas autorisé à se connecter au Serveur (par exemple 3). 
+
+Cette clé s'utilise conjointement à RangeVersMin. 
+
+Le numéro de version doit être spécifié à l'aide de la clé CurrentVers.</target>
+            </trans-unit>
+            <trans-unit id="19" resname="/Preferences4D/BuildApp/CS/CurrentVers">
+               <source>This key allows you to specify the current version number of the built application.
+
+If the RangeVersMax and RangeVersMin keys are not used, this number is purely for informational purposes.
+
+
+If these keys are used, the Server application will read this number to determine whether the Client belongs to the defined interval and is thus authorized to connect.</source>
+               <target>Cette clé permet de spécifier le numéro de version courant de l'application générée. 
+
+Si les clés RangeVersMax et RangeVersMin ne sont pas utilisées, ce numéro est uniquement informatif.
+
+Si ces clés sont utilisées, l'application Serveur lira ce numéro afin de déterminer si le Client appartient à l'intervalle défini et est donc autorisé à se connecter.</target>
+            </trans-unit>
+            <trans-unit id="102" resname="/Preferences4D/BuildApp/CS/BuildV13ClientUpgrades">
+               <source>If this key is set to true, legacy update packages must be generated to allow v13 client to upgrade automatically.
+When using the Build Application command:
+- if the key is not specified if the developer chooses to build client updates, then legacy update packages are automatically generated
+- if the key is specified it will govern whether legacy update packages shall be generated</source>
+               <target>If this key is set to true, legacy update packages must be generated to allow v13 client to upgrade automatically.
+When using the Build Application command:
+- if the key is not specified if the developer chooses to build client updates, then legacy update packages are automatically generated
+- if the key is specified it will govern whether legacy update packages shall be generated</target>
+            </trans-unit>
+         </group>
+         <group resname="SourcesFiles_RuntimeVL">
+            <trans-unit id="20" resname="RuntimeVLIncludeIt">
+               <source>This key must be present and set to True in order for the 4D Runtime Volume License application designated by the RuntimeVLWinFolder and/or RuntimeVLMacFolder keys to be integrated into the built application.</source>
+               <target>Cette clé doit être présente et contenir la valeur True pour que l'application 4D Runtime Volume License désignée par les clés RuntimeVLWinFolder et/ou RuntimeVLMacFolder soit intégrée à l'application générée.</target>
+            </trans-unit>
+            <trans-unit id="21" resname="RuntimeVLWinFolder">
+               <source>This key provides the access path of the folder containing the 4D Runtime Volume License application for Windows. 
+
+This key is mandatory if the BuildApplicationSerialized and/or BuildApplicationLight keys are set to True. 
+
+Otherwise, an error is returned and the current project build is stopped.</source>
+               <target>Cette clé fournit le chemin d'accès du dossier contenant l'application 4D Runtime Volume License pour la plate-forme Windows. 
+
+Cette clé est obligatoire si les clés BuildApplicationSerialized et/ou BuildApplicationLight sont mises à True. 
+
+Sinon, une erreur est retournée et la génération pour le projet courant est stoppée.</target>
+            </trans-unit>
+            <trans-unit id="22" resname="RuntimeVLMacFolder">
+               <source>This key provides the access path of the package containing the 4D Runtime Volume License application for Mac OS. 
+
+This key is mandatory if the BuildApplicationSerialized and/or BuildApplicationLight keys are set to True. 
+
+Otherwise, an error is returned and the current project build is stopped.</source>
+               <target>Cette clé fournit le chemin d'accès du paquet (package) contenant l'application 4D Runtime Volume License pour la plate-forme Mac OS.
+
+Cette clé est obligatoire si les clés BuildApplicationSerialized et/ou BuildApplicationLight sont mises à True. 
+
+Sinon, une erreur est retournée et la génération pour le projet courant est stoppée.</target>
+            </trans-unit>
+            <trans-unit id="23" resname="RuntimeVLIconWinPath">
+               <source>This key provides the access path of the application icon to build for Windows. This icon will have an ".ico" extension.
+
+If this key is omitted, the default 4D Runtime Volume License icon will be used.</source>
+               <target>Cette clé fournit le chemin d'accès de l'icône de l'application à générer pour la plate-forme Windows. L'icône sera du type ".ico".
+
+Si cette clé est omise, l'icône par défaut de 4D Runtime Volume License sera utilisée.</target>
+            </trans-unit>
+            <trans-unit id="24" resname="RuntimeVLIconMacPath">
+               <source>This key provides the access path of the application icon to build for Mac OS. This icon will have an "icns" extension. 
+
+Consequently, the "info.plist" file will be updated.
+
+If this key is omitted, the default 4D Runtime Volume License icon will be used.</source>
+               <target>Cette clé fournit le chemin d'accès de l'icône de l'application à générer pour la plate-forme Mac OS. L'icône sera du type "icns". 
+
+Le fichier "info.plist" sera mis à jour en conséquence.
+
+Si cette clé est omise, l'icône par défaut de 4D Runtime Volume License sera utilisée.</target>
+            </trans-unit>
+            <trans-unit id="25" resname="IsOEM">
+               <source>This key is used to determine whether or not the OEM deployment licenses will be taken into account for the Runtime application built. If this key is set to True, the application will integrate the OEM deployment licenses. If this key is not passed or is set to False, the application will not integrate the OEM deployment licenses. In this case, the application will be built in demo mode.
+
+Keep in mind that using this key requires an OEM license.</source>
+               <target>Cette clé permet de prendre en compte ou non les licences de déploiement OEM pour l'application Runtime générée. 
+
+Si cette clé contient la valeur True, l'application intégrera les licences de déploiement OEM. Si cette clé contient la valeur False ou est omise, l'application n'intégrera pas les licences de déploiement OEM. Dans ce cas, l'application sera générée en mode évaluation.
+
+A noter que l'emploi de cette clé requiert une licence OEM.</target>
+            </trans-unit>
+            <trans-unit id="95" resname="RuntimeVL">
+               <source>These parameters allow you to set options related to 4D Volume Desktop source files. </source>
+               <target>Ces paramètres permettent de définir des options relatives aux fichiers sources de l’application 4D Volume Desktop.</target>
+            </trans-unit>
+         </group>
+         <group resname="SourcesFiles_CS">
+            <trans-unit id="26" resname="ServerIncludeIt">
+               <source>This key must be present and set to True in order for the 4D Server application designated by the ServerWinFolder and/or ServerMacFolder keys to be integrated into the built application.</source>
+               <target>Cette clé doit être présente et contenir la valeur True pour que l'application 4D Server désignée par les clés ServerWinFolder et/ou ServerMacFolder soit intégrée à l'application générée.</target>
+            </trans-unit>
+            <trans-unit id="27" resname="ServerWinFolder">
+               <source>This key provides the access path of the folder containing the 4D Server application for Windows. This key is mandatory if the BuildServerApplication is set to True. Otherwise, an error is returned and the current project build is stopped.</source>
+               <target>Cette clé fournit le chemin d'accès du dossier contenant l'application 4D Server pour la plate-forme Windows. Cette clé est obligatoire si la clé BuildServerApplication est mise à True. Sinon, une erreur est retournée et la génération pour le projet courant est stoppée.</target>
+            </trans-unit>
+            <trans-unit id="28" resname="ServerMacFolder">
+               <source>This key provides the access path of the folder containing the 4D Server application for Mac OS. This key is mandatory if the BuildServerApplication is set to True. Otherwise, an error is returned and the current project build is stopped.</source>
+               <target>Cette clé fournit le chemin d'accès du paquet (package) contenant l'application 4D Server pour la plate-forme Mac OS. Cette clé est obligatoire si la clé BuildServerApplication est mise à True. Sinon, une erreur est retournée et la génération pour le projet courant est stoppée.</target>
+            </trans-unit>
+            <trans-unit id="29" resname="ClientWinIncludeIt">
+               <source>This key must be present and set to True in order for the 4D Client application designated by the ClientWinFolderToWin and/or ClientMacFolderToWin keys to be integrated into the Windows application that is built.</source>
+               <target>Cette clé doit être présente et contenir la valeur True pour que le 4D Client désigné par les clés ClientWinFolderToWin et/ou ClientWinFolderToMac soit intégrée à l'application Windows générée.</target>
+            </trans-unit>
+            <trans-unit id="30" resname="ClientWinFolderToWin">
+               <source>This key provides the access path of the 4D Client Windows application for the Windows platform. This key is mandatory if the BuildServerApplication key is set to True under Windows.</source>
+               <target>Cette clé fournit le chemin d'accès du dossier contenant l'application 4D Client Windows destiné à la plate-forme Windows. Cette clé est obligatoire si la clé BuildServerApplication est mise à True sur la plate-forme Windows.</target>
+            </trans-unit>
+            <trans-unit id="31" resname="ClientWinFolderToMac">
+               <source>This key provides the access path of the folder containing the 4D Client Windows application for the Mac OS platform. This key is mandatory if the BuildServerApplication key is set to True under Mac OS.</source>
+               <target>Cette clé fournit le chemin d'accès du dossier contenant l'application 4D Client Windows destiné à la plate-forme Mac OS. Cette clé est obligatoire si la clé BuildServerApplication est mise à True sur la plate-forme Mac OS.</target>
+            </trans-unit>
+            <trans-unit id="32" resname="ClientMacIncludeIt">
+               <source>This key must be present and set to True in order for the 4D Client application designated by the ClientWinFolderToMac and/or ClientMacFolderToMac keys to be integrated into the Mac OS application that is built.</source>
+               <target>Cette clé doit être présente et contenir la valeur True pour que le 4D Client désignée par les clés ClientMacFolderToWin et/ou ClientMacFolderToMac soit intégrée à l'application Mac OS générée.</target>
+            </trans-unit>
+            <trans-unit id="33" resname="ClientMacFolderToWin">
+               <source>This key provides the access path of the 4D Client Mac OS application package for the Windows platform. This key is mandatory if the BuildServerApplication key is set to True under Windows.</source>
+               <target>Cette clé fournit le chemin d'accès du paquet (package) de l'application 4D Client Mac OS destiné à la plate-forme Windows. Cette clé est obligatoire si la clé BuildServerApplication est mise à True sur la plate-forme Windows.</target>
+            </trans-unit>
+            <trans-unit id="34" resname="ClientMacFolderToMac">
+               <source>This key provides the access path of the 4D Client Mac OS application for the Mac OS platform. This key is mandatory if the BuildServerApplication key is set to True under Mac OS.</source>
+               <target>Cette clé fournit le chemin d'accès du dossier contenant l'application 4D Client Mac OS destiné à la plate-forme Mac OS. Cette clé est obligatoire si la clé BuildServerApplication est mise à True sur la plate-forme Mac OS.</target>
+            </trans-unit>
+            <trans-unit id="35" resname="ServerIconWinPath">
+               <source>This key provides the access path of the 4D Server icon to build for the Windows platform. This icon will have a ".ico" extension.
+
+If this key is omitted, the 4D Server default icon will be used.</source>
+               <target>Cette clé fournit le chemin d'accès de l'icône de l'application 4D Server à générer pour la plate-forme Windows. L'icône sera du type ".ico". 
+
+Si cette clé est omise, l'icône par défaut de 4D Server sera utilisée.</target>
+            </trans-unit>
+            <trans-unit id="36" resname="ServerIconMacPath">
+               <source>This key provides the access path of the 4D Server icon to build for the Mac OS platform. This icon will have a "icns" extension. Consequently, the "info.plist" file will be updated.
+
+If this key is omitted, the 4D Server default icon will be used.</source>
+               <target>Cette clé fournit le chemin d'accès de l'icône de l'application 4D Server à générer pour la plate-forme Mac OS. L'icône sera du type "icns". Le fichier "info.plist" sera mis à jour en conséquence.
+
+Si cette clé est omise, l'icône par défaut de 4D Server sera utilisée.</target>
+            </trans-unit>
+            <trans-unit id="37" resname="ClientMacIconForMacPath">
+               <source>This key provides the access path under Mac OS of the client application icon to generate for Mac OS. This icon will have a "icns" extension.
+
+If this key is omitted, the 4D Client default icon will be used.</source>
+               <target>Cette clé fournit le chemin d'accès sous Mac OS de l'icône de l'application cliente à générer pour la plate-forme Mac OS. L'icône sera du type "icns".
+
+Si cette clé est omise, l'icône par défaut de 4D Client sera utilisée.</target>
+            </trans-unit>
+            <trans-unit id="38" resname="ClientWinIconForMacPath">
+               <source>This key provides the access path under Mac OS of the client application icon to generate for Windows. This icon will have a ".ico" extension.
+
+If this key is omitted, the 4D Client default icon will be used.</source>
+               <target>Cette clé fournit le chemin d'accès sous Mac OS de l'icône de l'application cliente à générer pour la plate-forme Windows. L'icône sera du type ".ico".
+
+Si cette clé est omise, l'icône par défaut de 4D Client sera utilisée.</target>
+            </trans-unit>
+            <trans-unit id="39" resname="ClientMacIconForWinPath">
+               <source>This icon provides the access path under Windows of the client application icon to build for Mac OS. This icon will have a "icns" extension.
+
+If this key is omitted, the 4D Client default icon will be used.</source>
+               <target>Cette clé fournit le chemin d'accès sous Windows de l'icône de l'application cliente à générer pour la plate-forme Mac OS. L'icône sera du type "icns".
+
+Si cette clé est omise, l'icône par défaut de 4D Client sera utilisée.</target>
+            </trans-unit>
+            <trans-unit id="40" resname="ClientWinIconForWinPath">
+               <source>This key provides the access path under Windows of the client application icon to generate for Windows. This icon will have a ".ico" extension.
+
+If this key is omitted, the 4D Client default icon will be used.</source>
+               <target>Cette clé fournit le chemin d'accès sous Windows de l'icône de l'application cliente à générer pour la plate-forme Windows. L'icône sera du type ".ico".
+
+Si cette clé est omise, l'icône par défaut de 4D Client sera utilisée.</target>
+            </trans-unit>
+            <trans-unit id="41" resname="IsOEM">
+               <source>This key is used to determine whether or not the OEM deployment licenses will be taken into account for the client/server application built. If this key is set to True, the application will integrate the OEM deployment licenses. If this key is not passed or is set to False, the application will not integrate the OEM deployment licenses. In this case, the application will be built in demo mode.
+
+Keep in mind that using this key requires an OEM license.</source>
+               <target>Cette clé permet de prendre en compte ou non les licences de déploiement OEM pour l'application client/serveur générée. Si cette clé contient la valeur True, l'application intégrera les licences de déploiement OEM. Si cette clé contient la valeur False ou est omise, l'application n'intégrera pas les licences de déploiement OEM. Dans ce cas, l'application sera générée en mode évaluation.
+
+A noter que l'emploi de cette clé requiert une licence OEM.</target>
+            </trans-unit>
+         </group>
+         <group resname="Versioning_Common">
+            <trans-unit id="42" resname="CommonVersion">
+               <source>This key contains the version number of the application built. If it is omitted and if none of the RuntimeVLVersion, ServerVersion or ClientVersion keys are passed, the version number of the 4th Dimension application (4D Runtime Volume License, 4D Server or 4D Client) is used.
+
+Under Windows, this key causes the File version and Product version fields of the properties window to be updated.
+
+Under Mac OS, this key causes the CFBundleShortVersionString and CFBundleVersion fields of the "info.plist" file to be updated.</source>
+               <target>Cette clé contient le numéro de version de l'application générée. Si elle est omise et si aucune des clés RuntimeVLVersion, ServerVersion ou ClientVersion n'est passée, le numéro de version de l'application 4e Dimension (4D Runtime Volume License, 4D Server ou 4D Client) est utilisé.
+
+Sous Windows, cette clé entraîne la mise à jour des champs Version du fichier et Version du produit de la fenêtre des propriétés.
+
+Sous Mac OS, cette clé entraîne la mise à jour des champs CFBundleShortVersionString et CFBundleVersion du fichier "info.plist".</target>
+            </trans-unit>
+            <trans-unit id="43" resname="CommonCopyright">
+               <source>This key contains the text to insert in:
+
+\t• the CFBundleGetInfoString field of the "info.plist" file under Mac OS,
+\t• the Copyright field of the Properties window under Windows.
+If this key is omitted and if none of the RuntimeVLCopyright, ServerCopyright or ClientCopyright keys are passed, the Copyright information of the 4th Dimension application (4D Runtime Volume License, 4D Server or 4D Client) is used.</source>
+               <target>Cette clé contient le texte à insérer dans :
+
+\t• tle champ CFBundleGetInfoString du fichier "info.plist" sous Mac OS,
+\t• tle champ Copyright de la fenêtre des Propriétés sous Windows.
+Si cette clé est omise et si aucune des clés RuntimeVLCopyright, ServerCopyright ou ClientCopyright n'est passée, les informations de Copyright de l'application 4e Dimension (4D Runtime Volume License, 4D Server or 4D Client) sont utilisées.</target>
+            </trans-unit>
+            <trans-unit id="44" resname="CommonCreator">
+               <source>This key can only be used under Mac OS.
+
+This key is used to define the creator for the Mac OS application built. Its maximum size is 4 characters.
+
+If this key is omitted and if none of the RuntimeVLCreator, ServerCreator or ClientCreator keys are passed, the creator of the 4th Dimension applications (4D06) is used.
+
+This key does nothing under Windows.</source>
+               <target>Cette clé est utilisable sous Mac OS uniquement.
+
+Cette clé permet de définir le créateur (creator) pour l'application Mac OS générée. Sa taille maximale est de 4 caractères.
+
+Si cette clé est omise et si aucune des clés RuntimeVLCreator, ServerCreator ou ClientCreator n'est passée, le créateur des applications 4e Dimension (4D06) est utilisé.
+
+Sous Windows, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="45" resname="CommonComment">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Comment field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if none of the RuntimeVLComment, ServerComment or ClientComment keys are passed, the comments associated with the 4th Dimension application (4D Runtime Volume License, 4D Server or 4D Client) are used.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Commentaires de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si aucune des clés RuntimeVLComment, ServerComment ou ClientComment n'est passée, les commentaires associés à l'application 4e Dimension (4D Runtime Volume License, 4D Server ou 4D Client) sont utilisées.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="46" resname="CommonCompanyName">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Company name field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if none of the RuntimeVLCompanyName, ServerCompanyName or ClientCompanyName keys are passed, the company name associated with the 4th Dimension application (4D Runtime Volume License, 4D Server or 4D Client) is used.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Entreprise de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si aucune des clés RuntimeVLCompanyName, ServerCompanyName ou ClientCompanyName n'est passée, le nom d'entreprise associé à l'application 4e Dimension (4D Runtime Volume License, 4D Server ou 4D Client) est utilisé.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="47" resname="CommonFileDescription">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Description field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if none of the RuntimeVLFileDescription, ServerFileDescription or ClientFileDescription keys are passed, the description associated with the 4th Dimension application (4D Runtime Volume License, 4D Server or 4D Client) is used.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Description de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si aucune des clés RuntimeVLFileDescription, ServerFileDescription ou ClientFileDescription n'est passée, la description associée à l'application 4e Dimension (4D Runtime Volume License, 4D Server ou 4D Client) est utilisée.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="48" resname="CommonInternalName">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Internal name field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if none of the RuntimeVLInternalName, ServerInternalName or ClientInternalName keys are passed, the internal name associated with the 4th Dimension application (4D Runtime Volume License, 4D Server or 4D Client) is used.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Nom interne de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si aucune des clés RuntimeVLInternalName, ServerInternalName ou ClientInternalName n'est passée, le nom interne associé à l'application 4e Dimension (4D Runtime Volume License, 4D Server ou 4D Client) est utilisé.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="49" resname="CommonLegalTrademark">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Legal trademark field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if none of the RuntimeVLLegalTrademark, ServerLegalTrademark or ClientLegalTrademark keys are passed, the legal trademarks associated with the 4th Dimension application (4D Runtime Volume License, 4D Server or 4D Client) are used.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Marques légales de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si aucune des clés RuntimeVLLegalTrademark, ServerLegalTrademark ou ClientLegalTrademark n'est passée, les mentions de marques légales associées à l'application 4e Dimension (4D Runtime Volume License, 4D Server ou 4D Client) sont utilisées.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="50" resname="CommonPrivateBuild">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Private build field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if none of the RuntimeVLPrivateBuild, ServerPrivateBuild or ClientPrivateBuild keys are passed, the private builds associated with the 4th Dimension application (4D Runtime Volume License, 4D Server or 4D Client) are used.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Description personnelle de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si aucune des clés RuntimeVLPrivateBuild, ServerPrivateBuild ou ClientPrivateBuild n'est passée, les descriptions personnelles associées à l'application 4e Dimension (4D Runtime Volume License, 4D Server ou 4D Client) sont utilisées.</target>
+            </trans-unit>
+            <trans-unit id="51" resname="CommonSpecialBuild">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Special build field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if none of the RuntimeVLSpecialBuild, ServerSpecialBuild or ClientSpecialBuild keys are passed, the special builds associated with the 4th Dimension application (4D Runtime Volume License, 4D Server or 4D Client) are used.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Description de compilation de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si aucune des clés RuntimeVLSpecialBuild, ServerSpecialBuild ou ClientSpecialBuild n'est passée, les descriptions de compilation associées à l'application 4e Dimension (4D Runtime Volume License, 4D Server ou 4D Client) sont utilisées.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="96" resname="Common">
+               <source>Versioning parameters set options related to version numbers and built file information. The keys of this subset are common to all 4D applications (4D Volume Desktop and 4D Server).</source>
+               <target>Ces paramètres permettent de définir des options relatives aux numéros de versions et aux informations des fichiers générés. Les clés de ce sous-ensemble sont communes aux deux applications 4D (4D Volume Desktop et 4D Server). </target>
+            </trans-unit>
+         </group>
+         <group resname="Versioning_RuntimeVL">
+            <trans-unit id="52" resname="RuntimeVLVersion">
+               <source>
+This key contains the version number of the application built. If it is omitted and if the CommonVersion key is also omitted, the 4D Runtime Volume License version number is used.
+
+Conversely, if both keys are used, only the value set using the RuntimeVLVersion key is taken into account.
+
+Under Windows, this key causes the File version and Product version fields of the properties window to be updated.
+Under Mac OS, this key causes the CFBundleShortVersionString and CFBundleVersion fields of the "info.plist" file to be updated.</source>
+               <target>Cette clé contient le numéro de version de l'application générée. Si elle est omise et si la clé CommonVersion l'est également, le numéro de version de 4D Runtime Volume License est utilisé.
+
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé RuntimeVLVersion est prise en compte.
+
+Sous Windows, cette clé entraîne la mise à jour des champs Version du fichier et Version du produit de la fenêtre des propriétés. 
+Sous Mac OS, cette clé entraîne la mise à jour des champs CFBundleShortVersionString et CFBundleVersion du fichier "info.plist".</target>
+            </trans-unit>
+            <trans-unit id="53" resname="RuntimeVLCopyright">
+               <source>This key contains the text inserted into:
+
+\t• the CFBundleGetInfoString field of the "info.plist" file under Mac OS,
+\t• the Copyright field of the Properties window under Windows.
+If this key is omitted and if the CommonCopyright key is also omitted, the Copyright information of the 4D Runtime Volume License application is used.
+
+Conversely, if both keys are used, only the value set using the RuntimeVLCopyright key is taken into account.</source>
+               <target>Cette clé contient le texte à insérer dans :
+
+\t• le champ CFBundleGetInfoString du fichier "info.plist" sous Mac OS,
+\t• le champ Copyright de la fenêtre des Propriétés sous Windows.
+Si cette clé est omise et si la clé CommonCopyright l'est également, les informations de Copyright de l'application 4D Runtime Volume License sont utilisées.
+
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé RuntimeVLCopyright est prise en compte.</target>
+            </trans-unit>
+            <trans-unit id="54" resname="RuntimeVLCreator">
+               <source>This key is only used under Mac OS.
+
+This key is used to define the creator for the Mac OS application built. Its maximum size is 4 characters.
+
+If this key is omitted and if the CommonCreator key is not passed, the creator of the 4D Runtime Volume License (4D06) is used.
+
+Conversely, if both keys are used, only the value set using the RuntimeVLCreator key is taken into account.
+
+This key does nothing under Windows.</source>
+               <target>Cette clé est utilisable sous Mac OS uniquement.
+
+Cette clé permet de définir le créateur (creator) pour l'application Mac OS générée. Sa taille maximale est de 4 caractères.
+
+Si cette clé est omise et si la clé CommonCreator n'est pas passée, le créateur de 4D Runtime Volume License (4D06) est utilisé.
+
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé RuntimeVLCreator est prise en compte.
+
+Sous Windows, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="55" resname="RuntimeVLComment">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Comment field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonComment key is also omitted, the comments associated with the 4D Runtime Volume License application are used.
+
+Conversely, if both keys are used, only the value set using the RuntimeVLComment key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Commentaires de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonComment l'est également, les commentaires associés à l'application 4D Runtime Volume License sont utilisées.
+
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé RuntimeVLComment est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="56" resname="RuntimeVLCompanyName">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Company name field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonCompanyName key is also omitted, the company name associated with the 4D Runtime Volume License application is used.
+
+Conversely, if both keys are used, only the value set using the RuntimeVLCompanyName key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Entreprise de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonCompanyName l'est également, le nom d'entreprise associé à l'application 4D Runtime Volume License est utilisé.
+
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé RuntimeVLCompanyName est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="57" resname="RuntimeVLFileDescription">
+               <source>This key is only used under Windows.
+
+This key allows you to update the File description field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonFileDescription key is also omitted, the file description associated with the 4D Runtime Volume License application is used.
+
+Conversely, if both keys are used, only the value set using the RuntimeVLFileDescription key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Description de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonFileDescription l'est également, la description associée à l'application 4D Runtime Volume License est utilisée.
+
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé RuntimeVLFileDescription est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="58" resname="RuntimeVLInternalName">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Internal name field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonInternalName key is also omitted, the internal name associated with the 4D Runtime Volume License application is used.
+
+Conversely, if both keys are used, only the value set using the RuntimeVLInternalName key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Nom interne de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonInternalName l'est également, le nom interne associé à l'application 4D Runtime Volume License est utilisé. 
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé RuntimeVLInternalName est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="59" resname="RuntimeVLLegalTrademark">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Legal trademark field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonLegalTrademark key is also omitted, the legal trademarks associated with the 4D Runtime Volume License application are used.
+
+Conversely, if both keys are used, only the value set using the RuntimeVLLegalTrademark key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Marques légales de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonLegalTrademark l'est également, les mentions de marques légales associées à l'application 4D Runtime Volume License sont utilisées. 
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé RuntimeVLLegalTrademark est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="60" resname="RuntimeVLPrivateBuild">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Private build field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonPrivateBuild key is also omitted, the private build associated with the 4D Runtime Volume License application is used.
+
+Conversely, if both keys are used, only the value set using the RuntimeVLPrivateBuild key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Description personnelle de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonPrivateBuild l'est également, la description personnelle associée à l'application 4D Runtime Volume License est utilisée.
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé RuntimeVLPrivateBuild est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="61" resname="RuntimeVLSpecialBuild">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Special build field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonSpecialBuild key is also omitted, the special build associated with the 4D Runtime Volume License application is used.
+
+Conversely, if both keys are used, only the value set using the RuntimeVLSpecialBuild key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Description de compilation de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonSpecialBuild l'est également, la description de compilation associée à l'application 4D Runtime Volume License est utilisée. 
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé RuntimeVLSpecialBuild est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+         </group>
+         <group resname="Versioning_Server">
+            <trans-unit id="62" resname="ServerVersion">
+               <source>This key contains the version number of the application built. If it is omitted and if the CommonVersion key is also omitted, the 4D Server version number is used.
+
+Conversely, if both keys are used, only the value set using the ServerVersion key is taken into account.
+
+Under Windows, this key causes the File version and Product version fields of the properties window to be updated.
+
+Under Mac OS, this key causes the CFBundleShortVersionString and CFBundleVersion field of the "info.plist" file to be updated.</source>
+               <target>Cette clé contient le numéro de version de l'application générée. Si elle est omise et si la clé CommonVersion l'est également, le numéro de version de 4D Server est utilisé. A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ServerVersion est prise en compte.
+
+Sous Windows, cette clé entraîne la mise à jour des champs Version du fichier et Version du produit de la fenêtre des propriétés.
+
+Sous Mac OS, cette clé entraîne la mise à jour des champs CFBundleShortVersionString et CFBundleVersion du fichier "info.plist".</target>
+            </trans-unit>
+            <trans-unit id="63" resname="ServerCopyright">
+               <source>This key contains the text inserted into:
+
+\t• the CFBundleGetInfoString field of the "info.plist" file under Mac OS,
+\t• the Copyright field of the Properties window under Windows.
+If this key is omitted and if the CommonCopyright key is also omitted, the Copyright information of the 4D Server application is used.
+
+Conversely, if both keys are used, only the value set using the ServerCopyright key is taken into account.</source>
+               <target>Cette clé contient le texte à insérer dans :
+
+\t• le champ CFBundleGetInfoString du fichier "info.plist" sous Mac OS,
+\t• le champ Copyright de la fenêtre des Propriétés sous Windows.
+Si cette clé est omise et si la clé CommonCopyright l'est également, les informations de Copyright de l'application 4D Server sont utilisées.
+
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ServerCopyright est prise en compte.</target>
+            </trans-unit>
+            <trans-unit id="64" resname="ServerCreator">
+               <source>This key is only used under Mac OS.
+
+This key is used to define the creator for the Mac OS application built. Its maximum size is 4 characters.
+
+If this key is omitted and if the CommonCreator key is also omitted, the creator of 4D Server (4D06) is used.
+
+Conversely, if both keys are used, only the value set using the ServerCreator key is taken into account.
+
+This key does nothing under Windows.</source>
+               <target>Cette clé est utilisable sous Mac OS uniquement.
+
+Cette clé permet de définir le créateur (creator) pour l'application Serveur Mac OS générée. Sa taille maximale est de 4 caractères.
+
+Si cette clé est omise et si la clé CommonCreator n'est pas passée, le créateur de 4D Server (4D06) est utilisé.
+
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ServerCreator est prise en compte.
+
+Sous Windows, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="65" resname="ServerComment">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Comment field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonComment key is also omitted, the comments associated with the 4D Server application are used.
+
+Conversely, if both keys are used, only the value set using the ServerComment key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Commentaires de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonComment l'est également, les commentaires associés à l'application 4D Server sont utilisées.
+
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ServerComment est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="66" resname="ServerCompanyName">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Company name field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonCompanyName key is also omitted, the company name associated with the 4D Server application is used.
+
+Conversely, if both keys are used, only the value set using the ServerCompanyName key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Entreprise de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonCompanyName l'est également, le nom d'entreprise associé à l'application 4D Server est utilisé.
+
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ServerCompanyName est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="67" resname="ServerFileDescription">
+               <source>This key is only used under Windows.
+
+This key allows you to update the File description field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonFileDescription key is also omitted, the description associated with the 4D Server application is used.
+
+Conversely, if both keys are used, only the value set using the ServerFileDescription key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Description de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonFileDescription l'est également, la description associée à l'application 4D Server est utilisée.
+
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ServerFileDescription est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="68" resname="ServerInternalName">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Internal name field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonInternalName key is also omitted, the internal name associated with the 4D Server application is used.
+
+Conversely, if both keys are used, only the value set using the ServerInternalName key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Nom interne de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonInternalName l'est également, le nom interne associé à l'application 4D Server est utilisé. 
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ServerInternalName est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="69" resname="ServerLegalTrademark">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Legal trademark field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonLegalTrademark key is also omitted, the legal trademarks associated with the 4D Server application are used.
+
+Conversely, if both keys are used, only the value set using the ServerLegalTrademark key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Marques légales de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonLegalTrademark l'est également, les mentions de marques légales associées à l'application 4D Server sont utilisées. 
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ServerLegalTrademark est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="70" resname="ServerPrivateBuild">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Private build field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonPrivateBuild key is also omitted, the private build associated with the 4D Server application is used.
+
+Conversely, if both keys are used, only the value set using the ServerPrivateBuild key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Description personnelle de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonPrivateBuild l'est également, la description personnelle associée à l'application 4D Server est utilisée.
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ServerPrivateBuild est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="71" resname="ServerSpecialBuild">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Special build field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonSpecialBuild key is also omitted, the special build associated with the 4D Server application is used.
+
+Conversely, if both keys are used, only the value set using the ServerSpecialBuild key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Description de compilation de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonSpecialBuild l'est également, la description de compilation associée à l'application 4D Server est utilisée. 
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ServerSpecialBuild est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="97" resname="Server">
+               <source>The keys of this subset are specific to 4D Server application builds.</source>
+               <target>Les clés de ce sous-ensemble sont spécifiques aux générations d’applications 4D Server.</target>
+            </trans-unit>
+         </group>
+         <group resname="Versioning_Client">
+            <trans-unit id="72" resname="ClientVersion">
+               <source>This key contains the version number of the application built. If it is omitted and if the CommonVersion key is also omitted, the 4D Client version number is used.
+
+Conversely, if both keys are used, only the value set using the ClientVersion key is taken into account.
+
+Under Windows, this key causes the File version and Product version fields of the properties window to be updated.
+
+Under Mac OS, this key causes the CFBundleShortVersionString and CFBundleVersion fields of the "info.plist" file to be updated.</source>
+               <target>Cette clé contient le numéro de version de l'application générée. Si elle est omise et si la clé CommonVersion l'est également, le numéro de version de 4D Client est utilisé.
+
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ClientVersion est prise en compte.
+
+Sous Windows, cette clé entraîne la mise à jour des champs Version du fichier et Version du produit de la fenêtre des propriétés.
+
+Sous Mac OS, cette clé entraîne la mise à jour des champs CFBundleShortVersionString et CFBundleVersion du fichier "info.plist".</target>
+            </trans-unit>
+            <trans-unit id="73" resname="ClientCopyright">
+               <source>This key contains the text inserted into:
+
+\t• the CFBundleGetInfoString field of the "info.plist" file under Mac OS,
+\t• the Copyright field of the Properties window under Windows.
+If this key is omitted and if the CommonCopyright key is also omitted, the Copyright information of the 4D Client application is used.
+
+Conversely, if both keys are used, only the value set using the ClientCopyright key is taken into account.</source>
+               <target>Cette clé contient le texte à insérer dans :
+
+\t• le champ CFBundleGetInfoString du fichier "info.plist" sous Mac OS,
+\t• le champ Copyright de la fenêtre des Propriétés sous Windows.
+Si cette clé est omise et si la clé CommonCopyright l'est également, les informations de Copyright de l'application 4D Client sont utilisées.
+
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ClientCopyright est prise en compte.</target>
+            </trans-unit>
+            <trans-unit id="74" resname="ClientCreator">
+               <source>This key is only used under Mac OS.
+
+This key is used to define the creator for the Mac OS Client application built. Its maximum size is 4 characters.
+
+If this key is omitted and if the CommonCreator key is not passed, the creator of 4D Client (4D06) is used.
+
+Conversely, if both keys are used, only the value set using the ClientCreator key is taken into account.
+
+This key does nothing under Windows.</source>
+               <target>Cette clé est utilisable sous Mac OS uniquement.
+
+Cette clé permet de définir le créateur (creator) pour l'application Client Mac OS générée. Sa taille maximale est de 4 caractères.
+
+Si cette clé est omise et si la clé CommonCreator n'est pas passée, le créateur de 4D Client (4D06) est utilisé.
+
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ClientCreator est prise en compte.
+
+Sous Windows, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="75" resname="ClientComment">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Comment field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonComment key is also omitted, the comments associated with the 4D Client application are used.
+
+Conversely, if both keys are used, only the value set using the ClientComment key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Commentaires de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonComment l'est également, les commentaires associés à l'application 4D Client sont utilisées.
+
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ClientComment est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="76" resname="ClientCompanyName">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Company name field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonCompanyName key is also omitted, the company name associated with the 4D Client application is used.
+
+Conversely, if both keys are used, only the value set using the ClientCompanyName key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Entreprise de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonCompanyName l'est également, le nom d'entreprise associé à l'application 4D Client est utilisé.
+
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ClientCompanyName est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="77" resname="ClientFileDescription">
+               <source>This key is only used under Windows.
+
+This key allows you to update the File description field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonFileDescription key is also omitted, the file description associated with the 4D Client application is used.
+
+Conversely, if both keys are used, only the value set using the ClientFileDescription key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Description de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonFileDescription l'est également, la description associée à l'application 4D Client est utilisée.
+
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ClientFileDescription est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="78" resname="ClientInternalName">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Internal name field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonInternalName key is also omitted, the internal name associated with the 4D Client application is used.
+
+Conversely, if both keys are used, only the value set using the ClientInternalName key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Nom interne de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonInternalName l'est également, le nom interne associé à l'application 4D Client est utilisé. 
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ClientInternalName est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="79" resname="ClientLegalTrademark">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Legal trademark field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonLegalTrademark key is also omitted, the legal trademarks associated with the 4D Client application are used.
+
+Conversely, if both keys are used, only the value set using the ClientLegalTrademark key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Marques légales de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonLegalTrademark l'est également, les mentions de marques légales associées à l'application 4D Client sont utilisées. 
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ClientLegalTrademark est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="80" resname="ClientPrivateBuild">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Private build field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonPrivateBuild key is also omitted, the private build associated with the 4D Client application is used.
+
+Conversely, if both keys are used, only the value set using the ClientPrivateBuild key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Description personnelle de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonPrivateBuild l'est également, la description personnelle associée à l'application 4D Client est utilisée.
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ClientPrivateBuild est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="81" resname="ClientSpecialBuild">
+               <source>This key is only used under Windows.
+
+This key allows you to update the Special build field in the Properties window under Windows. Its maximum size is 31 characters.
+
+If this key is omitted and if the CommonSpecialBuild key is also omitted, the special build associated with the 4D Client application is used.
+
+Conversely, if both keys are used, only the value set using the ClientSpecialBuild key is taken into account.
+
+This key does nothing under Mac OS.</source>
+               <target>Cette clé est utilisable sous Windows uniquement.
+
+Cette clé permet de mettre à jour le contenu du champ Description de compilation de la fenêtre des Propriétés sous Windows. Sa taille maximale est de 31 caractères.
+
+Si cette clé est omise et si la clé CommonSpecialBuild l'est également, la description de compilation associée à l'application 4D Client est utilisée. 
+A l'inverse, si les deux clés sont utilisées, seule la valeur définie par la clé ClientSpecialBuild est prise en compte.
+
+Sous Mac OS, cette clé n'a pas d'effet.</target>
+            </trans-unit>
+            <trans-unit id="98" resname="Client">
+               <source>The keys of this subset are specific to 4D Volume Desktop client application builds.</source>
+               <target>Les clés de ce sous-ensemble sont spécifiques aux générations d’applications clientes avec 4D Volume Desktop.</target>
+            </trans-unit>
+         </group>
+         <group resname="TitleHelp">
+            <trans-unit id="85" resname="BuildApp">
+               <source>The 4th Dimension Application Builder provides a number of options that are all available using specific XML keys.
+
+Use the BUILD APPLICATION command (in the Tools theme) to set the location of the XML document containing your customized keys.
+
+The XML theme commands allow you to process XML documents.</source>
+               <target>De nombreuses options proposées par le Générateur d'applications de 4e Dimension sont accessibles via des clés XML spécifiques.
+
+Utilisez la commande GENERER APPLICATION (thème Outils) pour désigner l'emplacement du document XML contenant vos clés personnalisées.
+
+Les commandes du thème XML permettent de traiter les documents XML.</target>
+            </trans-unit>
+            <trans-unit id="86" resname="Licenses">
+               <source><![CDATA[These parameters allow you to set access to the license files integrated into the built applications. They must be surrounded with <Licenses> and </Licenses> keys.]]></source>
+               <target><![CDATA[Ces paramètres permettent de définir les accès aux fichiers de licences à intégrer dans les applications générées. Ils doivent être encadrés des clés <Licenses> et </Licenses>.]]></target>
+            </trans-unit>
+            <trans-unit id="87" resname="CS">
+               <source><![CDATA[These parameters allow you to set options related to the 4th Dimension client/server version. These parameters must be surrounded with <CS> and </CS> keys.]]></source>
+               <target><![CDATA[Ces paramètres permettent de définir des options relatives à la version client/serveur de 4e Dimension. Ils doivent être encadrés des clés <CS> et </CS>.]]></target>
+            </trans-unit>
+            <trans-unit id="88" resname="SourcesFiles">
+               <source><![CDATA[These parameters allow you to set options related to source files. These parameters must be surrounded with <SourcesFiles> and </SourcesFiles> keys.
+
+These parameters are broken down into two subsets:
+
+   - RuntimeVL for 4D Runtime Volume License files,
+   - CS for 4D Server / 4D Client files.]]></source>
+               <target><![CDATA[Ces paramètres permettent de définir des options relatives aux fichiers sources. Ils doivent être encadrés des clés <SourcesFiles> et </SourcesFiles>.
+
+Ces paramètres se déclinent en deux sous-ensembles :
+
+   - RuntimeVL pour les fichiers de 4D Runtime Volume License,
+   - CS pour les fichiers de 4D Server / 4D Client.]]></target>
+            </trans-unit>
+            <trans-unit id="90" resname="Versioning">
+               <source><![CDATA[These parameters allow you to set options related to version numbers and built file information. These parameters must be surrounded with <Versioning> and </Versioning> keys.
+
+These parameters are broken down into four subsets:
+
+    • Common: common files,
+    • RuntimeVL: 4D Runtime Volume License files,
+    • Server: 4D Server files,
+    • Client: 4D Client files.
+
+Certain keys in the Common subset set the same information as the other subsets - only the application field is different. In the event that two similar keys are used, the "specific" key (RuntimeVL, Server, or Client subset) has priority over the "generic" key (Common subset).]]></source>
+               <target><![CDATA[Ces paramètres permettent de définir des options relatives aux numéros de versions et aux informations des fichiers générés. Ils doivent être encadrés des clés <Versioning> et </Versioning>.
+
+Ces paramètres se déclinent en quatre sous-ensembles :
+
+    • Common pour les fichiers communs,
+    • RuntimeVL pour les fichiers de 4D Runtime Volume License,
+    • Server pour les fichiers de 4D Server,
+    • Client pour les fichiers de 4D Client.
+
+Certaines clés du sous-ensemble Common définissent les mêmes informations que celles des autres sous-ensembles - seul leur champ d'application est différent. Dans le cas où deux clés semblables sont utilisées, la clé "spécifique" (sous-ensemble RuntimeVL, Server ou Client) a priorité par rapport à la clé "générique" (sous-ensemble Common).]]></target>
+            </trans-unit>
+         </group>
+         <group resname="AutoUpdate">
+            <trans-unit id="93" resname="/Preferences4D/BuildApp/AutoUpdate">
+               <source>'AutoUpdate' XML keys are available beginning with 4D v14. They allow you to elevate the installation privileges under Windows, so that the "updater" utility can install merged applications (clients and/or server) in protected system locations such as the "Desktop".
+Note: It is generally not recommended to install merged applications in the "Program Files" folder under Windows since this folder includes specific mechanisms that are incompatible with the functioning of 4D applications.
+When these keys are set to True and the "updater" program attempts to update an applications in a protected location, a warning dialog box informs you that administrator privileges are required. If necessary, a dialog box appears on the machine so that you can log on using an administrator account.</source>
+               <target>Les clés XML 'AutoUpdate' sont disponibles à compter de 4D v14. Elles permettent d’élever les privilèges d’installation sous Windows, permettant à l’utilitaire "updater" d’installer des applications fusionnées (clientes et/ou serveur) dans les emplacements protégés du système tels que le "Bureau". 
+Note : Il est généralement déconseillé d’installer des applications fusionnées dans le dossier "Program Files" sous Windows car ce dossier inclut des mécanismes spécifiques incompatibles avec le fonctionnement des applications 4D. 
+Lorsque ces clés sont à True et que le programme "updater" tente de mettre à jour une application dans un emplacement protégé, une boîte de dialogue d’alerte indique que des privilèges d’administrateur sont requis. Si nécessaire, une boîte de dialogue de saisie d’identifiants s’affiche sur le poste, permettant d’utiliser un compte d’administrateur.
+</target>
+            </trans-unit>
+            <trans-unit id="101" resname="/Preferences4D/BuildApp/AutoUpdate/RuntimeVL/StartElevated">
+               <source>Windows only: When this key contains the value True, the update of the single-user application is performed with the administrator privileges of the machine. 
+When it contains False (default), this update is performed without elevating privileges. 
+Under OS X, this key is always False.</source>
+               <target>Windows uniquement : si cette clé contient la valeur True, la mise à jour de l’application monoposte est effectuée avec les privilèges d’administrateur de la machine. 
+Si elle vaut False (défaut), la mise à jour est effectuée sans élévation des privilèges. 
+Sous OS X, cette clé est toujours False.</target>
+            </trans-unit>
+            <trans-unit id="103" resname="/Preferences4D/BuildApp/AutoUpdate/CS/Server/StartElevated">
+               <source>Windows only: When this key contains the value True, the update of the server application is performed with the administrator privileges of the machine. 
+When it contains False (default), this update is performed without elevating privileges. 
+Under OS X, this key is always False.</source>
+               <target>Windows uniquement : si cette clé contient la valeur True, la mise à jour de l’application serveur est effectuée avec les privilèges d’administrateur de la machine. 
+Si elle vaut False (défaut), la mise à jour est effectuée sans élévation des privilèges. 
+Sous OS X, cette clé est toujours False.</target>
+            </trans-unit>
+            <trans-unit id="106" resname="/Preferences4D/BuildApp/AutoUpdate/CS/Client/StartElevated">
+               <source>Windows only: When this key contains the value True, the update of the merged client application is performed with the administrator privileges of the machine. 
+When it contains False (default), this update is performed without elevating privileges.
+Under OS X, this key is always False.</source>
+               <target>Windows uniquement : si cette clé contient la valeur True, la mise à jour de l’application cliente fusionnée est effectuée avec les privilèges d’administrateur de la machine. 
+Si elle vaut False (défaut), la mise à jour est effectuée sans élévation des privilèges. 
+Sous OS X, cette clé est toujours False.</target>
+            </trans-unit>
+            <trans-unit id="107" resname="/Preferences4D/BuildApp/AutoUpdate/CS/ClientUpdateWin/StartElevated">
+               <source>OS X only: When this key contains the value True, the update of the Windows client application is performed with the administrator privileges of the machine. 
+When it contains False (default), this update is performed without elevating privileges.
+Under Windows, this key is ignored.</source>
+               <target>OS X uniquement : si cette clé contient la valeur True, la mise à jour de l’application cliente Windows est effectuée avec les privilèges d’administrateur de la machine. 
+Si elle vaut False (défaut), la mise à jour est effectuée sans élévation des privilèges. 
+Sous Windows, cette clé est ignorée.</target>
+            </trans-unit>
+         </group>
+      </body>
+   </file>
+</xliff>
