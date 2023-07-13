@@ -14,7 +14,7 @@ Download the version corresponding to your version of 4D
 
 ## Items
 
-| Github | Last release | Build status | macOS |
+| Repository| Last release | Build status | macOS |
 |:------:|--------------|--------------|:---:|
 |[4DPop](https://github.com/vdelachaux/4DPop)|[![release](https://img.shields.io/github/v/release/vdelachaux/4DPop-Bookmarks?include_prereleases)](https://github.com/vdelachaux/4DPop-Bookmarks/releases/latest)|[![Build](https://github.com/vdelachaux/4DPop/actions/workflows/build.yml/badge.svg)](https://github.com/vdelachaux/4DPop/actions/workflows/build.yml)|![](https://img.shields.io/badge/notarized-blue)
 |[AppMaker](https://github.com/vdelachaux/4DPop-AppMaker)|[![release](https://img.shields.io/github/v/release/vdelachaux/4DPop-AppMaker?include_prereleases)](https://github.com/vdelachaux/4DPop-AppMaker/releases/latest)|[![Build](https://github.com/vdelachaux/4DPop-AppMaker/actions/workflows/build.yml/badge.svg)](https://github.com/vdelachaux/4DPop-AppMaker/actions/workflows/build.yml)|![](https://img.shields.io/badge/notarized-blue)
@@ -33,7 +33,9 @@ Download the version corresponding to your version of 4D
 |[Window](https://github.com/vdelachaux/4DPop-Window) |[![release](https://img.shields.io/github/v/release/vdelachaux/4DPop-Window?include_prereleases)](https://github.com/vdelachaux/4DPop-Window/releases/latest)|[![Build](https://github.com/vdelachaux/4DPop-Window/actions/workflows/build.yml/badge.svg)](https://github.com/vdelachaux/4DPop-Window/actions/workflows/build.yml)|![](https://img.shields.io/badge/notarized-blue)
 |[XLIFF-Pro](https://vdelachaux.github.io/4DPop-XLIFF-Pro) |[![release](https://img.shields.io/github/v/release/vdelachaux/4DPop-XLIFF-Pro?include_prereleases)](https://github.com/vdelachaux/4DPop-XLIFF-Pro/releases/latest)|[![Build](https://github.com/vdelachaux/4DPop-XLIFF-Pro/actions/workflows/build.yml/badge.svg)](https://github.com/vdelachaux/4DPop-XLIFF-Pro/actions/workflows/build.yml)|![](https://img.shields.io/badge/notarized-blue)
 
->  📌 You can also click on the `Latest version` tag of each component above to access its latest revision.
+>  📌 Click on a component name in the "Repository" column above to access its repository, where the source code is available.
+> 
+>  📌 Click on the `Release` tag of each component above to access its latest revision.
 
 ## 📌 **macOS user on ARM processor**.    
 >Since version **19R5**, 4DPop components are signed and notarized.    
