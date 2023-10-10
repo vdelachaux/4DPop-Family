@@ -10,7 +10,7 @@
     <key>CFBundleGetInfoString</key>
     <string>20R4</string>
     <key>CFBundleLongVersionString</key>
-    <string>20R4 (96)</string>
+    <string>20R4 (97)</string>
     <key>CFBundleName</key>
     <string>4DPop XLIFF Pro</string>
     <key>CFBundleDevelopmentRegion</key>
@@ -18,7 +18,7 @@
     <key>CFBundleDisplayName</key>
     <string>4DPop XLIFF Pro</string>
     <key>CFBundleVersion</key>
-    <string>97</string>
+    <string>98</string>
     <key>CFBundleShortVersionString</key>
     <string>20R4</string>
     <key>CFBundleExecutable</key>
